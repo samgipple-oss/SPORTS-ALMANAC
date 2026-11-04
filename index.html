@@ -8,138 +8,36 @@
   <meta name="description" content="A personalised UK and US sports fixture guide that only shows matches on your selected streaming services.">
   <title>Sports Almanac — Your sports, your subscriptions</title>
   <style>
-    :root { color-scheme:dark; --bg:#171419; --panel:#292027; --panel-alt:#362833; --line:#61434b; --text:#fff0e7; --muted:#c6b5b9; --accent:#bd5266; --accent-light:#ffbcc7; --cream:#f3d6c5; --good:#a9ecc6; --gold:#f3c787; }
-    * {box-sizing:border-box}
-    body {margin:0;min-height:100vh;background:radial-gradient(circle at 14% 0%,#592733,#211a20 43%,var(--bg));color:var(--text);font:15px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    a {color:var(--accent-light)}
-    button,select,input {font:inherit}
-    button {cursor:pointer}
-    button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible {outline:3px solid #fff;outline-offset:3px}
-    .shell {max-width:1100px;margin:auto;padding:30px 20px 72px}
-    .eyebrow,.step {color:#e9b8c0;text-transform:uppercase;font-size:11px;letter-spacing:2px;font-weight:800}
-    h1 {font:700 clamp(34px,7vw,65px)/1.07 Georgia,serif;letter-spacing:-1.4px;margin:8px 0}
-    h2 {font-size:22px;line-height:1.25;margin:0 0 7px}
-    p {color:var(--muted)}
-    .intro {margin:8px 0 28px;max-width:720px}
-    .panel {background:#292027ee;border:1px solid var(--line);border-radius:18px;margin:15px 0;padding:22px;box-shadow:0 10px 30px #0002}
-    .panel-heading {display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
-    .choices,.toolbar,.actions,.options {display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:13px}
-    .choice,.secondary,select,input[type="search"] {background:#352830;color:var(--text);border:1px solid #7d5962;border-radius:999px;padding:9px 14px;min-height:42px}
-    .choice[aria-pressed="true"],.secondary.active {background:#a34356;border-color:#f8bcc8;color:#fff;box-shadow:inset 0 0 0 1px #f8bbc8}
-    .choice:hover,.secondary:hover {border-color:#f8bcc8}
-    .choice {font-size:13px}
-    .choice small {opacity:.75}
-    .primary {background:var(--cream);color:#3a1d27;border:0;border-radius:10px;padding:11px 17px;font-weight:800}
-    .secondary {border-radius:10px;font-size:13px}
-    .hint {font-size:13px;margin:5px 0}
-    .micro {font-size:12px;color:#d4b7c0}
-    .split {display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
-    .label-count {font-size:12px;border-radius:999px;background:#46303b;color:#f5d8df;padding:5px 10px}
-    .notice {padding:12px 14px;background:#392c34;border-left:3px solid #d59ba5;border-radius:7px;color:#edd9dc;font-size:13px;margin-top:14px}
-    .notice.positive {border-color:#81c6a2;background:#27382e}
-    .checkrow {display:flex;align-items:flex-start;gap:10px;font-size:13px;margin-top:13px;color:#eadadd;cursor:pointer}
-    .checkrow input {width:18px;height:18px;accent-color:#cf6f82;margin-top:2px;flex:0 0 18px}
-    .stats {display:flex;flex-wrap:wrap;gap:9px;margin:17px 0;color:#e9c8d0;font-size:13px}
-    .stats span {background:#3b2933;border:1px solid #64464f;border-radius:8px;padding:7px 11px}
-    #timezone {border-radius:10px;max-width:215px}
-    #search {border-radius:10px;min-width:185px;flex:1;max-width:280px}
-    .calendar {display:grid;gap:13px}
-    .day {border:1px solid #69454e;border-radius:13px;overflow:hidden;background:#231b22}
-    .dayhead {background:#3b2933;padding:12px 15px;display:flex;justify-content:space-between;gap:8px;align-items:center;font-weight:800}
-    .game {display:grid;grid-template-columns:61px minmax(0,1fr);gap:13px;padding:14px 16px;border-top:1px solid #503640}
-    .time {color:#ffd8c8;font-weight:800;font-variant-numeric:tabular-nums}
-    .game-title {font-size:15px;line-height:1.35;font-weight:750}
-    .meta {color:#d5bbc2;font-size:12px;margin-top:3px}
-    .tags {display:flex;flex-wrap:wrap;gap:7px;margin:9px 0 0}
-    .tag {display:inline-flex;flex-wrap:wrap;align-items:center;gap:5px;border:1px solid #815b65;background:#35262e;border-radius:8px;padding:5px 8px;color:#f0d6d6;font-size:12px}
-    .tag.verified {border-color:#679b80;color:var(--good);background:#24392e}
-    .tag.scheduled {border-color:#a98b63;color:#f1d3a3;background:#3d3228}
-    .tag.conditional {border-color:#806a76;color:#dcc0cb}
-    .tag a {color:inherit;text-decoration:underline;text-underline-offset:2px}
-    .links {display:flex;flex-wrap:wrap;gap:9px;margin-top:10px;font-size:12px}
-    .links a {padding:5px 9px;border-radius:6px;border:1px solid #72515c;text-decoration:none}
-    .links a:hover {background:#49323c}
-    .footnote {font-size:12px;color:#cdb5bd;margin-top:8px}
-    .empty {border:1px dashed #80545e;border-radius:12px;padding:24px;text-align:center;color:#e7cbd0}
-    footer {font-size:12px;color:var(--muted);margin:28px 0}
-    @media(max-width:630px){.shell{padding:20px 12px 45px}.panel{padding:16px}.game{grid-template-columns:52px minmax(0,1fr);gap:9px;padding:12px 10px}.dayhead{padding:10px}.choice{font-size:12px;padding:8px 11px}.panel-heading{gap:8px}}
-    @media(prefers-reduced-motion:no-preference){button {transition:background-color .12s,border-color .12s}}
+    :root{color-scheme:dark;--bg:#111014;--surface:#1c1a20;--surface2:#252129;--line:#40343e;--text:#fbf5f0;--muted:#a9a1ab;--accent:#ed8d91;--gold:#f0c99c;--green:#95dbbb}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:var(--bg);font:14px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+    body:before{content:'';position:absolute;z-index:-1;left:0;top:0;width:100%;height:540px;background:radial-gradient(ellipse 70% 80% at 12% 8%,#59303b 0%,#2a1c25 48%,transparent 100%)}
+    a{color:#f2b3b6}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+    .shell{max-width:1240px;padding:0 24px 70px;margin:auto}.topbar{height:70px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff19;gap:12px}.brand{font-size:14px;font-weight:900;letter-spacing:2px;text-transform:uppercase;display:flex;align-items:center;gap:10px}.brandmark{display:grid;place-items:center;width:35px;height:35px;border-radius:10px;background:#e7b9a2;color:#24141a;font-size:20px}.top-meta{font-size:11px;letter-spacing:1.8px;color:#c9adb4;text-transform:uppercase}
+    .hero{display:flex;justify-content:space-between;align-items:flex-end;gap:22px;padding:38px 0 28px}.eyebrow,.step{color:#e4a0a9;text-transform:uppercase;font-size:10px;letter-spacing:2.4px;font-weight:850}.hero h1{font:700 clamp(43px,6vw,75px)/1.01 Georgia,'Times New Roman',serif;letter-spacing:-2.5px;margin:10px 0 12px}.hero h1 em{font-weight:400;color:#e3bda9;font-style:italic}.intro{max-width:585px;color:#bcb0b7;margin:0;font-size:15px}.hero-symbols{font-size:32px;letter-spacing:8px;white-space:nowrap;opacity:.85;padding:0 0 8px}
+    .workspace{display:grid;grid-template-columns:320px minmax(0,1fr);align-items:start;gap:22px}.settings{display:grid;gap:13px;position:sticky;top:14px;max-height:calc(100vh - 28px);overflow-y:auto;padding-right:4px;scrollbar-color:#634751 transparent;scrollbar-width:thin}.panel{background:linear-gradient(155deg,#29212a,#211d24);border:1px solid #57414b;border-radius:16px;padding:20px;box-shadow:0 5px 18px #0002}.settings .panel{padding:18px}.settings h2{font-size:15px;margin:4px 0 5px}.panel h2{letter-spacing:-.25px}.hint{color:#afa5af;font-size:12px;margin:4px 0 8px}.panel-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}.choices{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.choice,.secondary{color:#e8d6dd;background:#382d36;border:1px solid #674c58;border-radius:9px;min-height:35px;padding:8px 10px;font-size:12px;font-weight:650;transition:.15s}.choice{display:inline-flex;gap:6px;align-items:center;justify-content:center}.choice[aria-pressed=true],.secondary.active{background:#d38a98;color:#271821;border-color:#f0bac0}.choice:hover,.secondary:hover{border-color:#e6afae}.choice .sport-icon{font-size:17px;line-height:1}.choice .network-icon{width:23px;height:23px;font-size:10px}.choice .network-icon img{width:16px;height:16px}.service-grid{display:grid;grid-template-columns:1fr 1fr}.service-grid .choice{justify-content:flex-start;text-align:left;min-width:0;line-height:1.15}.service-grid .choice span:last-child{overflow-wrap:anywhere}
+    .network-icon{display:inline-grid;place-items:center;flex:0 0 auto;width:28px;height:28px;background:#211a22;border:1px solid #71535e;border-radius:8px;color:#ffdfd5;font-size:11px;font-weight:900;letter-spacing:-.5px;overflow:hidden}.network-icon img{width:19px;height:19px;object-fit:contain;border-radius:3px}.network-icon img.fallback{display:none}.network-icon:has(img:not(.fallback)) .mark{display:none}.network-icon:has(img.fallback) .mark{display:block}
+    .label-count{border:1px solid #74515b;background:#3c2933;padding:4px 8px;border-radius:99px;font-size:11px;color:#f1c8cb;white-space:nowrap}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.primary{background:#f0c8b0;border:0;border-radius:9px;padding:9px 12px;font-size:12px;font-weight:850;color:#321e25}.secondary{font-size:12px}.micro{color:#a99da5;font-size:11px}.notice{margin-top:12px;color:#bdb3ba;font-size:12px;border-left:2px solid #a36d80;padding:8px 10px;background:#332831;border-radius:5px}.notice.positive{border-color:#b0daaf}
+    .calendar-panel{padding:0;overflow:hidden;background:#1c191f}.calendar-intro{padding:25px 26px 17px;border-bottom:1px solid #43353f}.calendar-intro h2{font:700 32px Georgia,serif;margin:4px 0 6px}.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:13px}.toolbar .secondary{white-space:normal}.checkrow{display:flex;gap:9px;align-items:flex-start;cursor:pointer;color:#bfb5bb;font-size:12px;margin-top:14px}.checkrow input{accent-color:#dd8d99;width:16px;height:16px;flex:none;margin-top:2px}#timezone,#search{color:var(--text);background:#322933;border:1px solid #6a505b;border-radius:9px;padding:9px 12px;min-height:38px}#timezone{max-width:190px}#search{min-width:155px;flex:1}.stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.stats span{border:1px solid #55424d;background:#31262f;padding:6px 9px;border-radius:7px;font-size:11px;color:#e4c9cf}
+    .calendar{padding:0 12px 18px;display:grid;gap:18px}.day{border:1px solid #493a44;border-radius:12px;overflow:hidden;background:#211e24}.dayhead{background:#302630;border-bottom:1px solid #4a3a43;padding:13px 17px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;font-weight:850;letter-spacing:.2px}.dayhead .micro{font-weight:500}.game{display:grid;grid-template-columns:58px 44px minmax(0,1fr);gap:13px;padding:17px 16px;border-top:1px solid #3f333c;position:relative}.game:first-of-type{border-top:0}.game:before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--sport-color,#e7b59e);opacity:.85}.time{font-size:14px;font-weight:850;color:#ffe1cf;font-variant-numeric:tabular-nums;padding-top:8px}.sport-icon-tile{display:grid;place-items:center;width:42px;height:42px;background:color-mix(in srgb,var(--sport-color,#e7b59e) 18%,#211e24);border:1px solid color-mix(in srgb,var(--sport-color,#e7b59e) 45%,#333);border-radius:12px;font-size:22px}.game-title{font-size:16px;font-weight:800;line-height:1.3;letter-spacing:-.2px}.meta{font-size:11px;color:#bcaeb7;margin:4px 0 0}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tag{display:inline-flex;align-items:center;gap:7px;border:1px solid #684a56;background:#342832;padding:5px 9px 5px 6px;color:#e8d5dc;border-radius:9px;font-size:11px}.tag.verified{background:#24372d;color:#b4e7ce;border-color:#497960}.tag.scheduled{background:#3b3026;color:#e9ce9e;border-color:#94704b}.tag.conditional{color:#c7b3bc;opacity:.85}.tag .network-icon{width:23px;height:23px;border:0;background:#ffffff12;border-radius:6px;font-size:10px}.tag .network-icon img{height:16px;width:16px}.tag .entry-details{display:grid;line-height:1.15;gap:2px}.tag .entry-status{font-size:9px;opacity:.8}.links{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}.links a{border:1px solid #624b57;background:#302731;text-decoration:none;border-radius:8px;padding:6px 9px;font-size:11px;color:#e9c5c7}.links a:hover{background:#493442}.footnote{font-size:11px;color:#ab9da7;margin:7px 0}.empty{margin:20px;background:#2a222b;border:1px dashed #72515e;border-radius:12px;padding:27px;text-align:center;color:#d6bac5}.explain{padding:0 26px 20px;color:#a89ca5;font-size:11px}footer{font-size:11px;color:#887f88;padding:20px 0 0;text-align:center}
+    @media(max-width:910px){.workspace{grid-template-columns:1fr}.settings{position:static;max-height:none;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;padding:0}.settings .panel:last-child{grid-column:span 2}.hero-symbols{display:none}}
+    @media(max-width:630px){.shell{padding:0 12px 45px}.topbar{height:58px}.top-meta{font-size:9px}.hero{padding:29px 4px}.hero h1{font-size:46px}.settings{grid-template-columns:1fr}.settings .panel:last-child{grid-column:auto}.calendar-intro{padding:20px 15px}.calendar{padding:0 7px 15px}.game{grid-template-columns:45px 33px minmax(0,1fr);gap:8px;padding:13px 9px}.time{font-size:12px}.sport-icon-tile{width:33px;height:33px;font-size:18px;border-radius:9px}.game-title{font-size:14px}.dayhead{padding:12px}.tag{font-size:10px}.calendar-intro h2{font-size:28px}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
 </head>
 <body>
 <main class="shell">
-  <div class="eyebrow">YOUR SPORTS · YOUR SUBSCRIPTIONS · YOUR TIME</div>
-  <h1>SPORTS ALMANAC ⚾</h1>
-  <p class="intro">Your personal 30-day sports guide. Pick what you actually pay for — we'll show the games linked to those services, without mixing in matches from subscriptions you don't have.</p>
-
-  <section class="panel" aria-labelledby="country-head">
-    <div class="step">01 · Region</div>
-    <h2 id="country-head">Where are you watching?</h2>
-    <div class="choices" id="countries"></div>
-  </section>
-
-  <section class="panel" aria-labelledby="sports-head">
-    <div class="step">02 · Sports</div>
-    <h2 id="sports-head">Which sports?</h2>
-    <div class="choices" id="sports"></div>
-  </section>
-
-  <section class="panel" aria-labelledby="leagues-head">
-    <div class="step">03 · Competitions</div>
-    <h2 id="leagues-head">Which leagues?</h2>
-    <div class="choices" id="leagues"></div>
-  </section>
-
-  <section class="panel" aria-labelledby="services-head">
-    <div class="step">04 · Subscriptions</div>
-    <div class="panel-heading">
-      <div>
-        <h2 id="services-head">What services do you have?</h2>
-        <p class="hint">Selecting any service automatically filters the calendar to that service. Multiple selections show matches on <strong>at least one</strong> of them.</p>
-      </div>
-      <span id="service-count" class="label-count">0 selected</span>
-    </div>
-    <div class="choices" id="services"></div>
-    <div class="actions">
-      <button id="save" class="primary" type="button">Save preferences</button>
-      <button id="clear-services" class="secondary" type="button">Clear subscriptions</button>
-      <button id="reset" class="secondary" type="button">Reset everything</button>
-      <span id="message" class="micro" role="status" aria-live="polite"></span>
-    </div>
-    <div class="notice positive" id="selection-note">Choose a subscription above to see matching games. Without a selection, you can browse all fixtures.</div>
-  </section>
-
-  <section class="panel" aria-labelledby="calendar-head">
-    <div class="step">Your guide</div>
-    <h2 id="calendar-head">Next 30 days</h2>
-    <p class="hint">League-wide coverage and event-specific listings are separated from blackout warnings and unconfirmed broadcast possibilities.</p>
-    <div class="toolbar" id="filters" role="group" aria-label="Which matches to show">
-      <button type="button" class="secondary" data-filter="mine">My subscriptions</button>
-      <button type="button" class="secondary" data-filter="confirmed">Confirmed coverage only</button>
-      <button type="button" class="secondary" data-filter="all">All fixtures (ignore subscriptions)</button>
-    </div>
-    <label class="checkrow" for="include-conditional">
-      <input type="checkbox" id="include-conditional">
-      <span>Include <strong>unconfirmed rights possibilities</strong> (e.g. a league that sometimes airs on Sky, without a match-specific listing). Off by default to avoid false matches.</span>
-    </label>
-    <div class="toolbar">
-      <label for="timezone">Times:</label>
-      <select id="timezone">
-        <option value="auto">My country</option>
-        <option value="Europe/London">UK time</option>
-        <option value="America/New_York">US Eastern</option>
-        <option value="America/Los_Angeles">US Pacific</option>
-        <option value="UTC">UTC</option>
-      </select>
-      <input id="search" type="search" placeholder="Search team or competition" aria-label="Search teams or competitions">
-      <button type="button" id="reload" class="secondary">Refresh fixtures</button>
-    </div>
-    <div class="stats" id="stats" aria-live="polite"></div>
-    <div class="calendar" id="calendar" aria-live="polite"><div class="empty">Loading fixtures…</div></div>
-    <p class="footnote">“Confirmed league coverage” is based on published season-wide rights, not a direct match listing. “Game listing” means a broadcaster is named for that fixture but availability hasn't been independently verified. Watch links open the service's official site, not necessarily the exact game.</p>
-  </section>
-
-  <footer>Sports Almanac beta · Preferences stay in your browser · Fixtures and broadcast rights can change · Blackouts, paid sports add-ons and local TV markets may apply · ESPN fixture feed and linked broadcaster sources.</footer>
+  <header class="topbar"><div class="brand"><span class="brandmark">⚾</span> SPORT<span style="color:#eab0b7">S</span> ALMANAC</div><div class="top-meta">THE LIVE SPORTS DIRECTORY · 2026</div></header>
+  <section class="hero"><div><div class="eyebrow">KNOW THE GAME. KNOW WHERE TO WATCH.</div><h1>Every game.<br><em>Your way.</em></h1><p class="intro">A beautiful, personalised guide to the next 30 days of sport. Pick your subscriptions to see only the games you can actually find on them.</p></div><div class="hero-symbols" aria-hidden="true">⚽ 🏀 ⚾ 🏈 🏒</div></section>
+  <div class="workspace">
+    <aside class="settings" aria-label="Your preferences">
+      <section class="panel" aria-labelledby="country-head"><div class="step">01 / YOUR REGION</div><h2 id="country-head">Where are you watching?</h2><div class="choices" id="countries"></div></section>
+      <section class="panel" aria-labelledby="sports-head"><div class="step">02 / CHOOSE SPORTS</div><h2 id="sports-head">Follow your favourites</h2><div class="choices" id="sports"></div></section>
+      <section class="panel" aria-labelledby="leagues-head"><div class="step">03 / COMPETITIONS</div><h2 id="leagues-head">Choose your leagues</h2><div class="choices" id="leagues"></div></section>
+      <section class="panel" aria-labelledby="services-head"><div class="step">04 / STREAMING & TV</div><div class="panel-heading"><h2 id="services-head">Your subscriptions</h2><span id="service-count" class="label-count">0 selected</span></div><p class="hint">Select the networks you already have. Your calendar will filter automatically.</p><div class="choices service-grid" id="services"></div><div class="actions"><button id="save" class="primary" type="button">Save choices</button><button id="clear-services" class="secondary" type="button">Clear</button><button id="reset" class="secondary" type="button">Reset all</button></div><span id="message" class="micro" role="status" aria-live="polite"></span><div class="notice positive" id="selection-note">Choose your subscriptions to see matching games.</div></section>
+    </aside>
+    <section class="panel calendar-panel" aria-labelledby="calendar-head"><div class="calendar-intro"><div class="step">YOUR PERSONALISED LINEUP</div><h2 id="calendar-head">The next 30 days <span aria-hidden="true">↗</span></h2><p class="hint">Fixture times and available services, all in one place. Game-specific listings are distinguished from general rights.</p><div class="toolbar" id="filters" role="group" aria-label="Which matches to show"><button type="button" class="secondary" data-filter="mine">✦ My subscriptions</button><button type="button" class="secondary" data-filter="confirmed">✓ Confirmed only</button><button type="button" class="secondary" data-filter="all">All fixtures</button></div><label class="checkrow" for="include-conditional"><input type="checkbox" id="include-conditional"><span>Show unconfirmed rights possibilities too (off by default).</span></label><div class="toolbar"><label class="micro" for="timezone">TIMEZONE</label><select id="timezone"><option value="auto">My country</option><option value="Europe/London">UK time</option><option value="America/New_York">US Eastern</option><option value="America/Los_Angeles">US Pacific</option><option value="UTC">UTC</option></select><input id="search" type="search" placeholder="⌕ Search teams or leagues" aria-label="Search teams or competitions"><button type="button" id="reload" class="secondary">↻ Refresh</button></div><div class="stats" id="stats" aria-live="polite"></div></div><div class="calendar" id="calendar" aria-live="polite"><div class="empty">Loading games…</div></div><p class="explain">✓ League coverage is based on a published agreement, not necessarily a game-specific confirmation. Schedule leads may be subject to blackout rules, sports add-ons and availability changes. Network icons load from site favicons where available.</p></section>
+  </div>
+  <footer>SPORTS ALMANAC · BUILT FOR SPORTS FANS · PREFERENCES STAY ON YOUR DEVICE</footer>
 </main>
 <script>
 (() => {
@@ -159,7 +57,7 @@
       'Prime Video', 'Apple TV', 'Netflix', 'Disney+', 'DAZN', 'NBA League Pass',
       'WNBA League Pass', 'MLB.TV', 'NFL Game Pass', 'NHL.TV', 'Sky Sports', 'NOW',
       'TNT Sports', 'HBO Max', 'Premier Sports', 'BBC iPlayer', 'ITVX',
-      'Channel 4', 'Channel 5', 'YouTube'
+      'Channel 4', 'Channel 5', 'YouTube', 'FIFA+', 'LaLigaTV'
     ],
     US: [
       'Prime Video', 'Apple TV', 'Netflix', 'Disney+', 'Paramount+', 'Peacock',
@@ -168,7 +66,7 @@
       'Hulu + Live TV', 'Fubo', 'HBO Max', 'Fandango', 'YouTube',
       'ABC', 'CBS', 'FOX', 'NBC', 'TNT', 'TBS', 'FS1', 'FS2',
       'USA Network', 'CBS Sports Network', 'NBA TV', 'NFL Network',
-      'MLB Network', 'NHL Network', 'The CW'
+      'MLB Network', 'NHL Network', 'The CW', 'NBCSN', 'FIFA+'
     ]
   };
   const DISPLAY_NAMES = {
@@ -210,6 +108,42 @@
     'Fandango': 'https://www.fandango.com/'
   };
 
+  const SPORT_ICONS = {'Football':'⚽','Basketball':'🏀','Baseball':'⚾','American football':'🏈','Ice hockey':'🏒'};
+  const SPORT_COLORS = {'Football':'#8dc9a0','Basketball':'#ed9b75','Baseball':'#e6ba9f','American football':'#bb9ee0','Ice hockey':'#96c8db'};
+  const SERVICE_DOMAINS = {
+    'Prime Video':'primevideo.com','Apple TV':'tv.apple.com','Netflix':'netflix.com',
+    'Disney+':'disneyplus.com','DAZN':'dazn.com','NBA League Pass':'nba.com',
+    'WNBA League Pass':'wnba.com','MLB.TV':'mlb.com','NFL Game Pass':'dazn.com',
+    'NHL.TV':'nhl.com','Sky Sports':'skysports.com','NOW':'nowtv.com',
+    'TNT Sports':'tntsports.co.uk','HBO Max':'hbomax.com','Premier Sports':'premiersports.com',
+    'BBC iPlayer':'bbc.co.uk','ITVX':'itv.com','Channel 4':'channel4.com',
+    'Channel 5':'channel5.com','YouTube':'youtube.com','Paramount+':'paramountplus.com',
+    'Peacock':'peacocktv.com','ESPN+':'espn.com','ESPN':'espn.com',
+    'ESPN2':'espn.com','NFL+':'nfl.com','NFL Sunday Ticket':'youtube.com',
+    'FOX One':'fox.com','YouTube TV':'tv.youtube.com','Hulu + Live TV':'hulu.com',
+    'Fubo':'fubo.tv','Fandango':'fandango.com','ABC':'abc.com','CBS':'cbs.com',
+    'FOX':'fox.com','NBC':'nbc.com','TNT':'tntdrama.com','TBS':'tbs.com',
+    'FS1':'foxsports.com','FS2':'foxsports.com','USA Network':'usanetwork.com',
+    'CBS Sports Network':'cbssports.com','NBA TV':'nba.com','NFL Network':'nfl.com',
+    'MLB Network':'mlb.com','NHL Network':'nhl.com','The CW':'cwtv.com',
+    'NBCSN':'nbcsports.com','FIFA+':'fifa.com','LaLigaTV':'laliga.com',
+    'Prime Video PPV':'primevideo.com'};
+  function networkIcon(name) {
+    const span = document.createElement('span');
+    span.className = 'network-icon'; span.setAttribute('aria-hidden','true');
+    const mark = document.createElement('span'); mark.className='mark';
+    mark.textContent = (name.replace(/[^a-z0-9+ .]/gi,'').split(/\s+/).map(x=>x[0]||'').join('').slice(0,3) || name.slice(0,2)).toUpperCase();
+    span.append(mark);
+    const domain = SERVICE_DOMAINS[name];
+    if (domain) {
+      const img = document.createElement('img');
+      img.alt=''; img.loading='lazy'; img.referrerPolicy='no-referrer';
+      img.src='https://www.google.com/s2/favicons?domain='+encodeURIComponent(domain)+'&sz=64';
+      img.addEventListener('error',()=>img.classList.add('fallback'));
+      span.append(img);
+    }
+    return span;
+  }
   const $ = id => document.getElementById(id);
   const allLeagues = () => Object.values(CATALOG).flat();
   const defaults = () => ({
@@ -258,7 +192,12 @@
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'choice';
-      button.textContent = DISPLAY_NAMES[name] || name;
+      if (containerId === 'sports') {
+        const icon = document.createElement('span'); icon.className = 'sport-icon';
+        icon.textContent = SPORT_ICONS[name] || '🏆'; button.append(icon);
+      } else if (containerId === 'services') button.append(networkIcon(name));
+      const label = document.createElement('span');
+      label.textContent = DISPLAY_NAMES[name] || name; button.append(label);
       button.setAttribute('aria-pressed', String(selected.includes(name)));
       button.addEventListener('click', () => callback(name));
       container.append(button);
@@ -357,7 +296,7 @@
   }
   function isEventSpecific(entry) {
     return entry.verified === true || [
-      'matched-tv-listing', 'event-schedule', 'network-simulcast'
+      'matched-tv-listing', 'event-schedule', 'network-simulcast', 'official-event-schedule', 'official-exclusive-remainder', 'official-channel-simulcast'
     ].includes(entry.basis);
   }
   function eligibleEntries(game, confirmedOnly = false) {
@@ -428,17 +367,24 @@
     const tag = document.createElement('span');
     const strongMatch = isEventSpecific(entry);
     tag.className = 'tag ' + (entry.verified === true ? 'verified' : strongMatch ? 'scheduled' : 'conditional');
-    tag.textContent = `${entryLabel(entry)} · ${DISPLAY_NAMES[entry.service] || entry.service}`;
-    host.append(tag);
+    tag.append(networkIcon(entry.service));
+    const group = document.createElement('span'); group.className='entry-details';
+    addText(group,'strong',DISPLAY_NAMES[entry.service] || entry.service);
+    addText(group,'span',entryLabel(entry),'entry-status');
+    tag.append(group); host.append(tag);
   }
   function renderGame(dayBox, game) {
     const date = new Date(game.start);
     const row = document.createElement('article');
     row.className = 'game';
+    row.style.setProperty('--sport-color', SPORT_COLORS[game.sport] || '#e7b59e');
     addText(row, 'div', timeLabel(date), 'time');
+    const sportTile=document.createElement('div'); sportTile.className='sport-icon-tile';
+    sportTile.textContent=SPORT_ICONS[game.sport] || '🏆'; sportTile.setAttribute('aria-label',game.sport||'Sport');
+    row.append(sportTile);
     const main = document.createElement('div');
     addText(main, 'div', game.title || 'Fixture', 'game-title');
-    addText(main, 'div', `${game.competition || ''} · ${game.sport || ''}`, 'meta');
+    addText(main, 'div', `${game.sport || ''}  /  ${game.competition || ''}`, 'meta');
     const found = displayEntries(game);
     if (found.length) {
       const badges = document.createElement('div');
