@@ -28,6 +28,39 @@ LEAGUES = [
  ('Football','UEFA Nations League','soccer/uefa.nations'),
 ]
 
+
+# ESPN sometimes provides US network listings. These are useful leads, NOT
+# verified subscription entitlements, UK listings, or blackout guarantees.
+NETWORKS = {'ABC':'ABC','CBS':'CBS','FOX':'FOX','NBC':'NBC','ESPN':'ESPN',
+            'ESPN2':'ESPN','ESPN+':'ESPN+','PEACOCK':'Peacock',
+            'PRIME VIDEO':'Prime Video','AMAZON PRIME VIDEO':'Prime Video',
+            'NBA TV':'NBA TV','TNT':'TNT','TBS':'TBS','FS1':'FS1',
+            'NFL NETWORK':'NFL Network','MLB NETWORK':'MLB Network',
+            'NHL NETWORK':'NHL Network','USA NETWORK':'USA Network',
+            'PARAMOUNT+':'Paramount+','APPLE TV':'Apple TV'}
+
+def espn_broadcast_leads(event, competition, url):
+    names=[]
+    for obj in (competition,event):
+        for b in obj.get('broadcasts',[]) or []:
+            if isinstance(b,str): names.append(b)
+            elif isinstance(b,dict):
+                names.extend(str(n) for n in (b.get('names') or []) if n)
+                if b.get('name'): names.append(str(b['name']))
+        for b in obj.get('geoBroadcasts',[]) or []:
+            if isinstance(b,dict):
+                media=b.get('media') or {}
+                if isinstance(media,dict) and media.get('shortName'): names.append(str(media['shortName']))
+    leads=[];seen=set()
+    for raw in names:
+        key=raw.strip().upper()
+        service=NETWORKS.get(key)
+        if service and service not in seen:
+            leads.append({'country':'US','service':service,'verified':False,
+                          'sourceUrl':url,'note':'ESPN schedule listing; coverage and blackout restrictions unverified'})
+            seen.add(service)
+    return leads
+
 def fetch(job):
     sport, league, path, day = job
     params = urllib.parse.urlencode({'dates':day.strftime('%Y%m%d'),'limit':300})
@@ -55,7 +88,8 @@ def fetch(job):
                     'title':f'{team(away)} at {team(home)}',
                     'start':instant.isoformat(timespec='seconds').replace('+00:00','Z'),
                     'liveStatus':event.get('status',{}).get('type',{}).get('description',''),
-                    'fixtureSource':url,'broadcasts':[]
+                    'fixtureSource':url,'broadcasts':[],
+                    'broadcastLeads':espn_broadcast_leads(event,competition,url)
                 })
             except (KeyError,TypeError,ValueError,StopIteration,IndexError):
                 continue
@@ -89,13 +123,18 @@ def main():
     for game in results:
         when = dt.datetime.fromisoformat(game['start'].replace('Z','+00:00'))
         if not now <= when < end: continue
-        game['broadcasts'] = [b for b in overrides.get(game['id'],[]) if valid_broadcast(b)]
+        entry = overrides.get(game['id'], [])
+        # Preserve backwards compatibility with list-based manual overrides.
+        # A legacy object without country/verified cannot be considered confirmed.
+        if isinstance(entry,dict): entry = entry.get('broadcasts', [])
+        if not isinstance(entry,list): entry = []
+        game['broadcasts'] = [b for b in entry if valid_broadcast(b)]
         unique[game['id']] = game
     if not unique:
         raise RuntimeError('No future fixtures found; refusing to replace the feed')
     output = {
         'updatedAt':now.isoformat(timespec='seconds').replace('+00:00','Z'),
-        'schemaVersion':2,'source':'ESPN unofficial scoreboard; per-game broadcast overrides',
+        'schemaVersion':3,'source':'ESPN unofficial scoreboard; unverified US network leads; verified per-game manual overrides',
         'successfulChecks':len(jobs)-len(errors),'totalChecks':len(jobs),
         'errors':errors[:20],
         'items':sorted(unique.values(),key=lambda x:(x['start'],x['id']))
