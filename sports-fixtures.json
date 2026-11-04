@@ -1,22 +1,310 @@
 {
-  "updatedAt": "2026-11-04T21:47:28Z",
+  "updatedAt": "2026-11-04T22:01:35Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
-  "source": "ESPN fixture data, event-level ESPN leads, optional XMLTV and sourced 2026-27 viewing rules; manual verified overrides",
+  "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
+  "broadcastAuditVersion": 1,
+  "coverageByCompetition": {
+    "Bundesliga": {
+      "fixtures": 27,
+      "UK": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 12,
+        "anyCoverageFixtures": 12,
+        "uncoveredFixtures": 15,
+        "eventSpecificFixtures": 12,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 44.4
+      },
+      "US": {
+        "confirmedFixtures": 27,
+        "possibleFixtures": 27,
+        "anyCoverageFixtures": 27,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 8,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "Champions League": {
+      "fixtures": 18,
+      "UK": {
+        "confirmedFixtures": 18,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 18,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 18,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 18,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 18,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "Europa League": {
+      "fixtures": 35,
+      "UK": {
+        "confirmedFixtures": 35,
+        "possibleFixtures": 35,
+        "anyCoverageFixtures": 35,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 21,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 35,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 35,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "La Liga": {
+      "fixtures": 30,
+      "UK": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 30,
+        "anyCoverageFixtures": 30,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 20,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 30,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 30,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "MLS": {
+      "fixtures": 15,
+      "UK": {
+        "confirmedFixtures": 15,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 15,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 15,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 15,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "NBA": {
+      "fixtures": 220,
+      "UK": {
+        "confirmedFixtures": 220,
+        "possibleFixtures": 1,
+        "anyCoverageFixtures": 220,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 1,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 18,
+        "possibleFixtures": 220,
+        "anyCoverageFixtures": 220,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 47,
+        "confirmedPct": 8.2,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "NFL": {
+      "fixtures": 59,
+      "UK": {
+        "confirmedFixtures": 2,
+        "possibleFixtures": 59,
+        "anyCoverageFixtures": 59,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 3,
+        "confirmedPct": 3.4,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 59,
+        "anyCoverageFixtures": 59,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 58,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "NHL": {
+      "fixtures": 213,
+      "UK": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 213,
+        "anyCoverageFixtures": 213,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 4,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 213,
+        "anyCoverageFixtures": 213,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 176,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "Premier League": {
+      "fixtures": 40,
+      "UK": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 40,
+        "anyCoverageFixtures": 40,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 31,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 40,
+        "anyCoverageFixtures": 40,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 6,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "Serie A": {
+      "fixtures": 31,
+      "UK": {
+        "confirmedFixtures": 28,
+        "possibleFixtures": 31,
+        "anyCoverageFixtures": 31,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 8,
+        "confirmedPct": 90.3,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 31,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 31,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "UEFA Nations League": {
+      "fixtures": 52,
+      "UK": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 52,
+        "anyCoverageFixtures": 52,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 8,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 0,
+        "uncoveredFixtures": 52,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 0.0
+      }
+    },
+    "WSL": {
+      "fixtures": 21,
+      "UK": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 21,
+        "anyCoverageFixtures": 21,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 21,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 0,
+        "possibleFixtures": 21,
+        "anyCoverageFixtures": 21,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 21,
+        "confirmedPct": 0.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "Women’s Champions League": {
+      "fixtures": 18,
+      "UK": {
+        "confirmedFixtures": 18,
+        "possibleFixtures": 18,
+        "anyCoverageFixtures": 18,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 18,
+        "possibleFixtures": 4,
+        "anyCoverageFixtures": 18,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 4,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      }
+    }
+  },
+  "anyCoverageGamesByCountry": {
+    "UK": 764,
+    "US": 727
+  },
+  "eventSpecificGamesByCountry": {
+    "UK": 147,
+    "US": 320
+  },
+  "officialNHLBlackoutFixtureMatches": 0,
+  "nbaOfficialUSNationalBroadcastEntries": 18,
+  "nbaOfficialSourceWarnings": [],
+  "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 6,
-  "footballTVListingMatches": 125,
+  "footballTVListingMatches": 139,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 363,
-  "officialRightsEntries": 1994,
+  "networkStreamingLeads": 367,
+  "officialRightsEntries": 2098,
   "verifiedGamesByCountry": {
     "UK": 336,
-    "US": 174
+    "US": 192
   },
   "possibleGamesByCountry": {
-    "UK": 460,
+    "UK": 512,
     "US": 584
   },
   "errors": [],
@@ -40,18 +328,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
+        },
         {
           "country": "US",
           "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261104&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
           "watchUrl": "https://www.espn.com/watch/"
-        },
+        }
+      ],
+      "broadcastLeads": [
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -578,18 +866,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
+        },
         {
           "country": "US",
           "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261104&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
           "watchUrl": "https://www.espn.com/watch/"
-        },
+        }
+      ],
+      "broadcastLeads": [
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -2205,6 +2493,17 @@
           "sourceUrl": "https://www.live-footballontv.com/",
           "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
           "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Hamburg v Borussia Mönchengladbach",
+          "programmeStart": "2026-11-06T19:30:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.youtube.com/",
           "programmeTitle": "Hamburg v Borussia Mönchengladbach",
           "programmeStart": "2026-11-06T19:30:00Z"
         }
@@ -8263,9 +8562,27 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.peacocktv.com/sports"
         }
       ],
       "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBCSN",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261109&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports/nba"
+        },
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -9122,6 +9439,15 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.peacocktv.com/sports"
         }
       ],
       "broadcastLeads": [
@@ -9141,15 +9467,6 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261110&limit=300",
-          "note": "NBC games often stream on Peacock; check the specific event and plan.",
-          "watchUrl": "https://www.peacocktv.com/sports"
         },
         {
           "country": "US",
@@ -9698,18 +10015,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
+        },
         {
           "country": "US",
           "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261111&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
           "watchUrl": "https://www.espn.com/watch/"
-        },
+        }
+      ],
+      "broadcastLeads": [
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -10120,18 +10437,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
+        },
         {
           "country": "US",
           "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261111&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
           "watchUrl": "https://www.espn.com/watch/"
-        },
+        }
+      ],
+      "broadcastLeads": [
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -10409,7 +10726,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261112&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861146",
@@ -10422,7 +10758,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261112&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.wchampions:401916986",
@@ -10477,7 +10832,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261112&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861148",
@@ -10490,7 +10864,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261112&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861149",
@@ -10503,7 +10896,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261112&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861150",
@@ -10516,7 +10928,28 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261112&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.itv.com/watch",
+          "programmeTitle": "England v Croatia",
+          "programmeStart": "2026-11-12T19:45:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861151",
@@ -10529,7 +10962,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261112&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861152",
@@ -10542,7 +10994,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261112&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:basketball/nba:401909976",
@@ -11163,7 +11634,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861153",
@@ -11176,7 +11666,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861154",
@@ -11189,7 +11698,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861155",
@@ -11202,7 +11730,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861156",
@@ -11215,7 +11762,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861157",
@@ -11228,7 +11794,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861158",
@@ -11241,7 +11826,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861159",
@@ -11254,7 +11858,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861160",
@@ -11267,7 +11890,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861161",
@@ -11280,7 +11922,28 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261113&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Scotland v North Macedonia",
+          "programmeStart": "2026-11-13T19:45:00Z"
+        }
+      ]
     },
     {
       "id": "espn:basketball/nba:401909296",
@@ -11812,7 +12475,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/eng.w.1:401902861",
@@ -11887,7 +12569,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861165",
@@ -11900,7 +12601,28 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Norway v Wales",
+          "programmeStart": "2026-11-14T17:00:00Z"
+        }
+      ]
     },
     {
       "id": "espn:soccer/eng.w.1:401902862",
@@ -12016,7 +12738,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861167",
@@ -12029,7 +12770,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861168",
@@ -12042,7 +12802,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861169",
@@ -12055,7 +12834,28 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Northern Ireland v Ukraine",
+          "programmeStart": "2026-11-14T19:45:00Z"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861170",
@@ -12068,7 +12868,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:hockey/nhl:401892708",
@@ -12926,7 +13745,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861172",
@@ -12939,7 +13777,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:football/nfl:401873053",
@@ -13090,7 +13947,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861174",
@@ -13103,7 +13979,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:basketball/nba:401909985",
@@ -13744,7 +14639,28 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.itv.com/watch",
+          "programmeTitle": "Spain v England",
+          "programmeStart": "2026-11-15T19:45:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861176",
@@ -13757,7 +14673,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861177",
@@ -13770,7 +14705,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861178",
@@ -13783,7 +14737,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:basketball/nba:401909986",
@@ -14591,7 +15564,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861181",
@@ -14604,7 +15596,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861182",
@@ -14617,7 +15628,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861183",
@@ -14630,7 +15660,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861184",
@@ -14643,7 +15692,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861179",
@@ -14656,7 +15724,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861185",
@@ -14669,7 +15756,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861186",
@@ -14682,7 +15788,28 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Switzerland v Scotland",
+          "programmeStart": "2026-11-16T19:45:00Z"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861187",
@@ -14695,7 +15822,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861188",
@@ -14708,7 +15854,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:basketball/nba:401909994",
@@ -14729,9 +15894,27 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.peacocktv.com/sports"
         }
       ],
       "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBCSN",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261116&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports/nba"
+        },
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -15168,7 +16351,28 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Wales v Portugal",
+          "programmeStart": "2026-11-17T19:45:00Z"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861190",
@@ -15181,7 +16385,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861191",
@@ -15194,7 +16417,28 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Hungary v Northern Ireland",
+          "programmeStart": "2026-11-17T19:45:00Z"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861192",
@@ -15207,7 +16451,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861193",
@@ -15220,7 +16483,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861194",
@@ -15233,7 +16515,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861195",
@@ -15246,7 +16547,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:soccer/uefa.nations:401861196",
@@ -15259,7 +16579,26 @@
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
       "broadcasts": [],
-      "broadcastLeads": []
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "ITVX",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
+          "watchUrl": "https://www.itv.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
     },
     {
       "id": "espn:hockey/nhl:401892728",
@@ -15621,6 +16960,15 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.peacocktv.com/sports"
         }
       ],
       "broadcastLeads": [
@@ -15640,15 +16988,6 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261117&limit=300",
-          "note": "NBC games often stream on Peacock; check the specific event and plan.",
-          "watchUrl": "https://www.peacocktv.com/sports"
         },
         {
           "country": "US",
@@ -16277,18 +17616,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
+        },
         {
           "country": "US",
           "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
           "watchUrl": "https://www.espn.com/watch/"
-        },
+        }
+      ],
+      "broadcastLeads": [
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -16699,18 +18038,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
+        },
         {
           "country": "US",
           "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
           "watchUrl": "https://www.espn.com/watch/"
-        },
+        }
+      ],
+      "broadcastLeads": [
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -23086,9 +24425,27 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.peacocktv.com/sports"
         }
       ],
       "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBCSN",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261123&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports/nba"
+        },
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -24020,6 +25377,15 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.peacocktv.com/sports"
         }
       ],
       "broadcastLeads": [
@@ -24039,15 +25405,6 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261124&limit=300",
-          "note": "NBC games often stream on Peacock; check the specific event and plan.",
-          "watchUrl": "https://www.peacocktv.com/sports"
         },
         {
           "country": "US",
@@ -24172,9 +25529,27 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.peacocktv.com/sports"
         }
       ],
       "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBCSN",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261124&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports/nba"
+        },
         {
           "country": "US",
           "service": "NBC",
@@ -24191,15 +25566,6 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261124&limit=300",
-          "note": "NBC games often stream on Peacock; check the specific event and plan.",
-          "watchUrl": "https://www.peacocktv.com/sports"
         },
         {
           "country": "US",
@@ -24618,18 +25984,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
+        },
         {
           "country": "US",
           "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261125&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
           "watchUrl": "https://www.espn.com/watch/"
-        },
+        }
+      ],
+      "broadcastLeads": [
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -25108,18 +26474,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
+        },
         {
           "country": "US",
           "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261125&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
           "watchUrl": "https://www.espn.com/watch/"
-        },
+        }
+      ],
+      "broadcastLeads": [
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -25550,18 +26916,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
+        },
         {
           "country": "US",
           "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261125&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
           "watchUrl": "https://www.espn.com/watch/"
-        },
+        }
+      ],
+      "broadcastLeads": [
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -26854,6 +28220,17 @@
           "sourceUrl": "https://www.live-footballontv.com/",
           "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
           "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Werder Bremen v Borussia Mönchengladbach",
+          "programmeStart": "2026-11-27T19:30:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.youtube.com/",
           "programmeTitle": "Werder Bremen v Borussia Mönchengladbach",
           "programmeStart": "2026-11-27T19:30:00Z"
         }
@@ -30691,19 +32068,23 @@
           "country": "UK",
           "service": "TNT Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
-          "watchUrl": "https://www.tntsports.co.uk/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Como v Juventus",
+          "programmeStart": "2026-11-29T19:45:00Z"
         },
         {
           "country": "UK",
           "service": "HBO Max",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
-          "watchUrl": "https://www.hbomax.com/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.hbomax.com/",
+          "programmeTitle": "Como v Juventus",
+          "programmeStart": "2026-11-29T19:45:00Z"
         },
         {
           "country": "UK",
@@ -31997,19 +33378,23 @@
           "country": "UK",
           "service": "TNT Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
-          "watchUrl": "https://www.tntsports.co.uk/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Cagliari v AC Milan",
+          "programmeStart": "2026-11-30T19:45:00Z"
         },
         {
           "country": "UK",
           "service": "HBO Max",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
-          "watchUrl": "https://www.hbomax.com/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.hbomax.com/",
+          "programmeTitle": "Cagliari v AC Milan",
+          "programmeStart": "2026-11-30T19:45:00Z"
         },
         {
           "country": "UK",
@@ -32220,9 +33605,27 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.peacocktv.com/sports"
         }
       ],
       "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBCSN",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261130&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports/nba"
+        },
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -32876,6 +34279,15 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.peacocktv.com/sports"
         }
       ],
       "broadcastLeads": [
@@ -32895,15 +34307,6 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261201&limit=300",
-          "note": "NBC games often stream on Peacock; check the specific event and plan.",
-          "watchUrl": "https://www.peacocktv.com/sports"
         },
         {
           "country": "US",
