@@ -264,7 +264,7 @@ function leagueOf(f) {
     'FA Cup':['fa cup'],
     NBA:['nba'],
     WNBA:['wnba'],
-    MLB:['mlb','major league baseball'],
+    MLB:['mlb'],
     NFL:['nfl'],
     NHL:['nhl'],
     'Formula 1':['formula 1','f1'],
@@ -284,29 +284,88 @@ function leagueOf(f) {
 }
 
 function parseStart(f) {
-  const candidate = f.start || f.startTime ||
+  // New feeds must provide an absolute UTC or offset timestamp.
+  const candidate =
+    f.start || f.startTime ||
     f.start_time || f.utc || f.datetime;
 
   if (candidate) {
-    const str = String(candidate);
-    if (!/[zZ]$|[+-]\d\d:\d\d$/.test(str)) return null;
-    const d = new Date(str);
-    return Number.isFinite(+d) ? d : null;
+    const value = String(candidate);
+
+    if (!/[zZ]$|[+-]\d{2}:\d{2}$/.test(value)) {
+      return null;
+    }
+
+    const date = new Date(value);
+    return Number.isFinite(+date) ? date : null;
   }
 
+  // Legacy feed date/time are London local time, not UTC.
   if (
-    typeof f.date === 'string' &&
-    typeof f.time === 'string' &&
-    /^\d{4}-\d\d-\d\d$/.test(f.date) &&
-    /^\d\d:\d\d(?::\d\d)?$/.test(f.time)
+    typeof f.date !== 'string' ||
+    typeof f.time !== 'string' ||
+    !/^\d{4}-\d{2}-\d{2}$/.test(f.date) ||
+    !/^\d{2}:\d{2}(?::\d{2})?$/.test(f.time)
   ) {
-    const d = new Date(
-      f.date + 'T' + f.time +
-      (f.time.length === 5 ? ':00' : '') + 'Z'
-    );
-    return Number.isFinite(+d) ? d : null;
+    return null;
   }
-  return null;
+
+  const [year, month, day] = f.date.split('-').map(Number);
+  const [hour, minute, second = 0] =
+    f.time.split(':').map(Number);
+
+  if (
+    month < 1 || month > 12 ||
+    day < 1 || day > 31 ||
+    hour > 23 || minute > 59 || second > 59
+  ) {
+    return null;
+  }
+
+  const wallTime = Date.UTC(
+    year, month - 1, day, hour, minute, second
+  );
+
+  const formatter = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/London',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hourCycle: 'h23'
+  });
+
+  const matches = [];
+
+  // London is UTC+0 in winter and UTC+1 in summer.
+  for (const offsetHours of [0, 1]) {
+    const date = new Date(
+      wallTime - offsetHours * 3600000
+    );
+
+    const parts = Object.fromEntries(
+      formatter.formatToParts(date)
+        .filter(p => p.type !== 'literal')
+        .map(p => [p.type, Number(p.value)])
+    );
+
+    if (
+      parts.year === year &&
+      parts.month === month &&
+      parts.day === day &&
+      parts.hour === hour &&
+      parts.minute === minute &&
+      parts.second === second
+    ) {
+      matches.push(date);
+    }
+  }
+
+  // During the autumn clock change, 01:30 occurs twice.
+  // Without an absolute timestamp, don't guess.
+  return matches.length === 1 ? matches[0] : null;
 }
 
 function broadcastsOf(f) {
