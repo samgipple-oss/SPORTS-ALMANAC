@@ -1,5 +1,6 @@
+
 #!/usr/bin/env python3
-"""Sports Almanac V11: automatic fixtures and UK/US viewing-source catalogue.
+"""Sports Almanac V12: automatic fixtures and UK/US viewing-source catalogue.
 
 Free/no-key inputs: ESPN scoreboards, optional XMLTV_URL and manual overrides.
 Rights-based rules are dated 2026-27 and deliberately separate confirmed
@@ -11,6 +12,7 @@ import concurrent.futures
 import datetime as dt
 import difflib
 import gzip
+import html
 import io
 import json
 import os
@@ -20,6 +22,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter
+from html.parser import HTMLParser
 from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -79,6 +82,9 @@ UK_CHANNELS = {
 
 SOURCES = {
     "mls": "https://www.mlssoccer.com/how-to-watch/",
+    "prime_ucl_schedule": "https://www.aboutamazon.co.uk/news/entertainment/whats-on-prime-video-uk-november-2026",
+    "prime_ucl_rights": "https://www.aboutamazon.co.uk/news/entertainment/champions-league-prime-video-uk-renewal",
+    "nfl_5_guide": "https://tvradar.uk/nfl-on-tv",
     "nba": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
     "wnba": "https://support.wnba.com/hc/en-us/articles/19679847275927-Blackouts",
     "mlb": "https://www.mlb.com/live-stream-games/",
@@ -121,7 +127,8 @@ WATCH_PAGES = {
     "ESPN": "https://www.espn.com/watch/",
     "Paramount+": "https://www.paramountplus.com/sports/",
     "Peacock": "https://www.peacocktv.com/sports",
-    "Prime Video": "https://www.amazon.com/gp/video/storefront/",
+    "Prime Video": "https://www.primevideo.com/salp/ucl-help/",
+    "Prime Video PPV": "https://www.primevideo.com/",
     "Disney+": "https://www.disneyplus.com/",
     "DAZN": "https://www.dazn.com/en-GB/home",
     "HBO Max": "https://www.hbomax.com/",
@@ -275,6 +282,101 @@ def put(game, country, service, source_key, note, verified=False, basis="competi
                                  verified, basis, **extra))
 
 
+# An exact Amazon-confirmed selection, not a guess about which English
+# club gets the Tuesday broadcast. Other dates remain unknown until named.
+PRIME_UCL_PICKS = (
+    ("2026-11-03", "Manchester United", "Roma"),
+    ("2026-11-24", "Arsenal", "Borussia Dortmund"),
+)
+PRIME_CONFIRMED_DATES = {dt.date.fromisoformat(day) for day, _, _ in PRIME_UCL_PICKS}
+# The public Amazon schedule also names these broadcast dates but not yet
+# the selected fixture. It includes a Wednesday final-round matchday.
+PRIME_PENDING_DATES = {
+    dt.date.fromisoformat(day) for day in (
+        "2026-12-08", "2027-01-19", "2027-01-27", "2027-02-16",
+        "2027-02-23", "2027-03-09", "2027-03-16", "2027-04-06",
+        "2027-04-13",
+    )
+}
+
+
+def team_equivalent(actual, listed):
+    """Use conservative club aliases; do not treat every club from one city as equal."""
+    aliases = {
+        "man utd": "manchester united", "man united": "manchester united",
+        "man city": "manchester city", "spurs": "tottenham hotspur",
+        "tottenham": "tottenham hotspur", "borussia dortmund": "dortmund",
+        "bvb": "dortmund", "vfb stuttgart": "stuttgart",
+        "rb leipzig": "leipzig", "red bull leipzig": "leipzig",
+        "paris saint germain": "psg", "paris st germain": "psg",
+        "inter milan": "inter", "internazionale": "inter",
+        "ac milan": "milan", "athletic club": "athletic bilbao",
+        "atletico madrid": "atletico madrid",
+        "bayern munich": "bayern munich", "fc bayern munich": "bayern munich",
+        "psv eindhoven": "psv", "porto": "porto", "fc porto": "porto",
+        "club brugge": "brugge", "brighton and hove albion": "brighton",
+        "afc bournemouth": "bournemouth", "wolves": "wolverhampton wanderers",
+        "west ham united": "west ham", "newcastle united": "newcastle",
+        "nottingham forest": "nottingham forest", "aston villa": "aston villa",
+        "arsenal women": "arsenal", "chelsea women": "chelsea",
+        "liverpool women": "liverpool", "manchester city women": "manchester city",
+        "manchester united women": "manchester united",
+    }
+    def canonical(value):
+        words = normalise(value)
+        words = re.sub(r"\b(women|ladies)\b", "", words).strip()
+        return aliases.get(words, words)
+    a, b = canonical(actual), canonical(listed)
+    if a == b and a:
+        return True
+    # Single-word clubs can be compared as whole words (never substrings).
+    if len(a) >= 4 and (re.search(r"\b" + re.escape(a) + r"\b", b) or
+                        re.search(r"\b" + re.escape(b) + r"\b", a)):
+        return True
+    return bool(a and b and len(a) >= 9 and len(b) >= 9 and
+                difflib.SequenceMatcher(None, a, b).ratio() >= 0.91)
+
+
+def get_prime_first_pick(game):
+    if game.get("competition") != "Champions League":
+        return False
+    local = utc_time(game["start"]).astimezone(LONDON)
+    for day, home, away in PRIME_UCL_PICKS:
+        if local.date().isoformat() != day:
+            continue
+        if ((team_equivalent(game["homeTeam"], home) and team_equivalent(game["awayTeam"], away)) or
+            (team_equivalent(game["homeTeam"], away) and team_equivalent(game["awayTeam"], home))):
+            return True
+    return False
+
+
+# Confirmed individual free-to-air NFL selections. Never assume every NFL
+# Sunday 18:00 or 21:25 game is shown on Channel 5.
+UK_NFL_ON_FIVE = (
+    ("2026-11-08", "New York Jets", "Kansas City Chiefs"),
+    ("2026-11-08", "Green Bay Packers", "New England Patriots"),
+)
+
+
+def add_confirmed_uk_nfl(games):
+    n = 0
+    for game in games:
+        if game.get("competition") != "NFL":
+            continue
+        date = utc_time(game["start"]).astimezone(LONDON).date().isoformat()
+        for day, away, home in UK_NFL_ON_FIVE:
+            if day != date:
+                continue
+            if (team_equivalent(game["awayTeam"], away) and
+                    team_equivalent(game["homeTeam"], home)):
+                if put(game, "UK", "Channel 5", "nfl_5_guide",
+                       "This exact NFL game is listed live and free on 5/5Action.",
+                       True, "official-event-schedule"):
+                    n += 1
+    print(f"Added {n} specifically confirmed free Channel 5 NFL broadcasts")
+    return n
+
+
 def add_official_rights(games):
     """Add season-bound, official whole-league and conditional service rights."""
     counts = Counter()
@@ -336,7 +438,7 @@ def add_official_rights(games):
         elif comp == "Serie A" and is_2026_27:
             local = when.astimezone(LONDON)
             # UK 2026-27 3pm Saturday live-TV restriction can also delay nearby kickoffs.
-            restricted = local.weekday() == 5 and 14 <= local.hour < 18
+            restricted = local.weekday() == 5 and dt.time(14, 45) <= local.time() < dt.time(17, 15)
             rule("UK", "DAZN", "serie_uk", "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
                  not restricted, "official-league-wide-coverage" if not restricted else "blackout-dependent-coverage")
             rule("US", "Paramount+", "serie_us", "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
@@ -361,17 +463,35 @@ def add_official_rights(games):
         elif comp == "Champions League" and is_2026_27:
             rule("US", "Paramount+", "ucl_us", "Every UEFA Champions League match streams on Paramount+ in the US.",
                  True, "official-league-wide-coverage")
-            rule("UK", "TNT Sports", "ucl_uk", "TNT Sports carries most UK games; the Tuesday first pick is on Prime Video.")
-            rule("UK", "HBO Max", "tnt_hbo", "TNT Sports add-on; only when TNT has the live fixture.")
-            rule("UK", "Prime Video", "ucl_uk", "Selected first-pick Tuesday matches only; check the individual fixture.")
+            # Tuesday's Prime selection cannot be guessed from the kick-off time.
+            # Once that day's first pick is individually identified, all the
+            # OTHER games that day are the TNT/HBO Max matches.
+            local = when.astimezone(LONDON)
+            first_pick = get_prime_first_pick(game)
+            prime_date = local.date() in PRIME_CONFIRMED_DATES
+            if first_pick:
+                rule("UK", "Prime Video", "prime_ucl_schedule",
+                     "Amazon explicitly lists this individual UEFA Champions League match for Prime Video UK.",
+                     True, "official-event-schedule")
+            elif (local.weekday() != 1 and local.date() not in PRIME_PENDING_DATES) or prime_date:
+                rule("UK", "TNT Sports", "ucl_uk",
+                     "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
+                     True, "official-exclusive-remainder")
+                rule("UK", "HBO Max", "tnt_hbo",
+                     "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
+                     True, "official-channel-simulcast")
+            else:
+                rule("UK", "TNT Sports", "ucl_uk",
+                     "Most Champions League games are on TNT, but the Prime Tuesday first pick is not yet identified.")
+                rule("UK", "HBO Max", "tnt_hbo",
+                     "Only if TNT holds this fixture; Tuesday Prime selection is not yet identified.")
 
         elif comp == "Europa League" and is_2026_27:
             rule("US", "Paramount+", "uel", "Official US UEFA Europa League streaming rights in 2026-27.",
                  True, "official-league-wide-coverage")
-            rule("UK", "TNT Sports", "uel", "2026-27 UEFA Europa League live broadcaster in the UK.",
+            rule("UK", "HBO Max", "tnt_hbo", "Every Europa League fixture streams through HBO Max with the sports entitlement.",
                  True, "official-league-wide-coverage")
-            rule("UK", "HBO Max", "tnt_hbo", "Live TNT Sports requires the HBO Max TNT Sports plan or an eligible provider entitlement.",
-                 True, "official-channel-simulcast")
+            rule("UK", "TNT Sports", "uel", "Some Europa League matches are HBO Max-only; verify a linear TNT channel for this game.")
 
         elif comp == "Women’s Champions League" and is_2026_27:
             rule("UK", "Disney+", "uwcl_uk", "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
@@ -436,6 +556,216 @@ def add_network_streaming_leads(games):
                 n += 1
     print(f"Added {n} event-network streaming leads")
     return n
+
+
+# A second no-key feed is used for UK event-level channels. It supplements
+# XMLTV, which often contains only a few days of programme metadata.
+# This is a third-party public TV guide, so matched listings remain leads,
+# not verified game broadcasts. In particular, a Prime Video PPV label is
+# NEVER treated as an ordinary Prime subscription match.
+FOOTBALL_GUIDES = (
+    "https://www.live-footballontv.com/",
+    "https://www.live-footballontv.com/live-premier-league-football-on-tv.html",
+    "https://www.live-footballontv.com/live-champions-league-football-on-tv.html",
+    "https://www.live-footballontv.com/live-uefa-europa-league-football-on-tv.html",
+    "https://www.live-footballontv.com/live-womens-football-on-tv.html",
+)
+GUIDE_COMPETITIONS = {
+    "UEFA Champions League": "Champions League",
+    "UEFA Europa League": "Europa League",
+    "Women's Champions League": "Women’s Champions League",
+    "Women's Super League": "WSL",
+    "Premier League": "Premier League",
+    "La Liga": "La Liga",
+    "Serie A": "Serie A",
+    "Bundesliga": "Bundesliga",
+    "MLS": "MLS",
+}
+GUIDE_DAY_RE = re.compile(
+    r"^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+"
+    r"(\d{1,2})(?:st|nd|rd|th)?\s+"
+    r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+"
+    r"(20\d{2})$", re.I)
+GUIDE_TIME_RE = re.compile(r"^([01]?\d|2[0-3]):([0-5]\d)$")
+GUIDE_MATCH_RE = re.compile(r"^(.{2,85}?)\s+v(?:s\.?)?\s+(.{2,85})$", re.I)
+
+
+class GuideText(HTMLParser):
+    """Extract readable lines without installing HTML scraping libraries."""
+    BREAKS = {"div", "p", "li", "tr", "h1", "h2", "h3", "h4", "br", "section", "article"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts = []
+        self.skip = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style", "noscript"):
+            self.skip += 1
+        if tag in self.BREAKS:
+            self.parts.append("\n")
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style", "noscript"):
+            self.skip = max(0, self.skip - 1)
+        if tag in self.BREAKS:
+            self.parts.append("\n")
+
+    def handle_data(self, value):
+        if not self.skip:
+            self.parts.append(value + " ")
+
+    def lines(self):
+        return [" ".join(part.split()) for part in "".join(self.parts).splitlines()
+                if part.strip()]
+
+
+def guide_channels(text):
+    """Map literal channel labels only, not general statements about rights."""
+    text = " ".join(text.split())
+    lowered = text.casefold()
+    names = []
+    if "amazon prime ppv" in lowered or "prime video ppv" in lowered:
+        names.append("Prime Video PPV")
+    elif "amazon prime video" in lowered or re.search(r"\bprime video\b", lowered):
+        names.append("Prime Video")
+    for phrase, service in (
+        ("sky sports", "Sky Sports"), ("tnt sports", "TNT Sports"),
+        ("hbo max", "HBO Max"), ("premier sports", "Premier Sports"),
+        ("laligatv", "LaLigaTV"), ("disney+", "Disney+"),
+        ("dazn", "DAZN"), ("bbc iplayer", "BBC iPlayer"),
+        ("bbc one", "BBC iPlayer"), ("bbc two", "BBC iPlayer"),
+        ("bbc three", "BBC iPlayer"), ("bbc red button", "BBC iPlayer"),
+        ("itvx", "ITVX"), ("itv1", "ITVX"),
+        ("channel 4", "Channel 4"), ("channel 5", "Channel 5"),
+        ("apple tv", "Apple TV"), ("netflix", "Netflix"),
+        ("wsl youtube", "YouTube"),
+    ):
+        if phrase in lowered:
+            names.append(service)
+    return list(dict.fromkeys(names))
+
+
+def guide_competition(label):
+    value = " ".join(label.casefold().replace("’", "'").split())
+    if "women's super league 2" in value or "wsl2" in value:
+        return None
+    if "women's champions league" in value:
+        return "Women’s Champions League"
+    if "champions league" in value:
+        return "Champions League" if "uefa" in value else None
+    if "europa league" in value:
+        return "Europa League"
+    for text, competition in GUIDE_COMPETITIONS.items():
+        if text.casefold() in value:
+            return competition
+    return None
+
+
+def parse_football_guide(page):
+    """Parse listings only when date, kickoff, two clubs, league, channels align.
+
+    Yields (UK-local kickoff, competition, first club, second club, services).
+    Never infer a broadcaster just from the site-wide description.
+    """
+    parser = GuideText()
+    parser.feed(page)
+    lines = parser.lines()
+    day = None
+    fixtures = []
+    for i, line in enumerate(lines):
+        match_day = GUIDE_DAY_RE.fullmatch(line)
+        if match_day:
+            try:
+                day = dt.date(int(match_day[3]), dt.datetime.strptime(match_day[2], "%B").month, int(match_day[1]))
+            except ValueError:
+                day = None
+            continue
+        clock = GUIDE_TIME_RE.fullmatch(line)
+        if not clock or day is None:
+            continue
+        kickoff = dt.datetime.combine(day, dt.time(int(clock[1]), int(clock[2])), tzinfo=LONDON)
+        # The next line should name two clubs; the following one should name
+        # the actual competition, then an explicitly named broadcast service.
+        for j in range(i + 1, min(i + 5, len(lines))):
+            clubs = GUIDE_MATCH_RE.fullmatch(lines[j])
+            if not clubs:
+                if GUIDE_TIME_RE.fullmatch(lines[j]) or GUIDE_DAY_RE.fullmatch(lines[j]):
+                    break
+                continue
+            for k in range(j + 1, min(j + 5, len(lines))):
+                comp = guide_competition(lines[k])
+                if comp:
+                    collected = []
+                    for next_line in lines[k + 1: min(k + 6, len(lines))]:
+                        if (GUIDE_TIME_RE.fullmatch(next_line) or
+                            GUIDE_DAY_RE.fullmatch(next_line) or
+                            GUIDE_MATCH_RE.fullmatch(next_line)):
+                            break
+                        collected.append(next_line)
+                    channels = guide_channels(" ".join(collected))
+                    if channels:
+                        fixtures.append((kickoff.astimezone(UTC), comp,
+                                         clubs[1].strip(), clubs[2].strip(), channels))
+                    break
+            break
+    return fixtures
+
+
+def load_uk_football_listings(games):
+    """Optional best-effort 30-day UK broadcast fixture schedule matching."""
+    index = {}
+    for game in games:
+        if game["sport"] != "Football":
+            continue
+        day = utc_time(game["start"]).astimezone(LONDON).date()
+        index.setdefault((day, game["competition"]), []).append(game)
+    matches, errors = 0, []
+    for source in FOOTBALL_GUIDES:
+        try:
+            request = urllib.request.Request(source, headers={
+                "User-Agent": "Mozilla/5.0 (compatible; SportsAlmanac/3.1; +https://github.com/samgipple-oss/SPORTS-ALMANAC)",
+                "Accept": "text/html",
+            })
+            with urllib.request.urlopen(request, timeout=16) as response:
+                raw = response.read(4_000_001)
+            if len(raw) > 4_000_000:
+                raise ValueError("HTML exceeds 4 MB")
+            listings = parse_football_guide(raw.decode("utf-8", "replace"))
+            for kickoff, comp, left, right, services in listings:
+                for game in index.get((kickoff.astimezone(LONDON).date(), comp), []):
+                    if abs((utc_time(game["start"]) - kickoff).total_seconds()) > 40 * 60:
+                        continue
+                    clubs_match = (
+                        (team_equivalent(game["homeTeam"], left) and team_equivalent(game["awayTeam"], right)) or
+                        (team_equivalent(game["homeTeam"], right) and team_equivalent(game["awayTeam"], left))
+                    )
+                    if not clubs_match:
+                        continue
+                    for service in services:
+                        # Only the exact official Amazon Prime selected match is
+                        # verified; other third-party channel entries are leads.
+                        if comp == "Champions League" and service == "Prime Video" and not get_prime_first_pick(game):
+                            note = "A TV guide lists Prime; verify against Amazon's first-pick schedule."
+                        elif service == "Prime Video PPV":
+                            note = "Separate pay-per-view purchase required; NOT included in ordinary Prime Video."
+                        else:
+                            note = "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability."
+                        if add(game, build_entry("UK", service, source, note,
+                                                 basis="matched-tv-listing",
+                                                 programmeTitle=f"{left} v {right}",
+                                                 programmeStart=timestamp(kickoff))):
+                            matches += 1
+                        if service == "Sky Sports":
+                            add(game, build_entry("UK", "NOW", source,
+                                                  "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+                                                  basis="network-simulcast"))
+            print(f"Football guide: {len(listings)} listed matches checked from {source}")
+        except Exception as exc:
+            errors.append(f"Football guide {source}: {exc}")
+            print(f"Football guide warning: {source}: {exc}")
+    print(f"Matched {matches} individual UK football broadcast listings")
+    return matches, errors
 
 
 def normalise(value):
@@ -590,8 +920,12 @@ def main():
                 add(game, entry)
 
     games = list(unique.values())
+    scoreboard_error_count = len(errors)
     rule_counts = add_official_rights(games)
+    nfl_five_count = add_confirmed_uk_nfl(games)
     network_count = add_network_streaming_leads(games)
+    football_matches, football_errors = load_uk_football_listings(games)
+    errors.extend(football_errors)
     xmltv_matches = 0
     try:
         xmltv_matches = load_xmltv(games)
@@ -608,9 +942,12 @@ def main():
         "schemaVersion": 5,
         "rightsRulesCheckedAsOf": "2026-11-04",
         "source": "ESPN fixture data, event-level ESPN leads, optional XMLTV and sourced 2026-27 viewing rules; manual verified overrides",
-        "successfulChecks": len(jobs) - sum(not e.startswith("XMLTV:") for e in errors),
+        "successfulChecks": len(jobs) - scoreboard_error_count,
         "totalChecks": len(jobs),
         "xmltvMatches": xmltv_matches,
+        "footballTVListingMatches": football_matches,
+        "specificNFLFreeBroadcasts": nfl_five_count,
+        "footballTVListingSourceErrors": len(football_errors),
         "networkStreamingLeads": network_count,
         "officialRightsEntries": sum(rule_counts.values()),
         "verifiedGamesByCountry": confirmed,
@@ -624,6 +961,7 @@ def main():
 
     print(f"Saved {len(games)} fixtures")
     print(f"Matched {xmltv_matches} XMLTV broadcaster listings")
+    print(f"Matched {football_matches} individual UK football viewing listings")
     print(f"Added {network_count} event-network streaming leads")
     print(f"Verified game coverage: UK={confirmed['UK']}, US={confirmed['US']}")
     print(f"Possible/conditional coverage: UK={possible['UK']}, US={possible['US']}")
