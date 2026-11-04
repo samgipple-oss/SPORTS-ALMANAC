@@ -9,38 +9,37 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: sports-almanac-update
+  cancel-in-progress: false
+
 jobs:
-  update-fixtures:
+  update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+      - name: Collect fixtures and match TV listings
+        env:
+          XMLTV_URL: ${{ secrets.XMLTV_URL }}
+        run: python scripts/update_fixtures.py
 
-      - name: Update sports fixtures
-        run: |
-          python scripts/update_fixtures.py
-
-      - name: Commit updated fixture data
+      - name: Commit refreshed fixture database
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add sports-fixtures.json
-
-          if ! git diff --cached --quiet; then
-            git commit -m "Automatically update sports fixtures"
-            git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
           else
-            echo "No fixture changes to commit"
+            git commit -m "Update fixtures and broadcast matches"
+            git push
           fi
