@@ -175,6 +175,56 @@ def xmltv_time(value):
             tzinfo=UTC)
     return dt.datetime.strptime(value, "%Y%m%d%H%M%S %z").astimezone(UTC)
 
+def discover_channels(root):
+    """Identify UK broadcasters from XMLTV channel display names."""
+    known = {
+        "sky sports": "Sky Sports",
+        "tnt sports": "TNT Sports",
+        "premier sports": "Premier Sports",
+        "bbc one": "BBC iPlayer",
+        "bbc two": "BBC iPlayer",
+        "bbc three": "BBC iPlayer",
+        "bbc four": "BBC iPlayer",
+        "itv1": "ITVX",
+        "itv2": "ITVX",
+        "itv3": "ITVX",
+        "itv4": "ITVX",
+        "channel 4": "Channel 4",
+        "channel 5": "Channel 5",
+        "5action": "Channel 5",
+        "5 action": "Channel 5",
+    }
+
+    discovered = {}
+
+    for channel in root.findall("channel"):
+        channel_id = channel.get("id", "")
+        names = [
+            (element.text or "").strip()
+            for element in channel.findall("display-name")
+        ]
+
+        for name in names:
+            name_lower = name.casefold()
+
+            for prefix, service in known.items():
+                if name_lower.startswith(prefix):
+                    discovered[channel_id] = {
+                        "country": "UK",
+                        "service": service,
+                    }
+                    break
+
+            if channel_id in discovered:
+                break
+
+    print(
+        f"Automatically identified {len(discovered)} "
+        "UK broadcaster channels"
+    )
+
+    return discovered
+
 def load_xmltv(games):
     url = os.environ.get("XMLTV_URL", "").strip()
     if not url:
@@ -199,6 +249,9 @@ def load_xmltv(games):
         if len(raw) > 30_000_000:
             raise ValueError("Decompressed XMLTV feed too large")
     root = ET.fromstring(raw)
+
+    discovered = discover_channels(root)
+    config = {**discovered, **config}
 
     by_day = {}
     for game in games:
@@ -232,7 +285,7 @@ def load_xmltv(games):
             by_day.get((start + dt.timedelta(days=1)).date(), [])
         )
         for game in candidates:
-            if abs((iso(game["start"]) - start).total_seconds()) > 5400:
+                         if not (-14400 <= (start - iso(game["start"])).total_seconds() <= 1800):
                 continue
             if not team_in_text(game["homeTeam"], content):
                 continue
