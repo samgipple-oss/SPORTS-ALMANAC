@@ -1,144 +1,331 @@
 
 #!/usr/bin/env python3
-"""Build a rolling 30-day fixture feed; distinguish rights leads from verified broadcasts."""
-import concurrent.futures as cf
+"""Sports Almanac: rolling fixtures + source-linked broadcast matching.
+
+No paid API key required.
+Optional XMLTV_URL environment variable enables channel schedule matching.
+Optional xmltv-channels.json maps XMLTV channel IDs to country/services.
+Manual verified broadcasts remain in broadcast-overrides.json.
+"""
+import concurrent.futures
 import datetime as dt
+import difflib
 import json
+import os
 import pathlib
+import re
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-OUT = ROOT / 'sports-fixtures.json'
-OVERRIDES = ROOT / 'broadcast-overrides.json'
+OUTPUT = ROOT / "sports-fixtures.json"
+OVERRIDES = ROOT / "broadcast-overrides.json"
+CHANNELS = ROOT / "xmltv-channels.json"
+UTC = dt.timezone.utc
+
 LEAGUES = [
- ('Basketball','NBA','basketball/nba'),('Basketball','WNBA','basketball/wnba'),
- ('Baseball','MLB','baseball/mlb'),('American football','NFL','football/nfl'),
- ('Ice hockey','NHL','hockey/nhl'),('Football','Premier League','soccer/eng.1'),
- ('Football','Champions League','soccer/uefa.champions'),
- ('Football','Europa League','soccer/uefa.europa'),('Football','MLS','soccer/usa.1'),
- ('Football','La Liga','soccer/esp.1'),('Football','Bundesliga','soccer/ger.1'),
- ('Football','Serie A','soccer/ita.1'),('Football','WSL','soccer/eng.w.1'),
- ('Football','Women’s Champions League','soccer/uefa.wchampions'),
- ('Football','UEFA Nations League','soccer/uefa.nations')]
-NETWORKS = {'ABC':'ABC','CBS':'CBS','FOX':'FOX','NBC':'NBC','ESPN':'ESPN',
- 'ESPN2':'ESPN2','ESPN+':'ESPN+','PEACOCK':'Peacock','PRIME VIDEO':'Prime Video',
- 'AMAZON PRIME VIDEO':'Prime Video','NBA TV':'NBA TV','TNT':'TNT','TBS':'TBS',
- 'FS1':'FS1','NFL NETWORK':'NFL Network','MLB NETWORK':'MLB Network',
- 'NHL NETWORK':'NHL Network','USA NETWORK':'USA Network',
- 'PARAMOUNT+':'Paramount+','APPLE TV':'Apple TV'}
-# These are *competition-level possibilities*, never evidence of a specific live game.
-# Update as rights change. Do not populate the confirmed broadcasts field from this map.
-UK_RIGHTS_LEADS = {
- 'NBA':['NBA League Pass','Prime Video'],
- 'WNBA':['WNBA League Pass'],
- 'MLB':['MLB.TV'],
- 'NFL':['NFL Game Pass','Sky Sports'],
- 'NHL':['NHL.TV'],
- 'Premier League':['Sky Sports','TNT Sports'],
- 'Champions League':['TNT Sports','Prime Video'],
- 'Europa League':['TNT Sports'],
- 'MLS':['Apple TV'],
- 'La Liga':['Premier Sports'],
- 'Bundesliga':['Sky Sports'],
- 'Serie A':['DAZN'],
- 'WSL':['BBC iPlayer','Sky Sports'],
- 'Women’s Champions League':['Disney+'],
- 'UEFA Nations League':['ITVX','BBC iPlayer']
+    ("Basketball", "NBA", "basketball/nba"),
+    ("Basketball", "WNBA", "basketball/wnba"),
+    ("Baseball", "MLB", "baseball/mlb"),
+    ("American football", "NFL", "football/nfl"),
+    ("Ice hockey", "NHL", "hockey/nhl"),
+    ("Football", "Premier League", "soccer/eng.1"),
+    ("Football", "Champions League", "soccer/uefa.champions"),
+    ("Football", "Europa League", "soccer/uefa.europa"),
+    ("Football", "MLS", "soccer/usa.1"),
+    ("Football", "La Liga", "soccer/esp.1"),
+    ("Football", "Bundesliga", "soccer/ger.1"),
+    ("Football", "Serie A", "soccer/ita.1"),
+    ("Football", "WSL", "soccer/eng.w.1"),
+    ("Football", "Women’s Champions League", "soccer/uefa.wchampions"),
+    ("Football", "UEFA Nations League", "soccer/uefa.nations"),
+]
+
+NETWORKS = {
+    "ABC": "ABC", "CBS": "CBS", "FOX": "FOX", "NBC": "NBC",
+    "ESPN": "ESPN", "ESPN2": "ESPN2", "ESPN+": "ESPN+",
+    "PEACOCK": "Peacock", "PRIME VIDEO": "Prime Video",
+    "AMAZON PRIME VIDEO": "Prime Video", "NBA TV": "NBA TV",
+    "TNT": "TNT", "TBS": "TBS", "FS1": "FS1",
+    "PARAMOUNT+": "Paramount+", "APPLE TV": "Apple TV",
+    "NFL NETWORK": "NFL Network", "MLB NETWORK": "MLB Network",
+    "NHL NETWORK": "NHL Network",
 }
 
-def espn_broadcast_leads(event, competition, url):
-    names=[]
-    for obj in (competition,event):
-        for b in obj.get('broadcasts',[]) or []:
-            if isinstance(b,str): names.append(b)
-            elif isinstance(b,dict):
-                names.extend(str(n) for n in (b.get('names') or []) if n)
-                if b.get('name'): names.append(str(b['name']))
-        for b in obj.get('geoBroadcasts',[]) or []:
-            if isinstance(b,dict):
-                media=b.get('media') or {}
-                if isinstance(media,dict) and media.get('shortName'):
-                    names.append(str(media['shortName']))
-    leads=[];seen=set()
-    for raw in names:
-        service=NETWORKS.get(raw.strip().upper())
-        if service and service not in seen:
-            leads.append({'country':'US','service':service,'verified':False,
-              'sourceUrl':url,'basis':'event-schedule',
-              'note':'ESPN schedule listing; regional access and blackouts not verified'})
-            seen.add(service)
-    return leads
+def get_json(url):
+    req = urllib.request.Request(
+        url, headers={"User-Agent": "SportsAlmanac/2.0",
+                      "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=25) as response:
+        return json.load(response)
 
-def uk_rights_leads(league):
-    return [{'country':'UK','service':service,'verified':False,
-             'basis':'competition-rights','note':'Potential rights holder for this competition; this particular game is NOT confirmed on this service'}
-            for service in UK_RIGHTS_LEADS.get(league,[])]
+def iso(value):
+    return dt.datetime.fromisoformat(
+        value.replace("Z", "+00:00")).astimezone(UTC)
 
-def fetch(job):
-    sport,league,path,day=job
-    params=urllib.parse.urlencode({'dates':day.strftime('%Y%m%d'),'limit':300})
-    url=f'https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?{params}'
+def team_name(competitor):
+    team = competitor.get("team") or {}
+    return team.get("displayName") or team.get("name") or "TBC"
+
+def espn_leads(event, competition, url):
+    names = []
+    for obj in (competition, event):
+        for entry in obj.get("broadcasts", []) or []:
+            if isinstance(entry, str):
+                names.append(entry)
+            elif isinstance(entry, dict):
+                names += entry.get("names", []) or []
+                if entry.get("name"):
+                    names.append(entry["name"])
+        for entry in obj.get("geoBroadcasts", []) or []:
+            if isinstance(entry, dict):
+                media = entry.get("media") or {}
+                if isinstance(media, dict):
+                    names.append(media.get("shortName", ""))
+
+    found = []
+    for name in names:
+        service = NETWORKS.get(str(name).strip().upper())
+        if service and service not in [x["service"] for x in found]:
+            found.append({
+                "country": "US",
+                "service": service,
+                "verified": False,
+                "basis": "event-schedule",
+                "sourceUrl": url,
+                "note": "Listed for this game by ESPN; access and blackouts unverified"
+            })
+    return found
+
+def fetch_day(job):
+    sport, league, path, day = job
+    params = urllib.parse.urlencode({
+        "dates": day.strftime("%Y%m%d"), "limit": 300})
+    url = ("https://site.api.espn.com/apis/site/v2/sports/"
+           f"{path}/scoreboard?{params}")
     try:
-        req=urllib.request.Request(url,headers={'User-Agent':'SportsAlmanac/1.1','Accept':'application/json'})
-        with urllib.request.urlopen(req,timeout=22) as response: payload=json.load(response)
-        if not isinstance(payload.get('events'),list): raise ValueError('Missing events array')
-        games=[]
-        for event in payload['events']:
+        data = get_json(url)
+        if not isinstance(data.get("events"), list):
+            raise ValueError("No events array")
+        games = []
+        for event in data["events"]:
             try:
-                instant=dt.datetime.fromisoformat(event['date'].replace('Z','+00:00')).astimezone(dt.timezone.utc)
-                comp=event['competitions'][0]
-                teams=comp['competitors']
-                away=next(c for c in teams if c.get('homeAway')=='away')
-                home=next(c for c in teams if c.get('homeAway')=='home')
-                def team(c):
-                    t=c.get('team') or {}
-                    return t.get('displayName') or t.get('name') or 'TBC'
-                games.append({'id':f"espn:{path}:{event['id']}",
-                  'sport':sport,'competition':league,'title':f'{team(away)} at {team(home)}',
-                  'start':instant.isoformat(timespec='seconds').replace('+00:00','Z'),
-                  'liveStatus':event.get('status',{}).get('type',{}).get('description',''),
-                  'fixtureSource':url,'broadcasts':[],
-                  'broadcastLeads':espn_broadcast_leads(event,comp,url)+uk_rights_leads(league)})
-            except (KeyError,TypeError,ValueError,StopIteration,IndexError): continue
-        return games,None
-    except Exception as exc: return [],f'{path} {day}: {exc}'
+                competition = event["competitions"][0]
+                competitors = competition["competitors"]
+                home = next(x for x in competitors
+                            if x.get("homeAway") == "home")
+                away = next(x for x in competitors
+                            if x.get("homeAway") == "away")
+                start = iso(event["date"])
+                games.append({
+                    "id": f"espn:{path}:{event['id']}",
+                    "sport": sport,
+                    "competition": league,
+                    "title": f"{team_name(away)} at {team_name(home)}",
+                    "homeTeam": team_name(home),
+                    "awayTeam": team_name(away),
+                    "start": start.isoformat().replace("+00:00", "Z"),
+                    "liveStatus": (
+                        event.get("status", {})
+                        .get("type", {}).get("description", "Scheduled")),
+                    "fixtureSource": url,
+                    "broadcasts": [],
+                    "broadcastLeads": espn_leads(event, competition, url),
+                })
+            except (KeyError, IndexError, StopIteration,
+                    TypeError, ValueError):
+                continue
+        return games, None
+    except Exception as exc:
+        return [], f"{path} {day}: {exc}"
 
-def valid_broadcast(b):
-    return (isinstance(b,dict) and b.get('country') in ('UK','US')
-      and isinstance(b.get('service'),str) and bool(b['service'].strip())
-      and b.get('verified') is True and isinstance(b.get('sourceUrl'),str)
-      and b['sourceUrl'].startswith('https://'))
+def normalise(value):
+    value = str(value).casefold()
+    value = value.replace("&", " and ")
+    value = re.sub(r"[^a-z0-9]+", " ", value)
+    words = value.split()
+    ignored = {"fc", "afc", "cf", "the"}
+    return " ".join(x for x in words if x not in ignored)
+
+def team_in_text(team, text):
+    target = normalise(team)
+    content = normalise(text)
+    if not target or not content:
+        return False
+    if re.search(r"\b" + re.escape(target) + r"\b", content):
+        return True
+    # Conservative fallback for abbreviations and slightly different names.
+    # Never match a single generic word such as "United" or "City".
+    if len(target) < 8 or len(target.split()) < 2:
+        return False
+    fragments = [
+        " ".join(content.split()[i:i+len(target.split())])
+        for i in range(max(0, len(content.split()) -
+                           len(target.split()) + 1))
+    ]
+    return any(difflib.SequenceMatcher(None, target, part).ratio() >= .92
+               for part in fragments)
+
+def xmltv_time(value):
+    # XMLTV example: 20261105193000 +0000
+    value = value.strip()
+    if re.fullmatch(r"\d{14}", value):
+        return dt.datetime.strptime(value, "%Y%m%d%H%M%S").replace(
+            tzinfo=UTC)
+    return dt.datetime.strptime(value, "%Y%m%d%H%M%S %z").astimezone(UTC)
+
+def load_xmltv(games):
+    url = os.environ.get("XMLTV_URL", "").strip()
+    if not url:
+        print("XMLTV_URL not set: skipping external TV listings")
+        return 0
+
+    config = json.loads(CHANNELS.read_text(encoding="utf-8")) \
+        if CHANNELS.exists() else {}
+    if not isinstance(config, dict) or not config:
+        print("No xmltv-channels.json mapping: skipping XMLTV")
+        return 0
+
+    req = urllib.request.Request(
+        url, headers={"User-Agent": "SportsAlmanac/2.0"})
+    with urllib.request.urlopen(req, timeout=40) as response:
+        raw = response.read(20_000_001)
+    if len(raw) > 20_000_000:
+        raise ValueError("XMLTV feed exceeds 20 MB limit")
+    if raw[:2] == b"\x1f\x8b":
+        import gzip
+        raw = gzip.decompress(raw)
+        if len(raw) > 30_000_000:
+            raise ValueError("Decompressed XMLTV feed too large")
+    root = ET.fromstring(raw)
+
+    by_day = {}
+    for game in games:
+        date = iso(game["start"]).date()
+        by_day.setdefault(date, []).append(game)
+
+    matched = 0
+    for programme in root.findall(".//programme"):
+        channel_id = programme.get("channel", "")
+        channel = config.get(channel_id)
+        if not isinstance(channel, dict):
+            continue
+        country = channel.get("country")
+        service = channel.get("service")
+        if country not in ("UK", "US") or not service:
+            continue
+        try:
+            start = xmltv_time(programme.attrib["start"])
+        except (ValueError, KeyError):
+            continue
+        title = " ".join((n.text or "") for n in
+                         programme.findall("title"))
+        description = " ".join((n.text or "") for n in
+                               programme.findall("desc"))
+        content = f"{title} {description}"
+
+        # Exact team names + 90-minute start-time tolerance.
+        candidates = (
+            by_day.get(start.date(), []) +
+            by_day.get((start - dt.timedelta(days=1)).date(), []) +
+            by_day.get((start + dt.timedelta(days=1)).date(), [])
+        )
+        for game in candidates:
+            if abs((iso(game["start"]) - start).total_seconds()) > 5400:
+                continue
+            if not team_in_text(game["homeTeam"], content):
+                continue
+            if not team_in_text(game["awayTeam"], content):
+                continue
+
+            entry = {
+                "country": country,
+                "service": service,
+                "verified": False,
+                "basis": "matched-tv-listing",
+                "sourceUrl": channel.get("sourceUrl", url),
+                "note": "Both teams matched an XMLTV programme near kickoff; review broadcaster access",
+            }
+            existing = game["broadcastLeads"]
+            if not any(x["country"] == country and
+                       x["service"] == service for x in existing):
+                existing.append(entry)
+                matched += 1
+    return matched
+
+def valid_override(item):
+    return (
+        isinstance(item, dict)
+        and item.get("country") in ("UK", "US")
+        and isinstance(item.get("service"), str)
+        and bool(item["service"].strip())
+        and item.get("verified") is True
+        and isinstance(item.get("sourceUrl"), str)
+        and item["sourceUrl"].startswith("https://")
+    )
 
 def main():
-    today=dt.datetime.now(dt.timezone.utc).date()
-    jobs=[(s,l,p,today+dt.timedelta(days=i)) for s,l,p in LEAGUES for i in range(32)]
-    results=[];errors=[]
-    with cf.ThreadPoolExecutor(max_workers=10) as pool:
-        for games,err in pool.map(fetch,jobs):
-            results.extend(games)
-            if err: errors.append(err)
-    if not results: raise RuntimeError('No fixtures retrieved; refusing to replace the feed')
-    overrides=json.loads(OVERRIDES.read_text()) if OVERRIDES.exists() else {}
-    if not isinstance(overrides,dict): raise ValueError('broadcast-overrides.json must be an object')
-    now=dt.datetime.now(dt.timezone.utc);end=now+dt.timedelta(days=30)
-    unique={}
-    for game in results:
-        when=dt.datetime.fromisoformat(game['start'].replace('Z','+00:00'))
-        if not now <= when < end: continue
-        entry=overrides.get(game['id'],[])
-        if isinstance(entry,dict): entry=entry.get('broadcasts',[])
-        if not isinstance(entry,list): entry=[]
-        game['broadcasts']=[b for b in entry if valid_broadcast(b)]
-        unique[game['id']]=game
-    if not unique: raise RuntimeError('No future fixtures found; refusing to replace the feed')
-    output={'updatedAt':now.isoformat(timespec='seconds').replace('+00:00','Z'),
-      'schemaVersion':4,
-      'source':'ESPN unofficial fixtures; unverified US event listings and UK competition-rights possibilities; confirmed manual per-game overrides only',
-      'successfulChecks':len(jobs)-len(errors),'totalChecks':len(jobs),
-      'errors':errors[:20],'items':sorted(unique.values(),key=lambda x:(x['start'],x['id']))}
-    temp=OUT.with_suffix('.json.tmp')
-    temp.write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n')
-    temp.replace(OUT)
-    print(f"Saved {len(unique)} fixtures, {len(errors)} failed requests")
-if __name__=='__main__': main()
+    now = dt.datetime.now(UTC)
+    today = now.date()
+    jobs = [(sport, league, path, today + dt.timedelta(days=i))
+            for sport, league, path in LEAGUES for i in range(32)]
+    all_games, errors = [], []
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as pool:
+        for games, error in pool.map(fetch_day, jobs):
+            all_games.extend(games)
+            if error:
+                errors.append(error)
+
+    unique = {}
+    for game in all_games:
+        start = iso(game["start"])
+        if now <= start < now + dt.timedelta(days=30):
+            unique[game["id"]] = game
+
+    if not unique:
+        raise RuntimeError("No fixtures retrieved; keeping old database")
+
+    overrides = json.loads(OVERRIDES.read_text(encoding="utf-8")) \
+        if OVERRIDES.exists() else {}
+    if not isinstance(overrides, dict):
+        raise ValueError("broadcast-overrides.json must be an object")
+
+    for game in unique.values():
+        entry = overrides.get(game["id"], [])
+        if isinstance(entry, dict):
+            entry = entry.get("broadcasts", [])
+        if not isinstance(entry, list):
+            entry = []
+        game["broadcasts"] = [x for x in entry if valid_override(x)]
+
+    xmltv_matches = 0
+    try:
+        xmltv_matches = load_xmltv(list(unique.values()))
+    except Exception as exc:
+        errors.append(f"XMLTV: {exc}")
+        print(f"XMLTV warning: {exc}")
+
+    output = {
+        "updatedAt": now.isoformat(timespec="seconds").replace("+00:00", "Z"),
+        "schemaVersion": 5,
+        "source": "ESPN fixtures; event-specific ESPN broadcast leads; optional XMLTV schedule matches; manually verified overrides",
+        "successfulChecks": len(jobs) - len([
+            e for e in errors if not e.startswith("XMLTV:")]),
+        "totalChecks": len(jobs),
+        "xmltvMatches": xmltv_matches,
+        "errors": errors[:30],
+        "items": sorted(unique.values(),
+                        key=lambda x: (x["start"], x["id"])),
+    }
+    temporary = OUTPUT.with_suffix(".json.tmp")
+    temporary.write_text(json.dumps(output, ensure_ascii=False, indent=2)
+                         + "\n", encoding="utf-8")
+    temporary.replace(OUTPUT)
+    print(f"Saved {len(unique)} fixtures")
+    print(f"Matched {xmltv_matches} XMLTV broadcaster listings")
+    print(f"Recorded {len(errors)} source errors")
+
+if __name__ == "__main__":
+    main()
