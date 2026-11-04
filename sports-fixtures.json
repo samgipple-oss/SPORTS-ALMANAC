@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-04T20:42:07Z",
+  "updatedAt": "2026-11-04T20:46:35Z",
   "schemaVersion": 5,
   "source": "ESPN fixtures; event-specific ESPN broadcast leads; optional XMLTV schedule matches; manually verified overrides",
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 0,
+  "xmltvMatches": 1,
   "errors": [],
   "items": [
     {
@@ -26,6 +26,14 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261104&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams matched an XMLTV programme near kickoff; review broadcaster access"
         }
       ]
     },
