@@ -1,6 +1,5 @@
-
 #!/usr/bin/env python3
-"""Sports Almanac V12: automatic fixtures and UK/US viewing-source catalogue.
+"""Sports Almanac V13: automatic fixtures and UK/US viewing-source catalogue.
 
 Free/no-key inputs: ESPN scoreboards, optional XMLTV_URL and manual overrides.
 Rights-based rules are dated 2026-27 and deliberately separate confirmed
@@ -64,6 +63,8 @@ NETWORKS = {
     "APPLE TV+": "Apple TV", "NETFLIX": "Netflix",
     "NFL NETWORK": "NFL Network", "MLB NETWORK": "MLB Network",
     "NHL NETWORK": "NHL Network", "USA NETWORK": "USA Network",
+    "NBCSN": "NBCSN", "NBC SPORTS NETWORK": "NBCSN", "ESPN UNLIMITED": "ESPN",
+    "PRIME": "Prime Video", "AMAZON PRIME": "Prime Video",
     "CBSSN": "CBS Sports Network", "CBS SPORTS NETWORK": "CBS Sports Network",
     "HBO MAX": "HBO Max", "FANDANGO": "Fandango",
     "YOUTUBE": "YouTube", "THE CW": "The CW",
@@ -85,6 +86,8 @@ SOURCES = {
     "prime_ucl_schedule": "https://www.aboutamazon.co.uk/news/entertainment/whats-on-prime-video-uk-november-2026",
     "prime_ucl_rights": "https://www.aboutamazon.co.uk/news/entertainment/champions-league-prime-video-uk-renewal",
     "nfl_5_guide": "https://tvradar.uk/nfl-on-tv",
+    "nba_nbc": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+    "nba_espn": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
     "nba": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
     "wnba": "https://support.wnba.com/hc/en-us/articles/19679847275927-Blackouts",
     "mlb": "https://www.mlb.com/live-stream-games/",
@@ -125,6 +128,7 @@ WATCH_PAGES = {
     "NHL.TV": "https://www.dazn.com/en-GB/",
     "ESPN+": "https://www.espn.com/watch/",
     "ESPN": "https://www.espn.com/watch/",
+    "NBCSN": "https://www.peacocktv.com/sports/nba",
     "Paramount+": "https://www.paramountplus.com/sports/",
     "Peacock": "https://www.peacocktv.com/sports",
     "Prime Video": "https://www.primevideo.com/salp/ucl-help/",
@@ -144,6 +148,7 @@ WATCH_PAGES = {
     "YouTube": "https://www.youtube.com/",
     "YouTube TV": "https://tv.youtube.com/",
     "FOX One": "https://www.fox.com/sports/football/nfl",
+    "FIFA+": "https://www.plus.fifa.com/",
     "Hulu + Live TV": "https://www.hulu.com/live-tv",
     "Fubo": "https://www.fubo.tv/",
 }
@@ -509,6 +514,10 @@ def add_official_rights(games):
             rule("US", "USA Network", "premier_us", "Selected Premier League fixtures on USA Network.")
             rule("US", "NBC", "premier_us", "Selected Premier League matches on NBC.")
 
+        elif comp == "UEFA Nations League" and is_2026_27:
+            rule("UK", "ITVX", "wsl", "Selected England and European national-team matches; requires fixture-specific ITV listing.")
+            rule("UK", "BBC iPlayer", "wsl", "Selected national-team matches only; check an individual BBC listing.")
+
         elif comp == "WSL" and is_2026_27:
             rule("UK", "Sky Sports", "wsl", "Sky Sports shows most, but not all, WSL fixtures.")
             rule("UK", "NOW", "wsl", "Sky Sports WSL games may be streamed with a NOW Sports membership.")
@@ -527,7 +536,7 @@ def add_network_streaming_leads(games):
         comp = game["competition"]
         options = []
         if comp in ("NBA", "WNBA", "NFL"):
-            if "NBC" in networks:
+            if "NBC" in networks or "NBCSN" in networks:
                 options.append(("Peacock", "NBC", "NBC games often stream on Peacock; check the specific event and plan."))
             if "CBS" in networks and comp in ("WNBA", "NFL"):
                 options.append(("Paramount+", "CBS", "CBS simulcast may be limited to the viewer's local CBS market."))
@@ -569,6 +578,11 @@ FOOTBALL_GUIDES = (
     "https://www.live-footballontv.com/live-champions-league-football-on-tv.html",
     "https://www.live-footballontv.com/live-uefa-europa-league-football-on-tv.html",
     "https://www.live-footballontv.com/live-womens-football-on-tv.html",
+    "https://www.live-footballontv.com/live-spanish-football-on-tv.html",
+    "https://www.live-footballontv.com/live-italian-football-on-tv.html",
+    "https://www.live-footballontv.com/live-german-football-on-tv.html",
+    "https://www.live-footballontv.com/live-mls-football-on-tv.html",
+    "https://www.live-footballontv.com/live-international-football-on-tv.html",
 )
 GUIDE_COMPETITIONS = {
     "UEFA Champions League": "Champions League",
@@ -580,6 +594,7 @@ GUIDE_COMPETITIONS = {
     "Serie A": "Serie A",
     "Bundesliga": "Bundesliga",
     "MLS": "MLS",
+    "UEFA Nations League": "UEFA Nations League",
 }
 GUIDE_DAY_RE = re.compile(
     r"^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+"
@@ -637,9 +652,11 @@ def guide_channels(text):
         ("bbc one", "BBC iPlayer"), ("bbc two", "BBC iPlayer"),
         ("bbc three", "BBC iPlayer"), ("bbc red button", "BBC iPlayer"),
         ("itvx", "ITVX"), ("itv1", "ITVX"),
+        ("itv2", "ITVX"), ("itv3", "ITVX"), ("itv4", "ITVX"),
         ("channel 4", "Channel 4"), ("channel 5", "Channel 5"),
         ("apple tv", "Apple TV"), ("netflix", "Netflix"),
-        ("wsl youtube", "YouTube"),
+        ("wsl youtube", "YouTube"), ("bundesliga youtube", "YouTube"),
+        ("premier player", "Premier Sports"), ("fifa+", "FIFA+"),
     ):
         if phrase in lowered:
             names.append(service)
@@ -648,7 +665,8 @@ def guide_channels(text):
 
 def guide_competition(label):
     value = " ".join(label.casefold().replace("’", "'").split())
-    if "women's super league 2" in value or "wsl2" in value:
+    if ("women's super league 2" in value or "wsl2" in value or
+        "bundesliga 2" in value or "la liga 2" in value or "laliga 2" in value):
         return None
     if "women's champions league" in value:
         return "Women’s Champions League"
@@ -882,6 +900,222 @@ def load_xmltv(games):
     return matches
 
 
+
+
+# NBA publishes its selected US national games for the full season. We match
+# DATE, TEAMS and (when supplied) scheduled start, rather than assuming a game
+# is on Peacock/ESPN because it happens on the usual broadcasting weekday.
+NBA_OFFICIAL_US_SCHEDULES = (
+    (SOURCES["nba_nbc"], "Peacock"),
+    (SOURCES["nba_espn"], "ESPN"),
+)
+NBA_MONTHS = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+              "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}
+NBA_MATCH_LINE = re.compile(
+    r"\b(?P<month>Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?\s+"
+    r"(?P<day>\d{1,2}):?\s*(?P<away>[^—\n]{2,55}?)\s+"
+    r"(?:vs\.?|at)\s+(?P<home>[^—\n]{2,55}?)\s*[—–-]\s*"
+    r"(?P<hour>\d{1,2})(?::(?P<minute>\d{2}))?\s*(?P<ampm>[ap]\.?m\.?)\s*ET",
+    flags=re.I,
+)
+
+
+def parse_nba_official_games(raw):
+    parser = GuideText()
+    parser.feed(raw)
+    text = "\n".join(parser.lines())
+    records = []
+    for match in NBA_MATCH_LINE.finditer(text):
+        month = NBA_MONTHS[match["month"].lower()[:3]]
+        year = 2026 if month >= 7 else 2027
+        try:
+            day = dt.date(year, month, int(match["day"]))
+            hour = int(match["hour"]) % 12 + (12 if match["ampm"].lower().startswith("p") else 0)
+            minute = int(match["minute"] or 0)
+            when = dt.datetime.combine(day, dt.time(hour, minute), tzinfo=NEW_YORK).astimezone(UTC)
+        except ValueError:
+            continue
+        records.append((when, match["away"].strip(), match["home"].strip(),
+                        text[match.end(): match.end() + 35].split("\n", 1)[0]))
+    return records
+
+
+def load_nba_official_national_games(games):
+    by_day = {}
+    for game in games:
+        if game["competition"] == "NBA":
+            date = utc_time(game["start"]).astimezone(NEW_YORK).date()
+            by_day.setdefault(date, []).append(game)
+    matches = 0
+    warnings = []
+    for source, default_service in NBA_OFFICIAL_US_SCHEDULES:
+        try:
+            request = urllib.request.Request(source, headers={
+                "User-Agent": "Mozilla/5.0 SportsAlmanac/4.0", "Accept": "text/html"})
+            with urllib.request.urlopen(request, timeout=18) as response:
+                html_text = response.read(3_000_001)
+            if len(html_text) > 3_000_000:
+                raise ValueError("NBA schedule exceeds 3 MB")
+            listings = parse_nba_official_games(html_text.decode("utf-8", "replace"))
+            for when, away, home, suffix in listings:
+                candidates = by_day.get(when.astimezone(NEW_YORK).date(), [])
+                for game in candidates:
+                    if abs((utc_time(game["start"]) - when).total_seconds()) > 40 * 60:
+                        continue
+                    if not ((team_equivalent(game["homeTeam"], home) and team_equivalent(game["awayTeam"], away)) or
+                            (team_equivalent(game["homeTeam"], away) and team_equivalent(game["awayTeam"], home))):
+                        continue
+                    service = default_service
+                    # ABC-identified games are still available via ESPN's app;
+                    # add the actual linear channel when the page explicitly says ABC.
+                    if default_service == "ESPN" and re.search(r"\bABC\b", suffix, re.I):
+                        if add(game, build_entry("US", "ABC", source,
+                             "This game is on NBA's official ABC national broadcast schedule.",
+                             True, "official-event-schedule")):
+                            matches += 1
+                    if add(game, build_entry("US", service, source,
+                           "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+                           True, "official-event-schedule")):
+                        matches += 1
+                    break
+            print(f"NBA official national schedule: {len(listings)} candidate listings from {source}")
+        except Exception as exc:
+            warnings.append(f"{source}: {exc}")
+            print(f"NBA national schedule warning: {source}: {exc}")
+    print(f"Matched {matches} NBA official US game broadcast entries")
+    return matches, warnings
+
+# NHL publishes a first-party list of UK blackouts. We treat an exact match
+# as a confirmed Premier Sports selection and never label that game's NHL.TV
+# access as live. Unlisted games remain conditional because the public list
+# can be incomplete, delayed or changed without notice.
+class RightsTableParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.rows = []
+        self.row = None
+        self.cell = None
+        self.cell_depth = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "tr":
+            self.row = []
+        elif tag in ("td", "th") and self.row is not None:
+            self.cell = []
+            self.cell_depth = 1
+        elif self.cell is not None:
+            self.cell_depth += 1
+
+    def handle_data(self, data):
+        if self.cell is not None:
+            self.cell.append(data)
+
+    def handle_endtag(self, tag):
+        if tag in ("td", "th") and self.row is not None and self.cell is not None:
+            self.row.append(" ".join(" ".join(self.cell).split()))
+            self.cell = None
+            self.cell_depth = 0
+        elif tag == "tr" and self.row is not None:
+            if len(self.row) >= 4:
+                self.rows.append(self.row)
+            self.row = None
+        elif self.cell is not None:
+            self.cell_depth = max(self.cell_depth - 1, 0)
+
+
+def parse_nhl_blackouts(content):
+    parser = RightsTableParser()
+    parser.feed(content)
+    records = []
+    for row in parser.rows:
+        day_text, time_text, matchup, countries = row[:4]
+        if not re.search(r"\bUK\b|Ireland", countries, re.I):
+            continue
+        match = re.split(r"\s+(?:vs\.?|v)\s+", matchup, maxsplit=1, flags=re.I)
+        if len(match) != 2:
+            continue
+        day = None
+        for fmt in ("%d/%m/%Y", "%m/%d/%Y", "%d %B %Y", "%d %b %Y", "%dth %B %Y"):
+            try:
+                day = dt.datetime.strptime(day_text.strip(), fmt).date()
+                break
+            except ValueError:
+                continue
+        if day is None:
+            # Some DAZN pages omit the year or use ordinal dates (e.g. 5th November).
+            v = re.sub(r"(\d+)(st|nd|rd|th)\b", r"\1", day_text, flags=re.I)
+            for fmt in ("%d %B %Y", "%d %b %Y"):
+                try:
+                    day = dt.datetime.strptime(v, fmt).date()
+                    break
+                except ValueError:
+                    pass
+        if day is None:
+            continue
+        try:
+            clock = dt.datetime.strptime(time_text.upper().replace(".", ""), "%I:%M %p").time()
+        except ValueError:
+            continue
+        local = dt.datetime.combine(day, clock, tzinfo=NEW_YORK)
+        records.append((local.astimezone(UTC), match[0].strip(), match[1].strip()))
+    return records
+
+
+def load_nhl_official_blackouts(games):
+    source = SOURCES["nhl_blackout"]
+    request = urllib.request.Request(source, headers={"User-Agent": "Mozilla/5.0 SportsAlmanac/4.0", "Accept": "text/html"})
+    try:
+        with urllib.request.urlopen(request, timeout=18) as response:
+            data = response.read(2_000_001)
+        if len(data) > 2_000_000:
+            raise ValueError("NHL blackout page exceeds 2 MB")
+        records = parse_nhl_blackouts(data.decode("utf-8", "replace"))
+        matched = 0
+        for game in games:
+            if game["competition"] != "NHL":
+                continue
+            start = utc_time(game["start"])
+            for when, left, right in records:
+                if abs((start - when).total_seconds()) > 60 * 60:
+                    continue
+                if not ((team_equivalent(game["homeTeam"], left) and team_equivalent(game["awayTeam"], right)) or
+                        (team_equivalent(game["homeTeam"], right) and team_equivalent(game["awayTeam"], left))):
+                    continue
+                game["broadcastLeads"] = [entry for entry in game["broadcastLeads"]
+                        if not (entry.get("country") == "UK" and entry.get("service") == "NHL.TV")]
+                if put(game, "UK", "Premier Sports", "nhl_blackout",
+                       "DAZN officially lists this specific fixture as blacked out from UK NHL.TV; UK live rights belong to Premier Sports.",
+                       True, "official-event-schedule"):
+                    matched += 1
+                break
+        print(f"NHL official blackout table: {len(records)} UK records, {matched} exact fixture matches")
+        return matched, None
+    except Exception as exc:
+        print(f"NHL official blackout source warning: {exc}")
+        return 0, str(exc)
+
+
+def coverage_audit(games):
+    """Unique fixture coverage; possible/confirmed counts can overlap."""
+    report = {}
+    for competition in sorted(set(g["competition"] for g in games)):
+        subgroup = [g for g in games if g["competition"] == competition]
+        row = {"fixtures": len(subgroup)}
+        for country in ("UK", "US"):
+            confirmed = sum(any(x.get("country") == country for x in g["broadcasts"]) for g in subgroup)
+            tentative = sum(any(x.get("country") == country for x in g["broadcastLeads"]) for g in subgroup)
+            combined = sum(any(x.get("country") == country for x in g["broadcasts"] + g["broadcastLeads"]) for g in subgroup)
+            event_specific = sum(any(x.get("country") == country and
+                     x.get("basis") in ("matched-tv-listing", "event-schedule", "official-event-schedule", "official-exclusive-remainder")
+                     for x in g["broadcasts"] + g["broadcastLeads"]) for g in subgroup)
+            row[country] = {"confirmedFixtures": confirmed, "possibleFixtures": tentative,
+                            "anyCoverageFixtures": combined, "uncoveredFixtures": len(subgroup) - combined,
+                            "eventSpecificFixtures": event_specific,
+                            "confirmedPct": round(100 * confirmed / len(subgroup), 1),
+                            "anyCoveragePct": round(100 * combined / len(subgroup), 1)}
+        report[competition] = row
+    return report
+
 def valid_override(item):
     return (isinstance(item, dict) and item.get("country") in ("UK", "US")
             and isinstance(item.get("service"), str) and bool(item["service"].strip())
@@ -926,6 +1160,8 @@ def main():
     network_count = add_network_streaming_leads(games)
     football_matches, football_errors = load_uk_football_listings(games)
     errors.extend(football_errors)
+    nhl_matches, nhl_warning = load_nhl_official_blackouts(games)
+    nba_matches, nba_warnings = load_nba_official_national_games(games)
     xmltv_matches = 0
     try:
         xmltv_matches = load_xmltv(games)
@@ -937,11 +1173,26 @@ def main():
                  for country in ("UK", "US")}
     possible = {country: sum(any(x.get("country") == country for x in game["broadcastLeads"]) for game in games)
                 for country in ("UK", "US")}
+    audit = coverage_audit(games)
+    any_country = {country: sum(any(x.get("country") == country for x in g["broadcasts"] + g["broadcastLeads"]) for g in games)
+                   for country in ("UK", "US")}
+    event_country = {country: sum(any(x.get("country") == country and
+                        x.get("basis") in ("matched-tv-listing", "event-schedule", "official-event-schedule", "official-exclusive-remainder")
+                        for x in g["broadcasts"] + g["broadcastLeads"]) for g in games)
+                     for country in ("UK", "US")}
     output = {
         "updatedAt": timestamp(now),
         "schemaVersion": 5,
         "rightsRulesCheckedAsOf": "2026-11-04",
-        "source": "ESPN fixture data, event-level ESPN leads, optional XMLTV and sourced 2026-27 viewing rules; manual verified overrides",
+        "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
+        "broadcastAuditVersion": 1,
+        "coverageByCompetition": audit,
+        "anyCoverageGamesByCountry": any_country,
+        "eventSpecificGamesByCountry": event_country,
+        "officialNHLBlackoutFixtureMatches": nhl_matches,
+        "nbaOfficialUSNationalBroadcastEntries": nba_matches,
+        "nbaOfficialSourceWarnings": nba_warnings,
+        "nhlBlackoutSourceWarning": nhl_warning,
         "successfulChecks": len(jobs) - scoreboard_error_count,
         "totalChecks": len(jobs),
         "xmltvMatches": xmltv_matches,
@@ -965,6 +1216,13 @@ def main():
     print(f"Added {network_count} event-network streaming leads")
     print(f"Verified game coverage: UK={confirmed['UK']}, US={confirmed['US']}")
     print(f"Possible/conditional coverage: UK={possible['UK']}, US={possible['US']}")
+    print(f"Any broadcast coverage (verified OR possible): UK={any_country['UK']}/{len(games)}, US={any_country['US']}/{len(games)}")
+    print(f"Event-specific broadcaster evidence: UK={event_country['UK']}/{len(games)}, US={event_country['US']}/{len(games)}")
+    print(f"Official NHL UK blackout matches: {nhl_matches}")
+    print(f"Official NBA US national broadcast entries: {nba_matches}")
+    print("Uncovered fixtures by competition (UK / US):")
+    for league, row in audit.items():
+        print(f"  {league}: {row['UK']['uncoveredFixtures']} / {row['US']['uncoveredFixtures']} (of {row['fixtures']})")
     print(f"Recorded {len(errors)} source errors")
 
 
