@@ -1,65 +1,590 @@
 
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#84252f"><title>Sports Almanac — Your sports, your schedule</title>
-<style>
-:root{color-scheme:dark;--bg:#171419;--panel:#292027;--line:#61434b;--text:#fff0e7;--muted:#c6b5b9;--accent:#b94c60}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 12% 0%,#592733,#211a20 42%,var(--bg));color:var(--text);font:15px/1.5 system-ui,-apple-system,sans-serif;min-height:100vh}.shell{max-width:1050px;margin:auto;padding:34px 20px 60px}.eyebrow,.step{font-size:11px;letter-spacing:2px;color:#e2b8bb;font-weight:800;text-transform:uppercase}h1{font:700 clamp(35px,7vw,64px)/1.04 Georgia,serif;letter-spacing:-1.5px;margin:8px 0}h2{font-size:22px;margin:0 0 5px}p{color:var(--muted)}.intro{margin:10px 0 26px}.panel{background:#292027ee;border:1px solid var(--line);border-radius:17px;padding:22px;margin:15px 0;box-shadow:0 12px 30px #0002}.choices,.toolbar,.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px}button,select{font:inherit;color:inherit;cursor:pointer}.choice,.secondary,select{border:1px solid #7d5962;background:#352830;color:#f7e8e2;border-radius:999px;padding:9px 14px;min-height:42px}.choice[aria-pressed=true],.secondary.active{background:#9e3d50;border-color:#f4b5c0;color:#fff}.primary{background:#f3d6c5;color:#3a1d27;border:0;border-radius:10px;padding:11px 17px;font-weight:800}.secondary{border-radius:10px}button:focus-visible,select:focus-visible{outline:3px solid #fff;outline-offset:3px}.hint{font-size:13px;margin:6px 0}.meta{font-size:12px;color:#d5bbc2}.calendar{display:grid;gap:13px}.day{border:1px solid #69454e;border-radius:13px;overflow:hidden}.dayhead{background:#3b2933;padding:11px 15px;font-weight:800;display:flex;justify-content:space-between}.game{display:grid;grid-template-columns:65px minmax(0,1fr);gap:13px;padding:13px 15px;border-top:1px solid #503640}.time{font-weight:800;color:#ffd8c8;font-variant-numeric:tabular-nums}.game strong{display:block}.tag{display:inline-block;margin:6px 6px 0 0;border:1px solid #7d5962;border-radius:7px;padding:2px 7px;font-size:11px;color:#f0d6d6}.confirmed{border-color:#6eaa89;color:#b8f0cf}.lead{border-color:#aa805a;color:#f2d6aa}.empty{border:1px dashed #80545e;border-radius:12px;padding:20px;text-align:center;color:#e7cbd0}.stats{display:flex;flex-wrap:wrap;gap:12px;color:#e9c8d0;font-size:13px;margin:12px 0}.stats span{background:#3b2933;padding:6px 10px;border-radius:7px}a{color:#ffb6bf}footer{font-size:12px;color:var(--muted);margin-top:25px}@media(max-width:600px){.shell{padding:20px 12px 45px}.panel{padding:16px}.game{grid-template-columns:52px minmax(0,1fr);gap:8px;padding:12px 9px}}
-</style></head><body><main class="shell">
-<div class="eyebrow">YOUR SPORTS · YOUR LOCATION · YOUR TIME</div><h1>SPORTS ALMANAC ⚾</h1><p class="intro">A personalised 30-day sports calendar. See every fixture, possible places to watch, and broadcasts confirmed for your country.</p>
-<section class="panel"><div class="step">01 · Region</div><h2>Where do you watch?</h2><div class="choices" id="countries"></div></section>
-<section class="panel"><div class="step">02 · Sports</div><h2>Which sports do you follow?</h2><div class="choices" id="sports"></div></section>
-<section class="panel"><div class="step">03 · Leagues</div><h2>Which competitions?</h2><p class="hint">Leave every league selected to see all your chosen sports.</p><div class="choices" id="leagues"></div></section>
-<section class="panel"><div class="step">04 · Subscriptions</div><h2>What can you watch on?</h2><p class="hint">Used for matching broadcaster suggestions. A suggestion does not guarantee access.</p><div class="choices" id="services"></div><div class="actions"><button class="primary" id="save">Save preferences</button><button class="secondary" id="reset">Reset</button><span id="message" class="hint" role="status"></span></div></section>
-<section class="panel"><div class="step">Your guide</div><h2>Next 30 days</h2><p class="hint">Fixtures are from an unofficial schedule. Only green “Confirmed” labels mean a game-level broadcast source was supplied. Amber labels are suggestions, not confirmed TV listings.</p>
-<div class="toolbar" id="filters"><button class="secondary active" data-filter="all">All fixtures</button><button class="secondary" data-filter="mine">My services · possible or confirmed</button><button class="secondary" data-filter="confirmed">Confirmed on my services</button></div>
-<div class="toolbar"><label for="timezone">Times:</label><select id="timezone"><option value="auto">My country</option><option value="Europe/London">UK time</option><option value="America/New_York">US Eastern</option><option value="America/Los_Angeles">US Pacific</option><option value="UTC">UTC</option></select><button class="secondary" id="reload">Refresh fixtures</button></div>
-<div class="stats" id="stats"></div><div id="calendar" class="calendar" aria-live="polite"><div class="empty">Loading fixture data…</div></div></section>
-<footer>Sports Almanac beta · Preferences stored in your browser · Times and rights may change · Blackouts and territorial restrictions apply · Fixture data sourced from ESPN's unofficial scoreboard interface.</footer>
-</main><script>
-(()=>{'use strict';
-const KEY='sports-almanac-v4-preferences',OLD='sports-almanac-v2-preferences';
-const CATALOG={
-'Football':['Premier League','Champions League','Europa League','MLS','La Liga','Bundesliga','Serie A','WSL','Women’s Champions League','UEFA Nations League'],
-'Basketball':['NBA','WNBA'],'Baseball':['MLB'],'American football':['NFL'],'Ice hockey':['NHL']};
-const SERVICES={UK:['Prime Video','Sky Sports','NOW','TNT Sports','discovery+','Apple TV','Disney+','DAZN','NBA League Pass','WNBA League Pass','MLB.TV','NFL Game Pass','NHL.TV','Premier Sports','BBC iPlayer','ITVX','Channel 4','Channel 5'],US:['Prime Video','ESPN','ESPN2','ESPN+','Peacock','Paramount+','Apple TV','Netflix','YouTube TV','Hulu + Live TV','Fubo','NBA League Pass','MLB.TV','NFL Sunday Ticket','ABC','CBS','FOX','NBC','TNT','NBA TV','NFL Network','MLB Network','NHL Network','FS1','TBS']};
-let prefs={country:'UK',sports:Object.keys(CATALOG),leagues:Object.values(CATALOG).flat(),services:[]},items=[],filter='all',loaded=false,updated='';
-try{const stored=JSON.parse(localStorage.getItem(KEY)||localStorage.getItem(OLD)||'null');if(stored&&['UK','US'].includes(stored.country)){
-prefs.country=stored.country;
-if(Array.isArray(stored.sports)){prefs.sports=stored.sports.map(s=>s==='Football (soccer)'?'Football':s).filter(s=>CATALOG[s]);}
-if(Array.isArray(stored.leagues))prefs.leagues=stored.leagues.filter(l=>Object.values(CATALOG).flat().includes(l));
-if(Array.isArray(stored.services))prefs.services=stored.services.filter(s=>SERVICES[prefs.country].includes(s));
-}}catch{}
-const $=id=>document.getElementById(id);
-function buttons(id,options,selected,callback){const el=$(id);el.replaceChildren();options.forEach(x=>{const b=document.createElement('button');b.className='choice';b.type='button';b.textContent=x;b.setAttribute('aria-pressed',String(selected.includes(x)));b.onclick=()=>callback(x);el.append(b);});}
-function toggle(arr,x){return arr.includes(x)?arr.filter(v=>v!==x):[...arr,x];}
-function renderControls(){buttons('countries',['UK','US'],[prefs.country],x=>{prefs.country=x;prefs.services=[];renderControls();renderCalendar();});buttons('sports',Object.keys(CATALOG),prefs.sports,x=>{prefs.sports=toggle(prefs.sports,x);renderControls();renderCalendar();});buttons('leagues',[...new Set(prefs.sports.flatMap(s=>CATALOG[s]||[]))],prefs.leagues,x=>{prefs.leagues=toggle(prefs.leagues,x);renderControls();renderCalendar();});buttons('services',SERVICES[prefs.country],prefs.services,x=>{prefs.services=toggle(prefs.services,x);renderControls();renderCalendar();});}
-function timezone(){return $('timezone').value==='auto'?(prefs.country==='UK'?'Europe/London':'America/New_York'):$('timezone').value;}
-function localDate(date){return new Intl.DateTimeFormat('en-CA',{timeZone:timezone(),year:'numeric',month:'2-digit',day:'2-digit'}).format(date);}
-function dayLabel(date){return new Intl.DateTimeFormat(prefs.country==='UK'?'en-GB':'en-US',{timeZone:timezone(),weekday:'long',month:'long',day:'numeric'}).format(date);}
-function timeLabel(date){return new Intl.DateTimeFormat('en-GB',{timeZone:timezone(),hour:'2-digit',minute:'2-digit',hour12:false}).format(date);}
-function broadcasts(f){return (Array.isArray(f.broadcasts)?f.broadcasts:[]).filter(b=>b&&b.country===prefs.country&&b.verified===true);}
-function leads(f){return (Array.isArray(f.broadcastLeads)?f.broadcastLeads:[]).filter(b=>b&&b.country===prefs.country&&b.verified!==true);}
-function matchesMine(f){return [...broadcasts(f),...leads(f)].some(b=>prefs.services.includes(b.service));}
-function matchesConfirmed(f){return broadcasts(f).some(b=>prefs.services.includes(b.service));}
-function addText(parent,tag,value,cls){const n=document.createElement(tag);if(cls)n.className=cls;n.textContent=value;parent.append(n);return n;}
-function renderCalendar(){const host=$('calendar');host.replaceChildren();if(!loaded){addText(host,'div','Loading fixture data…','empty');return;}
-const now=Date.now(),end=now+30*86400000;
-const visible=items.filter(f=>{const t=Date.parse(f.start);return Number.isFinite(t)&&t>=now&&t<end&&prefs.sports.includes(f.sport)&&prefs.leagues.includes(f.competition)&&(filter==='all'||(filter==='mine'?matchesMine(f):matchesConfirmed(f)));}).sort((a,b)=>a.start.localeCompare(b.start));
-const confirmed=visible.filter(f=>broadcasts(f).length).length,leadsCount=visible.filter(f=>leads(f).length).length;
-$('stats').replaceChildren();[`${visible.length} games`,`${confirmed} with confirmed broadcasts in ${prefs.country}`,`${leadsCount} with possible services`,updated?`Updated ${new Date(updated).toLocaleString()}`:''].filter(Boolean).forEach(x=>addText($('stats'),'span',x));
-if(!visible.length){addText(host,'div',filter==='confirmed'?'No verified games on your selected services yet. This means listings are unverified, not that no games are showing.':filter==='mine'?'No games with suggested or confirmed matches for these services. Try All fixtures.':'No fixtures match your current sports and leagues.','empty');return;}
-let current='',dayBox;
-for(const f of visible){const date=new Date(f.start),key=localDate(date);if(key!==current){current=key;dayBox=document.createElement('section');dayBox.className='day';const head=addText(dayBox,'div',dayLabel(date),'dayhead');addText(head,'span',key);host.append(dayBox);}
-const game=document.createElement('div');game.className='game';addText(game,'div',timeLabel(date),'time');const detail=document.createElement('div');addText(detail,'strong',f.title);addText(detail,'div',`${f.competition} · ${f.sport}`,'meta');
-const verified=broadcasts(f),possible=leads(f);
-if(verified.length){for(const b of verified){const tag=addText(detail,'span',`✓ Confirmed: ${b.service}`,'tag confirmed');if(b.sourceUrl&&/^https:\/\//.test(b.sourceUrl)){const a=document.createElement('a');a.href=b.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';a.textContent=' source';tag.append(a);}}}
-if(possible.length){const relevant=possible.filter(b=>prefs.services.includes(b.service));const display=filter==='mine'?relevant:possible;for(const b of display.slice(0,6)){const prefix=b.basis==='competition-rights'?'Rights possibility':'Schedule lead';addText(detail,'span',`${prefix}: ${b.service}`,'tag lead');}}
-if(!verified.length&&!possible.length)addText(detail,'div','Broadcaster not yet listed','meta');
-if(f.fixtureSource&&/^https:\/\//.test(f.fixtureSource)){const a=addText(detail,'a','Fixture source','meta');a.href=f.fixtureSource;a.target='_blank';a.rel='noopener noreferrer';}
-game.append(detail);dayBox.append(game);}}
-async function load(){loaded=false;renderCalendar();try{const response=await fetch('./sports-fixtures.json?ts='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);const data=await response.json();if(!Array.isArray(data.items))throw Error('Missing items array');items=data.items;updated=data.updatedAt||'';loaded=true;renderCalendar();}catch(e){loaded=true;items=[];renderCalendar();$('calendar').replaceChildren();addText($('calendar'),'div','Could not load sports-fixtures.json. Run the Update Sports Almanac fixtures action in GitHub, then refresh. ('+e.message+')','empty');}}
-$('save').onclick=()=>{try{localStorage.setItem(KEY,JSON.stringify(prefs));$('message').textContent='Preferences saved.';}catch{$('message').textContent='Browser could not save preferences.';}};
-$('reset').onclick=()=>{prefs={country:'UK',sports:Object.keys(CATALOG),leagues:Object.values(CATALOG).flat(),services:[]};try{localStorage.removeItem(KEY);localStorage.removeItem(OLD);}catch{}renderControls();renderCalendar();$('message').textContent='Preferences reset.';};
-$('timezone').onchange=renderCalendar;$('reload').onclick=load;
-$('filters').querySelectorAll('button').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;$('filters').querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));renderCalendar();});
-renderControls();load();
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#84252f">
+  <meta name="description" content="A personalised UK and US sports fixture guide that only shows matches on your selected streaming services.">
+  <title>Sports Almanac — Your sports, your subscriptions</title>
+  <style>
+    :root { color-scheme:dark; --bg:#171419; --panel:#292027; --panel-alt:#362833; --line:#61434b; --text:#fff0e7; --muted:#c6b5b9; --accent:#bd5266; --accent-light:#ffbcc7; --cream:#f3d6c5; --good:#a9ecc6; --gold:#f3c787; }
+    * {box-sizing:border-box}
+    body {margin:0;min-height:100vh;background:radial-gradient(circle at 14% 0%,#592733,#211a20 43%,var(--bg));color:var(--text);font:15px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a {color:var(--accent-light)}
+    button,select,input {font:inherit}
+    button {cursor:pointer}
+    button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible {outline:3px solid #fff;outline-offset:3px}
+    .shell {max-width:1100px;margin:auto;padding:30px 20px 72px}
+    .eyebrow,.step {color:#e9b8c0;text-transform:uppercase;font-size:11px;letter-spacing:2px;font-weight:800}
+    h1 {font:700 clamp(34px,7vw,65px)/1.07 Georgia,serif;letter-spacing:-1.4px;margin:8px 0}
+    h2 {font-size:22px;line-height:1.25;margin:0 0 7px}
+    p {color:var(--muted)}
+    .intro {margin:8px 0 28px;max-width:720px}
+    .panel {background:#292027ee;border:1px solid var(--line);border-radius:18px;margin:15px 0;padding:22px;box-shadow:0 10px 30px #0002}
+    .panel-heading {display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+    .choices,.toolbar,.actions,.options {display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:13px}
+    .choice,.secondary,select,input[type="search"] {background:#352830;color:var(--text);border:1px solid #7d5962;border-radius:999px;padding:9px 14px;min-height:42px}
+    .choice[aria-pressed="true"],.secondary.active {background:#a34356;border-color:#f8bcc8;color:#fff;box-shadow:inset 0 0 0 1px #f8bbc8}
+    .choice:hover,.secondary:hover {border-color:#f8bcc8}
+    .choice {font-size:13px}
+    .choice small {opacity:.75}
+    .primary {background:var(--cream);color:#3a1d27;border:0;border-radius:10px;padding:11px 17px;font-weight:800}
+    .secondary {border-radius:10px;font-size:13px}
+    .hint {font-size:13px;margin:5px 0}
+    .micro {font-size:12px;color:#d4b7c0}
+    .split {display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+    .label-count {font-size:12px;border-radius:999px;background:#46303b;color:#f5d8df;padding:5px 10px}
+    .notice {padding:12px 14px;background:#392c34;border-left:3px solid #d59ba5;border-radius:7px;color:#edd9dc;font-size:13px;margin-top:14px}
+    .notice.positive {border-color:#81c6a2;background:#27382e}
+    .checkrow {display:flex;align-items:flex-start;gap:10px;font-size:13px;margin-top:13px;color:#eadadd;cursor:pointer}
+    .checkrow input {width:18px;height:18px;accent-color:#cf6f82;margin-top:2px;flex:0 0 18px}
+    .stats {display:flex;flex-wrap:wrap;gap:9px;margin:17px 0;color:#e9c8d0;font-size:13px}
+    .stats span {background:#3b2933;border:1px solid #64464f;border-radius:8px;padding:7px 11px}
+    #timezone {border-radius:10px;max-width:215px}
+    #search {border-radius:10px;min-width:185px;flex:1;max-width:280px}
+    .calendar {display:grid;gap:13px}
+    .day {border:1px solid #69454e;border-radius:13px;overflow:hidden;background:#231b22}
+    .dayhead {background:#3b2933;padding:12px 15px;display:flex;justify-content:space-between;gap:8px;align-items:center;font-weight:800}
+    .game {display:grid;grid-template-columns:61px minmax(0,1fr);gap:13px;padding:14px 16px;border-top:1px solid #503640}
+    .time {color:#ffd8c8;font-weight:800;font-variant-numeric:tabular-nums}
+    .game-title {font-size:15px;line-height:1.35;font-weight:750}
+    .meta {color:#d5bbc2;font-size:12px;margin-top:3px}
+    .tags {display:flex;flex-wrap:wrap;gap:7px;margin:9px 0 0}
+    .tag {display:inline-flex;flex-wrap:wrap;align-items:center;gap:5px;border:1px solid #815b65;background:#35262e;border-radius:8px;padding:5px 8px;color:#f0d6d6;font-size:12px}
+    .tag.verified {border-color:#679b80;color:var(--good);background:#24392e}
+    .tag.scheduled {border-color:#a98b63;color:#f1d3a3;background:#3d3228}
+    .tag.conditional {border-color:#806a76;color:#dcc0cb}
+    .tag a {color:inherit;text-decoration:underline;text-underline-offset:2px}
+    .links {display:flex;flex-wrap:wrap;gap:9px;margin-top:10px;font-size:12px}
+    .links a {padding:5px 9px;border-radius:6px;border:1px solid #72515c;text-decoration:none}
+    .links a:hover {background:#49323c}
+    .footnote {font-size:12px;color:#cdb5bd;margin-top:8px}
+    .empty {border:1px dashed #80545e;border-radius:12px;padding:24px;text-align:center;color:#e7cbd0}
+    footer {font-size:12px;color:var(--muted);margin:28px 0}
+    @media(max-width:630px){.shell{padding:20px 12px 45px}.panel{padding:16px}.game{grid-template-columns:52px minmax(0,1fr);gap:9px;padding:12px 10px}.dayhead{padding:10px}.choice{font-size:12px;padding:8px 11px}.panel-heading{gap:8px}}
+    @media(prefers-reduced-motion:no-preference){button {transition:background-color .12s,border-color .12s}}
+  </style>
+</head>
+<body>
+<main class="shell">
+  <div class="eyebrow">YOUR SPORTS · YOUR SUBSCRIPTIONS · YOUR TIME</div>
+  <h1>SPORTS ALMANAC ⚾</h1>
+  <p class="intro">Your personal 30-day sports guide. Pick what you actually pay for — we'll show the games linked to those services, without mixing in matches from subscriptions you don't have.</p>
+
+  <section class="panel" aria-labelledby="country-head">
+    <div class="step">01 · Region</div>
+    <h2 id="country-head">Where are you watching?</h2>
+    <div class="choices" id="countries"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="sports-head">
+    <div class="step">02 · Sports</div>
+    <h2 id="sports-head">Which sports?</h2>
+    <div class="choices" id="sports"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="leagues-head">
+    <div class="step">03 · Competitions</div>
+    <h2 id="leagues-head">Which leagues?</h2>
+    <div class="choices" id="leagues"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="services-head">
+    <div class="step">04 · Subscriptions</div>
+    <div class="panel-heading">
+      <div>
+        <h2 id="services-head">What services do you have?</h2>
+        <p class="hint">Selecting any service automatically filters the calendar to that service. Multiple selections show matches on <strong>at least one</strong> of them.</p>
+      </div>
+      <span id="service-count" class="label-count">0 selected</span>
+    </div>
+    <div class="choices" id="services"></div>
+    <div class="actions">
+      <button id="save" class="primary" type="button">Save preferences</button>
+      <button id="clear-services" class="secondary" type="button">Clear subscriptions</button>
+      <button id="reset" class="secondary" type="button">Reset everything</button>
+      <span id="message" class="micro" role="status" aria-live="polite"></span>
+    </div>
+    <div class="notice positive" id="selection-note">Choose a subscription above to see matching games. Without a selection, you can browse all fixtures.</div>
+  </section>
+
+  <section class="panel" aria-labelledby="calendar-head">
+    <div class="step">Your guide</div>
+    <h2 id="calendar-head">Next 30 days</h2>
+    <p class="hint">League-wide coverage and event-specific listings are separated from blackout warnings and unconfirmed broadcast possibilities.</p>
+    <div class="toolbar" id="filters" role="group" aria-label="Which matches to show">
+      <button type="button" class="secondary" data-filter="mine">My subscriptions</button>
+      <button type="button" class="secondary" data-filter="confirmed">Confirmed coverage only</button>
+      <button type="button" class="secondary" data-filter="all">All fixtures (ignore subscriptions)</button>
+    </div>
+    <label class="checkrow" for="include-conditional">
+      <input type="checkbox" id="include-conditional">
+      <span>Include <strong>unconfirmed rights possibilities</strong> (e.g. a league that sometimes airs on Sky, without a match-specific listing). Off by default to avoid false matches.</span>
+    </label>
+    <div class="toolbar">
+      <label for="timezone">Times:</label>
+      <select id="timezone">
+        <option value="auto">My country</option>
+        <option value="Europe/London">UK time</option>
+        <option value="America/New_York">US Eastern</option>
+        <option value="America/Los_Angeles">US Pacific</option>
+        <option value="UTC">UTC</option>
+      </select>
+      <input id="search" type="search" placeholder="Search team or competition" aria-label="Search teams or competitions">
+      <button type="button" id="reload" class="secondary">Refresh fixtures</button>
+    </div>
+    <div class="stats" id="stats" aria-live="polite"></div>
+    <div class="calendar" id="calendar" aria-live="polite"><div class="empty">Loading fixtures…</div></div>
+    <p class="footnote">“Confirmed league coverage” is based on published season-wide rights, not a direct match listing. “Game listing” means a broadcaster is named for that fixture but availability hasn't been independently verified. Watch links open the service's official site, not necessarily the exact game.</p>
+  </section>
+
+  <footer>Sports Almanac beta · Preferences stay in your browser · Fixtures and broadcast rights can change · Blackouts, paid sports add-ons and local TV markets may apply · ESPN fixture feed and linked broadcaster sources.</footer>
+</main>
+<script>
+(() => {
+  'use strict';
+
+  const STORAGE_KEY = 'sports-almanac-v6-preferences';
+  const LEGACY_KEYS = ['sports-almanac-v4-preferences', 'sports-almanac-v2-preferences'];
+  const CATALOG = {
+    'Football': ['Premier League', 'Champions League', 'Europa League', 'MLS', 'La Liga', 'Bundesliga', 'Serie A', 'WSL', 'Women’s Champions League', 'UEFA Nations League'],
+    'Basketball': ['NBA', 'WNBA'],
+    'Baseball': ['MLB'],
+    'American football': ['NFL'],
+    'Ice hockey': ['NHL']
+  };
+  const SERVICE_OPTIONS = {
+    UK: [
+      'Prime Video', 'Apple TV', 'Netflix', 'Disney+', 'DAZN', 'NBA League Pass',
+      'WNBA League Pass', 'MLB.TV', 'NFL Game Pass', 'NHL.TV', 'Sky Sports', 'NOW',
+      'TNT Sports', 'HBO Max', 'Premier Sports', 'BBC iPlayer', 'ITVX',
+      'Channel 4', 'Channel 5', 'YouTube'
+    ],
+    US: [
+      'Prime Video', 'Apple TV', 'Netflix', 'Disney+', 'Paramount+', 'Peacock',
+      'ESPN+', 'ESPN', 'ESPN2', 'DAZN', 'NBA League Pass', 'WNBA League Pass',
+      'MLB.TV', 'NFL+', 'NFL Sunday Ticket', 'FOX One', 'YouTube TV',
+      'Hulu + Live TV', 'Fubo', 'HBO Max', 'Fandango', 'YouTube',
+      'ABC', 'CBS', 'FOX', 'NBC', 'TNT', 'TBS', 'FS1', 'FS2',
+      'USA Network', 'CBS Sports Network', 'NBA TV', 'NFL Network',
+      'MLB Network', 'NHL Network', 'The CW'
+    ]
+  };
+  const DISPLAY_NAMES = {
+    'NOW': 'NOW Sports',
+    'HBO Max': 'HBO Max (sports plan may be needed)',
+    'NFL Game Pass': 'NFL Game Pass · DAZN',
+    'NHL.TV': 'NHL.TV · DAZN'
+  };
+  const WATCH_PAGES = {
+    'Apple TV': 'https://tv.apple.com/sports',
+    'NBA League Pass': 'https://www.nba.com/games',
+    'WNBA League Pass': 'https://www.wnba.com/schedule',
+    'MLB.TV': 'https://www.mlb.com/live-stream-games/',
+    'NFL Game Pass': 'https://www.dazn.com/en-GB/',
+    'NFL+': 'https://www.nfl.com/plus/',
+    'NFL Sunday Ticket': 'https://tv.youtube.com/',
+    'NHL.TV': 'https://www.dazn.com/en-GB/',
+    'ESPN+': 'https://www.espn.com/watch/',
+    'ESPN': 'https://www.espn.com/watch/',
+    'Paramount+': 'https://www.paramountplus.com/sports/',
+    'Peacock': 'https://www.peacocktv.com/sports',
+    'Prime Video': 'https://www.amazon.com/gp/video/storefront/',
+    'Disney+': 'https://www.disneyplus.com/',
+    'DAZN': 'https://www.dazn.com/',
+    'HBO Max': 'https://www.hbomax.com/',
+    'TNT Sports': 'https://www.tntsports.co.uk/',
+    'Sky Sports': 'https://www.skysports.com/watch',
+    'NOW': 'https://www.nowtv.com/watch-sky-sports-online',
+    'BBC iPlayer': 'https://www.bbc.co.uk/iplayer',
+    'ITVX': 'https://www.itv.com/watch',
+    'Channel 4': 'https://www.channel4.com/',
+    'Channel 5': 'https://www.channel5.com/',
+    'Netflix': 'https://www.netflix.com/',
+    'YouTube': 'https://www.youtube.com/',
+    'YouTube TV': 'https://tv.youtube.com/',
+    'FOX One': 'https://www.fox.com/sports/',
+    'Hulu + Live TV': 'https://www.hulu.com/live-tv',
+    'Fubo': 'https://www.fubo.tv/',
+    'Fandango': 'https://www.fandango.com/'
+  };
+
+  const $ = id => document.getElementById(id);
+  const allLeagues = () => Object.values(CATALOG).flat();
+  const defaults = () => ({
+    country: 'UK', sports: Object.keys(CATALOG), leagues: allLeagues(),
+    services: [], includeConditional: false
+  });
+  let prefs = defaults();
+  let items = [], updatedAt = '', loaded = false, loadError = '';
+  let filter = 'all';
+
+  function restore() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY) ||
+        LEGACY_KEYS.map(key => localStorage.getItem(key)).find(Boolean);
+      if (!raw) return;
+      const saved = JSON.parse(raw);
+      if (!saved || !['UK', 'US'].includes(saved.country)) return;
+      prefs.country = saved.country;
+      if (Array.isArray(saved.sports)) {
+        prefs.sports = saved.sports.map(s => s === 'Football (soccer)' ? 'Football' : s)
+          .filter(s => Object.hasOwn(CATALOG, s));
+      }
+      if (Array.isArray(saved.leagues)) {
+        prefs.leagues = saved.leagues.filter(x => allLeagues().includes(x));
+      }
+      if (Array.isArray(saved.services)) {
+        // Preserve any newly added/legacy service; data may contain it later.
+        prefs.services = [...new Set(saved.services.filter(s => typeof s === 'string'))];
+      }
+      prefs.includeConditional = saved.includeConditional === true;
+    } catch (error) {
+      console.warn('Could not restore preferences:', error);
+    }
+  }
+  function persist() {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs)); return true; }
+    catch { return false; }
+  }
+  function toggle(array, name) {
+    return array.includes(name) ? array.filter(x => x !== name) : [...array, name];
+  }
+  function makeButtons(containerId, options, selected, callback) {
+    const container = $(containerId);
+    container.replaceChildren();
+    for (const name of options) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'choice';
+      button.textContent = DISPLAY_NAMES[name] || name;
+      button.setAttribute('aria-pressed', String(selected.includes(name)));
+      button.addEventListener('click', () => callback(name));
+      container.append(button);
+    }
+  }
+  function availableServices() {
+    const names = new Set(SERVICE_OPTIONS[prefs.country]);
+    for (const game of items) {
+      for (const entry of [...(Array.isArray(game.broadcasts) ? game.broadcasts : []),
+                           ...(Array.isArray(game.broadcastLeads) ? game.broadcastLeads : [])]) {
+        if (entry && entry.country === prefs.country && typeof entry.service === 'string') {
+          names.add(entry.service);
+        }
+      }
+    }
+    for (const name of prefs.services) names.add(name);
+    return [...names];
+  }
+  function setFilter(next) {
+    filter = next;
+    for (const button of $('filters').querySelectorAll('button')) {
+      const selected = button.dataset.filter === next;
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-pressed', String(selected));
+    }
+    renderCalendar();
+  }
+  function renderControls() {
+    makeButtons('countries', ['UK', 'US'], [prefs.country], name => {
+      if (name === prefs.country) return;
+      prefs.country = name;
+      prefs.services = []; // UK and US subscriptions are separate markets.
+      persist();
+      setFilter('all');
+      renderControls();
+    });
+    makeButtons('sports', Object.keys(CATALOG), prefs.sports, name => {
+      prefs.sports = toggle(prefs.sports, name);
+      persist(); renderControls(); renderCalendar();
+    });
+    makeButtons('leagues', [...new Set(prefs.sports.flatMap(s => CATALOG[s] || []))],
+      prefs.leagues, name => {
+        prefs.leagues = toggle(prefs.leagues, name);
+        persist(); renderControls(); renderCalendar();
+      });
+    makeButtons('services', availableServices(), prefs.services, name => {
+      prefs.services = toggle(prefs.services, name);
+      persist();
+      // CRITICAL: choosing any service immediately removes unrelated games.
+      setFilter(prefs.services.length ? 'mine' : 'all');
+      renderControls();
+    });
+    $('service-count').textContent = `${prefs.services.length} selected`;
+    const note = $('selection-note');
+    if (prefs.services.length) {
+      note.textContent = `Filtering to ${prefs.services.map(x => DISPLAY_NAMES[x] || x).join(', ')}. Games on unrelated services are hidden. Unconfirmed general rights are excluded unless you enable them below.`;
+    } else {
+      note.textContent = 'Choose a subscription above to see matching games. Without a selection, you can browse all fixtures.';
+    }
+  }
+
+  function getZone() {
+    const chosen = $('timezone').value;
+    return chosen === 'auto' ? (prefs.country === 'UK' ? 'Europe/London' : 'America/New_York') : chosen;
+  }
+  function dateKey(date) {
+    const parts = new Intl.DateTimeFormat('en-GB', {
+      timeZone: getZone(), year: 'numeric', month: '2-digit', day: '2-digit'
+    }).formatToParts(date);
+    const get = type => parts.find(p => p.type === type)?.value || '';
+    return `${get('year')}-${get('month')}-${get('day')}`;
+  }
+  function dayLabel(date) {
+    return new Intl.DateTimeFormat(prefs.country === 'UK' ? 'en-GB' : 'en-US', {
+      timeZone: getZone(), weekday: 'long', month: 'long', day: 'numeric'
+    }).format(date);
+  }
+  function timeLabel(date) {
+    return new Intl.DateTimeFormat('en-GB', {
+      timeZone: getZone(), hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+    }).format(date);
+  }
+  function entriesForCountry(game) {
+    const confirmed = Array.isArray(game.broadcasts) ? game.broadcasts : [];
+    const possible = Array.isArray(game.broadcastLeads) ? game.broadcastLeads : [];
+    const result = new Map();
+    for (const entry of [...possible, ...confirmed]) {
+      if (!entry || entry.country !== prefs.country || typeof entry.service !== 'string') continue;
+      const prior = result.get(entry.service);
+      // A verified entry supersedes an unverified lead from the same service.
+      if (!prior || (entry.verified === true && prior.verified !== true)) {
+        result.set(entry.service, entry);
+      }
+    }
+    return [...result.values()];
+  }
+  function isEventSpecific(entry) {
+    return entry.verified === true || [
+      'matched-tv-listing', 'event-schedule', 'network-simulcast'
+    ].includes(entry.basis);
+  }
+  function eligibleEntries(game, confirmedOnly = false) {
+    if (prefs.services.length === 0) return [];
+    return entriesForCountry(game).filter(entry =>
+      prefs.services.includes(entry.service) &&
+      (confirmedOnly ? entry.verified === true :
+        (isEventSpecific(entry) || prefs.includeConditional))
+    );
+  }
+  function displayEntries(game) {
+    const entries = entriesForCountry(game);
+    if (prefs.services.length === 0) return filter === 'all' ? entries : [];
+    // Even in All fixtures mode, don't show labels for services not selected.
+    return entries.filter(entry => prefs.services.includes(entry.service))
+      .filter(entry => filter !== 'confirmed' || entry.verified === true)
+      .filter(entry => isEventSpecific(entry) || prefs.includeConditional);
+  }
+  function filteredGames() {
+    const now = Date.now(), end = now + 30 * 86400000;
+    const text = $('search').value.trim().toLocaleLowerCase();
+    return items.filter(game => {
+      if (!game || typeof game.start !== 'string') return false;
+      const start = Date.parse(game.start);
+      if (!Number.isFinite(start) || start < now || start >= end) return false;
+      if (!prefs.sports.includes(game.sport) || !prefs.leagues.includes(game.competition)) return false;
+      if (text && ![game.title, game.homeTeam, game.awayTeam, game.competition, game.sport]
+        .some(value => String(value || '').toLocaleLowerCase().includes(text))) return false;
+      if (filter === 'mine' && !eligibleEntries(game).length) return false;
+      if (filter === 'confirmed' && !eligibleEntries(game, true).length) return false;
+      return true;
+    }).sort((a, b) => a.start.localeCompare(b.start));
+  }
+  function addText(host, tag, value, className) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    node.textContent = value;
+    host.append(node);
+    return node;
+  }
+  function safeHttps(value) {
+    if (typeof value !== 'string') return '';
+    try { const url = new URL(value); return url.protocol === 'https:' ? url.href : ''; }
+    catch { return ''; }
+  }
+  function addLink(host, text, url) {
+    const safe = safeHttps(url);
+    if (!safe) return;
+    const link = document.createElement('a');
+    link.href = safe;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = text;
+    host.append(link);
+  }
+  function entryLabel(entry) {
+    if (entry.verified === true) {
+      return entry.basis === 'official-league-wide-coverage'
+        ? '✓ League coverage' : '✓ Confirmed source';
+    }
+    if (entry.basis === 'matched-tv-listing') return 'TV guide match';
+    if (entry.basis === 'event-schedule') return 'Game listing';
+    if (entry.basis === 'network-simulcast') return 'Network option';
+    if (entry.basis === 'blackout-dependent-coverage') return 'Blackout dependent';
+    return 'Rights possibility';
+  }
+  function renderEntry(host, entry) {
+    const tag = document.createElement('span');
+    const strongMatch = isEventSpecific(entry);
+    tag.className = 'tag ' + (entry.verified === true ? 'verified' : strongMatch ? 'scheduled' : 'conditional');
+    tag.textContent = `${entryLabel(entry)} · ${DISPLAY_NAMES[entry.service] || entry.service}`;
+    host.append(tag);
+  }
+  function renderGame(dayBox, game) {
+    const date = new Date(game.start);
+    const row = document.createElement('article');
+    row.className = 'game';
+    addText(row, 'div', timeLabel(date), 'time');
+    const main = document.createElement('div');
+    addText(main, 'div', game.title || 'Fixture', 'game-title');
+    addText(main, 'div', `${game.competition || ''} · ${game.sport || ''}`, 'meta');
+    const found = displayEntries(game);
+    if (found.length) {
+      const badges = document.createElement('div');
+      badges.className = 'tags';
+      for (const entry of found) renderEntry(badges, entry);
+      main.append(badges);
+      const links = document.createElement('div');
+      links.className = 'links';
+      // Links are only offered for service matches actually displayed here.
+      for (const entry of found) {
+        const watch = safeHttps(entry.watchUrl) || safeHttps(WATCH_PAGES[entry.service]);
+        if (watch) addLink(links, `Open ${entry.service}`, watch);
+        if (entry.sourceUrl) addLink(links, `Source · ${entry.service}`, entry.sourceUrl);
+      }
+      if (links.children.length) main.append(links);
+      // Notes are especially important for blackout rules and subscription add-ons.
+      for (const entry of found) {
+        if (entry.note && (entry.verified !== true || /blackout|add-on|restric|only/i.test(entry.note))) {
+          addText(main, 'div', `${entry.service}: ${entry.note}`, 'footnote');
+        }
+      }
+    } else {
+      addText(main, 'div', filter === 'all' && prefs.services.length === 0
+        ? 'Broadcaster not yet matched for this region'
+        : 'No listed coverage from your selected services', 'meta');
+    }
+    if (game.fixtureSource) {
+      const links = document.createElement('div');
+      links.className = 'links';
+      addLink(links, 'Fixture details', game.fixtureSource);
+      main.append(links);
+    }
+    row.append(main);
+    dayBox.append(row);
+  }
+  function renderCalendar() {
+    const calendar = $('calendar');
+    calendar.replaceChildren();
+    $('stats').replaceChildren();
+    if (!loaded) {
+      addText(calendar, 'div', 'Loading fixture data…', 'empty');
+      return;
+    }
+    if (loadError) {
+      addText(calendar, 'div', `Couldn't load sports-fixtures.json: ${loadError}. Run your GitHub Actions updater, then try Refresh fixtures.`, 'empty');
+      return;
+    }
+    if (filter !== 'all' && prefs.services.length === 0) {
+      addText(calendar, 'div', 'Select a streaming service above to see your matches.', 'empty');
+      return;
+    }
+    const visible = filteredGames();
+    const counted = visible.map(game => displayEntries(game));
+    const confirmed = counted.filter(entries => entries.some(e => e.verified === true)).length;
+    const listed = counted.filter(entries => entries.some(e => e.verified !== true && isEventSpecific(e))).length;
+    const allStats = [
+      `${visible.length} games`,
+      `${confirmed} with confirmed coverage`,
+      `${listed} with game/network listings`,
+      updatedAt ? `Data updated ${new Date(updatedAt).toLocaleString(prefs.country === 'UK' ? 'en-GB' : 'en-US', {timeZone:getZone()})}` : ''
+    ];
+    for (const text of allStats.filter(Boolean)) addText($('stats'), 'span', text);
+    if (!visible.length) {
+      const help = filter === 'confirmed'
+        ? 'No confirmed coverage was found for those services. This does not prove the games are unavailable.'
+        : filter === 'mine'
+          ? 'No event-specific or confirmed matches on your subscriptions in this period. Try the optional unconfirmed-rights toggle, select other services, or choose All fixtures.'
+          : 'No fixtures match your sport, league or search filters.';
+      addText(calendar, 'div', help, 'empty');
+      return;
+    }
+    let currentDay = '', box = null;
+    for (const game of visible) {
+      const date = new Date(game.start), key = dateKey(date);
+      if (key !== currentDay) {
+        currentDay = key;
+        box = document.createElement('section');
+        box.className = 'day';
+        const header = addText(box, 'div', dayLabel(date), 'dayhead');
+        addText(header, 'span', key, 'micro');
+        calendar.append(box);
+      }
+      renderGame(box, game);
+    }
+  }
+
+  async function loadFixtures() {
+    loaded = false;
+    loadError = '';
+    renderCalendar();
+    try {
+      const response = await fetch('./sports-fixtures.json?ts=' + Date.now(), {cache:'no-store'});
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      const data = await response.json();
+      if (!Array.isArray(data.items)) throw new Error('The fixture data has no items array');
+      items = data.items;
+      updatedAt = data.updatedAt || '';
+      loaded = true;
+      renderControls();
+      renderCalendar();
+    } catch (error) {
+      loaded = true;
+      items = [];
+      loadError = String(error && error.message || error);
+      renderCalendar();
+    }
+  }
+
+  restore();
+  filter = prefs.services.length ? 'mine' : 'all';
+  $('include-conditional').checked = prefs.includeConditional;
+  $('include-conditional').addEventListener('change', event => {
+    prefs.includeConditional = event.target.checked;
+    persist();
+    renderCalendar();
+  });
+  $('save').addEventListener('click', () => {
+    $('message').textContent = persist() ? 'Saved on this device.' : 'Browser storage is unavailable.';
+  });
+  $('clear-services').addEventListener('click', () => {
+    prefs.services = [];
+    persist();
+    setFilter('all');
+    renderControls();
+    $('message').textContent = 'Subscriptions cleared.';
+  });
+  $('reset').addEventListener('click', () => {
+    prefs = defaults();
+    $('include-conditional').checked = false;
+    $('search').value = '';
+    $('timezone').value = 'auto';
+    persist();
+    setFilter('all');
+    renderControls();
+    $('message').textContent = 'All preferences reset.';
+  });
+  $('filters').querySelectorAll('button').forEach(button => {
+    button.addEventListener('click', () => setFilter(button.dataset.filter));
+  });
+  $('timezone').addEventListener('change', renderCalendar);
+  $('search').addEventListener('input', renderCalendar);
+  $('reload').addEventListener('click', loadFixtures);
+  setFilter(filter);
+  renderControls();
+  loadFixtures();
 })();
-</script></body></html>
+</script>
+</body>
+</html>
