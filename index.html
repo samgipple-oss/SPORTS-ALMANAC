@@ -1,33 +1,516 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#84252f"><meta name="description" content="Your personalised UK and US sports TV guide">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#84252f">
+<meta name="description" content="Your personalised UK and US sports TV guide">
 <title>Sports Almanac — Your Sports, Your Schedule</title>
 <style>
-:root{color-scheme:dark;--bg:#171419;--panel:#292027;--line:#61434b;--text:#fff0e7;--muted:#c6b5b9;--accent:#b94c60}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 12% 0%,#592733 0%,#211a20 42%,var(--bg) 100%);color:var(--text);font:16px/1.5 system-ui,-apple-system,sans-serif;min-height:100vh}.shell{max-width:850px;margin:auto;padding:34px 20px 60px}.eyebrow{font-size:11px;letter-spacing:2px;color:#e2b8bb;font-weight:750}h1{font-family:Georgia,serif;font-size:clamp(35px,7vw,62px);line-height:1.05;margin:8px 0 10px;letter-spacing:-1.5px}h1 span{font-size:.58em}h2{font-size:22px;margin:0 0 6px}p{color:var(--muted)}.intro{max-width:620px;margin:0 0 26px}.panel{background:rgba(43,33,40,.94);border:1px solid var(--line);border-radius:17px;padding:23px;margin:16px 0;box-shadow:0 12px 30px #0002}.step{color:#e6b0b6;text-transform:uppercase;letter-spacing:1.5px;font-size:11px;font-weight:800}.choices{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}button{font:inherit;cursor:pointer}.choice{border:1px solid #7d5962;background:#352830;color:#f7e8e2;border-radius:999px;padding:9px 14px;min-height:42px}.choice[aria-pressed=true]{background:#9e3d50;border-color:#f4b5c0;color:white}.choice:focus-visible,.primary:focus-visible{outline:3px solid white;outline-offset:3px}.hint{font-size:13px;margin:8px 0 0}.actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:22px}.primary{background:#f3d6c5;color:#3a1d27;border:0;border-radius:10px;padding:13px 19px;font-weight:800}.secondary{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:10px;padding:12px 16px}.summary{border-left:3px solid #d98995;padding-left:16px}.summary strong{color:#fff}.empty{padding:25px;border:1px dashed #80545e;border-radius:12px;text-align:center;margin-top:16px}.empty strong{display:block;font-size:19px;color:#fff}.small{font-size:12px}.hidden{display:none!important}footer{font-size:12px;margin-top:35px;color:var(--muted)}@media(max-width:520px){.shell{padding:24px 14px 50px}.panel{padding:17px}.choice{padding:9px 12px}}
+:root {
+  color-scheme: dark;
+  --bg: #171419;
+  --panel: #292027;
+  --line: #61434b;
+  --text: #fff0e7;
+  --muted: #c6b5b9;
+  --accent: #b94c60;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at 12% 0%, #592733 0%, #211a20 42%, var(--bg) 100%);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+.shell { max-width: 850px; margin: auto; padding: 34px 20px 60px; }
+.eyebrow { font-size: 11px; letter-spacing: 2px; color: #e2b8bb; font-weight: 750; }
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(35px, 7vw, 62px);
+  line-height: 1.05;
+  margin: 8px 0 10px;
+  letter-spacing: -1.5px;
+}
+h1 span { font-size: .58em; }
+h2 { font-size: 22px; margin: 0 0 6px; }
+p { color: var(--muted); }
+.intro { max-width: 620px; margin: 0 0 26px; }
+.panel {
+  background: rgba(43, 33, 40, .94);
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  padding: 23px;
+  margin: 16px 0;
+  box-shadow: 0 12px 30px #0002;
+}
+.step {
+  color: #e6b0b6;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+  font-weight: 800;
+}
+.choices { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
+button { font: inherit; cursor: pointer; }
+.choice {
+  border: 1px solid #7d5962;
+  background: #352830;
+  color: #f7e8e2;
+  border-radius: 999px;
+  padding: 9px 14px;
+  min-height: 42px;
+}
+.choice[aria-pressed=true] {
+  background: #9e3d50;
+  border-color: #f4b5c0;
+  color: white;
+}
+.choice:focus-visible, .primary:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
+}
+.hint { font-size: 13px; margin: 8px 0 0; }
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.primary {
+  background: #f3d6c5;
+  color: #3a1d27;
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 19px;
+  font-weight: 800;
+}
+.secondary {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+.summary { border-left: 3px solid #d98995; padding-left: 16px; }
+.summary strong { color: #fff; }
+.empty {
+  padding: 25px;
+  border: 1px dashed #80545e;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 16px;
+}
+.small { font-size: 12px; }
+.hidden { display: none !important; }
+footer { font-size: 12px; margin-top: 35px; color: var(--muted); }
+.calendar-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  margin: 14px 0;
+}
+.calendar-toolbar select {
+  background: #352830;
+  color: #fff0e7;
+  border: 1px solid #80545e;
+  border-radius: 9px;
+  padding: 10px;
+}
+.calendar-day { margin: 22px 0; }
+.calendar-day h3 {
+  font-size: 16px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+.fixture {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #49353d;
+}
+.fixture-time { font-weight: 800; color: #efc6c9; }
+.fixture-title { font-weight: 750; }
+.fixture-meta { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.notice {
+  background: #3b2a32;
+  border: 1px solid #80545e;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 13px;
+  color: #f1d4d5;
+}
+.calendar-state { font-size: 13px; color: var(--muted); }
+@media(max-width:520px) {
+  .shell { padding: 24px 14px 50px; }
+  .panel { padding: 17px; }
+  .choice { padding: 9px 12px; }
+}
 </style>
 </head>
-<body><main class="shell">
-<div class="eyebrow">YOUR SPORTS · YOUR LOCATION · YOUR TIME</div><h1>SPORTS ALMANAC <span aria-hidden="true">⚾️</span></h1>
-<p class="intro">Your personal guide to the next 30 days of sport. Tell us what you watch, and we'll build your schedule around it.</p>
-<section class="panel" aria-labelledby="countryTitle"><div class="step">Step 01</div><h2 id="countryTitle">Where do you watch?</h2><p class="hint">This determines your local time zone and which broadcasters we'll match.</p><div class="choices" id="countries"></div></section>
-<section class="panel" aria-labelledby="sportsTitle"><div class="step">Step 02</div><h2 id="sportsTitle">Which sports do you follow?</h2><p class="hint">Choose as many as you like.</p><div class="choices" id="sports"></div></section>
-<section class="panel" aria-labelledby="servicesTitle"><div class="step">Step 03</div><h2 id="servicesTitle">What can you watch on?</h2><p class="hint">Select your subscriptions. Free-to-air options will be included automatically when listings are available.</p><div class="choices" id="services"></div></section>
-<section class="panel" aria-labelledby="summaryTitle"><div class="step">Your setup</div><h2 id="summaryTitle">Your Almanac</h2><div class="summary" id="summary" aria-live="polite"></div><div class="actions"><button class="primary" id="save">Save my preferences</button><button class="secondary" id="reset">Reset</button></div><p class="hint" id="message" role="status"></p></section>
-<section class="panel" aria-labelledby="calendarTitle"><div class="step">Coming next</div><h2 id="calendarTitle">Your next 30 days</h2><div class="empty"><strong>The fixture calendar is next.</strong><p>We haven't connected live fixtures or UK/US broadcast listings yet. Once connected, this will show games matched to your selections — without inventing TV availability.</p></div></section>
-<footer>Sports Almanac beta · Preferences are stored only in this browser. No account required. Broadcaster availability can vary by region and blackout restrictions.</footer>
+<body>
+<main class="shell">
+  <div class="eyebrow">YOUR SPORTS · YOUR LOCATION · YOUR TIME</div>
+  <h1>SPORTS ALMANAC <span aria-hidden="true">⚾️</span></h1>
+  <p class="intro">Your personal guide to the next 30 days of sport. Tell us what you watch, and we'll build your schedule around it.</p>
+
+  <section class="panel">
+    <div class="step">Step 01</div>
+    <h2>Where do you watch?</h2>
+    <p class="hint">This determines your local time zone and which broadcasters we'll match.</p>
+    <div class="choices" id="countries"></div>
+  </section>
+
+  <section class="panel">
+    <div class="step">Step 02</div>
+    <h2>Which sports do you follow?</h2>
+    <p class="hint">Choose as many as you like.</p>
+    <div class="choices" id="sports"></div>
+  </section>
+
+  <section class="panel">
+    <div class="step">Step 03</div>
+    <h2>What can you watch on?</h2>
+    <p class="hint">Select your subscriptions. Free-to-air options will be included automatically when listings are available.</p>
+    <div class="choices" id="services"></div>
+  </section>
+
+  <section class="panel">
+    <div class="step">Your setup</div>
+    <h2>Your Almanac</h2>
+    <div class="summary" id="summary" aria-live="polite"></div>
+    <div class="actions">
+      <button class="primary" id="save">Save my preferences</button>
+      <button class="secondary" id="reset">Reset</button>
+    </div>
+    <p class="hint" id="message" role="status"></p>
+  </section>
+
+  <section class="panel">
+    <div class="step">Live fixture preview</div>
+    <h2>Your next 30 days</h2>
+    <p class="hint">Fixtures from the original Sports Almanac. Broadcaster information is still being developed for UK and US users.</p>
+    <div class="calendar-toolbar">
+      <label for="tz">Times:</label>
+      <select id="tz">
+        <option value="Europe/London">UK · London</option>
+        <option value="America/New_York">US · Eastern</option>
+        <option value="America/Chicago">US · Central</option>
+        <option value="America/Denver">US · Mountain</option>
+        <option value="America/Los_Angeles">US · Pacific</option>
+      </select>
+      <label for="view">Show:</label>
+      <select id="view">
+        <option value="all">All selected sports</option>
+        <option value="mine">Confirmed on my services</option>
+      </select>
+      <button class="secondary" id="reload" type="button">Refresh games</button>
+    </div>
+    <div class="notice">Broadcast listings are not yet verified for both countries. A listed fixture does not guarantee you can stream it.</div>
+    <p class="calendar-state" id="fixtureStatus" role="status">Loading fixtures…</p>
+    <div id="calendar"></div>
+  </section>
+
+  <footer>Sports Almanac beta · Preferences are stored only in this browser. No account required. Broadcaster availability can vary by region and blackout restrictions.</footer>
 </main>
+
 <script>
-(()=>{'use strict';
-const KEY='sports-almanac-v2-preferences';
-const sports=['Football (soccer)','Basketball','Baseball','American football','Ice hockey','Tennis','Formula 1','Cricket','Rugby','Golf','Motorsport'];
-const services={UK:['Prime Video','Sky Sports','NOW','TNT Sports','discovery+','Apple TV','Disney+','DAZN','NBA League Pass','MLB.TV','NFL Game Pass','BBC iPlayer','ITVX','Channel 4','Channel 5'],US:['Prime Video','ESPN','ESPN Unlimited','ESPN+','Peacock','Paramount+','Apple TV','Netflix','YouTube TV','Hulu + Live TV','Fubo','NBA League Pass','MLB.TV','NFL Sunday Ticket','FOX Sports','CBS Sports']};
-let prefs={country:'UK',sports:['Football (soccer)','Basketball','Baseball'],services:[]};
-try{const stored=JSON.parse(localStorage.getItem(KEY));if(stored&&['UK','US'].includes(stored.country)&&Array.isArray(stored.sports)&&Array.isArray(stored.services)){prefs={country:stored.country,sports:stored.sports.filter(x=>sports.includes(x)),services:stored.services.filter(x=>services[stored.country].includes(x))}}}catch{}
-function choices(id,options,selected,multiple,callback){const host=document.getElementById(id);host.replaceChildren();options.forEach(option=>{const b=document.createElement('button');b.type='button';b.className='choice';b.textContent=option;b.setAttribute('aria-pressed',String(multiple?selected.includes(option):selected===option));b.addEventListener('click',()=>callback(option));host.append(b)})}
-function render(){choices('countries',['UK','US'],prefs.country,false,c=>{if(prefs.country!==c){prefs.country=c;prefs.services=[]}render()});choices('sports',sports,prefs.sports,true,s=>{prefs.sports=prefs.sports.includes(s)?prefs.sports.filter(x=>x!==s):[...prefs.sports,s];render()});choices('services',services[prefs.country],prefs.services,true,s=>{prefs.services=prefs.services.includes(s)?prefs.services.filter(x=>x!==s):[...prefs.services,s];render()});document.getElementById('summary').innerHTML='';const summary=document.getElementById('summary');const lines=[['Country',prefs.country==='UK'?'United Kingdom':'United States'],['Sports',prefs.sports.join(', ')||'None selected'],['Services',prefs.services.join(', ')||'None selected']];lines.forEach(([label,value])=>{const p=document.createElement('p');const strong=document.createElement('strong');strong.textContent=label+': ';p.append(strong,document.createTextNode(value));summary.append(p)})}
-document.getElementById('save').addEventListener('click',()=>{try{localStorage.setItem(KEY,JSON.stringify(prefs));document.getElementById('message').textContent='Saved! Your choices will be here next time you visit.'}catch{document.getElementById('message').textContent='Could not save preferences in this browser.'}});
-document.getElementById('reset').addEventListener('click',()=>{prefs={country:'UK',sports:[],services:[]};try{localStorage.removeItem(KEY)}catch{}render();document.getElementById('message').textContent='Preferences reset.'});render();
+(() => {
+  'use strict';
+
+  const KEY = 'sports-almanac-v2-preferences';
+  const TZKEY = 'sports-almanac-v2-timezone';
+  const feed = 'https://raw.githubusercontent.com/samgipple-oss/Sam-Sports-Watchlist/main/live-fixtures.json';
+
+  let fixtures = [];
+
+  const sports = [
+    'Football (soccer)', 'Basketball', 'Baseball',
+    'American football', 'Ice hockey', 'Tennis',
+    'Formula 1', 'Cricket', 'Rugby', 'Golf', 'Motorsport'
+  ];
+
+  const services = {
+    UK: [
+      'Prime Video', 'Sky Sports', 'NOW', 'TNT Sports',
+      'discovery+', 'Apple TV', 'Disney+', 'DAZN',
+      'NBA League Pass', 'MLB.TV', 'NFL Game Pass',
+      'BBC iPlayer', 'ITVX', 'Channel 4', 'Channel 5'
+    ],
+    US: [
+      'Prime Video', 'ESPN', 'ESPN Unlimited', 'ESPN+',
+      'Peacock', 'Paramount+', 'Apple TV', 'Netflix',
+      'YouTube TV', 'Hulu + Live TV', 'Fubo',
+      'NBA League Pass', 'MLB.TV', 'NFL Sunday Ticket',
+      'FOX Sports', 'CBS Sports'
+    ]
+  };
+
+  let prefs = {
+    country: 'UK',
+    sports: ['Football (soccer)', 'Basketball', 'Baseball'],
+    services: []
+  };
+
+  try {
+    const stored = JSON.parse(localStorage.getItem(KEY));
+    if (stored && ['UK', 'US'].includes(stored.country)
+        && Array.isArray(stored.sports)
+        && Array.isArray(stored.services)) {
+      prefs = {
+        country: stored.country,
+        sports: stored.sports.filter(x => sports.includes(x)),
+        services: stored.services.filter(x => services[stored.country].includes(x))
+      };
+    }
+  } catch {}
+
+  const tz = document.getElementById('tz');
+  const view = document.getElementById('view');
+  const zones = { UK: 'Europe/London', US: 'America/New_York' };
+
+  try {
+    const stored = localStorage.getItem(TZKEY);
+    if (stored && Array.from(tz.options).some(o => o.value === stored)) {
+      tz.value = stored;
+    } else {
+      tz.value = zones[prefs.country];
+    }
+  } catch {
+    tz.value = zones[prefs.country];
+  }
+
+  function choices(id, options, selected, multiple, callback) {
+    const host = document.getElementById(id);
+    host.replaceChildren();
+
+    options.forEach(option => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'choice';
+      b.textContent = option;
+      b.setAttribute('aria-pressed',
+        String(multiple ? selected.includes(option) : selected === option));
+      b.addEventListener('click', () => callback(option));
+      host.append(b);
+    });
+  }
+
+  function render() {
+    choices('countries', ['UK', 'US'], prefs.country, false, country => {
+      if (prefs.country !== country) {
+        prefs.country = country;
+        prefs.services = [];
+        tz.value = zones[country];
+        try { localStorage.setItem(TZKEY, tz.value); } catch {}
+      }
+      render();
+    });
+
+    choices('sports', sports, prefs.sports, true, sport => {
+      prefs.sports = prefs.sports.includes(sport)
+        ? prefs.sports.filter(x => x !== sport)
+        : [...prefs.sports, sport];
+      render();
+    });
+
+    choices('services', services[prefs.country], prefs.services, true, service => {
+      prefs.services = prefs.services.includes(service)
+        ? prefs.services.filter(x => x !== service)
+        : [...prefs.services, service];
+      render();
+    });
+
+    const summary = document.getElementById('summary');
+    summary.replaceChildren();
+
+    [
+      ['Country', prefs.country === 'UK' ? 'United Kingdom' : 'United States'],
+      ['Sports', prefs.sports.join(', ') || 'None selected'],
+      ['Services', prefs.services.join(', ') || 'None selected']
+    ].forEach(([label, value]) => {
+      const p = document.createElement('p');
+      const strong = document.createElement('strong');
+      strong.textContent = label + ': ';
+      p.append(strong, document.createTextNode(value));
+      summary.append(p);
+    });
+
+    drawCalendar();
+  }
+
+  function mappedSport(s) {
+    return ({
+      'Football': 'Football (soccer)',
+      'MLS': 'Football (soccer)',
+      'NBA': 'Basketball',
+      'MLB': 'Baseball',
+      'NFL': 'American football',
+      'NHL': 'Ice hockey',
+      'F1': 'Formula 1'
+    })[s] || s;
+  }
+
+  function fmt(date, options) {
+    return new Intl.DateTimeFormat('en-GB', {
+      timeZone: tz.value, ...options
+    }).format(date);
+  }
+
+  function serviceFor(f) {
+    if (!f.broadcastVerified || !f.service ||
+        f.service === 'Check broadcaster') return null;
+    return { 'League Pass': 'NBA League Pass' }[f.service] || f.service;
+  }
+
+  function drawCalendar() {
+    const host = document.getElementById('calendar');
+    const status = document.getElementById('fixtureStatus');
+    host.replaceChildren();
+
+    if (!fixtures.length) return;
+
+    const today = new Date();
+    const end = new Date(today.getTime() + 30 * 86400000);
+    const groups = new Map();
+    let count = 0;
+
+    for (const f of fixtures) {
+      if (!prefs.sports.includes(mappedSport(f.sport))) continue;
+      if (typeof f.date !== 'string' || typeof f.time !== 'string') continue;
+
+      const d = new Date(f.date + 'T' + f.time + ':00Z');
+      if (Number.isNaN(+d) || d < today || d >= end) continue;
+
+      const service = serviceFor(f);
+
+      // Original feed is UK-oriented. Do not verify US rights from it.
+      const eligible = prefs.country === 'UK'
+        && service && prefs.services.includes(service);
+
+      if (view.value === 'mine' && !eligible) continue;
+
+      const day = fmt(d, {
+        weekday: 'long', day: 'numeric',
+        month: 'long', year: 'numeric'
+      });
+
+      if (!groups.has(day)) groups.set(day, []);
+      groups.get(day).push({ f, d, service, eligible });
+      count++;
+    }
+
+    status.textContent = count + ' matching fixtures across '
+      + groups.size + ' days · Times shown in '
+      + tz.options[tz.selectedIndex].text;
+
+    if (!count) {
+      const empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.textContent = view.value === 'mine'
+        ? 'No confirmed matches on your subscriptions in this preview. Try “All selected sports”.'
+        : 'No upcoming fixtures match your selected sports in the current feed.';
+      host.append(empty);
+      return;
+    }
+
+    for (const [day, items] of groups) {
+      const section = document.createElement('div');
+      section.className = 'calendar-day';
+
+      const heading = document.createElement('h3');
+      heading.textContent = day;
+      section.append(heading);
+
+      for (const { f, d, service, eligible } of items) {
+        const row = document.createElement('div');
+        row.className = 'fixture';
+
+        const time = document.createElement('div');
+        time.className = 'fixture-time';
+        time.textContent = fmt(d, {
+          hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+        });
+
+        const detail = document.createElement('div');
+        const title = document.createElement('div');
+        title.className = 'fixture-title';
+        title.textContent = f.title || 'Fixture';
+
+        const meta = document.createElement('div');
+        meta.className = 'fixture-meta';
+
+        const broadcaster = eligible
+          ? 'On your selected service: ' + service
+          : prefs.country === 'US'
+            ? 'US broadcaster not verified'
+            : service
+              ? 'Listed service: ' + service + ' · check local rights'
+              : 'Broadcaster to be confirmed';
+
+        meta.textContent = [
+          f.competition || f.sport, broadcaster
+        ].join(' · ');
+
+        detail.append(title, meta);
+        row.append(time, detail);
+        section.append(row);
+      }
+
+      host.append(section);
+    }
+  }
+
+  async function loadFixtures() {
+    document.getElementById('fixtureStatus').textContent = 'Loading fixtures…';
+
+    try {
+      const response = await fetch(feed + '?t=' + Date.now(), {
+        cache: 'no-store'
+      });
+      if (!response.ok) throw Error('HTTP ' + response.status);
+
+      const data = await response.json();
+      if (!Array.isArray(data.items)) throw Error('Invalid fixture feed');
+
+      fixtures = data.items;
+      drawCalendar();
+    } catch (err) {
+      document.getElementById('fixtureStatus').textContent =
+        'Could not load fixtures. Please try Refresh games later.';
+      document.getElementById('calendar').replaceChildren();
+      console.error(err);
+    }
+  }
+
+  document.getElementById('save').addEventListener('click', () => {
+    try {
+      localStorage.setItem(KEY, JSON.stringify(prefs));
+      document.getElementById('message').textContent =
+        'Saved! Your choices will be here next time you visit.';
+    } catch {
+      document.getElementById('message').textContent =
+        'Could not save preferences in this browser.';
+    }
+  });
+
+  document.getElementById('reset').addEventListener('click', () => {
+    prefs = { country: 'UK', sports: [], services: [] };
+    try { localStorage.removeItem(KEY); } catch {}
+    render();
+    document.getElementById('message').textContent = 'Preferences reset.';
+  });
+
+  tz.addEventListener('change', () => {
+    try { localStorage.setItem(TZKEY, tz.value); } catch {}
+    drawCalendar();
+  });
+
+  view.addEventListener('change', drawCalendar);
+  document.getElementById('reload').addEventListener('click', loadFixtures);
+
+  render();
+  loadFixtures();
 })();
-</script></body></html>
+</script>
+</body>
+</html>
