@@ -1,27 +1,19 @@
 
 {
-  "BBCOne.uk": {
+  "BBCOneLondon.uk": {
     "country": "UK",
     "service": "BBC iPlayer"
   },
-  "BBCTwo.uk": {
-    "country": "UK",
-    "service": "BBC iPlayer"
-  },
-  "ITV1.uk": {
-    "country": "UK",
-    "service": "ITVX"
-  },
-  "ITV2.uk": {
-    "country": "UK",
-    "service": "ITVX"
-  },
-  "Channel4.uk": {
-    "country": "UK",
-    "service": "Channel 4"
-  },
-  "Channel5.uk": {
+  "5.uk": {
     "country": "UK",
     "service": "Channel 5"
+  },
+  "SkySportsMainEvent.uk": {
+    "country": "UK",
+    "service": "Sky Sports"
+  },
+  "SkySportsPremierLeague.uk": {
+    "country": "UK",
+    "service": "Sky Sports"
   }
 }
