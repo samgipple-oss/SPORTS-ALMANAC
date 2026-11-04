@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-04T20:46:35Z",
+  "updatedAt": "2026-11-04T20:51:26Z",
   "schemaVersion": 5,
-  "source": "ESPN fixtures; event-specific ESPN broadcast leads; optional XMLTV schedule matches; manually verified overrides",
+  "source": "ESPN fixtures; event-specific ESPN leads; optional XMLTV matches; manually verified overrides",
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 1,
+  "xmltvMatches": 12,
   "errors": [],
   "items": [
     {
@@ -33,7 +33,9 @@
           "verified": false,
           "basis": "matched-tv-listing",
           "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
-          "note": "Both teams matched an XMLTV programme near kickoff; review broadcaster access"
+          "programmeTitle": "Live NBA: 76ers @ Pistons",
+          "programmeStart": "2026-11-05T00:00:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -130,6 +132,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261104&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live NHL: Chicago at Florida",
+          "programmeStart": "2026-11-05T00:30:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -287,6 +299,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261104&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live NHL: Calgary at Seattle",
+          "programmeStart": "2026-11-05T03:00:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -366,6 +388,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live: Sparta Prague v Bournemouth",
+          "programmeStart": "2026-11-05T17:00:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -388,6 +420,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live UEL: AC Milan v Ferencvaros",
+          "programmeStart": "2026-11-05T17:45:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -454,6 +496,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live UEL:  Real Sociedad V Lyon",
+          "programmeStart": "2026-11-05T17:40:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -498,6 +550,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live UEL: Celtic v Besiktas",
+          "programmeStart": "2026-11-05T19:45:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -520,6 +582,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live UEL: Sunderland v Dinamo",
+          "programmeStart": "2026-11-05T19:45:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -586,6 +658,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live UEL: AZ Alkmaar v Juventus",
+          "programmeStart": "2026-11-05T19:45:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -806,6 +888,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261105&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live NHL: Philadelphia at NY Rangers",
+          "programmeStart": "2026-11-06T00:00:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -916,6 +1008,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261105&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live: NFL Jaguars @ Ravens",
+          "programmeStart": "2026-11-06T00:00:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
@@ -951,6 +1053,16 @@
           "basis": "event-schedule",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261105&limit=300",
           "note": "Listed for this game by ESPN; access and blackouts unverified"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "programmeTitle": "Live NHL: Nashville at Colorado",
+          "programmeStart": "2026-11-06T02:30:00Z",
+          "note": "Both teams matched an XMLTV programme near kickoff; broadcaster access still requires confirmation"
         }
       ]
     },
