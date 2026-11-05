@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T01:29:22Z",
+  "updatedAt": "2026-11-05T04:15:24Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 211,
+      "fixtures": 213,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 211,
-        "anyCoverageFixtures": 211,
+        "possibleFixtures": 213,
+        "anyCoverageFixtures": 213,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
@@ -165,8 +165,8 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 211,
-        "anyCoverageFixtures": 211,
+        "possibleFixtures": 213,
+        "anyCoverageFixtures": 213,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 172,
         "confirmedPct": 0.0,
@@ -280,8 +280,8 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 748,
-    "US": 711
+    "UK": 750,
+    "US": 713
   },
   "eventSpecificGamesByCountry": {
     "UK": 144,
@@ -291,26 +291,23 @@
   "nbaOfficialUSNationalBroadcastEntries": 16,
   "nbaOfficialSourceWarnings": [],
   "nhlBlackoutSourceWarning": null,
-  "successfulChecks": 478,
+  "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 3,
   "footballTVListingMatches": 139,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 355,
-  "officialRightsEntries": 2066,
+  "officialRightsEntries": 2072,
   "verifiedGamesByCountry": {
     "UK": 322,
     "US": 190
   },
   "possibleGamesByCountry": {
-    "UK": 509,
-    "US": 568
+    "UK": 511,
+    "US": 570
   },
-  "errors": [
-    "baseball/mlb 2026-11-07: <urlopen error _ssl.c:994: The handshake operation timed out>",
-    "soccer/uefa.europa 2026-12-01: <urlopen error _ssl.c:994: The handshake operation timed out>"
-  ],
+  "errors": [],
   "items": [
     {
       "id": "espn:soccer/uefa.europa:401915526",
@@ -36088,6 +36085,86 @@
       "homeTeam": "St. Louis Blues",
       "awayTeam": "Chicago Blackhawks",
       "start": "2026-12-05T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261204&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892857",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Buffalo Sabres at Vancouver Canucks",
+      "homeTeam": "Vancouver Canucks",
+      "awayTeam": "Buffalo Sabres",
+      "start": "2026-12-05T02:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261204&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892858",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Seattle Kraken at Anaheim Ducks",
+      "homeTeam": "Anaheim Ducks",
+      "awayTeam": "Seattle Kraken",
+      "start": "2026-12-05T03:00:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261204&limit=300",
       "broadcasts": [],
