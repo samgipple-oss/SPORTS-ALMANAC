@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T10:23:04Z",
+  "updatedAt": "2026-11-05T13:34:17Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -174,20 +174,20 @@
       }
     },
     "Premier League": {
-      "fixtures": 40,
+      "fixtures": 41,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 40,
-        "anyCoverageFixtures": 40,
+        "possibleFixtures": 41,
+        "anyCoverageFixtures": 41,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 31,
+        "eventSpecificFixtures": 32,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 40,
-        "anyCoverageFixtures": 40,
+        "possibleFixtures": 41,
+        "anyCoverageFixtures": 41,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 6,
         "confirmedPct": 0.0,
@@ -280,11 +280,11 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 752,
-    "US": 715
+    "UK": 753,
+    "US": 716
   },
   "eventSpecificGamesByCountry": {
-    "UK": 146,
+    "UK": 147,
     "US": 316
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -294,18 +294,18 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 5,
-  "footballTVListingMatches": 139,
+  "footballTVListingMatches": 141,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 355,
-  "officialRightsEntries": 2076,
+  "officialRightsEntries": 2083,
   "verifiedGamesByCountry": {
     "UK": 324,
     "US": 190
   },
   "possibleGamesByCountry": {
-    "UK": 511,
-    "US": 572
+    "UK": 512,
+    "US": 573
   },
   "errors": [],
   "items": [
@@ -36284,6 +36284,85 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401879213",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Liverpool at Chelsea",
+      "homeTeam": "Chelsea",
+      "awayTeam": "Liverpool",
+      "start": "2026-12-05T12:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261205&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "A selection of UK live fixtures; not every Premier League game is televised.",
+          "watchUrl": "https://www.skysports.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "Selected games live with a NOW Sports membership when shown on Sky Sports.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Chelsea v Liverpool",
+          "programmeStart": "2026-12-05T12:30:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.hbomax.com/",
+          "programmeTitle": "Chelsea v Liverpool",
+          "programmeStart": "2026-12-05T12:30:00Z"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
         }
       ]
     }
