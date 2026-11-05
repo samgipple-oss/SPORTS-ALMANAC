@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T07:39:50Z",
+  "updatedAt": "2026-11-05T10:23:04Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -159,7 +159,7 @@
         "possibleFixtures": 213,
         "anyCoverageFixtures": 213,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 2,
+        "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -284,7 +284,7 @@
     "US": 715
   },
   "eventSpecificGamesByCountry": {
-    "UK": 144,
+    "UK": 146,
     "US": 316
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -293,7 +293,7 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 3,
+  "xmltvMatches": 5,
   "footballTVListingMatches": 139,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
@@ -1998,9 +1998,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Columbus at Buffalo",
+          "programmeStart": "2026-11-07T00:00:00Z",
+          "xmltvChannel": "PremierSports2.uk"
         }
       ]
     },
@@ -2212,9 +2215,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: San Jose at Minnesota",
+          "programmeStart": "2026-11-07T01:00:00Z",
+          "xmltvChannel": "PremierSports1.uk"
         }
       ]
     },
