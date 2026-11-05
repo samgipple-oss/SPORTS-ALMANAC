@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-11-05T16:22:43Z",
+  "updatedAt": "2026-11-05T19:17:32Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
   "broadcastAuditVersion": 1,
   "coverageByCompetition": {
     "Bundesliga": {
-      "fixtures": 33,
+      "fixtures": 34,
       "UK": {
         "confirmedFixtures": 0,
         "possibleFixtures": 12,
         "anyCoverageFixtures": 12,
-        "uncoveredFixtures": 21,
+        "uncoveredFixtures": 22,
         "eventSpecificFixtures": 12,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 36.4
+        "anyCoveragePct": 35.3
       },
       "US": {
-        "confirmedFixtures": 33,
-        "possibleFixtures": 33,
-        "anyCoverageFixtures": 33,
+        "confirmedFixtures": 34,
+        "possibleFixtures": 34,
+        "anyCoverageFixtures": 34,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 8,
         "confirmedPct": 100.0,
@@ -48,22 +48,22 @@
       }
     },
     "Europa League": {
-      "fixtures": 35,
+      "fixtures": 27,
       "UK": {
-        "confirmedFixtures": 35,
-        "possibleFixtures": 35,
-        "anyCoverageFixtures": 35,
+        "confirmedFixtures": 27,
+        "possibleFixtures": 27,
+        "anyCoverageFixtures": 27,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 21,
+        "eventSpecificFixtures": 16,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 35,
-        "possibleFixtures": 2,
-        "anyCoverageFixtures": 35,
+        "confirmedFixtures": 27,
+        "possibleFixtures": 1,
+        "anyCoverageFixtures": 27,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 2,
+        "eventSpecificFixtures": 1,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       }
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 213,
+      "fixtures": 216,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 213,
-        "anyCoverageFixtures": 213,
+        "possibleFixtures": 216,
+        "anyCoverageFixtures": 216,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
@@ -165,8 +165,8 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 213,
-        "anyCoverageFixtures": 213,
+        "possibleFixtures": 216,
+        "anyCoverageFixtures": 216,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 172,
         "confirmedPct": 0.0,
@@ -174,20 +174,20 @@
       }
     },
     "Premier League": {
-      "fixtures": 45,
+      "fixtures": 46,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 45,
-        "anyCoverageFixtures": 45,
+        "possibleFixtures": 46,
+        "anyCoverageFixtures": 46,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 32,
+        "eventSpecificFixtures": 33,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 45,
-        "anyCoverageFixtures": 45,
+        "possibleFixtures": 46,
+        "anyCoverageFixtures": 46,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 6,
         "confirmedPct": 0.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 32,
+      "fixtures": 33,
       "UK": {
         "confirmedFixtures": 29,
-        "possibleFixtures": 32,
-        "anyCoverageFixtures": 32,
+        "possibleFixtures": 33,
+        "anyCoverageFixtures": 33,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 8,
-        "confirmedPct": 90.6,
+        "eventSpecificFixtures": 9,
+        "confirmedPct": 87.9,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 32,
+        "confirmedFixtures": 33,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 32,
+        "anyCoverageFixtures": 33,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 758,
-    "US": 727
+    "UK": 755,
+    "US": 725
   },
   "eventSpecificGamesByCountry": {
-    "UK": 147,
-    "US": 318
+    "UK": 144,
+    "US": 317
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 16,
@@ -294,402 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 5,
-  "footballTVListingMatches": 141,
+  "footballTVListingMatches": 138,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 361,
   "officialRightsEntries": 2134,
   "verifiedGamesByCountry": {
-    "UK": 325,
-    "US": 197
+    "UK": 317,
+    "US": 191
   },
   "possibleGamesByCountry": {
-    "UK": 517,
-    "US": 585
+    "UK": 514,
+    "US": 589
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.europa:401915526",
-      "sport": "Football",
-      "competition": "Europa League",
-      "title": "TSG Hoffenheim at Crystal Palace",
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "TSG Hoffenheim",
-      "start": "2026-11-05T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.tntsports.co.uk/",
-          "programmeTitle": "Crystal Palace v Hoffenheim",
-          "programmeStart": "2026-11-05T17:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.europa:401915527",
-      "sport": "Football",
-      "competition": "Europa League",
-      "title": "Viktoria Plzen at Lillestrom",
-      "homeTeam": "Lillestrom",
-      "awayTeam": "Viktoria Plzen",
-      "start": "2026-11-05T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Some Europa League matches are HBO Max-only; verify a linear TNT channel for this game.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.europa:401915528",
-      "sport": "Football",
-      "competition": "Europa League",
-      "title": "AFC Bournemouth at Sparta Prague",
-      "homeTeam": "Sparta Prague",
-      "awayTeam": "AFC Bournemouth",
-      "start": "2026-11-05T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.tntsports.co.uk/",
-          "programmeTitle": "Sparta Prague v AFC Bournemouth",
-          "programmeStart": "2026-11-05T17:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.europa:401915534",
-      "sport": "Football",
-      "competition": "Europa League",
-      "title": "Ferencvaros at AC Milan",
-      "homeTeam": "AC Milan",
-      "awayTeam": "Ferencvaros",
-      "start": "2026-11-05T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.tntsports.co.uk/",
-          "programmeTitle": "AC Milan v Ferencvaros",
-          "programmeStart": "2026-11-05T17:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.europa:401915535",
-      "sport": "Football",
-      "competition": "Europa League",
-      "title": "Omonia Nicosia at NEC Nijmegen",
-      "homeTeam": "NEC Nijmegen",
-      "awayTeam": "Omonia Nicosia",
-      "start": "2026-11-05T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Some Europa League matches are HBO Max-only; verify a linear TNT channel for this game.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.europa:401915536",
-      "sport": "Football",
-      "competition": "Europa League",
-      "title": "Jagiellonia Bialystok at Levski Sofia",
-      "homeTeam": "Levski Sofia",
-      "awayTeam": "Jagiellonia Bialystok",
-      "start": "2026-11-05T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Some Europa League matches are HBO Max-only; verify a linear TNT channel for this game.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.europa:401915537",
-      "sport": "Football",
-      "competition": "Europa League",
-      "title": "Lyon at Real Sociedad",
-      "homeTeam": "Real Sociedad",
-      "awayTeam": "Lyon",
-      "start": "2026-11-05T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS Sports Network",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.tntsports.co.uk/",
-          "programmeTitle": "Real Sociedad v Lyon",
-          "programmeStart": "2026-11-05T17:45:00Z"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.europa:401915538",
-      "sport": "Football",
-      "competition": "Europa League",
-      "title": "RB Salzburg at Anderlecht",
-      "homeTeam": "Anderlecht",
-      "awayTeam": "RB Salzburg",
-      "start": "2026-11-05T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261105&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.tntsports.co.uk/",
-          "programmeTitle": "Anderlecht v RB Salzburg",
-          "programmeStart": "2026-11-05T17:45:00Z"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/uefa.europa:401915522",
       "sport": "Football",
@@ -17286,6 +16905,14 @@
           "watchUrl": "https://www.espn.com/watch/"
         },
         {
+          "country": "US",
+          "service": "TNT",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -17301,6 +16928,33 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        },
+        {
+          "country": "US",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "NHL games on TNT/TBS can stream with the appropriate HBO Max sports access.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "YouTube TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://tv.youtube.com/"
+        },
+        {
+          "country": "US",
+          "service": "Hulu + Live TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.hulu.com/live-tv"
         }
       ]
     },
@@ -37057,6 +36711,309 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
           "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401875023",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Internazionale at Frosinone",
+      "homeTeam": "Frosinone",
+      "awayTeam": "Internazionale",
+      "start": "2026-12-05T17:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261205&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.dazn.com/en-GB/home",
+          "programmeTitle": "Frosinone v Inter Milan (joins match in progress)",
+          "programmeStart": "2026-12-05T17:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401878747",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Brighton & Hove Albion at Nottingham Forest",
+      "homeTeam": "Nottingham Forest",
+      "awayTeam": "Brighton & Hove Albion",
+      "start": "2026-12-05T17:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261205&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Nottingham Forest v Brighton & Hove Albion",
+          "programmeStart": "2026-12-05T17:30:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ger.1:401884714",
+      "sport": "Football",
+      "competition": "Bundesliga",
+      "title": "Werder Bremen at Eintracht Frankfurt",
+      "homeTeam": "Eintracht Frankfurt",
+      "awayTeam": "Werder Bremen",
+      "start": "2026-12-05T17:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261205&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
+          "watchUrl": "https://www.peacocktv.com/sports",
+          "language": "Spanish"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Fandango",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "Most Bundesliga matches stream free in English; some are instead on USA Network.",
+          "watchUrl": "https://www.fandango.com/",
+          "free": true,
+          "language": "English"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "At least 30 matches per season air on USA Network; check this fixture."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892859",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Detroit Red Wings at Boston Bruins",
+      "homeTeam": "Boston Bruins",
+      "awayTeam": "Detroit Red Wings",
+      "start": "2026-12-05T18:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892860",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Florida Panthers at Montreal Canadiens",
+      "homeTeam": "Montreal Canadiens",
+      "awayTeam": "Florida Panthers",
+      "start": "2026-12-05T18:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892861",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Columbus Blue Jackets at Nashville Predators",
+      "homeTeam": "Nashville Predators",
+      "awayTeam": "Columbus Blue Jackets",
+      "start": "2026-12-05T19:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
         }
       ]
     }
