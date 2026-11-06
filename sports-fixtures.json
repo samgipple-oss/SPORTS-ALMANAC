@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T10:20:47Z",
+  "updatedAt": "2026-11-06T13:28:18Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 34,
+      "fixtures": 35,
       "UK": {
-        "confirmedFixtures": 30,
-        "possibleFixtures": 34,
-        "anyCoverageFixtures": 34,
+        "confirmedFixtures": 31,
+        "possibleFixtures": 35,
+        "anyCoverageFixtures": 35,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 9,
-        "confirmedPct": 88.2,
+        "confirmedPct": 88.6,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 34,
+        "confirmedFixtures": 35,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 34,
+        "anyCoverageFixtures": 35,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -280,8 +280,8 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 743,
-    "US": 713
+    "UK": 744,
+    "US": 714
   },
   "eventSpecificGamesByCountry": {
     "UK": 138,
@@ -298,13 +298,13 @@
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 355,
-  "officialRightsEntries": 2118,
+  "officialRightsEntries": 2123,
   "verifiedGamesByCountry": {
-    "UK": 307,
-    "US": 183
+    "UK": 308,
+    "US": 184
   },
   "possibleGamesByCountry": {
-    "UK": 504,
+    "UK": 505,
     "US": 584
   },
   "errors": [],
@@ -36483,6 +36483,66 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401875017",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Torino at Genoa",
+      "homeTeam": "Genoa",
+      "awayTeam": "Torino",
+      "start": "2026-12-06T11:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261206&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
         }
       ]
     }
