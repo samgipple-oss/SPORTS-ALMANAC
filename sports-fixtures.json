@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T01:32:06Z",
+  "updatedAt": "2026-11-06T04:14:56Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 212,
+      "fixtures": 214,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 212,
-        "anyCoverageFixtures": 212,
+        "possibleFixtures": 214,
+        "anyCoverageFixtures": 214,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
@@ -165,8 +165,8 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 212,
-        "anyCoverageFixtures": 212,
+        "possibleFixtures": 214,
+        "anyCoverageFixtures": 214,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 161,
         "confirmedPct": 0.0,
@@ -280,8 +280,8 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 741,
-    "US": 711
+    "UK": 743,
+    "US": 713
   },
   "eventSpecificGamesByCountry": {
     "UK": 136,
@@ -298,14 +298,14 @@
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 355,
-  "officialRightsEntries": 2112,
+  "officialRightsEntries": 2118,
   "verifiedGamesByCountry": {
     "UK": 307,
     "US": 183
   },
   "possibleGamesByCountry": {
-    "UK": 502,
-    "US": 582
+    "UK": 504,
+    "US": 584
   },
   "errors": [],
   "items": [
@@ -36368,6 +36368,86 @@
       "homeTeam": "Minnesota Wild",
       "awayTeam": "Philadelphia Flyers",
       "start": "2026-12-06T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892869",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Utah Mammoth at Los Angeles Kings",
+      "homeTeam": "Los Angeles Kings",
+      "awayTeam": "Utah Mammoth",
+      "start": "2026-12-06T03:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892870",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Dallas Stars at Vancouver Canucks",
+      "homeTeam": "Vancouver Canucks",
+      "awayTeam": "Dallas Stars",
+      "start": "2026-12-06T03:00:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
       "broadcasts": [],
