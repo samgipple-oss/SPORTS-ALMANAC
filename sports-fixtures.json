@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T07:37:13Z",
+  "updatedAt": "2026-11-06T10:20:47Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -159,7 +159,7 @@
         "possibleFixtures": 214,
         "anyCoverageFixtures": 214,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 2,
+        "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -284,7 +284,7 @@
     "US": 713
   },
   "eventSpecificGamesByCountry": {
-    "UK": 136,
+    "UK": 138,
     "US": 303
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -293,7 +293,7 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 2,
+  "xmltvMatches": 4,
   "footballTVListingMatches": 133,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
@@ -2543,9 +2543,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: NY Rangers at Seattle",
+          "programmeStart": "2026-11-07T22:00:00Z",
+          "xmltvChannel": "PremierSports2.uk"
         }
       ]
     },
@@ -3141,9 +3144,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Tampa Bay at Minnesota",
+          "programmeStart": "2026-11-08T01:00:00Z",
+          "xmltvChannel": "PremierSports1.uk"
         }
       ]
     },
