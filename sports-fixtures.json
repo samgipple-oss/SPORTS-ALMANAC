@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T19:05:57Z",
+  "updatedAt": "2026-11-07T21:54:02Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -69,20 +69,20 @@
       }
     },
     "La Liga": {
-      "fixtures": 38,
+      "fixtures": 37,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 38,
-        "anyCoverageFixtures": 38,
+        "possibleFixtures": 37,
+        "anyCoverageFixtures": 37,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 16,
+        "eventSpecificFixtures": 15,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 38,
+        "confirmedFixtures": 37,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 38,
+        "anyCoverageFixtures": 37,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -90,20 +90,20 @@
       }
     },
     "MLS": {
-      "fixtures": 15,
+      "fixtures": 7,
       "UK": {
-        "confirmedFixtures": 15,
+        "confirmedFixtures": 7,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 15,
+        "anyCoverageFixtures": 7,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 15,
+        "confirmedFixtures": 7,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 15,
+        "anyCoverageFixtures": 7,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -201,7 +201,7 @@
         "possibleFixtures": 35,
         "anyCoverageFixtures": 35,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 9,
+        "eventSpecificFixtures": 8,
         "confirmedPct": 91.4,
         "anyCoveragePct": 100.0
       },
@@ -280,11 +280,11 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 754,
-    "US": 719
+    "UK": 745,
+    "US": 710
   },
   "eventSpecificGamesByCountry": {
-    "UK": 134,
+    "UK": 132,
     "US": 301
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -294,382 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 5,
-  "footballTVListingMatches": 127,
+  "footballTVListingMatches": 125,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 402,
-  "officialRightsEntries": 2148,
+  "officialRightsEntries": 2129,
   "verifiedGamesByCountry": {
-    "UK": 300,
-    "US": 188
+    "UK": 292,
+    "US": 179
   },
   "possibleGamesByCountry": {
-    "UK": 524,
+    "UK": 523,
     "US": 582
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/ita.1:401874803",
-      "sport": "Football",
-      "competition": "Serie A",
-      "title": "Sassuolo at AS Roma",
-      "homeTeam": "AS Roma",
-      "awayTeam": "Sassuolo",
-      "start": "2026-11-07T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "DAZN",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
-          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
-          "watchUrl": "https://www.dazn.com/en-GB/home"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
-          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer",
-          "programmeTitle": "Roma v Sassuolo",
-          "programmeStart": "2026-11-07T19:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882808",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Real Madrid at Valencia",
-      "homeTeam": "Valencia",
-      "awayTeam": "Real Madrid",
-      "start": "2026-11-07T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.disneyplus.com/",
-          "programmeTitle": "Valencia v Real Madrid",
-          "programmeStart": "2026-11-07T20:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/usa.1:761934",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Vancouver Whitecaps at CF Montréal",
-      "homeTeam": "CF Montréal",
-      "awayTeam": "Vancouver Whitecaps",
-      "start": "2026-11-07T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:761935",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Columbus Crew at Chicago Fire FC",
-      "homeTeam": "Chicago Fire FC",
-      "awayTeam": "Columbus Crew",
-      "start": "2026-11-07T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:761936",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "New York City FC at D.C. United",
-      "homeTeam": "D.C. United",
-      "awayTeam": "New York City FC",
-      "start": "2026-11-07T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:761937",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Nashville SC at FC Cincinnati",
-      "homeTeam": "FC Cincinnati",
-      "awayTeam": "Nashville SC",
-      "start": "2026-11-07T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:761938",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Charlotte FC at Inter Miami CF",
-      "homeTeam": "Inter Miami CF",
-      "awayTeam": "Charlotte FC",
-      "start": "2026-11-07T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:761939",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Atlanta United FC at Red Bull New York",
-      "homeTeam": "Red Bull New York",
-      "awayTeam": "Atlanta United FC",
-      "start": "2026-11-07T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:761940",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "New England Revolution at Orlando City SC",
-      "homeTeam": "Orlando City SC",
-      "awayTeam": "New England Revolution",
-      "start": "2026-11-07T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:761941",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Toronto FC at Philadelphia Union",
-      "homeTeam": "Philadelphia Union",
-      "awayTeam": "Toronto FC",
-      "start": "2026-11-07T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
     {
       "id": "espn:basketball/nba:401909938",
       "sport": "Basketball",
@@ -37238,6 +36877,66 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401875107",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Cagliari at Fiorentina",
+      "homeTeam": "Fiorentina",
+      "awayTeam": "Cagliari",
+      "start": "2026-12-07T19:45:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261207&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
         }
       ]
     }
