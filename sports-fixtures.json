@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T10:03:39Z",
+  "updatedAt": "2026-11-07T13:14:27Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -69,20 +69,20 @@
       }
     },
     "La Liga": {
-      "fixtures": 41,
+      "fixtures": 40,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 41,
-        "anyCoverageFixtures": 41,
+        "possibleFixtures": 40,
+        "anyCoverageFixtures": 40,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 19,
+        "eventSpecificFixtures": 18,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 41,
+        "confirmedFixtures": 40,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 41,
+        "anyCoverageFixtures": 40,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -174,20 +174,20 @@
       }
     },
     "Premier League": {
-      "fixtures": 49,
+      "fixtures": 48,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 49,
-        "anyCoverageFixtures": 49,
+        "possibleFixtures": 48,
+        "anyCoverageFixtures": 48,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 36,
+        "eventSpecificFixtures": 35,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 49,
-        "anyCoverageFixtures": 49,
+        "possibleFixtures": 48,
+        "anyCoverageFixtures": 48,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 6,
         "confirmedPct": 0.0,
@@ -237,22 +237,22 @@
       }
     },
     "WSL": {
-      "fixtures": 21,
+      "fixtures": 19,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 21,
-        "anyCoverageFixtures": 21,
+        "possibleFixtures": 19,
+        "anyCoverageFixtures": 19,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 21,
+        "eventSpecificFixtures": 19,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 21,
-        "anyCoverageFixtures": 21,
+        "possibleFixtures": 19,
+        "anyCoverageFixtures": 19,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 21,
+        "eventSpecificFixtures": 19,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 767,
-    "US": 736
+    "UK": 763,
+    "US": 732
   },
   "eventSpecificGamesByCountry": {
-    "UK": 143,
-    "US": 311
+    "UK": 139,
+    "US": 309
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 16,
@@ -294,267 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 5,
-  "footballTVListingMatches": 137,
+  "footballTVListingMatches": 132,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 406,
-  "officialRightsEntries": 2213,
+  "officialRightsEntries": 2195,
   "verifiedGamesByCountry": {
     "UK": 301,
-    "US": 198
+    "US": 197
   },
   "possibleGamesByCountry": {
-    "UK": 537,
-    "US": 594
+    "UK": 533,
+    "US": 591
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/eng.1:401878758",
-      "sport": "Football",
-      "competition": "Premier League",
-      "title": "Tottenham Hotspur at Leeds United",
-      "homeTeam": "Leeds United",
-      "awayTeam": "Tottenham Hotspur",
-      "start": "2026-11-07T12:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
-          "note": "A selection of UK live fixtures; not every Premier League game is televised.",
-          "watchUrl": "https://www.skysports.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
-          "note": "Selected games live with a NOW Sports membership when shown on Sky Sports.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.tntsports.co.uk/",
-          "programmeTitle": "Leeds United v Tottenham Hotspur",
-          "programmeStart": "2026-11-07T12:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.hbomax.com/",
-          "programmeTitle": "Leeds United v Tottenham Hotspur",
-          "programmeStart": "2026-11-07T12:30:00Z"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
-          "watchUrl": "https://www.peacocktv.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "USA Network",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected Premier League fixtures on USA Network."
-        },
-        {
-          "country": "US",
-          "service": "NBC",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected Premier League matches on NBC."
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902868",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "West Ham United at Manchester City",
-      "homeTeam": "Manchester City",
-      "awayTeam": "West Ham United",
-      "start": "2026-11-07T12:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261107&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Manchester City Women v West Ham United Women",
-          "programmeStart": "2026-11-07T12:45:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902869",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Everton at Chelsea",
-      "homeTeam": "Chelsea",
-      "awayTeam": "Everton",
-      "start": "2026-11-07T12:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261107&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Chelsea Women v Everton Women",
-          "programmeStart": "2026-11-07T12:45:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882812",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Racing Santander at Málaga",
-      "homeTeam": "Málaga",
-      "awayTeam": "Racing Santander",
-      "start": "2026-11-07T13:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "programmeTitle": "Málaga v Racing Santander",
-          "programmeStart": "2026-11-07T13:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/ita.1:401874791",
       "sport": "Football",
