@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-11-07T15:54:35Z",
+  "updatedAt": "2026-11-07T19:05:57Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
   "broadcastAuditVersion": 1,
   "coverageByCompetition": {
     "Bundesliga": {
-      "fixtures": 31,
+      "fixtures": 30,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 14,
-        "anyCoverageFixtures": 14,
+        "possibleFixtures": 13,
+        "anyCoverageFixtures": 13,
         "uncoveredFixtures": 17,
-        "eventSpecificFixtures": 14,
+        "eventSpecificFixtures": 13,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 45.2
+        "anyCoveragePct": 43.3
       },
       "US": {
-        "confirmedFixtures": 31,
-        "possibleFixtures": 31,
-        "anyCoverageFixtures": 31,
+        "confirmedFixtures": 30,
+        "possibleFixtures": 30,
+        "anyCoverageFixtures": 30,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 3,
         "confirmedPct": 100.0,
@@ -69,20 +69,20 @@
       }
     },
     "La Liga": {
-      "fixtures": 39,
+      "fixtures": 38,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 39,
-        "anyCoverageFixtures": 39,
+        "possibleFixtures": 38,
+        "anyCoverageFixtures": 38,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 17,
+        "eventSpecificFixtures": 16,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 39,
+        "confirmedFixtures": 38,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 39,
+        "anyCoverageFixtures": 38,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 217,
+      "fixtures": 216,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 217,
-        "anyCoverageFixtures": 217,
+        "possibleFixtures": 216,
+        "anyCoverageFixtures": 216,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 3,
         "confirmedPct": 0.0,
@@ -165,31 +165,31 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 217,
-        "anyCoverageFixtures": 217,
+        "possibleFixtures": 216,
+        "anyCoverageFixtures": 216,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 159,
+        "eventSpecificFixtures": 158,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
     },
     "Premier League": {
-      "fixtures": 46,
+      "fixtures": 45,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 46,
-        "anyCoverageFixtures": 46,
+        "possibleFixtures": 45,
+        "anyCoverageFixtures": 45,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 35,
+        "eventSpecificFixtures": 34,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 46,
-        "anyCoverageFixtures": 46,
+        "possibleFixtures": 45,
+        "anyCoverageFixtures": 45,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 4,
+        "eventSpecificFixtures": 3,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -197,12 +197,12 @@
     "Serie A": {
       "fixtures": 35,
       "UK": {
-        "confirmedFixtures": 31,
+        "confirmedFixtures": 32,
         "possibleFixtures": 35,
         "anyCoverageFixtures": 35,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 10,
-        "confirmedPct": 88.6,
+        "eventSpecificFixtures": 9,
+        "confirmedPct": 91.4,
         "anyCoveragePct": 100.0
       },
       "US": {
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 758,
-    "US": 723
+    "UK": 754,
+    "US": 719
   },
   "eventSpecificGamesByCountry": {
-    "UK": 138,
-    "US": 303
+    "UK": 134,
+    "US": 301
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 16,
@@ -294,374 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 5,
-  "footballTVListingMatches": 131,
+  "footballTVListingMatches": 127,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 406,
-  "officialRightsEntries": 2162,
+  "networkStreamingLeads": 402,
+  "officialRightsEntries": 2148,
   "verifiedGamesByCountry": {
-    "UK": 299,
-    "US": 190
+    "UK": 300,
+    "US": 188
   },
   "possibleGamesByCountry": {
-    "UK": 528,
-    "US": 585
+    "UK": 524,
+    "US": 582
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/ita.1:401874974",
-      "sport": "Football",
-      "competition": "Serie A",
-      "title": "Bologna at Parma",
-      "homeTeam": "Parma",
-      "awayTeam": "Bologna",
-      "start": "2026-11-07T17:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
-          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "DAZN",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.dazn.com/en-GB/home",
-          "programmeTitle": "Parma v Bologna (joins match in progress)",
-          "programmeStart": "2026-11-07T17:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:hockey/nhl:401892662",
-      "sport": "Ice hockey",
-      "competition": "NHL",
-      "title": "Florida Panthers at Washington Capitals",
-      "homeTeam": "Washington Capitals",
-      "awayTeam": "Florida Panthers",
-      "start": "2026-11-07T17:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261107&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "NHL.TV",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
-          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.1:401878757",
-      "sport": "Football",
-      "competition": "Premier League",
-      "title": "Manchester City at Nottingham Forest",
-      "homeTeam": "Nottingham Forest",
-      "awayTeam": "Manchester City",
-      "start": "2026-11-07T17:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBC",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Nottingham Forest v Manchester City",
-          "programmeStart": "2026-11-07T17:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
-          "note": "Selected live Premier League matches, not every fixture.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on required; selected TNT matches only.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Only select NBC simulcasts are on Peacock; check this game.",
-          "watchUrl": "https://www.peacocktv.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "USA Network",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected Premier League fixtures on USA Network."
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261107&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882811",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Athletic Club at Osasuna",
-      "homeTeam": "Osasuna",
-      "awayTeam": "Athletic Club",
-      "start": "2026-11-07T17:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "programmeTitle": "Osasuna v Athletic Bilbao",
-          "programmeStart": "2026-11-07T17:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/ger.1:401884743",
-      "sport": "Football",
-      "competition": "Bundesliga",
-      "title": "Werder Bremen at VfB Stuttgart",
-      "homeTeam": "VfB Stuttgart",
-      "awayTeam": "Werder Bremen",
-      "start": "2026-11-07T17:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
-          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
-          "watchUrl": "https://www.peacocktv.com/sports",
-          "language": "Spanish"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Fandango",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
-          "note": "Most Bundesliga matches stream free in English; some are instead on USA Network.",
-          "watchUrl": "https://www.fandango.com/",
-          "free": true,
-          "language": "English"
-        },
-        {
-          "country": "US",
-          "service": "USA Network",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
-          "note": "At least 30 matches per season air on USA Network; check this fixture."
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "VfB Stuttgart v Werder Bremen",
-          "programmeStart": "2026-11-07T17:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        }
-      ]
-    },
-    {
-      "id": "espn:hockey/nhl:401892663",
-      "sport": "Ice hockey",
-      "competition": "NHL",
-      "title": "St. Louis Blues at Nashville Predators",
-      "homeTeam": "Nashville Predators",
-      "awayTeam": "St. Louis Blues",
-      "start": "2026-11-07T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261107&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "NHL.TV",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
-          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
-        }
-      ]
-    },
     {
       "id": "espn:soccer/ita.1:401874803",
       "sport": "Football",
@@ -37491,6 +37138,106 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261206&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401875011",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Sassuolo at Venezia",
+      "homeTeam": "Venezia",
+      "awayTeam": "Sassuolo",
+      "start": "2026-12-07T17:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261207&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892877",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Colorado Avalanche at New York Islanders",
+      "homeTeam": "New York Islanders",
+      "awayTeam": "Colorado Avalanche",
+      "start": "2026-12-07T18:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261207&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
         }
       ]
     }
