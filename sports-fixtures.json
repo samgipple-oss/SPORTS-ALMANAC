@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T10:03:27Z",
+  "updatedAt": "2026-11-08T13:13:51Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -69,20 +69,41 @@
       }
     },
     "La Liga": {
-      "fixtures": 37,
+      "fixtures": 36,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 37,
-        "anyCoverageFixtures": 37,
+        "possibleFixtures": 36,
+        "anyCoverageFixtures": 36,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 15,
+        "eventSpecificFixtures": 14,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 37,
+        "confirmedFixtures": 36,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 37,
+        "anyCoverageFixtures": 36,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      }
+    },
+    "MLS": {
+      "fixtures": 2,
+      "UK": {
+        "confirmedFixtures": 2,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 2,
+        "uncoveredFixtures": 0,
+        "eventSpecificFixtures": 0,
+        "confirmedPct": 100.0,
+        "anyCoveragePct": 100.0
+      },
+      "US": {
+        "confirmedFixtures": 2,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 2,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -174,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 35,
+      "fixtures": 34,
       "UK": {
-        "confirmedFixtures": 32,
-        "possibleFixtures": 35,
-        "anyCoverageFixtures": 35,
+        "confirmedFixtures": 31,
+        "possibleFixtures": 34,
+        "anyCoverageFixtures": 34,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 8,
-        "confirmedPct": 91.4,
+        "confirmedPct": 91.2,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 35,
+        "confirmedFixtures": 34,
         "possibleFixtures": 1,
-        "anyCoverageFixtures": 35,
+        "anyCoverageFixtures": 34,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 1,
         "confirmedPct": 100.0,
@@ -216,22 +237,22 @@
       }
     },
     "WSL": {
-      "fixtures": 19,
+      "fixtures": 17,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 19,
-        "anyCoverageFixtures": 19,
+        "possibleFixtures": 17,
+        "anyCoverageFixtures": 17,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 19,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 19,
-        "anyCoverageFixtures": 19,
+        "possibleFixtures": 17,
+        "anyCoverageFixtures": 17,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 19,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -259,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 726,
-    "US": 691
+    "UK": 724,
+    "US": 689
   },
   "eventSpecificGamesByCountry": {
-    "UK": 134,
-    "US": 291
+    "UK": 131,
+    "US": 289
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 16,
@@ -273,284 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 8,
-  "footballTVListingMatches": 125,
+  "footballTVListingMatches": 121,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 399,
-  "officialRightsEntries": 2093,
+  "networkStreamingLeads": 396,
+  "officialRightsEntries": 2081,
   "verifiedGamesByCountry": {
-    "UK": 279,
+    "UK": 280,
     "US": 172
   },
   "possibleGamesByCountry": {
-    "UK": 518,
-    "US": 570
+    "UK": 514,
+    "US": 568
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/ita.1:401874810",
-      "sport": "Football",
-      "competition": "Serie A",
-      "title": "Lazio at Napoli",
-      "homeTeam": "Napoli",
-      "awayTeam": "Lazio",
-      "start": "2026-11-08T11:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261108&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "DAZN",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
-          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
-          "watchUrl": "https://www.dazn.com/en-GB/home"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
-          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902870",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Manchester United at Aston Villa",
-      "homeTeam": "Aston Villa",
-      "awayTeam": "Manchester United",
-      "start": "2026-11-08T12:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261108&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261108&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Aston Villa Women v Manchester United Women",
-          "programmeStart": "2026-11-08T12:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.youtube.com/",
-          "programmeTitle": "Aston Villa Women v Manchester United Women",
-          "programmeStart": "2026-11-08T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902871",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Arsenal at Liverpool",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Arsenal",
-      "start": "2026-11-08T12:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261108&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS Sports Network",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261108&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261108&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Liverpool Women v Arsenal Women",
-          "programmeStart": "2026-11-08T12:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261108&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261108&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261108&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882814",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Real Betis at Elche",
-      "homeTeam": "Elche",
-      "awayTeam": "Real Betis",
-      "start": "2026-11-08T13:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261108&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "programmeTitle": "Elche v Real Betis",
-          "programmeStart": "2026-11-08T13:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/eng.1:401878759",
       "sport": "Football",
@@ -13657,6 +13415,38 @@
       ]
     },
     {
+      "id": "espn:soccer/usa.1:401933535",
+      "sport": "Football",
+      "competition": "MLS",
+      "title": "FC Cincinnati at Orlando City SC",
+      "homeTeam": "Orlando City SC",
+      "awayTeam": "FC Cincinnati",
+      "start": "2026-11-20T00:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261119&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
       "id": "espn:basketball/nba:401910019",
       "sport": "Basketball",
       "competition": "NBA",
@@ -14063,6 +13853,38 @@
           "note": "Selected NHL games only; check the Premier Sports listings."
         }
       ]
+    },
+    {
+      "id": "espn:soccer/usa.1:401933555",
+      "sport": "Football",
+      "competition": "MLS",
+      "title": "Real Salt Lake at Seattle Sounders FC",
+      "homeTeam": "Seattle Sounders FC",
+      "awayTeam": "Real Salt Lake",
+      "start": "2026-11-20T03:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261119&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        }
+      ],
+      "broadcastLeads": []
     },
     {
       "id": "espn:soccer/ger.1:401884736",
