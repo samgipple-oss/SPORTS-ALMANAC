@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T04:12:40Z",
+  "updatedAt": "2026-11-08T07:25:45Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -90,11 +90,11 @@
       }
     },
     "NBA": {
-      "fixtures": 190,
+      "fixtures": 191,
       "UK": {
-        "confirmedFixtures": 190,
+        "confirmedFixtures": 191,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 190,
+        "anyCoverageFixtures": 191,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -102,8 +102,8 @@
       },
       "US": {
         "confirmedFixtures": 16,
-        "possibleFixtures": 190,
-        "anyCoverageFixtures": 190,
+        "possibleFixtures": 191,
+        "anyCoverageFixtures": 191,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 42,
         "confirmedPct": 8.4,
@@ -259,8 +259,8 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 725,
-    "US": 690
+    "UK": 726,
+    "US": 691
   },
   "eventSpecificGamesByCountry": {
     "UK": 130,
@@ -277,14 +277,14 @@
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 399,
-  "officialRightsEntries": 2091,
+  "officialRightsEntries": 2093,
   "verifiedGamesByCountry": {
-    "UK": 278,
+    "UK": 279,
     "US": 172
   },
   "possibleGamesByCountry": {
     "UK": 517,
-    "US": 569
+    "US": 570
   },
   "errors": [],
   "items": [
@@ -36181,6 +36181,39 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401909454",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "TBD at TBD",
+      "homeTeam": "TBD",
+      "awayTeam": "TBD",
+      "start": "2026-12-08T05:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261208&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
         }
       ]
     }
