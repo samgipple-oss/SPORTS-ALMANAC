@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T07:25:45Z",
+  "updatedAt": "2026-11-08T10:03:27Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -93,10 +93,10 @@
       "fixtures": 191,
       "UK": {
         "confirmedFixtures": 191,
-        "possibleFixtures": 0,
+        "possibleFixtures": 1,
         "anyCoverageFixtures": 191,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 0,
+        "eventSpecificFixtures": 1,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
@@ -117,7 +117,7 @@
         "possibleFixtures": 71,
         "anyCoverageFixtures": 71,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 4,
+        "eventSpecificFixtures": 7,
         "confirmedPct": 2.8,
         "anyCoveragePct": 100.0
       },
@@ -263,7 +263,7 @@
     "US": 691
   },
   "eventSpecificGamesByCountry": {
-    "UK": 130,
+    "UK": 134,
     "US": 291
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -272,7 +272,7 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 3,
+  "xmltvMatches": 8,
   "footballTVListingMatches": 125,
   "specificNFLFreeBroadcasts": 2,
   "footballTVListingSourceErrors": 0,
@@ -283,7 +283,7 @@
     "US": 172
   },
   "possibleGamesByCountry": {
-    "UK": 517,
+    "UK": 518,
     "US": 570
   },
   "errors": [],
@@ -1880,6 +1880,27 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261108&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live NFL Broncos @ Panthers",
+          "programmeStart": "2026-11-08T18:00:00Z",
+          "xmltvChannel": "SkySportsAction.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
@@ -1965,6 +1986,27 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261108&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live NFL Lions @ Dolphins",
+          "programmeStart": "2026-11-08T18:00:00Z",
+          "xmltvChannel": "SkySportsPlus.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
@@ -2853,6 +2895,27 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261108&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live NFL Packers @ Patriots",
+          "programmeStart": "2026-11-08T21:15:00Z",
+          "xmltvChannel": "SkySportsAction.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
@@ -3463,6 +3526,27 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live NBA: Wizards @ Pistons",
+          "programmeStart": "2026-11-09T23:30:00Z",
+          "xmltvChannel": "SkySportsPlus.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
@@ -3645,6 +3729,27 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261109&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live: NFL Bills @ Vikings",
+          "programmeStart": "2026-11-10T01:00:00Z",
+          "xmltvChannel": "SkySportsAction.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
