@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T19:16:51Z",
+  "updatedAt": "2026-11-09T22:02:22Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -27,20 +27,20 @@
       }
     },
     "Champions League": {
-      "fixtures": 29,
+      "fixtures": 36,
       "UK": {
-        "confirmedFixtures": 20,
+        "confirmedFixtures": 27,
         "possibleFixtures": 9,
-        "anyCoverageFixtures": 29,
+        "anyCoverageFixtures": 36,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 29,
-        "confirmedPct": 69.0,
+        "eventSpecificFixtures": 36,
+        "confirmedPct": 75.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 29,
+        "confirmedFixtures": 36,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 29,
+        "anyCoverageFixtures": 36,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -280,11 +280,11 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 726,
-    "US": 690
+    "UK": 733,
+    "US": 697
   },
   "eventSpecificGamesByCountry": {
-    "UK": 130,
+    "UK": 137,
     "US": 270
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -298,10 +298,10 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 363,
-  "officialRightsEntries": 2047,
+  "officialRightsEntries": 2068,
   "verifiedGamesByCountry": {
-    "UK": 293,
-    "US": 197
+    "UK": 300,
+    "US": 204
   },
   "possibleGamesByCountry": {
     "UK": 499,
@@ -35386,6 +35386,293 @@
           "watchUrl": "https://www.disneyplus.com/"
         }
       ]
+    },
+    {
+      "id": "espn:soccer/uefa.champions:401915281",
+      "sport": "Football",
+      "competition": "Champions League",
+      "title": "Fenerbahce at LASK Linz",
+      "homeTeam": "LASK Linz",
+      "awayTeam": "Fenerbahce",
+      "start": "2026-12-09T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261209&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
+          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": true,
+          "basis": "official-exclusive-remainder",
+          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
+          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-channel-simulcast",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
+      "id": "espn:soccer/uefa.champions:401915365",
+      "sport": "Football",
+      "competition": "Champions League",
+      "title": "Lille at VfB Stuttgart",
+      "homeTeam": "VfB Stuttgart",
+      "awayTeam": "Lille",
+      "start": "2026-12-09T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261209&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
+          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": true,
+          "basis": "official-exclusive-remainder",
+          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
+          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-channel-simulcast",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
+      "id": "espn:soccer/uefa.champions:401915366",
+      "sport": "Football",
+      "competition": "Champions League",
+      "title": "Atlético Madrid at PSV Eindhoven",
+      "homeTeam": "PSV Eindhoven",
+      "awayTeam": "Atlético Madrid",
+      "start": "2026-12-09T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261209&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
+          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": true,
+          "basis": "official-exclusive-remainder",
+          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
+          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-channel-simulcast",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
+      "id": "espn:soccer/uefa.champions:401915367",
+      "sport": "Football",
+      "competition": "Champions League",
+      "title": "Real Madrid at Arsenal",
+      "homeTeam": "Arsenal",
+      "awayTeam": "Real Madrid",
+      "start": "2026-12-09T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261209&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
+          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": true,
+          "basis": "official-exclusive-remainder",
+          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
+          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-channel-simulcast",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
+      "id": "espn:soccer/uefa.champions:401915368",
+      "sport": "Football",
+      "competition": "Champions League",
+      "title": "Internazionale at Borussia Dortmund",
+      "homeTeam": "Borussia Dortmund",
+      "awayTeam": "Internazionale",
+      "start": "2026-12-09T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261209&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
+          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": true,
+          "basis": "official-exclusive-remainder",
+          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
+          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-channel-simulcast",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
+      "id": "espn:soccer/uefa.champions:401915369",
+      "sport": "Football",
+      "competition": "Champions League",
+      "title": "FC Porto at Liverpool",
+      "homeTeam": "Liverpool",
+      "awayTeam": "FC Porto",
+      "start": "2026-12-09T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261209&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
+          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": true,
+          "basis": "official-exclusive-remainder",
+          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
+          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-channel-simulcast",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
+      "id": "espn:soccer/uefa.champions:401915370",
+      "sport": "Football",
+      "competition": "Champions League",
+      "title": "Bodo/Glimt at Lens",
+      "homeTeam": "Lens",
+      "awayTeam": "Bodo/Glimt",
+      "start": "2026-12-09T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261209&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
+          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": true,
+          "basis": "official-exclusive-remainder",
+          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
+          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-channel-simulcast",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": []
     }
   ]
 }
