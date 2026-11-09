@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T07:48:34Z",
+  "updatedAt": "2026-11-09T10:16:44Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -114,10 +114,10 @@
       "fixtures": 184,
       "UK": {
         "confirmedFixtures": 184,
-        "possibleFixtures": 1,
+        "possibleFixtures": 3,
         "anyCoverageFixtures": 184,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 1,
+        "eventSpecificFixtures": 3,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
@@ -284,7 +284,7 @@
     "US": 687
   },
   "eventSpecificGamesByCountry": {
-    "UK": 117,
+    "UK": 119,
     "US": 271
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -293,7 +293,7 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 2,
+  "xmltvMatches": 4,
   "footballTVListingMatches": 118,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
@@ -304,7 +304,7 @@
     "US": 194
   },
   "possibleGamesByCountry": {
-    "UK": 496,
+    "UK": 498,
     "US": 546
   },
   "errors": [],
@@ -1408,6 +1408,27 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261110&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live NBA: Celtics @ 76ers",
+          "programmeStart": "2026-11-11T00:00:00Z",
+          "xmltvChannel": "SkySportsPlus.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
@@ -1699,6 +1720,27 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261110&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live NBA: Thunder @ Trail Blazers",
+          "programmeStart": "2026-11-11T04:00:00Z",
+          "xmltvChannel": "SkySportsMainEvent.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
