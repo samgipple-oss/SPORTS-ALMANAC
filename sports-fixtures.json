@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T19:17:30Z",
+  "updatedAt": "2026-11-10T21:58:00Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -48,20 +48,20 @@
       }
     },
     "Europa League": {
-      "fixtures": 27,
+      "fixtures": 36,
       "UK": {
-        "confirmedFixtures": 27,
-        "possibleFixtures": 27,
-        "anyCoverageFixtures": 27,
+        "confirmedFixtures": 36,
+        "possibleFixtures": 36,
+        "anyCoverageFixtures": 36,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 17,
+        "eventSpecificFixtures": 26,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 27,
+        "confirmedFixtures": 36,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 27,
+        "anyCoverageFixtures": 36,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -258,34 +258,34 @@
       }
     },
     "Women’s Champions League": {
-      "fixtures": 16,
+      "fixtures": 13,
       "UK": {
-        "confirmedFixtures": 16,
-        "possibleFixtures": 16,
-        "anyCoverageFixtures": 16,
+        "confirmedFixtures": 13,
+        "possibleFixtures": 13,
+        "anyCoverageFixtures": 13,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 16,
-        "possibleFixtures": 3,
-        "anyCoverageFixtures": 16,
+        "confirmedFixtures": 13,
+        "possibleFixtures": 1,
+        "anyCoverageFixtures": 13,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 3,
+        "eventSpecificFixtures": 1,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       }
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 731,
-    "US": 695
+    "UK": 737,
+    "US": 701
   },
   "eventSpecificGamesByCountry": {
-    "UK": 144,
-    "US": 265
+    "UK": 153,
+    "US": 263
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 15,
@@ -294,165 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 2,
-  "footballTVListingMatches": 138,
+  "footballTVListingMatches": 147,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 362,
-  "officialRightsEntries": 2074,
+  "officialRightsEntries": 2092,
   "verifiedGamesByCountry": {
-    "UK": 299,
-    "US": 210
+    "UK": 305,
+    "US": 216
   },
   "possibleGamesByCountry": {
-    "UK": 504,
-    "US": 536
+    "UK": 510,
+    "US": 534
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.wchampions:401916987",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "Bayern Munich at Paris Saint-Germain",
-      "homeTeam": "Paris Saint-Germain",
-      "awayTeam": "Bayern Munich",
-      "start": "2026-11-10T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261110&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.wchampions:401916988",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "Manchester City at Internazionale",
-      "homeTeam": "Internazionale",
-      "awayTeam": "Manchester City",
-      "start": "2026-11-10T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261110&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261110&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.wchampions:401916989",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "Servette at Roma",
-      "homeTeam": "Roma",
-      "awayTeam": "Servette",
-      "start": "2026-11-10T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261110&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261110&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
     {
       "id": "espn:hockey/nhl:401892683",
       "sport": "Ice hockey",
@@ -35613,6 +35469,402 @@
           "watchUrl": "https://www.tntsports.co.uk/",
           "programmeTitle": "Anderlecht v Hoffenheim",
           "programmeStart": "2026-12-10T17:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.europa:401915485",
+      "sport": "Football",
+      "competition": "Europa League",
+      "title": "Union St.-Gilloise at Lyon",
+      "homeTeam": "Lyon",
+      "awayTeam": "Union St.-Gilloise",
+      "start": "2026-12-10T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261210&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Lyon v Union Saint-Gilloise",
+          "programmeStart": "2026-12-10T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.europa:401915486",
+      "sport": "Football",
+      "competition": "Europa League",
+      "title": "Ferencvaros at Lech Poznan",
+      "homeTeam": "Lech Poznan",
+      "awayTeam": "Ferencvaros",
+      "start": "2026-12-10T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261210&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Lech Poznan v Ferencvaros",
+          "programmeStart": "2026-12-10T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.europa:401915488",
+      "sport": "Football",
+      "competition": "Europa League",
+      "title": "Viktoria Plzen at AFC Bournemouth",
+      "homeTeam": "AFC Bournemouth",
+      "awayTeam": "Viktoria Plzen",
+      "start": "2026-12-10T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261210&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "AFC Bournemouth v Viktoria Plzen",
+          "programmeStart": "2026-12-10T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.europa:401915489",
+      "sport": "Football",
+      "competition": "Europa League",
+      "title": "Sparta Prague at RB Salzburg",
+      "homeTeam": "RB Salzburg",
+      "awayTeam": "Sparta Prague",
+      "start": "2026-12-10T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261210&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "RB Salzburg v Sparta Prague",
+          "programmeStart": "2026-12-10T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.europa:401915490",
+      "sport": "Football",
+      "competition": "Europa League",
+      "title": "Torreense at Real Sociedad",
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Torreense",
+      "start": "2026-12-10T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261210&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Real Sociedad v Torreense",
+          "programmeStart": "2026-12-10T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.europa:401915491",
+      "sport": "Football",
+      "competition": "Europa League",
+      "title": "OFI Crete at Benfica",
+      "homeTeam": "Benfica",
+      "awayTeam": "OFI Crete",
+      "start": "2026-12-10T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261210&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Benfica v OFI Crete",
+          "programmeStart": "2026-12-10T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.europa:401915492",
+      "sport": "Football",
+      "competition": "Europa League",
+      "title": "Besiktas at Bayer Leverkusen",
+      "homeTeam": "Bayer Leverkusen",
+      "awayTeam": "Besiktas",
+      "start": "2026-12-10T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261210&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Bayer Leverkusen v Besiktas",
+          "programmeStart": "2026-12-10T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.europa:401915493",
+      "sport": "Football",
+      "competition": "Europa League",
+      "title": "Sunderland at AC Milan",
+      "homeTeam": "AC Milan",
+      "awayTeam": "Sunderland",
+      "start": "2026-12-10T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261210&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "AC Milan v Sunderland",
+          "programmeStart": "2026-12-10T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.europa:401915510",
+      "sport": "Football",
+      "competition": "Europa League",
+      "title": "Lillestrom at Levski Sofia",
+      "homeTeam": "Levski Sofia",
+      "awayTeam": "Lillestrom",
+      "start": "2026-12-10T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261210&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Official US UEFA Europa League streaming rights in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "Every Europa League fixture streams through HBO Max with the sports entitlement.",
+          "watchUrl": "https://www.hbomax.com/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Levski Sofia v Lillestrom",
+          "programmeStart": "2026-12-10T20:00:00Z"
         }
       ]
     }
