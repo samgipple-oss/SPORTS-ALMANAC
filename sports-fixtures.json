@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T16:10:50Z",
+  "updatedAt": "2026-11-11T19:21:21Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -75,7 +75,7 @@
         "possibleFixtures": 33,
         "anyCoverageFixtures": 33,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 10,
+        "eventSpecificFixtures": 20,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -222,7 +222,7 @@
         "possibleFixtures": 52,
         "anyCoverageFixtures": 52,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 17,
+        "eventSpecificFixtures": 25,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -237,41 +237,41 @@
       }
     },
     "WSL": {
-      "fixtures": 14,
+      "fixtures": 16,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 14,
-        "anyCoverageFixtures": 14,
+        "possibleFixtures": 16,
+        "anyCoverageFixtures": 16,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 14,
+        "eventSpecificFixtures": 16,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 14,
-        "anyCoverageFixtures": 14,
+        "possibleFixtures": 16,
+        "anyCoverageFixtures": 16,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 14,
+        "eventSpecificFixtures": 16,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
     },
     "Women’s Champions League": {
-      "fixtures": 13,
+      "fixtures": 12,
       "UK": {
-        "confirmedFixtures": 13,
-        "possibleFixtures": 13,
-        "anyCoverageFixtures": 13,
+        "confirmedFixtures": 12,
+        "possibleFixtures": 12,
+        "anyCoverageFixtures": 12,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 13,
+        "confirmedFixtures": 12,
         "possibleFixtures": 1,
-        "anyCoverageFixtures": 13,
+        "anyCoverageFixtures": 12,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 1,
         "confirmedPct": 100.0,
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 737,
-    "US": 701
+    "UK": 738,
+    "US": 702
   },
   "eventSpecificGamesByCountry": {
-    "UK": 157,
-    "US": 258
+    "UK": 177,
+    "US": 260
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -294,63 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 6,
-  "footballTVListingMatches": 147,
+  "footballTVListingMatches": 167,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 357,
-  "officialRightsEntries": 2102,
+  "officialRightsEntries": 2107,
   "verifiedGamesByCountry": {
-    "UK": 300,
-    "US": 215
+    "UK": 299,
+    "US": 214
   },
   "possibleGamesByCountry": {
-    "UK": 514,
-    "US": 534
+    "UK": 515,
+    "US": 536
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.wchampions:401916985",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "HB Køge at OH Leuven",
-      "homeTeam": "OH Leuven",
-      "awayTeam": "HB Køge",
-      "start": "2026-11-11T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261111&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/uefa.wchampions:401916984",
       "sport": "Football",
@@ -5325,6 +5283,17 @@
           "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
           "note": "Selected national-team matches only; check an individual BBC listing.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "Prime Video PPV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
+          "watchUrl": "https://www.primevideo.com/",
+          "programmeTitle": "Belgium v Italy",
+          "programmeStart": "2026-11-15T19:45:00Z"
         }
       ]
     },
@@ -6408,6 +6377,17 @@
           "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
           "note": "Selected national-team matches only; check an individual BBC listing.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "Prime Video PPV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
+          "watchUrl": "https://www.primevideo.com/",
+          "programmeTitle": "Germany v Netherlands",
+          "programmeStart": "2026-11-16T19:45:00Z"
         }
       ]
     },
@@ -6506,6 +6486,17 @@
           "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
           "note": "Selected national-team matches only; check an individual BBC listing.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "Prime Video PPV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
+          "watchUrl": "https://www.primevideo.com/",
+          "programmeTitle": "Greece v Serbia",
+          "programmeStart": "2026-11-16T19:45:00Z"
         }
       ]
     },
@@ -7037,6 +7028,17 @@
           "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
           "note": "Selected national-team matches only; check an individual BBC listing.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "Prime Video PPV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
+          "watchUrl": "https://www.primevideo.com/",
+          "programmeTitle": "Ukraine v Georgia",
+          "programmeStart": "2026-11-17T19:45:00Z"
         }
       ]
     },
@@ -7103,6 +7105,17 @@
           "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
           "note": "Selected national-team matches only; check an individual BBC listing.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "Prime Video PPV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
+          "watchUrl": "https://www.primevideo.com/",
+          "programmeTitle": "Republic of Ireland v Kosovo",
+          "programmeStart": "2026-11-17T19:45:00Z"
         }
       ]
     },
@@ -7167,6 +7180,17 @@
           "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
           "note": "Selected national-team matches only; check an individual BBC listing.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "Prime Video PPV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
+          "watchUrl": "https://www.primevideo.com/",
+          "programmeTitle": "Denmark v Norway",
+          "programmeStart": "2026-11-17T19:45:00Z"
         }
       ]
     },
@@ -7199,6 +7223,17 @@
           "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
           "note": "Selected national-team matches only; check an individual BBC listing.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "Prime Video PPV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
+          "watchUrl": "https://www.primevideo.com/",
+          "programmeTitle": "Poland v Sweden",
+          "programmeStart": "2026-11-17T19:45:00Z"
         }
       ]
     },
@@ -7231,6 +7266,17 @@
           "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
           "note": "Selected national-team matches only; check an individual BBC listing.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "Prime Video PPV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
+          "watchUrl": "https://www.primevideo.com/",
+          "programmeTitle": "Bosnia-Herzegovina v Romania",
+          "programmeStart": "2026-11-17T19:45:00Z"
         }
       ]
     },
@@ -19733,9 +19779,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Levante v Racing Santander",
+          "programmeStart": "2026-11-27T20:00:00Z"
         },
         {
           "country": "UK",
@@ -20641,9 +20689,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Real Betis v Rayo Vallecano",
+          "programmeStart": "2026-11-28T13:00:00Z"
         },
         {
           "country": "UK",
@@ -21080,6 +21130,16 @@
           "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
           "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
           "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "UK",
+          "service": "LaLigaTV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Málaga v Athletic Bilbao",
+          "programmeStart": "2026-11-28T15:15:00Z"
         }
       ]
     },
@@ -21248,9 +21308,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Elche v Atlético Madrid",
+          "programmeStart": "2026-11-28T17:30:00Z"
         },
         {
           "country": "UK",
@@ -21485,10 +21547,12 @@
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.disneyplus.com/",
+          "programmeTitle": "Real Madrid v Alavés",
+          "programmeStart": "2026-11-28T20:00:00Z"
         }
       ]
     },
@@ -22505,9 +22569,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Valencia v Osasuna",
+          "programmeStart": "2026-11-29T13:00:00Z"
         },
         {
           "country": "UK",
@@ -22969,9 +23035,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Deportivo La Coruna v Barcelona",
+          "programmeStart": "2026-11-29T15:15:00Z"
         },
         {
           "country": "UK",
@@ -23202,9 +23270,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Celta Vigo v Villarreal",
+          "programmeStart": "2026-11-29T17:30:00Z"
         },
         {
           "country": "UK",
@@ -23912,9 +23982,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Real Sociedad v Sevilla",
+          "programmeStart": "2026-11-29T20:00:00Z"
         },
         {
           "country": "UK",
@@ -24853,9 +24925,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Espanyol v Getafe",
+          "programmeStart": "2026-11-30T20:00:00Z"
         },
         {
           "country": "UK",
@@ -35871,6 +35945,130 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902846",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "Charlton Athletic at Tottenham Hotspur",
+      "homeTeam": "Tottenham Hotspur",
+      "awayTeam": "Charlton Athletic",
+      "start": "2026-12-11T19:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261211&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261211&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Tottenham Hotspur Women v Charlton Athletic Women",
+          "programmeStart": "2026-12-11T19:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free WSL fixtures only; check official channel.",
+          "watchUrl": "https://www.youtube.com/",
+          "free": true
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902851",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "Arsenal at Everton",
+      "homeTeam": "Everton",
+      "awayTeam": "Arsenal",
+      "start": "2026-12-11T19:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261211&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261211&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Everton Women v Arsenal Women",
+          "programmeStart": "2026-12-11T19:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free WSL fixtures only; check official channel.",
+          "watchUrl": "https://www.youtube.com/",
+          "free": true
         }
       ]
     }
