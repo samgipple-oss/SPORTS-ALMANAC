@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T10:17:43Z",
+  "updatedAt": "2026-11-11T13:32:24Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -340,57 +340,6 @@
         }
       ],
       "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.wchampions:401916983",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "Austria Vienna at Benfica",
-      "homeTeam": "Benfica",
-      "awayTeam": "Austria Vienna",
-      "start": "2026-11-11T20:00:00Z",
-      "liveStatus": "Postponed",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261111&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261111&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
         {
           "country": "UK",
           "service": "BBC iPlayer",
@@ -1509,6 +1458,57 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
           "note": "Selected national-team matches only; check an individual BBC listing.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916983",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "Austria Vienna at Benfica",
+      "homeTeam": "Benfica",
+      "awayTeam": "Austria Vienna",
+      "start": "2026-11-12T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261112&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261112&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
         }
       ]
