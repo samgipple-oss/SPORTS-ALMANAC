@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-11-11T19:21:21Z",
+  "updatedAt": "2026-11-11T22:29:15Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
   "broadcastAuditVersion": 1,
   "coverageByCompetition": {
     "Bundesliga": {
-      "fixtures": 27,
+      "fixtures": 28,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 11,
-        "anyCoverageFixtures": 11,
+        "possibleFixtures": 12,
+        "anyCoverageFixtures": 12,
         "uncoveredFixtures": 16,
-        "eventSpecificFixtures": 11,
+        "eventSpecificFixtures": 12,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 40.7
+        "anyCoveragePct": 42.9
       },
       "US": {
-        "confirmedFixtures": 27,
-        "possibleFixtures": 27,
-        "anyCoverageFixtures": 27,
+        "confirmedFixtures": 28,
+        "possibleFixtures": 28,
+        "anyCoverageFixtures": 28,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 30,
+      "fixtures": 31,
       "UK": {
-        "confirmedFixtures": 27,
-        "possibleFixtures": 30,
-        "anyCoverageFixtures": 30,
+        "confirmedFixtures": 28,
+        "possibleFixtures": 31,
+        "anyCoverageFixtures": 31,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 8,
-        "confirmedPct": 90.0,
+        "confirmedPct": 90.3,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 30,
+        "confirmedFixtures": 31,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 30,
+        "anyCoverageFixtures": 31,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -258,20 +258,20 @@
       }
     },
     "Women’s Champions League": {
-      "fixtures": 12,
+      "fixtures": 11,
       "UK": {
-        "confirmedFixtures": 12,
-        "possibleFixtures": 12,
-        "anyCoverageFixtures": 12,
+        "confirmedFixtures": 11,
+        "possibleFixtures": 11,
+        "anyCoverageFixtures": 11,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 12,
+        "confirmedFixtures": 11,
         "possibleFixtures": 1,
-        "anyCoverageFixtures": 12,
+        "anyCoverageFixtures": 11,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 1,
         "confirmedPct": 100.0,
@@ -280,11 +280,11 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 738,
-    "US": 702
+    "UK": 739,
+    "US": 703
   },
   "eventSpecificGamesByCountry": {
-    "UK": 177,
+    "UK": 178,
     "US": 260
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -294,63 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 6,
-  "footballTVListingMatches": 167,
+  "footballTVListingMatches": 169,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 357,
-  "officialRightsEntries": 2107,
+  "officialRightsEntries": 2112,
   "verifiedGamesByCountry": {
     "UK": 299,
-    "US": 214
+    "US": 215
   },
   "possibleGamesByCountry": {
-    "UK": 515,
-    "US": 536
+    "UK": 516,
+    "US": 537
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.wchampions:401916984",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "OL Lyonnes at Juventus",
-      "homeTeam": "Juventus",
-      "awayTeam": "OL Lyonnes",
-      "start": "2026-11-11T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261111&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
     {
       "id": "espn:basketball/nba:401909966",
       "sport": "Basketball",
@@ -36069,6 +36027,132 @@
           "note": "Selected free WSL fixtures only; check official channel.",
           "watchUrl": "https://www.youtube.com/",
           "free": true
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ger.1:401884704",
+      "sport": "Football",
+      "competition": "Bundesliga",
+      "title": "Schalke 04 at Hamburg SV",
+      "homeTeam": "Hamburg SV",
+      "awayTeam": "Schalke 04",
+      "start": "2026-12-11T19:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261211&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
+          "watchUrl": "https://www.peacocktv.com/sports",
+          "language": "Spanish"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Fandango",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "Most Bundesliga matches stream free in English; some are instead on USA Network.",
+          "watchUrl": "https://www.fandango.com/",
+          "free": true,
+          "language": "English"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "At least 30 matches per season air on USA Network; check this fixture."
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Hamburg v Schalke 04",
+          "programmeStart": "2026-12-11T19:30:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.youtube.com/",
+          "programmeTitle": "Hamburg v Schalke 04",
+          "programmeStart": "2026-12-11T19:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401874775",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Frosinone at Udinese",
+      "homeTeam": "Udinese",
+      "awayTeam": "Frosinone",
+      "start": "2026-12-11T19:45:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261211&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
         }
       ]
     }
