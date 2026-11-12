@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T07:41:15Z",
+  "updatedAt": "2026-11-12T10:22:27Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -159,7 +159,7 @@
         "possibleFixtures": 215,
         "anyCoverageFixtures": 215,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 2,
+        "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -284,7 +284,7 @@
     "US": 704
   },
   "eventSpecificGamesByCountry": {
-    "UK": 176,
+    "UK": 178,
     "US": 270
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -293,7 +293,7 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 4,
+  "xmltvMatches": 6,
   "footballTVListingMatches": 169,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
@@ -2079,9 +2079,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: NY Rangers at Vancouver",
+          "programmeStart": "2026-11-14T02:00:00Z",
+          "xmltvChannel": "PremierSports2.uk"
         }
       ]
     },
@@ -2194,9 +2197,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Nashville at Vegas",
+          "programmeStart": "2026-11-14T03:00:00Z",
+          "xmltvChannel": "PremierSports1.uk"
         }
       ]
     },
