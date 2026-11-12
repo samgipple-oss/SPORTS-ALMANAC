@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T10:22:27Z",
+  "updatedAt": "2026-11-12T13:36:21Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -237,22 +237,22 @@
       }
     },
     "WSL": {
-      "fixtures": 16,
+      "fixtures": 17,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 16,
-        "anyCoverageFixtures": 16,
+        "possibleFixtures": 17,
+        "anyCoverageFixtures": 17,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 16,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 16,
-        "anyCoverageFixtures": 16,
+        "possibleFixtures": 17,
+        "anyCoverageFixtures": 17,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 16,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 727,
-    "US": 704
+    "UK": 728,
+    "US": 705
   },
   "eventSpecificGamesByCountry": {
-    "UK": 178,
-    "US": 270
+    "UK": 179,
+    "US": 271
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 12,
@@ -294,18 +294,18 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 6,
-  "footballTVListingMatches": 169,
+  "footballTVListingMatches": 170,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 384,
-  "officialRightsEntries": 2090,
+  "officialRightsEntries": 2094,
   "verifiedGamesByCountry": {
     "UK": 289,
     "US": 213
   },
   "possibleGamesByCountry": {
-    "UK": 514,
-    "US": 543
+    "UK": 515,
+    "US": 544
   },
   "errors": [],
   "items": [
@@ -36101,6 +36101,68 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902848",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "London City Lionesses at Chelsea",
+      "homeTeam": "Chelsea",
+      "awayTeam": "London City Lionesses",
+      "start": "2026-12-12T12:45:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261212&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Sky Sports shows most, but not all, WSL fixtures.",
+          "watchUrl": "https://www.skysports.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Sky Sports WSL games may be streamed with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Chelsea Women v London City Lionesses",
+          "programmeStart": "2026-12-12T12:45:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free WSL fixtures only; check official channel.",
+          "watchUrl": "https://www.youtube.com/",
+          "free": true
         }
       ]
     }
