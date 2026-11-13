@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-11-13T13:31:36Z",
+  "updatedAt": "2026-11-13T16:08:13Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
   "broadcastAuditVersion": 1,
   "coverageByCompetition": {
     "Bundesliga": {
-      "fixtures": 33,
+      "fixtures": 34,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 13,
-        "anyCoverageFixtures": 13,
+        "possibleFixtures": 14,
+        "anyCoverageFixtures": 14,
         "uncoveredFixtures": 20,
-        "eventSpecificFixtures": 13,
+        "eventSpecificFixtures": 14,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 39.4
+        "anyCoveragePct": 41.2
       },
       "US": {
-        "confirmedFixtures": 33,
-        "possibleFixtures": 33,
-        "anyCoverageFixtures": 33,
+        "confirmedFixtures": 34,
+        "possibleFixtures": 34,
+        "anyCoverageFixtures": 34,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -174,20 +174,20 @@
       }
     },
     "Premier League": {
-      "fixtures": 44,
+      "fixtures": 47,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 44,
-        "anyCoverageFixtures": 44,
+        "possibleFixtures": 47,
+        "anyCoverageFixtures": 47,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 30,
+        "eventSpecificFixtures": 33,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 44,
-        "anyCoverageFixtures": 44,
+        "possibleFixtures": 47,
+        "anyCoverageFixtures": 47,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 0.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 35,
+      "fixtures": 36,
       "UK": {
-        "confirmedFixtures": 31,
-        "possibleFixtures": 35,
-        "anyCoverageFixtures": 35,
+        "confirmedFixtures": 32,
+        "possibleFixtures": 36,
+        "anyCoverageFixtures": 36,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 9,
-        "confirmedPct": 88.6,
+        "confirmedPct": 88.9,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 35,
+        "confirmedFixtures": 36,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 35,
+        "anyCoverageFixtures": 36,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -237,22 +237,22 @@
       }
     },
     "WSL": {
-      "fixtures": 19,
+      "fixtures": 21,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 19,
-        "anyCoverageFixtures": 19,
+        "possibleFixtures": 21,
+        "anyCoverageFixtures": 21,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 19,
+        "eventSpecificFixtures": 21,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 19,
-        "anyCoverageFixtures": 19,
+        "possibleFixtures": 21,
+        "anyCoverageFixtures": 21,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 19,
+        "eventSpecificFixtures": 21,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 734,
-    "US": 721
+    "UK": 741,
+    "US": 728
   },
   "eventSpecificGamesByCountry": {
-    "UK": 180,
-    "US": 260
+    "UK": 186,
+    "US": 262
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -294,18 +294,18 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 4,
-  "footballTVListingMatches": 174,
+  "footballTVListingMatches": 182,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 382,
-  "officialRightsEntries": 2165,
+  "officialRightsEntries": 2202,
   "verifiedGamesByCountry": {
-    "UK": 294,
-    "US": 221
+    "UK": 295,
+    "US": 223
   },
   "possibleGamesByCountry": {
-    "UK": 516,
-    "US": 557
+    "UK": 523,
+    "US": 563
   },
   "errors": [],
   "items": [
@@ -36813,6 +36813,478 @@
           "watchUrl": "https://www.youtube.com/",
           "programmeTitle": "Manchester United Women v Brighton & Hove Albion Women",
           "programmeStart": "2026-12-13T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401878741",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Nottingham Forest at Sunderland",
+      "homeTeam": "Sunderland",
+      "awayTeam": "Nottingham Forest",
+      "start": "2026-12-13T14:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Sunderland v Nottingham Forest",
+          "programmeStart": "2026-12-13T14:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401878745",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Everton at Brighton & Hove Albion",
+      "homeTeam": "Brighton & Hove Albion",
+      "awayTeam": "Everton",
+      "start": "2026-12-13T14:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Brighton & Hove Albion v Everton",
+          "programmeStart": "2026-12-13T14:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401878746",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "AFC Bournemouth at Arsenal",
+      "homeTeam": "Arsenal",
+      "awayTeam": "AFC Bournemouth",
+      "start": "2026-12-13T14:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Arsenal v AFC Bournemouth",
+          "programmeStart": "2026-12-13T14:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902845",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "Aston Villa at West Ham United",
+      "homeTeam": "West Ham United",
+      "awayTeam": "Aston Villa",
+      "start": "2026-12-13T14:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261213&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "West Ham United Women v Aston Villa Women",
+          "programmeStart": "2026-12-13T14:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.youtube.com/",
+          "programmeTitle": "West Ham United Women v Aston Villa Women",
+          "programmeStart": "2026-12-13T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902849",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "Liverpool at Birmingham City",
+      "homeTeam": "Birmingham City",
+      "awayTeam": "Liverpool",
+      "start": "2026-12-13T14:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261213&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Birmingham City Women v Liverpool Women",
+          "programmeStart": "2026-12-13T14:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.youtube.com/",
+          "programmeTitle": "Birmingham City Women v Liverpool Women",
+          "programmeStart": "2026-12-13T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401874766",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Torino at Internazionale",
+      "homeTeam": "Internazionale",
+      "awayTeam": "Torino",
+      "start": "2026-12-13T14:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ger.1:401884706",
+      "sport": "Football",
+      "competition": "Bundesliga",
+      "title": "SC Freiburg at Mainz",
+      "homeTeam": "Mainz",
+      "awayTeam": "SC Freiburg",
+      "start": "2026-12-13T14:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
+          "watchUrl": "https://www.peacocktv.com/sports",
+          "language": "Spanish"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Fandango",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "Most Bundesliga matches stream free in English; some are instead on USA Network.",
+          "watchUrl": "https://www.fandango.com/",
+          "free": true,
+          "language": "English"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "At least 30 matches per season air on USA Network; check this fixture."
+        },
+        {
+          "country": "UK",
+          "service": "Prime Video PPV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
+          "watchUrl": "https://www.primevideo.com/",
+          "programmeTitle": "Mainz v SC Freiburg",
+          "programmeStart": "2026-12-13T14:30:00Z"
         }
       ]
     }
