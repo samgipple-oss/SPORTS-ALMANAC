@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T10:18:32Z",
+  "updatedAt": "2026-11-13T13:31:36Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 34,
+      "fixtures": 35,
       "UK": {
-        "confirmedFixtures": 30,
-        "possibleFixtures": 34,
-        "anyCoverageFixtures": 34,
+        "confirmedFixtures": 31,
+        "possibleFixtures": 35,
+        "anyCoverageFixtures": 35,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 9,
-        "confirmedPct": 88.2,
+        "confirmedPct": 88.6,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 34,
+        "confirmedFixtures": 35,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 34,
+        "anyCoverageFixtures": 35,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -237,22 +237,22 @@
       }
     },
     "WSL": {
-      "fixtures": 17,
+      "fixtures": 19,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 17,
-        "anyCoverageFixtures": 17,
+        "possibleFixtures": 19,
+        "anyCoverageFixtures": 19,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 17,
+        "eventSpecificFixtures": 19,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 17,
-        "anyCoverageFixtures": 17,
+        "possibleFixtures": 19,
+        "anyCoverageFixtures": 19,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 17,
+        "eventSpecificFixtures": 19,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 731,
-    "US": 718
+    "UK": 734,
+    "US": 721
   },
   "eventSpecificGamesByCountry": {
-    "UK": 178,
-    "US": 258
+    "UK": 180,
+    "US": 260
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -294,18 +294,18 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 4,
-  "footballTVListingMatches": 171,
+  "footballTVListingMatches": 174,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 382,
-  "officialRightsEntries": 2152,
+  "officialRightsEntries": 2165,
   "verifiedGamesByCountry": {
-    "UK": 293,
-    "US": 220
+    "UK": 294,
+    "US": 221
   },
   "possibleGamesByCountry": {
-    "UK": 513,
-    "US": 555
+    "UK": 516,
+    "US": 557
   },
   "errors": [],
   "items": [
@@ -36628,6 +36628,191 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401875007",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "AS Roma at Lazio",
+      "homeTeam": "Lazio",
+      "awayTeam": "AS Roma",
+      "start": "2026-12-13T11:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902847",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "Manchester City at Crystal Palace",
+      "homeTeam": "Crystal Palace",
+      "awayTeam": "Manchester City",
+      "start": "2026-12-13T12:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261213&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Crystal Palace Women v Manchester City Women",
+          "programmeStart": "2026-12-13T12:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free WSL fixtures only; check official channel.",
+          "watchUrl": "https://www.youtube.com/",
+          "free": true
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902850",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "Brighton & Hove Albion at Manchester United",
+      "homeTeam": "Manchester United",
+      "awayTeam": "Brighton & Hove Albion",
+      "start": "2026-12-13T12:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261213&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Manchester United Women v Brighton & Hove Albion Women",
+          "programmeStart": "2026-12-13T12:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.youtube.com/",
+          "programmeTitle": "Manchester United Women v Brighton & Hove Albion Women",
+          "programmeStart": "2026-12-13T12:00:00Z"
         }
       ]
     }
