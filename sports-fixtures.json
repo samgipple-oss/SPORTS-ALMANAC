@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T01:26:21Z",
+  "updatedAt": "2026-11-14T04:12:42Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -111,11 +111,11 @@
       }
     },
     "NBA": {
-      "fixtures": 161,
+      "fixtures": 162,
       "UK": {
-        "confirmedFixtures": 161,
+        "confirmedFixtures": 162,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 161,
+        "anyCoverageFixtures": 162,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -123,11 +123,11 @@
       },
       "US": {
         "confirmedFixtures": 13,
-        "possibleFixtures": 161,
-        "anyCoverageFixtures": 161,
+        "possibleFixtures": 162,
+        "anyCoverageFixtures": 162,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 35,
-        "confirmedPct": 8.1,
+        "confirmedPct": 8.0,
         "anyCoveragePct": 100.0
       }
     },
@@ -280,8 +280,8 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 759,
-    "US": 754
+    "UK": 760,
+    "US": 755
   },
   "eventSpecificGamesByCountry": {
     "UK": 186,
@@ -298,14 +298,14 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 431,
-  "officialRightsEntries": 2280,
+  "officialRightsEntries": 2282,
   "verifiedGamesByCountry": {
-    "UK": 293,
+    "UK": 294,
     "US": 237
   },
   "possibleGamesByCountry": {
     "UK": 545,
-    "US": 577
+    "US": 578
   },
   "errors": [],
   "items": [
@@ -38728,6 +38728,39 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910103",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "New Orleans Pelicans at Sacramento Kings",
+      "homeTeam": "Sacramento Kings",
+      "awayTeam": "New Orleans Pelicans",
+      "start": "2026-12-14T02:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261213&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
         }
       ]
     }
