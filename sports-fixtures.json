@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T10:03:39Z",
+  "updatedAt": "2026-11-14T13:14:39Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -237,22 +237,22 @@
       }
     },
     "WSL": {
-      "fixtures": 21,
+      "fixtures": 20,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 21,
-        "anyCoverageFixtures": 21,
+        "possibleFixtures": 20,
+        "anyCoverageFixtures": 20,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 21,
+        "eventSpecificFixtures": 20,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 21,
-        "anyCoverageFixtures": 21,
+        "possibleFixtures": 20,
+        "anyCoverageFixtures": 20,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 21,
+        "eventSpecificFixtures": 20,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 760,
-    "US": 755
+    "UK": 759,
+    "US": 754
   },
   "eventSpecificGamesByCountry": {
-    "UK": 192,
-    "US": 270
+    "UK": 191,
+    "US": 269
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -294,83 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 8,
-  "footballTVListingMatches": 187,
+  "footballTVListingMatches": 186,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 431,
-  "officialRightsEntries": 2282,
+  "officialRightsEntries": 2278,
   "verifiedGamesByCountry": {
     "UK": 294,
     "US": 237
   },
   "possibleGamesByCountry": {
-    "UK": 545,
-    "US": 578
+    "UK": 544,
+    "US": 577
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/eng.w.1:401902863",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Crystal Palace at Manchester United",
-      "homeTeam": "Manchester United",
-      "awayTeam": "Crystal Palace",
-      "start": "2026-11-14T12:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261114&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261114&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Manchester United Women v Crystal Palace Women",
-          "programmeStart": "2026-11-14T12:45:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        }
-      ]
-    },
     {
       "id": "espn:soccer/eng.w.1:401902865",
       "sport": "Football",
