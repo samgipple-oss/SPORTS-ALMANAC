@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T15:56:29Z",
+  "updatedAt": "2026-11-14T19:05:51Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -122,12 +122,12 @@
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 13,
+        "confirmedFixtures": 12,
         "possibleFixtures": 162,
         "anyCoverageFixtures": 162,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 35,
-        "confirmedPct": 8.0,
+        "confirmedPct": 7.4,
         "anyCoveragePct": 100.0
       }
     },
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 38,
+      "fixtures": 39,
       "UK": {
-        "confirmedFixtures": 34,
-        "possibleFixtures": 38,
-        "anyCoverageFixtures": 38,
+        "confirmedFixtures": 35,
+        "possibleFixtures": 39,
+        "anyCoverageFixtures": 39,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 11,
-        "confirmedPct": 89.5,
+        "confirmedPct": 89.7,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 38,
+        "confirmedFixtures": 39,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 38,
+        "anyCoverageFixtures": 39,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -216,43 +216,43 @@
       }
     },
     "UEFA Nations League": {
-      "fixtures": 33,
+      "fixtures": 31,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 33,
-        "anyCoverageFixtures": 33,
+        "possibleFixtures": 31,
+        "anyCoverageFixtures": 31,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 18,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 10,
-        "anyCoverageFixtures": 10,
-        "uncoveredFixtures": 23,
-        "eventSpecificFixtures": 10,
+        "possibleFixtures": 9,
+        "anyCoverageFixtures": 9,
+        "uncoveredFixtures": 22,
+        "eventSpecificFixtures": 9,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 30.3
+        "anyCoveragePct": 29.0
       }
     },
     "WSL": {
-      "fixtures": 18,
+      "fixtures": 17,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 18,
-        "anyCoverageFixtures": 18,
+        "possibleFixtures": 17,
+        "anyCoverageFixtures": 17,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 18,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 18,
-        "anyCoverageFixtures": 18,
+        "possibleFixtures": 17,
+        "anyCoverageFixtures": 17,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 18,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -280,239 +280,35 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 756,
-    "US": 752
+    "UK": 754,
+    "US": 751
   },
   "eventSpecificGamesByCountry": {
-    "UK": 189,
-    "US": 267
+    "UK": 187,
+    "US": 265
   },
   "officialNHLBlackoutFixtureMatches": 0,
-  "nbaOfficialUSNationalBroadcastEntries": 14,
+  "nbaOfficialUSNationalBroadcastEntries": 13,
   "nbaOfficialSourceWarnings": [],
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 8,
-  "footballTVListingMatches": 184,
+  "footballTVListingMatches": 181,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 431,
-  "officialRightsEntries": 2268,
+  "networkStreamingLeads": 428,
+  "officialRightsEntries": 2265,
   "verifiedGamesByCountry": {
-    "UK": 294,
+    "UK": 295,
     "US": 237
   },
   "possibleGamesByCountry": {
-    "UK": 541,
-    "US": 575
+    "UK": 539,
+    "US": 573
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.nations:401861164",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Hungary at Georgia",
-      "homeTeam": "Georgia",
-      "awayTeam": "Hungary",
-      "start": "2026-11-14T17:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861165",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Wales at Norway",
-      "homeTeam": "Norway",
-      "awayTeam": "Wales",
-      "start": "2026-11-14T17:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FS2",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer",
-          "programmeTitle": "Norway v Wales",
-          "programmeStart": "2026-11-14T17:00:00Z"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902862",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Liverpool at Brighton & Hove Albion",
-      "homeTeam": "Brighton & Hove Albion",
-      "awayTeam": "Liverpool",
-      "start": "2026-11-14T17:15:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261114&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261114&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Brighton & Hove Albion Women v Liverpool Women",
-          "programmeStart": "2026-11-14T17:15:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.youtube.com/",
-          "programmeTitle": "Brighton & Hove Albion Women v Liverpool Women",
-          "programmeStart": "2026-11-14T17:15:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:hockey/nhl:401891809",
-      "sport": "Ice hockey",
-      "competition": "NHL",
-      "title": "Seattle Kraken at Carolina Hurricanes",
-      "homeTeam": "Carolina Hurricanes",
-      "awayTeam": "Seattle Kraken",
-      "start": "2026-11-14T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261114&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "NHL.TV",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
-          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
-        }
-      ]
-    },
     {
       "id": "espn:soccer/uefa.nations:401861166",
       "sport": "Football",
@@ -6276,13 +6072,13 @@
       ]
     },
     {
-      "id": "espn:basketball/nba:401910015",
+      "id": "espn:basketball/nba:401910016",
       "sport": "Basketball",
       "competition": "NBA",
-      "title": "Boston Celtics at Denver Nuggets",
-      "homeTeam": "Denver Nuggets",
-      "awayTeam": "Boston Celtics",
-      "start": "2026-11-19T02:00:00Z",
+      "title": "Golden State Warriors at Dallas Mavericks",
+      "homeTeam": "Dallas Mavericks",
+      "awayTeam": "Golden State Warriors",
+      "start": "2026-11-19T01:00:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
       "broadcasts": [
@@ -6309,12 +6105,12 @@
       ]
     },
     {
-      "id": "espn:basketball/nba:401910016",
+      "id": "espn:basketball/nba:401910015",
       "sport": "Basketball",
       "competition": "NBA",
-      "title": "Golden State Warriors at Dallas Mavericks",
-      "homeTeam": "Dallas Mavericks",
-      "awayTeam": "Golden State Warriors",
+      "title": "Boston Celtics at Denver Nuggets",
+      "homeTeam": "Denver Nuggets",
+      "awayTeam": "Boston Celtics",
       "start": "2026-11-19T02:30:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
@@ -6327,18 +6123,18 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Every NBA game is live on League Pass outside the US and Canada.",
           "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "ESPN",
-          "verified": true,
-          "basis": "official-event-schedule",
-          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
-          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
-          "watchUrl": "https://www.espn.com/watch/"
         }
       ],
       "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -38615,6 +38411,106 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401875032",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Genoa at Atalanta",
+      "homeTeam": "Atalanta",
+      "awayTeam": "Genoa",
+      "start": "2026-12-14T17:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261214&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892926",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Buffalo Sabres at Ottawa Senators",
+      "homeTeam": "Ottawa Senators",
+      "awayTeam": "Buffalo Sabres",
+      "start": "2026-12-14T19:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261214&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
         }
       ]
     }
