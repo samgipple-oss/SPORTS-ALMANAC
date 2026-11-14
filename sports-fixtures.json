@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T13:14:39Z",
+  "updatedAt": "2026-11-14T15:56:29Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -216,11 +216,11 @@
       }
     },
     "UEFA Nations League": {
-      "fixtures": 34,
+      "fixtures": 33,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 34,
-        "anyCoverageFixtures": 34,
+        "possibleFixtures": 33,
+        "anyCoverageFixtures": 33,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 18,
         "confirmedPct": 0.0,
@@ -230,29 +230,29 @@
         "confirmedFixtures": 0,
         "possibleFixtures": 10,
         "anyCoverageFixtures": 10,
-        "uncoveredFixtures": 24,
+        "uncoveredFixtures": 23,
         "eventSpecificFixtures": 10,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 29.4
+        "anyCoveragePct": 30.3
       }
     },
     "WSL": {
-      "fixtures": 20,
+      "fixtures": 18,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 20,
-        "anyCoverageFixtures": 20,
+        "possibleFixtures": 18,
+        "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 20,
+        "eventSpecificFixtures": 18,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 20,
-        "anyCoverageFixtures": 20,
+        "possibleFixtures": 18,
+        "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 20,
+        "eventSpecificFixtures": 18,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 759,
-    "US": 754
+    "UK": 756,
+    "US": 752
   },
   "eventSpecificGamesByCountry": {
-    "UK": 191,
-    "US": 269
+    "UK": 189,
+    "US": 267
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -294,177 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 8,
-  "footballTVListingMatches": 186,
+  "footballTVListingMatches": 184,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 431,
-  "officialRightsEntries": 2278,
+  "officialRightsEntries": 2268,
   "verifiedGamesByCountry": {
     "UK": 294,
     "US": 237
   },
   "possibleGamesByCountry": {
-    "UK": 544,
-    "US": 577
+    "UK": 541,
+    "US": 575
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/eng.w.1:401902865",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Manchester City at Chelsea",
-      "homeTeam": "Chelsea",
-      "awayTeam": "Manchester City",
-      "start": "2026-11-14T13:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261114&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261114&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Sky Sports shows most, but not all, WSL fixtures.",
-          "watchUrl": "https://www.skysports.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Sky Sports WSL games may be streamed with a NOW Sports membership.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer",
-          "programmeTitle": "Chelsea Women v Manchester City Women",
-          "programmeStart": "2026-11-14T13:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861163",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Israel at Kosovo",
-      "homeTeam": "Kosovo",
-      "awayTeam": "Israel",
-      "start": "2026-11-14T14:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261114&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902861",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Everton at Tottenham Hotspur",
-      "homeTeam": "Tottenham Hotspur",
-      "awayTeam": "Everton",
-      "start": "2026-11-14T15:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261114&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261114&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Tottenham Hotspur Women v Everton Women",
-          "programmeStart": "2026-11-14T15:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        }
-      ]
-    },
     {
       "id": "espn:soccer/uefa.nations:401861164",
       "sport": "Football",
