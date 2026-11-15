@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T19:07:06Z",
+  "updatedAt": "2026-11-15T21:55:18Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -111,11 +111,11 @@
       }
     },
     "NBA": {
-      "fixtures": 167,
+      "fixtures": 165,
       "UK": {
-        "confirmedFixtures": 167,
+        "confirmedFixtures": 165,
         "possibleFixtures": 1,
-        "anyCoverageFixtures": 167,
+        "anyCoverageFixtures": 165,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 1,
         "confirmedPct": 100.0,
@@ -123,31 +123,31 @@
       },
       "US": {
         "confirmedFixtures": 13,
-        "possibleFixtures": 167,
-        "anyCoverageFixtures": 167,
+        "possibleFixtures": 165,
+        "anyCoverageFixtures": 165,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 36,
-        "confirmedPct": 7.8,
+        "confirmedPct": 7.9,
         "anyCoveragePct": 100.0
       }
     },
     "NFL": {
-      "fixtures": 63,
+      "fixtures": 60,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 63,
-        "anyCoverageFixtures": 63,
+        "possibleFixtures": 60,
+        "anyCoverageFixtures": 60,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 3,
+        "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 63,
-        "anyCoverageFixtures": 63,
+        "possibleFixtures": 60,
+        "anyCoverageFixtures": 60,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 63,
+        "eventSpecificFixtures": 60,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -216,24 +216,24 @@
       }
     },
     "UEFA Nations League": {
-      "fixtures": 22,
+      "fixtures": 18,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 22,
-        "anyCoverageFixtures": 22,
+        "possibleFixtures": 18,
+        "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 12,
+        "eventSpecificFixtures": 10,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 7,
-        "anyCoverageFixtures": 7,
-        "uncoveredFixtures": 15,
-        "eventSpecificFixtures": 7,
+        "possibleFixtures": 6,
+        "anyCoverageFixtures": 6,
+        "uncoveredFixtures": 12,
+        "eventSpecificFixtures": 6,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 31.8
+        "anyCoveragePct": 33.3
       }
     },
     "WSL": {
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 733,
-    "US": 737
+    "UK": 724,
+    "US": 731
   },
   "eventSpecificGamesByCountry": {
-    "UK": 178,
-    "US": 242
+    "UK": 175,
+    "US": 238
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -293,531 +293,22 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 6,
-  "footballTVListingMatches": 173,
+  "xmltvMatches": 5,
+  "footballTVListingMatches": 171,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 394,
-  "officialRightsEntries": 2221,
+  "networkStreamingLeads": 379,
+  "officialRightsEntries": 2200,
   "verifiedGamesByCountry": {
-    "UK": 301,
+    "UK": 299,
     "US": 239
   },
   "possibleGamesByCountry": {
-    "UK": 514,
-    "US": 558
+    "UK": 507,
+    "US": 552
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.nations:401861175",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "England at Spain",
-      "homeTeam": "Spain",
-      "awayTeam": "England",
-      "start": "2026-11-15T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.itv.com/watch",
-          "programmeTitle": "Spain v England",
-          "programmeStart": "2026-11-15T19:45:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861176",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Italy at Belgium",
-      "homeTeam": "Belgium",
-      "awayTeam": "Italy",
-      "start": "2026-11-15T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "Prime Video PPV",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
-          "watchUrl": "https://www.primevideo.com/",
-          "programmeTitle": "Belgium v Italy",
-          "programmeStart": "2026-11-15T19:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861177",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Türkiye at France",
-      "homeTeam": "France",
-      "awayTeam": "Türkiye",
-      "start": "2026-11-15T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FS2",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861178",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Czechia at Croatia",
-      "homeTeam": "Croatia",
-      "awayTeam": "Czechia",
-      "start": "2026-11-15T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401909986",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Los Angeles Lakers at Phoenix Suns",
-      "homeTeam": "Phoenix Suns",
-      "awayTeam": "Los Angeles Lakers",
-      "start": "2026-11-15T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873061",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Los Angeles Rams at Arizona Cardinals",
-      "homeTeam": "Arizona Cardinals",
-      "awayTeam": "Los Angeles Rams",
-      "start": "2026-11-15T21:05:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "CBS simulcast may be limited to the viewer's local CBS market.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873062",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Seattle Seahawks at Las Vegas Raiders",
-      "homeTeam": "Las Vegas Raiders",
-      "awayTeam": "Seattle Seahawks",
-      "start": "2026-11-15T21:05:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "CBS simulcast may be limited to the viewer's local CBS market.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873063",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "San Francisco 49ers at Dallas Cowboys",
-      "homeTeam": "Dallas Cowboys",
-      "awayTeam": "San Francisco 49ers",
-      "start": "2026-11-15T21:25:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FOX",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "FOX One",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.fox.com/sports/football/nfl",
-          "note": "FOX One streams FOX NFL games only in your applicable market.",
-          "watchUrl": "https://www.fox.com/sports/football/nfl"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        },
-        {
-          "country": "UK",
-          "service": "Channel 5",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
-          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
-          "watchUrl": "https://www.channel5.com/",
-          "programmeTitle": "Live: NFL on 5: San Francisco...",
-          "programmeStart": "2026-11-15T21:00:00Z",
-          "xmltvChannel": "5.uk"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401909987",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Charlotte Hornets at LA Clippers",
-      "homeTeam": "LA Clippers",
-      "awayTeam": "Charlotte Hornets",
-      "start": "2026-11-15T21:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
     {
       "id": "espn:basketball/nba:401909988",
       "sport": "Basketball",
@@ -24228,6 +23719,47 @@
       ]
     },
     {
+      "id": "espn:soccer/esp.1:401882786",
+      "sport": "Football",
+      "competition": "La Liga",
+      "title": "Espanyol at Alavés",
+      "homeTeam": "Alavés",
+      "awayTeam": "Espanyol",
+      "start": "2026-12-04T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
+          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+        },
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
+        }
+      ]
+    },
+    {
       "id": "espn:hockey/nhl:401892855",
       "sport": "Ice hockey",
       "competition": "NHL",
@@ -24547,6 +24079,47 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
           "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/esp.1:401882780",
+      "sport": "Football",
+      "competition": "La Liga",
+      "title": "Deportivo at Racing Santander",
+      "homeTeam": "Racing Santander",
+      "awayTeam": "Deportivo",
+      "start": "2026-12-05T13:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
+          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+        },
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
@@ -25131,6 +24704,47 @@
       ]
     },
     {
+      "id": "espn:soccer/esp.1:401882779",
+      "sport": "Football",
+      "competition": "La Liga",
+      "title": "Levante at Rayo Vallecano",
+      "homeTeam": "Rayo Vallecano",
+      "awayTeam": "Levante",
+      "start": "2026-12-05T15:15:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
+          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+        },
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
+        }
+      ]
+    },
+    {
       "id": "espn:soccer/ita.1:401875023",
       "sport": "Football",
       "competition": "Serie A",
@@ -25266,6 +24880,47 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
           "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/esp.1:401882777",
+      "sport": "Football",
+      "competition": "La Liga",
+      "title": "Real Sociedad at Villarreal",
+      "homeTeam": "Villarreal",
+      "awayTeam": "Real Sociedad",
+      "start": "2026-12-05T17:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
+          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+        },
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
@@ -25631,6 +25286,47 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
           "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/esp.1:401882783",
+      "sport": "Football",
+      "competition": "La Liga",
+      "title": "Celta Vigo at Barcelona",
+      "homeTeam": "Barcelona",
+      "awayTeam": "Celta Vigo",
+      "start": "2026-12-05T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
+          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+        },
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
@@ -26015,6 +25711,47 @@
       ]
     },
     {
+      "id": "espn:soccer/esp.1:401882781",
+      "sport": "Football",
+      "competition": "La Liga",
+      "title": "Elche at Osasuna",
+      "homeTeam": "Osasuna",
+      "awayTeam": "Elche",
+      "start": "2026-12-06T13:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
+          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+        },
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
+        }
+      ]
+    },
+    {
       "id": "espn:soccer/eng.1:401878748",
       "sport": "Football",
       "competition": "Premier League",
@@ -26284,6 +26021,47 @@
       ]
     },
     {
+      "id": "espn:soccer/esp.1:401882785",
+      "sport": "Football",
+      "competition": "La Liga",
+      "title": "Real Madrid at Athletic Club",
+      "homeTeam": "Athletic Club",
+      "awayTeam": "Real Madrid",
+      "start": "2026-12-06T15:15:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
+          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+        },
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
+        }
+      ]
+    },
+    {
       "id": "espn:soccer/eng.1:401879209",
       "sport": "Football",
       "competition": "Premier League",
@@ -26472,6 +26250,47 @@
           "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
           "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/esp.1:401882782",
+      "sport": "Football",
+      "competition": "La Liga",
+      "title": "Valencia at Getafe",
+      "homeTeam": "Getafe",
+      "awayTeam": "Valencia",
+      "start": "2026-12-06T17:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
+          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+        },
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
@@ -27175,381 +26994,12 @@
       ]
     },
     {
-      "id": "espn:soccer/esp.1:401882777",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Real Sociedad at Villarreal",
-      "homeTeam": "Villarreal",
-      "awayTeam": "Real Sociedad",
-      "start": "2026-12-06T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882778",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Málaga at Sevilla",
-      "homeTeam": "Sevilla",
-      "awayTeam": "Málaga",
-      "start": "2026-12-06T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882779",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Levante at Rayo Vallecano",
-      "homeTeam": "Rayo Vallecano",
-      "awayTeam": "Levante",
-      "start": "2026-12-06T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882780",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Deportivo at Racing Santander",
-      "homeTeam": "Racing Santander",
-      "awayTeam": "Deportivo",
-      "start": "2026-12-06T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882781",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Elche at Osasuna",
-      "homeTeam": "Osasuna",
-      "awayTeam": "Elche",
-      "start": "2026-12-06T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882782",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Valencia at Getafe",
-      "homeTeam": "Getafe",
-      "awayTeam": "Valencia",
-      "start": "2026-12-06T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882783",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Celta Vigo at Barcelona",
-      "homeTeam": "Barcelona",
-      "awayTeam": "Celta Vigo",
-      "start": "2026-12-06T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
       "id": "espn:soccer/esp.1:401882784",
       "sport": "Football",
       "competition": "La Liga",
       "title": "Real Betis at Atlético Madrid",
       "homeTeam": "Atlético Madrid",
       "awayTeam": "Real Betis",
-      "start": "2026-12-06T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882785",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Real Madrid at Athletic Club",
-      "homeTeam": "Athletic Club",
-      "awayTeam": "Real Madrid",
-      "start": "2026-12-06T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882786",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Espanyol at Alavés",
-      "homeTeam": "Alavés",
-      "awayTeam": "Espanyol",
       "start": "2026-12-06T20:00:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261206&limit=300",
@@ -28357,6 +27807,47 @@
           "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
           "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/esp.1:401882778",
+      "sport": "Football",
+      "competition": "La Liga",
+      "title": "Málaga at Sevilla",
+      "homeTeam": "Sevilla",
+      "awayTeam": "Málaga",
+      "start": "2026-12-07T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261207&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
+          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+        },
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
