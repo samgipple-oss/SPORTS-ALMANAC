@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T13:16:08Z",
+  "updatedAt": "2026-11-15T15:57:11Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -132,22 +132,22 @@
       }
     },
     "NFL": {
-      "fixtures": 71,
+      "fixtures": 70,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 71,
-        "anyCoverageFixtures": 71,
+        "possibleFixtures": 70,
+        "anyCoverageFixtures": 70,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 5,
+        "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 71,
-        "anyCoverageFixtures": 71,
+        "possibleFixtures": 70,
+        "anyCoverageFixtures": 70,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 71,
+        "eventSpecificFixtures": 70,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -216,11 +216,11 @@
       }
     },
     "UEFA Nations League": {
-      "fixtures": 26,
+      "fixtures": 24,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 26,
-        "anyCoverageFixtures": 26,
+        "possibleFixtures": 24,
+        "anyCoverageFixtures": 24,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 12,
         "confirmedPct": 0.0,
@@ -228,31 +228,31 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 8,
-        "anyCoverageFixtures": 8,
-        "uncoveredFixtures": 18,
-        "eventSpecificFixtures": 8,
+        "possibleFixtures": 7,
+        "anyCoverageFixtures": 7,
+        "uncoveredFixtures": 17,
+        "eventSpecificFixtures": 7,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 30.8
+        "anyCoveragePct": 29.2
       }
     },
     "WSL": {
-      "fixtures": 17,
+      "fixtures": 15,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 17,
-        "anyCoverageFixtures": 17,
+        "possibleFixtures": 15,
+        "anyCoverageFixtures": 15,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 17,
+        "eventSpecificFixtures": 15,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 17,
-        "anyCoverageFixtures": 17,
+        "possibleFixtures": 15,
+        "anyCoverageFixtures": 15,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 17,
+        "eventSpecificFixtures": 15,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 749,
-    "US": 750
+    "UK": 744,
+    "US": 746
   },
   "eventSpecificGamesByCountry": {
-    "UK": 183,
-    "US": 254
+    "UK": 180,
+    "US": 250
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -293,343 +293,22 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 8,
-  "footballTVListingMatches": 177,
+  "xmltvMatches": 7,
+  "footballTVListingMatches": 174,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 429,
-  "officialRightsEntries": 2266,
+  "networkStreamingLeads": 422,
+  "officialRightsEntries": 2252,
   "verifiedGamesByCountry": {
     "UK": 302,
     "US": 239
   },
   "possibleGamesByCountry": {
-    "UK": 529,
-    "US": 571
+    "UK": 524,
+    "US": 567
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/eng.w.1:401902859",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Birmingham City at Aston Villa",
-      "homeTeam": "Aston Villa",
-      "awayTeam": "Birmingham City",
-      "start": "2026-11-15T14:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261115&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Aston Villa Women v Birmingham City Women",
-          "programmeStart": "2026-11-15T14:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902860",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Charlton Athletic at West Ham United",
-      "homeTeam": "West Ham United",
-      "awayTeam": "Charlton Athletic",
-      "start": "2026-11-15T14:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261115&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "West Ham United Women v Charlton Athletic Women",
-          "programmeStart": "2026-11-15T14:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.youtube.com/",
-          "programmeTitle": "West Ham United Women v Charlton Athletic Women",
-          "programmeStart": "2026-11-15T14:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861171",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Armenia at Latvia",
-      "homeTeam": "Latvia",
-      "awayTeam": "Armenia",
-      "start": "2026-11-15T14:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861172",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Montenegro at Cyprus",
-      "homeTeam": "Cyprus",
-      "awayTeam": "Montenegro",
-      "start": "2026-11-15T14:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FS2",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873053",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "New England Patriots at Detroit Lions",
-      "homeTeam": "Detroit Lions",
-      "awayTeam": "New England Patriots",
-      "start": "2026-11-15T14:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FOX",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "FOX One",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.fox.com/sports/football/nfl",
-          "note": "FOX One streams FOX NFL games only in your applicable market.",
-          "watchUrl": "https://www.fox.com/sports/football/nfl"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
-          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Live NFL Patriots @ Lions",
-          "programmeStart": "2026-11-15T14:00:00Z",
-          "xmltvChannel": "SkySportsAction.uk"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
-          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/eng.w.1:401902864",
       "sport": "Football",
