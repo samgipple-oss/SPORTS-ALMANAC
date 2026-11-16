@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T10:49:38Z",
+  "updatedAt": "2026-11-16T15:28:39Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -216,11 +216,11 @@
       }
     },
     "UEFA Nations League": {
-      "fixtures": 18,
+      "fixtures": 16,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 18,
-        "anyCoverageFixtures": 18,
+        "possibleFixtures": 16,
+        "anyCoverageFixtures": 16,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 10,
         "confirmedPct": 0.0,
@@ -228,12 +228,12 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 6,
-        "anyCoverageFixtures": 6,
-        "uncoveredFixtures": 12,
-        "eventSpecificFixtures": 6,
+        "possibleFixtures": 5,
+        "anyCoverageFixtures": 5,
+        "uncoveredFixtures": 11,
+        "eventSpecificFixtures": 5,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 33.3
+        "anyCoveragePct": 31.2
       }
     },
     "WSL": {
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 725,
-    "US": 732
+    "UK": 723,
+    "US": 731
   },
   "eventSpecificGamesByCountry": {
     "UK": 172,
-    "US": 238
+    "US": 237
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 15,
@@ -297,117 +297,18 @@
   "footballTVListingMatches": 171,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 389,
-  "officialRightsEntries": 2211,
+  "networkStreamingLeads": 386,
+  "officialRightsEntries": 2207,
   "verifiedGamesByCountry": {
     "UK": 295,
     "US": 240
   },
   "possibleGamesByCountry": {
-    "UK": 512,
-    "US": 553
+    "UK": 510,
+    "US": 552
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.nations:401861180",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Moldova at Faroe Islands",
-      "homeTeam": "Faroe Islands",
-      "awayTeam": "Moldova",
-      "start": "2026-11-16T15:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861181",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Slovakia at Kazakhstan",
-      "homeTeam": "Kazakhstan",
-      "awayTeam": "Slovakia",
-      "start": "2026-11-16T15:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FS2",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/uefa.nations:401861182",
       "sport": "Football",
