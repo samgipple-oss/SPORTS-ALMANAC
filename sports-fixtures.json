@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T19:19:44Z",
+  "updatedAt": "2026-11-16T22:06:06Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -216,24 +216,24 @@
       }
     },
     "UEFA Nations League": {
-      "fixtures": 13,
+      "fixtures": 8,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 13,
-        "anyCoverageFixtures": 13,
+        "possibleFixtures": 8,
+        "anyCoverageFixtures": 8,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 10,
+        "eventSpecificFixtures": 7,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 4,
-        "anyCoverageFixtures": 4,
-        "uncoveredFixtures": 9,
-        "eventSpecificFixtures": 4,
+        "possibleFixtures": 2,
+        "anyCoverageFixtures": 2,
+        "uncoveredFixtures": 6,
+        "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 30.8
+        "anyCoveragePct": 25.0
       }
     },
     "WSL": {
@@ -258,20 +258,20 @@
       }
     },
     "Women’s Champions League": {
-      "fixtures": 9,
+      "fixtures": 18,
       "UK": {
-        "confirmedFixtures": 9,
-        "possibleFixtures": 9,
-        "anyCoverageFixtures": 9,
+        "confirmedFixtures": 18,
+        "possibleFixtures": 18,
+        "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 9,
+        "confirmedFixtures": 18,
         "possibleFixtures": 5,
-        "anyCoverageFixtures": 9,
+        "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 5,
         "confirmedPct": 100.0,
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 720,
-    "US": 730
+    "UK": 724,
+    "US": 737
   },
   "eventSpecificGamesByCountry": {
-    "UK": 174,
-    "US": 238
+    "UK": 171,
+    "US": 236
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 15,
@@ -294,275 +294,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 4,
-  "footballTVListingMatches": 171,
+  "footballTVListingMatches": 168,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 389,
-  "officialRightsEntries": 2201,
+  "networkStreamingLeads": 379,
+  "officialRightsEntries": 2218,
   "verifiedGamesByCountry": {
-    "UK": 295,
-    "US": 240
+    "UK": 304,
+    "US": 249
   },
   "possibleGamesByCountry": {
-    "UK": 509,
-    "US": 553
+    "UK": 513,
+    "US": 551
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.nations:401861179",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Malta at Gibraltar",
-      "homeTeam": "Gibraltar",
-      "awayTeam": "Malta",
-      "start": "2026-11-16T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861185",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Netherlands at Germany",
-      "homeTeam": "Germany",
-      "awayTeam": "Netherlands",
-      "start": "2026-11-16T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FS1",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        },
-        {
-          "country": "UK",
-          "service": "Prime Video PPV",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
-          "watchUrl": "https://www.primevideo.com/",
-          "programmeTitle": "Germany v Netherlands",
-          "programmeStart": "2026-11-16T19:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861186",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Scotland at Switzerland",
-      "homeTeam": "Switzerland",
-      "awayTeam": "Scotland",
-      "start": "2026-11-16T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer",
-          "programmeTitle": "Switzerland v Scotland",
-          "programmeStart": "2026-11-16T19:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861187",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Slovenia at North Macedonia",
-      "homeTeam": "North Macedonia",
-      "awayTeam": "Slovenia",
-      "start": "2026-11-16T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861188",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Serbia at Greece",
-      "homeTeam": "Greece",
-      "awayTeam": "Serbia",
-      "start": "2026-11-16T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FS2",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        },
-        {
-          "country": "UK",
-          "service": "Prime Video PPV",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
-          "watchUrl": "https://www.primevideo.com/",
-          "programmeTitle": "Greece v Serbia",
-          "programmeStart": "2026-11-16T19:45:00Z"
-        }
-      ]
-    },
     {
       "id": "espn:basketball/nba:401909994",
       "sport": "Basketball",
@@ -10916,56 +10662,12 @@
       "broadcastLeads": [
         {
           "country": "US",
-          "service": "NBCSN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261124&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.peacocktv.com/sports/nba"
-        },
-        {
-          "country": "US",
-          "service": "NBC",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261124&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "US",
           "service": "NBA League Pass",
           "verified": false,
           "basis": "blackout-dependent-coverage",
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261124&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261124&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261124&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
         }
       ]
     },
@@ -36816,6 +36518,384 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261215&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916965",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "Paris FC at Servette",
+      "homeTeam": "Servette",
+      "awayTeam": "Paris FC",
+      "start": "2026-12-16T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261216&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916966",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "Juventus at Paris Saint-Germain",
+      "homeTeam": "Paris Saint-Germain",
+      "awayTeam": "Juventus",
+      "start": "2026-12-16T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261216&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916967",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "BK Häcken at OL Lyonnes",
+      "homeTeam": "OL Lyonnes",
+      "awayTeam": "BK Häcken",
+      "start": "2026-12-16T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261216&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916968",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "Chelsea at OH Leuven",
+      "homeTeam": "OH Leuven",
+      "awayTeam": "Chelsea",
+      "start": "2026-12-16T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261216&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916969",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "Austria Vienna at Manchester City",
+      "homeTeam": "Manchester City",
+      "awayTeam": "Austria Vienna",
+      "start": "2026-12-16T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261216&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916970",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "Benfica at HB Køge",
+      "homeTeam": "HB Køge",
+      "awayTeam": "Benfica",
+      "start": "2026-12-16T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261216&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916971",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "Arsenal at Internazionale",
+      "homeTeam": "Internazionale",
+      "awayTeam": "Arsenal",
+      "start": "2026-12-16T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261216&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916972",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "Barcelona at Bayern Munich",
+      "homeTeam": "Bayern Munich",
+      "awayTeam": "Barcelona",
+      "start": "2026-12-16T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261216&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/uefa.wchampions:401916973",
+      "sport": "Football",
+      "competition": "Women’s Champions League",
+      "title": "Real Madrid at Roma",
+      "homeTeam": "Roma",
+      "awayTeam": "Real Madrid",
+      "start": "2026-12-16T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261216&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Disney+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
+          "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
+          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
+          "note": "Only selected free BBC matches; check individual listings.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
         }
       ]
     }
