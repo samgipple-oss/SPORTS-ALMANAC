@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T15:28:39Z",
+  "updatedAt": "2026-11-16T19:19:44Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -81,10 +81,10 @@
       },
       "US": {
         "confirmedFixtures": 43,
-        "possibleFixtures": 0,
+        "possibleFixtures": 2,
         "anyCoverageFixtures": 43,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 0,
+        "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       }
@@ -114,10 +114,10 @@
       "fixtures": 161,
       "UK": {
         "confirmedFixtures": 161,
-        "possibleFixtures": 1,
+        "possibleFixtures": 3,
         "anyCoverageFixtures": 161,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 1,
+        "eventSpecificFixtures": 3,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
@@ -216,11 +216,11 @@
       }
     },
     "UEFA Nations League": {
-      "fixtures": 16,
+      "fixtures": 13,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 16,
-        "anyCoverageFixtures": 16,
+        "possibleFixtures": 13,
+        "anyCoverageFixtures": 13,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 10,
         "confirmedPct": 0.0,
@@ -228,12 +228,12 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 5,
-        "anyCoverageFixtures": 5,
-        "uncoveredFixtures": 11,
-        "eventSpecificFixtures": 5,
+        "possibleFixtures": 4,
+        "anyCoverageFixtures": 4,
+        "uncoveredFixtures": 9,
+        "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 31.2
+        "anyCoveragePct": 30.8
       }
     },
     "WSL": {
@@ -280,12 +280,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 723,
-    "US": 731
+    "UK": 720,
+    "US": 730
   },
   "eventSpecificGamesByCountry": {
-    "UK": 172,
-    "US": 237
+    "UK": 174,
+    "US": 238
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 15,
@@ -293,153 +293,22 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 2,
+  "xmltvMatches": 4,
   "footballTVListingMatches": 171,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 386,
-  "officialRightsEntries": 2207,
+  "networkStreamingLeads": 389,
+  "officialRightsEntries": 2201,
   "verifiedGamesByCountry": {
     "UK": 295,
     "US": 240
   },
   "possibleGamesByCountry": {
-    "UK": 510,
-    "US": 552
+    "UK": 509,
+    "US": 553
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.nations:401861182",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Luxembourg at Iceland",
-      "homeTeam": "Iceland",
-      "awayTeam": "Luxembourg",
-      "start": "2026-11-16T17:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861183",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Bulgaria at Estonia",
-      "homeTeam": "Estonia",
-      "awayTeam": "Bulgaria",
-      "start": "2026-11-16T17:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FS2",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861184",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Liechtenstein at Lithuania",
-      "homeTeam": "Lithuania",
-      "awayTeam": "Liechtenstein",
-      "start": "2026-11-16T17:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261116&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/uefa.nations:401861179",
       "sport": "Football",
@@ -2041,6 +1910,27 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261117&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live NBA: Pistons @ Spurs",
+          "programmeStart": "2026-11-18T00:00:00Z",
+          "xmltvChannel": "SkySportsMainEvent.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
@@ -2346,6 +2236,27 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261117&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live NBA: Hornets @ LA Lakers",
+          "programmeStart": "2026-11-18T04:00:00Z",
+          "xmltvChannel": "SkySportsMainEvent.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
@@ -20657,6 +20568,14 @@
       ],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN2",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261202&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
+        },
+        {
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
@@ -20672,6 +20591,33 @@
           "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
           "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
           "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "YouTube TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261202&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://tv.youtube.com/"
+        },
+        {
+          "country": "US",
+          "service": "Hulu + Live TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261202&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.hulu.com/live-tv"
+        },
+        {
+          "country": "US",
+          "service": "Fubo",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261202&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.fubo.tv/"
         }
       ]
     },
@@ -21570,6 +21516,14 @@
       ],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN2",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261202&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
+        },
+        {
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
@@ -21585,6 +21539,33 @@
           "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
           "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
           "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "US",
+          "service": "YouTube TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261202&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://tv.youtube.com/"
+        },
+        {
+          "country": "US",
+          "service": "Hulu + Live TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261202&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.hulu.com/live-tv"
+        },
+        {
+          "country": "US",
+          "service": "Fubo",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261202&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.fubo.tv/"
         }
       ]
     },
