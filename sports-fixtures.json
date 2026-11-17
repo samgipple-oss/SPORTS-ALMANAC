@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T19:25:09Z",
+  "updatedAt": "2026-11-17T22:13:04Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -75,7 +75,7 @@
         "possibleFixtures": 43,
         "anyCoverageFixtures": 43,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 20,
+        "eventSpecificFixtures": 32,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -132,11 +132,11 @@
       }
     },
     "NFL": {
-      "fixtures": 58,
+      "fixtures": 43,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 58,
-        "anyCoverageFixtures": 58,
+        "possibleFixtures": 43,
+        "anyCoverageFixtures": 43,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 0.0,
@@ -144,10 +144,10 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 58,
-        "anyCoverageFixtures": 58,
+        "possibleFixtures": 43,
+        "anyCoverageFixtures": 43,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 58,
+        "eventSpecificFixtures": 43,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -201,7 +201,7 @@
         "possibleFixtures": 40,
         "anyCoverageFixtures": 40,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 11,
+        "eventSpecificFixtures": 12,
         "confirmedPct": 90.0,
         "anyCoveragePct": 100.0
       },
@@ -213,27 +213,6 @@
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
-      }
-    },
-    "UEFA Nations League": {
-      "fixtures": 8,
-      "UK": {
-        "confirmedFixtures": 0,
-        "possibleFixtures": 8,
-        "anyCoverageFixtures": 8,
-        "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 7,
-        "confirmedPct": 0.0,
-        "anyCoveragePct": 100.0
-      },
-      "US": {
-        "confirmedFixtures": 0,
-        "possibleFixtures": 2,
-        "anyCoverageFixtures": 2,
-        "uncoveredFixtures": 6,
-        "eventSpecificFixtures": 2,
-        "confirmedPct": 0.0,
-        "anyCoveragePct": 25.0
       }
     },
     "WSL": {
@@ -280,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 730,
-    "US": 743
+    "UK": 707,
+    "US": 726
   },
   "eventSpecificGamesByCountry": {
-    "UK": 170,
-    "US": 236
+    "UK": 176,
+    "US": 219
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 16,
@@ -294,406 +273,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 3,
-  "footballTVListingMatches": 168,
+  "footballTVListingMatches": 174,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 387,
-  "officialRightsEntries": 2233,
+  "networkStreamingLeads": 326,
+  "officialRightsEntries": 2175,
   "verifiedGamesByCountry": {
     "UK": 309,
     "US": 250
   },
   "possibleGamesByCountry": {
-    "UK": 514,
-    "US": 557
+    "UK": 491,
+    "US": 540
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.nations:401861189",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Portugal at Wales",
-      "homeTeam": "Wales",
-      "awayTeam": "Portugal",
-      "start": "2026-11-17T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer",
-          "programmeTitle": "Wales v Portugal",
-          "programmeStart": "2026-11-17T19:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861190",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Georgia at Ukraine",
-      "homeTeam": "Ukraine",
-      "awayTeam": "Georgia",
-      "start": "2026-11-17T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "Prime Video PPV",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
-          "watchUrl": "https://www.primevideo.com/",
-          "programmeTitle": "Ukraine v Georgia",
-          "programmeStart": "2026-11-17T19:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861191",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Northern Ireland at Hungary",
-      "homeTeam": "Hungary",
-      "awayTeam": "Northern Ireland",
-      "start": "2026-11-17T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FS2",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer",
-          "programmeTitle": "Hungary v Northern Ireland",
-          "programmeStart": "2026-11-17T19:45:00Z"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861192",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Kosovo at Republic of Ireland",
-      "homeTeam": "Republic of Ireland",
-      "awayTeam": "Kosovo",
-      "start": "2026-11-17T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "Prime Video PPV",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
-          "watchUrl": "https://www.primevideo.com/",
-          "programmeTitle": "Republic of Ireland v Kosovo",
-          "programmeStart": "2026-11-17T19:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861193",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Austria at Israel",
-      "homeTeam": "Israel",
-      "awayTeam": "Austria",
-      "start": "2026-11-17T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861194",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Norway at Denmark",
-      "homeTeam": "Denmark",
-      "awayTeam": "Norway",
-      "start": "2026-11-17T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FS1",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        },
-        {
-          "country": "UK",
-          "service": "Prime Video PPV",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
-          "watchUrl": "https://www.primevideo.com/",
-          "programmeTitle": "Denmark v Norway",
-          "programmeStart": "2026-11-17T19:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861195",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Sweden at Poland",
-      "homeTeam": "Poland",
-      "awayTeam": "Sweden",
-      "start": "2026-11-17T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "Prime Video PPV",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
-          "watchUrl": "https://www.primevideo.com/",
-          "programmeTitle": "Poland v Sweden",
-          "programmeStart": "2026-11-17T19:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.nations:401861196",
-      "sport": "Football",
-      "competition": "UEFA Nations League",
-      "title": "Romania at Bosnia-Herzegovina",
-      "homeTeam": "Bosnia-Herzegovina",
-      "awayTeam": "Romania",
-      "start": "2026-11-17T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261117&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "ITVX",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected England and European national-team matches; requires fixture-specific ITV listing.",
-          "watchUrl": "https://www.itv.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected national-team matches only; check an individual BBC listing.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "Prime Video PPV",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Separate pay-per-view purchase required; NOT included in ordinary Prime Video.",
-          "watchUrl": "https://www.primevideo.com/",
-          "programmeTitle": "Bosnia-Herzegovina v Romania",
-          "programmeStart": "2026-11-17T19:45:00Z"
-        }
-      ]
-    },
     {
       "id": "espn:hockey/nhl:401892728",
       "sport": "Ice hockey",
@@ -16152,10 +15746,12 @@
           "country": "UK",
           "service": "BBC iPlayer",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer",
+          "programmeTitle": "Sassuolo v Napoli",
+          "programmeStart": "2026-11-29T14:00:00Z"
         }
       ]
     },
@@ -19830,9 +19426,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Real Sociedad v Real Madrid",
+          "programmeStart": "2026-12-02T18:00:00Z"
         },
         {
           "country": "UK",
@@ -20586,9 +20184,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Barcelona v Atlético Madrid",
+          "programmeStart": "2026-12-02T20:30:00Z"
         },
         {
           "country": "UK",
@@ -22376,9 +21976,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Alavés v Espanyol",
+          "programmeStart": "2026-12-04T20:00:00Z"
         },
         {
           "country": "UK",
@@ -22740,9 +22342,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Racing Santander v Deportivo La Coruna",
+          "programmeStart": "2026-12-05T13:00:00Z"
         },
         {
           "country": "UK",
@@ -23373,6 +22977,16 @@
           "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
           "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
           "watchUrl": "https://www.disneyplus.com/"
+        },
+        {
+          "country": "UK",
+          "service": "LaLigaTV",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Rayo Vallecano v Levante",
+          "programmeStart": "2026-12-05T15:15:00Z"
         }
       ]
     },
@@ -23541,9 +23155,11 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Villarreal v Real Sociedad",
+          "programmeStart": "2026-12-05T17:30:00Z"
         },
         {
           "country": "UK",
@@ -23955,10 +23571,12 @@
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.disneyplus.com/",
+          "programmeTitle": "Barcelona v Celta Vigo",
+          "programmeStart": "2026-12-05T20:00:00Z"
         }
       ]
     },
@@ -24376,10 +23994,12 @@
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.disneyplus.com/",
+          "programmeTitle": "Osasuna v Elche",
+          "programmeStart": "2026-12-06T13:00:00Z"
         }
       ]
     },
@@ -24686,10 +24306,12 @@
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.disneyplus.com/",
+          "programmeTitle": "Athletic Bilbao v Real Madrid",
+          "programmeStart": "2026-12-06T15:15:00Z"
         }
       ]
     },
@@ -24919,10 +24541,12 @@
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.disneyplus.com/",
+          "programmeTitle": "Getafe v Valencia",
+          "programmeStart": "2026-12-06T17:30:00Z"
         }
       ]
     },
@@ -25659,10 +25283,12 @@
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.disneyplus.com/",
+          "programmeTitle": "Atlético Madrid v Real Betis",
+          "programmeStart": "2026-12-06T20:00:00Z"
         }
       ]
     },
@@ -26476,10 +26102,12 @@
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.disneyplus.com/",
+          "programmeTitle": "Sevilla v Málaga",
+          "programmeStart": "2026-12-07T20:00:00Z"
         }
       ]
     },
@@ -29309,47 +28937,6 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873109",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Minnesota Vikings at New England Patriots",
-      "homeTeam": "New England Patriots",
-      "awayTeam": "Minnesota Vikings",
-      "start": "2026-12-11T01:15:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261210&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Prime Video",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261210&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.primevideo.com/salp/ucl-help/"
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
         }
       ]
     },
@@ -32464,686 +32051,6 @@
       ]
     },
     {
-      "id": "espn:football/nfl:401873110",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Atlanta Falcons at Cleveland Browns",
-      "homeTeam": "Cleveland Browns",
-      "awayTeam": "Atlanta Falcons",
-      "start": "2026-12-13T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "CBS simulcast may be limited to the viewer's local CBS market.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873111",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Chicago Bears at Miami Dolphins",
-      "homeTeam": "Miami Dolphins",
-      "awayTeam": "Chicago Bears",
-      "start": "2026-12-13T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "CBS simulcast may be limited to the viewer's local CBS market.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873112",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Denver Broncos at New York Jets",
-      "homeTeam": "New York Jets",
-      "awayTeam": "Denver Broncos",
-      "start": "2026-12-13T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "CBS simulcast may be limited to the viewer's local CBS market.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873113",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Houston Texans at Washington Commanders",
-      "homeTeam": "Washington Commanders",
-      "awayTeam": "Houston Texans",
-      "start": "2026-12-13T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "CBS simulcast may be limited to the viewer's local CBS market.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873114",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Indianapolis Colts at Philadelphia Eagles",
-      "homeTeam": "Philadelphia Eagles",
-      "awayTeam": "Indianapolis Colts",
-      "start": "2026-12-13T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FOX",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "FOX One",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.fox.com/sports/football/nfl",
-          "note": "FOX One streams FOX NFL games only in your applicable market.",
-          "watchUrl": "https://www.fox.com/sports/football/nfl"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873115",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "New Orleans Saints at Carolina Panthers",
-      "homeTeam": "Carolina Panthers",
-      "awayTeam": "New Orleans Saints",
-      "start": "2026-12-13T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "CBS simulcast may be limited to the viewer's local CBS market.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873116",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Tampa Bay Buccaneers at Baltimore Ravens",
-      "homeTeam": "Baltimore Ravens",
-      "awayTeam": "Tampa Bay Buccaneers",
-      "start": "2026-12-13T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FOX",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "FOX One",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.fox.com/sports/football/nfl",
-          "note": "FOX One streams FOX NFL games only in your applicable market.",
-          "watchUrl": "https://www.fox.com/sports/football/nfl"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873117",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Tennessee Titans at Detroit Lions",
-      "homeTeam": "Detroit Lions",
-      "awayTeam": "Tennessee Titans",
-      "start": "2026-12-13T18:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FOX",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "FOX One",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.fox.com/sports/football/nfl",
-          "note": "FOX One streams FOX NFL games only in your applicable market.",
-          "watchUrl": "https://www.fox.com/sports/football/nfl"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
       "id": "espn:hockey/nhl:401892922",
       "sport": "Ice hockey",
       "competition": "NHL",
@@ -33858,346 +32765,6 @@
       ]
     },
     {
-      "id": "espn:football/nfl:401873118",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Los Angeles Chargers at Las Vegas Raiders",
-      "homeTeam": "Las Vegas Raiders",
-      "awayTeam": "Los Angeles Chargers",
-      "start": "2026-12-13T21:05:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "CBS",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "CBS simulcast may be limited to the viewer's local CBS market.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873119",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Kansas City Chiefs at Cincinnati Bengals",
-      "homeTeam": "Cincinnati Bengals",
-      "awayTeam": "Kansas City Chiefs",
-      "start": "2026-12-13T21:25:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FOX",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "FOX One",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.fox.com/sports/football/nfl",
-          "note": "FOX One streams FOX NFL games only in your applicable market.",
-          "watchUrl": "https://www.fox.com/sports/football/nfl"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873120",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Los Angeles Rams at San Francisco 49ers",
-      "homeTeam": "San Francisco 49ers",
-      "awayTeam": "Los Angeles Rams",
-      "start": "2026-12-13T21:25:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FOX",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "FOX One",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.fox.com/sports/football/nfl",
-          "note": "FOX One streams FOX NFL games only in your applicable market.",
-          "watchUrl": "https://www.fox.com/sports/football/nfl"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873121",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "New York Giants at Seattle Seahawks",
-      "homeTeam": "Seattle Seahawks",
-      "awayTeam": "New York Giants",
-      "start": "2026-12-13T21:25:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "FOX",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "NFL Sunday Ticket",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.google.com/youtube/answer/17594070",
-          "note": "Only eligible out-of-market Sunday afternoon CBS/FOX games; local and national exclusions apply.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "FOX One",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.fox.com/sports/football/nfl",
-          "note": "FOX One streams FOX NFL games only in your applicable market.",
-          "watchUrl": "https://www.fox.com/sports/football/nfl"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
       "id": "espn:basketball/nba:401910100",
       "sport": "Basketball",
       "competition": "NBA",
@@ -34413,82 +32980,6 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873122",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Buffalo Bills at Green Bay Packers",
-      "homeTeam": "Green Bay Packers",
-      "awayTeam": "Buffalo Bills",
-      "start": "2026-12-14T01:20:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBC",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "NBC games often stream on Peacock; check the specific event and plan.",
-          "watchUrl": "https://www.peacocktv.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261213&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
         }
       ]
     },
@@ -35088,74 +33579,6 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:football/nfl:401873123",
-      "sport": "American football",
-      "competition": "NFL",
-      "title": "Pittsburgh Steelers at Jacksonville Jaguars",
-      "homeTeam": "Jacksonville Jaguars",
-      "awayTeam": "Pittsburgh Steelers",
-      "start": "2026-12-15T01:15:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261214&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261214&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "NFL Game Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
-          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "NFL+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
-          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
-          "watchUrl": "https://www.nfl.com/plus/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261214&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261214&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261214&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
         }
       ]
     },
