@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T13:34:00Z",
+  "updatedAt": "2026-11-17T16:17:05Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -20181,204 +20181,12 @@
       ]
     },
     {
-      "id": "espn:soccer/usa.1:401933715",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Houston Dynamo FC at San Jose Earthquakes",
-      "homeTeam": "San Jose Earthquakes",
-      "awayTeam": "Houston Dynamo FC",
-      "start": "2026-12-02T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:401933716",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Portland Timbers at FC Dallas",
-      "homeTeam": "FC Dallas",
-      "awayTeam": "Portland Timbers",
-      "start": "2026-12-02T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
       "id": "espn:soccer/usa.1:401933717",
       "sport": "Football",
       "competition": "MLS",
       "title": "TBD Away at Vancouver Whitecaps",
       "homeTeam": "Vancouver Whitecaps",
       "awayTeam": "TBD Away",
-      "start": "2026-12-02T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:401933718",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Charlotte FC at Chicago Fire FC",
-      "homeTeam": "Chicago Fire FC",
-      "awayTeam": "Charlotte FC",
-      "start": "2026-12-02T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:401933719",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Philadelphia Union at New England Revolution",
-      "homeTeam": "New England Revolution",
-      "awayTeam": "Philadelphia Union",
-      "start": "2026-12-02T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:401933720",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Columbus Crew at Inter Miami CF",
-      "homeTeam": "Inter Miami CF",
-      "awayTeam": "Columbus Crew",
-      "start": "2026-12-02T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/usa.1:401933735",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "LAFC at St. Louis CITY SC",
-      "homeTeam": "St. Louis CITY SC",
-      "awayTeam": "LAFC",
       "start": "2026-12-02T20:00:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
@@ -20922,6 +20730,38 @@
       ]
     },
     {
+      "id": "espn:soccer/usa.1:401933719",
+      "sport": "Football",
+      "competition": "MLS",
+      "title": "Philadelphia Union at New England Revolution",
+      "homeTeam": "New England Revolution",
+      "awayTeam": "Philadelphia Union",
+      "start": "2026-12-03T00:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
       "id": "espn:basketball/nba:401910078",
       "sport": "Basketball",
       "competition": "NBA",
@@ -21028,6 +20868,38 @@
           "watchUrl": "https://www.hulu.com/live-tv"
         }
       ]
+    },
+    {
+      "id": "espn:soccer/usa.1:401933720",
+      "sport": "Football",
+      "competition": "MLS",
+      "title": "Columbus Crew at Inter Miami CF",
+      "homeTeam": "Inter Miami CF",
+      "awayTeam": "Columbus Crew",
+      "start": "2026-12-03T00:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        }
+      ],
+      "broadcastLeads": []
     },
     {
       "id": "espn:basketball/nba:401910079",
@@ -21202,6 +21074,102 @@
       ]
     },
     {
+      "id": "espn:soccer/usa.1:401933716",
+      "sport": "Football",
+      "competition": "MLS",
+      "title": "Portland Timbers at FC Dallas",
+      "homeTeam": "FC Dallas",
+      "awayTeam": "Portland Timbers",
+      "start": "2026-12-03T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
+      "id": "espn:soccer/usa.1:401933718",
+      "sport": "Football",
+      "competition": "MLS",
+      "title": "Charlotte FC at Chicago Fire FC",
+      "homeTeam": "Chicago Fire FC",
+      "awayTeam": "Charlotte FC",
+      "start": "2026-12-03T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
+      "id": "espn:soccer/usa.1:401933735",
+      "sport": "Football",
+      "competition": "MLS",
+      "title": "LAFC at St. Louis CITY SC",
+      "homeTeam": "St. Louis CITY SC",
+      "awayTeam": "LAFC",
+      "start": "2026-12-03T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        }
+      ],
+      "broadcastLeads": []
+    },
+    {
       "id": "espn:basketball/nba:401910083",
       "sport": "Basketball",
       "competition": "NBA",
@@ -21273,6 +21241,38 @@
           "note": "Selected NHL games only; check the Premier Sports listings."
         }
       ]
+    },
+    {
+      "id": "espn:soccer/usa.1:401933715",
+      "sport": "Football",
+      "competition": "MLS",
+      "title": "Houston Dynamo FC at San Jose Earthquakes",
+      "homeTeam": "San Jose Earthquakes",
+      "awayTeam": "Houston Dynamo FC",
+      "start": "2026-12-03T03:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "Apple TV",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
+          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
+          "watchUrl": "https://tv.apple.com/sports"
+        }
+      ],
+      "broadcastLeads": []
     },
     {
       "id": "espn:basketball/nba:401910084",
