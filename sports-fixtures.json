@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T13:36:41Z",
+  "updatedAt": "2026-11-18T16:19:18Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -189,7 +189,7 @@
         "possibleFixtures": 50,
         "anyCoverageFixtures": 50,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 0,
+        "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -264,7 +264,7 @@
   },
   "eventSpecificGamesByCountry": {
     "UK": 180,
-    "US": 234
+    "US": 238
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 15,
@@ -277,7 +277,7 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 373,
-  "officialRightsEntries": 2205,
+  "officialRightsEntries": 2201,
   "verifiedGamesByCountry": {
     "UK": 307,
     "US": 249
@@ -3180,6 +3180,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261121&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
           "country": "UK",
           "service": "Sky Sports",
           "verified": false,
@@ -3214,15 +3223,6 @@
           "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
           "note": "TNT Sports add-on required; selected TNT matches only.",
           "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
-          "watchUrl": "https://www.peacocktv.com/sports"
         },
         {
           "country": "US",
@@ -3255,6 +3255,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261121&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
           "country": "UK",
           "service": "Sky Sports",
           "verified": false,
@@ -3289,15 +3298,6 @@
           "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
           "note": "TNT Sports add-on required; selected TNT matches only.",
           "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
-          "watchUrl": "https://www.peacocktv.com/sports"
         },
         {
           "country": "US",
@@ -3330,6 +3330,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261121&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
           "country": "UK",
           "service": "Sky Sports",
           "verified": false,
@@ -3364,15 +3373,6 @@
           "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
           "note": "TNT Sports add-on required; selected TNT matches only.",
           "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
-          "watchUrl": "https://www.peacocktv.com/sports"
         },
         {
           "country": "US",
@@ -3405,6 +3405,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261121&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
           "country": "UK",
           "service": "Sky Sports",
           "verified": false,
@@ -3439,15 +3448,6 @@
           "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
           "note": "TNT Sports add-on required; selected TNT matches only.",
           "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
-          "watchUrl": "https://www.peacocktv.com/sports"
         },
         {
           "country": "US",
