@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T07:40:28Z",
+  "updatedAt": "2026-11-18T10:24:11Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -138,7 +138,7 @@
         "possibleFixtures": 59,
         "anyCoverageFixtures": 59,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 0,
+        "eventSpecificFixtures": 1,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -159,7 +159,7 @@
         "possibleFixtures": 215,
         "anyCoverageFixtures": 215,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 0,
+        "eventSpecificFixtures": 5,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -263,7 +263,7 @@
     "US": 737
   },
   "eventSpecificGamesByCountry": {
-    "UK": 174,
+    "UK": 180,
     "US": 234
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -272,7 +272,7 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 1,
+  "xmltvMatches": 7,
   "footballTVListingMatches": 174,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
@@ -838,9 +838,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Montreal at New Jersey",
+          "programmeStart": "2026-11-19T00:30:00Z",
+          "xmltvChannel": "PremierSports1.uk"
         }
       ]
     },
@@ -1120,9 +1123,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Colorado at Utah",
+          "programmeStart": "2026-11-19T03:00:00Z",
+          "xmltvChannel": "PremierSports2.uk"
         },
         {
           "country": "US",
@@ -1464,9 +1470,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Philadelphia at Ottawa",
+          "programmeStart": "2026-11-20T00:00:00Z",
+          "xmltvChannel": "PremierSports2.uk"
         }
       ]
     },
@@ -1664,9 +1673,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Edmonton at Tampa Bay",
+          "programmeStart": "2026-11-20T00:30:00Z",
+          "xmltvChannel": "PremierSports1.uk"
         }
       ]
     },
@@ -1987,6 +1999,27 @@
           "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
           "note": "Live games on phones/tablets only when local or nationally televised in your market.",
           "watchUrl": "https://www.nfl.com/plus/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live: NFL Colts @ Texans",
+          "programmeStart": "2026-11-20T00:00:00Z",
+          "xmltvChannel": "SkySportsAction.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
@@ -2104,9 +2137,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Dallas at Vegas",
+          "programmeStart": "2026-11-20T03:00:00Z",
+          "xmltvChannel": "PremierSports2.uk"
         }
       ]
     },
