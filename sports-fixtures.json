@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T01:36:57Z",
+  "updatedAt": "2026-11-19T04:20:22Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 218,
+      "fixtures": 220,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 218,
-        "anyCoverageFixtures": 218,
+        "possibleFixtures": 220,
+        "anyCoverageFixtures": 220,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 3,
         "confirmedPct": 0.0,
@@ -165,8 +165,8 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 218,
-        "anyCoverageFixtures": 218,
+        "possibleFixtures": 220,
+        "anyCoverageFixtures": 220,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 98,
         "confirmedPct": 0.0,
@@ -259,8 +259,8 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 720,
-    "US": 739
+    "UK": 722,
+    "US": 741
   },
   "eventSpecificGamesByCountry": {
     "UK": 179,
@@ -277,14 +277,14 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 361,
-  "officialRightsEntries": 2211,
+  "officialRightsEntries": 2217,
   "verifiedGamesByCountry": {
     "UK": 305,
     "US": 247
   },
   "possibleGamesByCountry": {
-    "UK": 503,
-    "US": 554
+    "UK": 505,
+    "US": 556
   },
   "errors": [],
   "items": [
@@ -36483,6 +36483,86 @@
       "homeTeam": "Minnesota Wild",
       "awayTeam": "Anaheim Ducks",
       "start": "2026-12-19T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892959",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Carolina Hurricanes at Colorado Avalanche",
+      "homeTeam": "Colorado Avalanche",
+      "awayTeam": "Carolina Hurricanes",
+      "start": "2026-12-19T02:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892960",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "New York Islanders at Vegas Golden Knights",
+      "homeTeam": "Vegas Golden Knights",
+      "awayTeam": "New York Islanders",
+      "start": "2026-12-19T03:00:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
       "broadcasts": [],
