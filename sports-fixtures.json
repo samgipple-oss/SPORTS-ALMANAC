@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T22:08:58Z",
+  "updatedAt": "2026-11-19T01:36:57Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -114,20 +114,20 @@
       "fixtures": 164,
       "UK": {
         "confirmedFixtures": 164,
-        "possibleFixtures": 1,
+        "possibleFixtures": 0,
         "anyCoverageFixtures": 164,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 1,
+        "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 14,
+        "confirmedFixtures": 13,
         "possibleFixtures": 164,
         "anyCoverageFixtures": 164,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 38,
-        "confirmedPct": 8.5,
+        "eventSpecificFixtures": 37,
+        "confirmedPct": 7.9,
         "anyCoveragePct": 100.0
       }
     },
@@ -153,22 +153,22 @@
       }
     },
     "NHL": {
-      "fixtures": 216,
+      "fixtures": 218,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 216,
-        "anyCoverageFixtures": 216,
+        "possibleFixtures": 218,
+        "anyCoverageFixtures": 218,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 5,
+        "eventSpecificFixtures": 3,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 216,
-        "anyCoverageFixtures": 216,
+        "possibleFixtures": 218,
+        "anyCoverageFixtures": 218,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 100,
+        "eventSpecificFixtures": 98,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -259,720 +259,35 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 718,
-    "US": 737
+    "UK": 720,
+    "US": 739
   },
   "eventSpecificGamesByCountry": {
-    "UK": 182,
-    "US": 236
+    "UK": 179,
+    "US": 233
   },
   "officialNHLBlackoutFixtureMatches": 0,
-  "nbaOfficialUSNationalBroadcastEntries": 15,
+  "nbaOfficialUSNationalBroadcastEntries": 14,
   "nbaOfficialSourceWarnings": [],
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 7,
+  "xmltvMatches": 4,
   "footballTVListingMatches": 178,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 373,
-  "officialRightsEntries": 2205,
+  "networkStreamingLeads": 361,
+  "officialRightsEntries": 2211,
   "verifiedGamesByCountry": {
     "UK": 305,
-    "US": 248
+    "US": 247
   },
   "possibleGamesByCountry": {
-    "UK": 502,
-    "US": 552
+    "UK": 503,
+    "US": 554
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:basketball/nba:401910007",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Memphis Grizzlies at Cleveland Cavaliers",
-      "homeTeam": "Cleveland Cavaliers",
-      "awayTeam": "Memphis Grizzlies",
-      "start": "2026-11-19T00:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910008",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Houston Rockets at Indiana Pacers",
-      "homeTeam": "Indiana Pacers",
-      "awayTeam": "Houston Rockets",
-      "start": "2026-11-19T00:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910009",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Milwaukee Bucks at Miami Heat",
-      "homeTeam": "Miami Heat",
-      "awayTeam": "Milwaukee Bucks",
-      "start": "2026-11-19T00:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "ESPN",
-          "verified": true,
-          "basis": "official-event-schedule",
-          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
-          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
-          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Live NBA: Bucks @ Heat",
-          "programmeStart": "2026-11-19T00:00:00Z",
-          "xmltvChannel": "SkySportsMainEvent.uk"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
-          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910010",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Philadelphia 76ers at Orlando Magic",
-      "homeTeam": "Orlando Magic",
-      "awayTeam": "Philadelphia 76ers",
-      "start": "2026-11-19T00:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910011",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Chicago Bulls at Brooklyn Nets",
-      "homeTeam": "Brooklyn Nets",
-      "awayTeam": "Chicago Bulls",
-      "start": "2026-11-19T00:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910012",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Washington Wizards at Toronto Raptors",
-      "homeTeam": "Toronto Raptors",
-      "awayTeam": "Washington Wizards",
-      "start": "2026-11-19T00:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:hockey/nhl:401892739",
-      "sport": "Ice hockey",
-      "competition": "NHL",
-      "title": "Boston Bruins at Detroit Red Wings",
-      "homeTeam": "Detroit Red Wings",
-      "awayTeam": "Boston Bruins",
-      "start": "2026-11-19T00:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "TNT",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NHL.TV",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
-          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
-        },
-        {
-          "country": "US",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "NHL games on TNT/TBS can stream with the appropriate HBO Max sports access.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        }
-      ]
-    },
-    {
-      "id": "espn:hockey/nhl:401892740",
-      "sport": "Ice hockey",
-      "competition": "NHL",
-      "title": "Montreal Canadiens at New Jersey Devils",
-      "homeTeam": "New Jersey Devils",
-      "awayTeam": "Montreal Canadiens",
-      "start": "2026-11-19T00:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "NHL.TV",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
-          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
-          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
-          "programmeTitle": "Live NHL: Montreal at New Jersey",
-          "programmeStart": "2026-11-19T00:30:00Z",
-          "xmltvChannel": "PremierSports1.uk"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910013",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Detroit Pistons at New Orleans Pelicans",
-      "homeTeam": "New Orleans Pelicans",
-      "awayTeam": "Detroit Pistons",
-      "start": "2026-11-19T01:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910014",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Atlanta Hawks at Oklahoma City Thunder",
-      "homeTeam": "Oklahoma City Thunder",
-      "awayTeam": "Atlanta Hawks",
-      "start": "2026-11-19T01:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910016",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Golden State Warriors at Dallas Mavericks",
-      "homeTeam": "Dallas Mavericks",
-      "awayTeam": "Golden State Warriors",
-      "start": "2026-11-19T01:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910015",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Boston Celtics at Denver Nuggets",
-      "homeTeam": "Denver Nuggets",
-      "awayTeam": "Boston Celtics",
-      "start": "2026-11-19T02:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910017",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Utah Jazz at Los Angeles Lakers",
-      "homeTeam": "Los Angeles Lakers",
-      "awayTeam": "Utah Jazz",
-      "start": "2026-11-19T03:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910018",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Phoenix Suns at Sacramento Kings",
-      "homeTeam": "Sacramento Kings",
-      "awayTeam": "Phoenix Suns",
-      "start": "2026-11-19T03:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ]
-    },
-    {
-      "id": "espn:hockey/nhl:401892741",
-      "sport": "Ice hockey",
-      "competition": "NHL",
-      "title": "Colorado Avalanche at Utah Mammoth",
-      "homeTeam": "Utah Mammoth",
-      "awayTeam": "Colorado Avalanche",
-      "start": "2026-11-19T03:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "TNT",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
-        },
-        {
-          "country": "UK",
-          "service": "NHL.TV",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
-          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
-          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
-          "programmeTitle": "Live NHL: Colorado at Utah",
-          "programmeStart": "2026-11-19T03:00:00Z",
-          "xmltvChannel": "PremierSports2.uk"
-        },
-        {
-          "country": "US",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "NHL games on TNT/TBS can stream with the appropriate HBO Max sports access.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/uefa.wchampions:401916977",
       "sport": "Football",
@@ -36592,6 +35907,611 @@
           "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
           "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
           "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910133",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Oklahoma City Thunder at Charlotte Hornets",
+      "homeTeam": "Charlotte Hornets",
+      "awayTeam": "Oklahoma City Thunder",
+      "start": "2026-12-19T00:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910134",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "LA Clippers at Miami Heat",
+      "homeTeam": "Miami Heat",
+      "awayTeam": "LA Clippers",
+      "start": "2026-12-19T00:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Prime Video",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.primevideo.com/salp/ucl-help/"
+        },
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910135",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "New York Knicks at Washington Wizards",
+      "homeTeam": "Washington Wizards",
+      "awayTeam": "New York Knicks",
+      "start": "2026-12-19T00:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892955",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Nashville Predators at New York Rangers",
+      "homeTeam": "New York Rangers",
+      "awayTeam": "Nashville Predators",
+      "start": "2026-12-19T00:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892956",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Detroit Red Wings at Philadelphia Flyers",
+      "homeTeam": "Philadelphia Flyers",
+      "awayTeam": "Detroit Red Wings",
+      "start": "2026-12-19T00:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892957",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Seattle Kraken at Pittsburgh Penguins",
+      "homeTeam": "Pittsburgh Penguins",
+      "awayTeam": "Seattle Kraken",
+      "start": "2026-12-19T00:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910136",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Utah Jazz at Boston Celtics",
+      "homeTeam": "Boston Celtics",
+      "awayTeam": "Utah Jazz",
+      "start": "2026-12-19T00:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910137",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Orlando Magic at Brooklyn Nets",
+      "homeTeam": "Brooklyn Nets",
+      "awayTeam": "Orlando Magic",
+      "start": "2026-12-19T00:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910138",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Cleveland Cavaliers at Detroit Pistons",
+      "homeTeam": "Detroit Pistons",
+      "awayTeam": "Cleveland Cavaliers",
+      "start": "2026-12-19T00:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910139",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Golden State Warriors at Toronto Raptors",
+      "homeTeam": "Toronto Raptors",
+      "awayTeam": "Golden State Warriors",
+      "start": "2026-12-19T00:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892954",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Montreal Canadiens at Buffalo Sabres",
+      "homeTeam": "Buffalo Sabres",
+      "awayTeam": "Montreal Canadiens",
+      "start": "2026-12-19T00:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910140",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Houston Rockets at Memphis Grizzlies",
+      "homeTeam": "Memphis Grizzlies",
+      "awayTeam": "Houston Rockets",
+      "start": "2026-12-19T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910141",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Phoenix Suns at Milwaukee Bucks",
+      "homeTeam": "Milwaukee Bucks",
+      "awayTeam": "Phoenix Suns",
+      "start": "2026-12-19T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910142",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Los Angeles Lakers at Minnesota Timberwolves",
+      "homeTeam": "Minnesota Timberwolves",
+      "awayTeam": "Los Angeles Lakers",
+      "start": "2026-12-19T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910143",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Sacramento Kings at New Orleans Pelicans",
+      "homeTeam": "New Orleans Pelicans",
+      "awayTeam": "Sacramento Kings",
+      "start": "2026-12-19T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910144",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Chicago Bulls at San Antonio Spurs",
+      "homeTeam": "San Antonio Spurs",
+      "awayTeam": "Chicago Bulls",
+      "start": "2026-12-19T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892958",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Anaheim Ducks at Minnesota Wild",
+      "homeTeam": "Minnesota Wild",
+      "awayTeam": "Anaheim Ducks",
+      "start": "2026-12-19T01:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
         }
       ]
     }
