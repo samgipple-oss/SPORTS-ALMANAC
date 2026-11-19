@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T10:25:35Z",
+  "updatedAt": "2026-11-19T13:38:30Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -174,20 +174,20 @@
       }
     },
     "Premier League": {
-      "fixtures": 50,
+      "fixtures": 51,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 50,
-        "anyCoverageFixtures": 50,
+        "possibleFixtures": 51,
+        "anyCoverageFixtures": 51,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 36,
+        "eventSpecificFixtures": 37,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 50,
-        "anyCoverageFixtures": 50,
+        "possibleFixtures": 51,
+        "anyCoverageFixtures": 51,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
@@ -216,22 +216,22 @@
       }
     },
     "WSL": {
-      "fixtures": 14,
+      "fixtures": 16,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 14,
-        "anyCoverageFixtures": 14,
+        "possibleFixtures": 16,
+        "anyCoverageFixtures": 16,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 14,
+        "eventSpecificFixtures": 16,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 14,
-        "anyCoverageFixtures": 14,
+        "possibleFixtures": 16,
+        "anyCoverageFixtures": 16,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 14,
+        "eventSpecificFixtures": 16,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -259,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 722,
-    "US": 741
+    "UK": 725,
+    "US": 744
   },
   "eventSpecificGamesByCountry": {
-    "UK": 179,
-    "US": 233
+    "UK": 182,
+    "US": 235
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -273,18 +273,18 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 4,
-  "footballTVListingMatches": 178,
+  "footballTVListingMatches": 182,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 361,
-  "officialRightsEntries": 2217,
+  "officialRightsEntries": 2232,
   "verifiedGamesByCountry": {
     "UK": 305,
     "US": 247
   },
   "possibleGamesByCountry": {
-    "UK": 505,
-    "US": 556
+    "UK": 508,
+    "US": 559
   },
   "errors": [],
   "items": [
@@ -36592,6 +36592,209 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401879203",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Newcastle United at Brentford",
+      "homeTeam": "Brentford",
+      "awayTeam": "Newcastle United",
+      "start": "2026-12-19T12:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "A selection of UK live fixtures; not every Premier League game is televised.",
+          "watchUrl": "https://www.skysports.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "Selected games live with a NOW Sports membership when shown on Sky Sports.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Brentford v Newcastle United",
+          "programmeStart": "2026-12-19T12:30:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.hbomax.com/",
+          "programmeTitle": "Brentford v Newcastle United",
+          "programmeStart": "2026-12-19T12:30:00Z"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902841",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "London City Lionesses at Aston Villa",
+      "homeTeam": "Aston Villa",
+      "awayTeam": "London City Lionesses",
+      "start": "2026-12-19T12:45:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261219&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Aston Villa Women v London City Lionesses",
+          "programmeStart": "2026-12-19T12:45:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free WSL fixtures only; check official channel.",
+          "watchUrl": "https://www.youtube.com/",
+          "free": true
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902844",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "Chelsea at Brighton & Hove Albion",
+      "homeTeam": "Brighton & Hove Albion",
+      "awayTeam": "Chelsea",
+      "start": "2026-12-19T12:45:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261219&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Brighton & Hove Albion Women v Chelsea Women",
+          "programmeStart": "2026-12-19T12:45:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free WSL fixtures only; check official channel.",
+          "watchUrl": "https://www.youtube.com/",
+          "free": true
         }
       ]
     }
