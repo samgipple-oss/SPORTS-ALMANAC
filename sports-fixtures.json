@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-11-19T13:38:30Z",
+  "updatedAt": "2026-11-19T16:21:25Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
   "broadcastAuditVersion": 1,
   "coverageByCompetition": {
     "Bundesliga": {
-      "fixtures": 37,
+      "fixtures": 41,
       "UK": {
         "confirmedFixtures": 0,
         "possibleFixtures": 18,
         "anyCoverageFixtures": 18,
-        "uncoveredFixtures": 19,
+        "uncoveredFixtures": 23,
         "eventSpecificFixtures": 18,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 48.6
+        "anyCoveragePct": 43.9
       },
       "US": {
-        "confirmedFixtures": 37,
-        "possibleFixtures": 37,
-        "anyCoverageFixtures": 37,
+        "confirmedFixtures": 41,
+        "possibleFixtures": 41,
+        "anyCoverageFixtures": 41,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 9,
         "confirmedPct": 100.0,
@@ -174,11 +174,11 @@
       }
     },
     "Premier League": {
-      "fixtures": 51,
+      "fixtures": 54,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 51,
-        "anyCoverageFixtures": 51,
+        "possibleFixtures": 54,
+        "anyCoverageFixtures": 54,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 37,
         "confirmedPct": 0.0,
@@ -186,8 +186,8 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 51,
-        "anyCoverageFixtures": 51,
+        "possibleFixtures": 54,
+        "anyCoverageFixtures": 54,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 42,
+      "fixtures": 43,
       "UK": {
-        "confirmedFixtures": 38,
-        "possibleFixtures": 42,
-        "anyCoverageFixtures": 42,
+        "confirmedFixtures": 39,
+        "possibleFixtures": 43,
+        "anyCoverageFixtures": 43,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 13,
-        "confirmedPct": 90.5,
+        "confirmedPct": 90.7,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 42,
+        "confirmedFixtures": 43,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 42,
+        "anyCoverageFixtures": 43,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -259,8 +259,8 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 725,
-    "US": 744
+    "UK": 729,
+    "US": 752
   },
   "eventSpecificGamesByCountry": {
     "UK": 182,
@@ -277,14 +277,14 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 361,
-  "officialRightsEntries": 2232,
+  "officialRightsEntries": 2270,
   "verifiedGamesByCountry": {
-    "UK": 305,
-    "US": 247
+    "UK": 306,
+    "US": 252
   },
   "possibleGamesByCountry": {
-    "UK": 508,
-    "US": 559
+    "UK": 512,
+    "US": 566
   },
   "errors": [],
   "items": [
@@ -36795,6 +36795,467 @@
           "note": "Selected free WSL fixtures only; check official channel.",
           "watchUrl": "https://www.youtube.com/",
           "free": true
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401874973",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Parma at Sassuolo",
+      "homeTeam": "Sassuolo",
+      "awayTeam": "Parma",
+      "start": "2026-12-19T14:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ger.1:401884692",
+      "sport": "Football",
+      "competition": "Bundesliga",
+      "title": "Hamburg SV at SV Elversberg",
+      "homeTeam": "SV Elversberg",
+      "awayTeam": "Hamburg SV",
+      "start": "2026-12-19T14:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
+          "watchUrl": "https://www.peacocktv.com/sports",
+          "language": "Spanish"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Fandango",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "Most Bundesliga matches stream free in English; some are instead on USA Network.",
+          "watchUrl": "https://www.fandango.com/",
+          "free": true,
+          "language": "English"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "At least 30 matches per season air on USA Network; check this fixture."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ger.1:401884695",
+      "sport": "Football",
+      "competition": "Bundesliga",
+      "title": "FC Cologne at Mainz",
+      "homeTeam": "Mainz",
+      "awayTeam": "FC Cologne",
+      "start": "2026-12-19T14:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
+          "watchUrl": "https://www.peacocktv.com/sports",
+          "language": "Spanish"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Fandango",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "Most Bundesliga matches stream free in English; some are instead on USA Network.",
+          "watchUrl": "https://www.fandango.com/",
+          "free": true,
+          "language": "English"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "At least 30 matches per season air on USA Network; check this fixture."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ger.1:401884696",
+      "sport": "Football",
+      "competition": "Bundesliga",
+      "title": "SC Paderborn 07 at FC Augsburg",
+      "homeTeam": "FC Augsburg",
+      "awayTeam": "SC Paderborn 07",
+      "start": "2026-12-19T14:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
+          "watchUrl": "https://www.peacocktv.com/sports",
+          "language": "Spanish"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Fandango",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "Most Bundesliga matches stream free in English; some are instead on USA Network.",
+          "watchUrl": "https://www.fandango.com/",
+          "free": true,
+          "language": "English"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "At least 30 matches per season air on USA Network; check this fixture."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ger.1:401884698",
+      "sport": "Football",
+      "competition": "Bundesliga",
+      "title": "Eintracht Frankfurt at Bayer Leverkusen",
+      "homeTeam": "Bayer Leverkusen",
+      "awayTeam": "Eintracht Frankfurt",
+      "start": "2026-12-19T14:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
+          "watchUrl": "https://www.peacocktv.com/sports",
+          "language": "Spanish"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Fandango",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "Most Bundesliga matches stream free in English; some are instead on USA Network.",
+          "watchUrl": "https://www.fandango.com/",
+          "free": true,
+          "language": "English"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "At least 30 matches per season air on USA Network; check this fixture."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401878740",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Coventry City at AFC Bournemouth",
+      "homeTeam": "AFC Bournemouth",
+      "awayTeam": "Coventry City",
+      "start": "2026-12-19T15:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "A selection of UK live fixtures; not every Premier League game is televised.",
+          "watchUrl": "https://www.skysports.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "Selected games live with a NOW Sports membership when shown on Sky Sports.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401879199",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Hull City at Manchester City",
+      "homeTeam": "Manchester City",
+      "awayTeam": "Hull City",
+      "start": "2026-12-19T15:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "A selection of UK live fixtures; not every Premier League game is televised.",
+          "watchUrl": "https://www.skysports.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "Selected games live with a NOW Sports membership when shown on Sky Sports.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401879201",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Fulham at Leeds United",
+      "homeTeam": "Leeds United",
+      "awayTeam": "Fulham",
+      "start": "2026-12-19T15:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "A selection of UK live fixtures; not every Premier League game is televised.",
+          "watchUrl": "https://www.skysports.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "Selected games live with a NOW Sports membership when shown on Sky Sports.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
         }
       ]
     }
