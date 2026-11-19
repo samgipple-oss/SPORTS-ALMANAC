@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-11-19T16:21:25Z",
+  "updatedAt": "2026-11-19T19:22:26Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
   "broadcastAuditVersion": 1,
   "coverageByCompetition": {
     "Bundesliga": {
-      "fixtures": 41,
+      "fixtures": 42,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 18,
-        "anyCoverageFixtures": 18,
+        "possibleFixtures": 19,
+        "anyCoverageFixtures": 19,
         "uncoveredFixtures": 23,
-        "eventSpecificFixtures": 18,
+        "eventSpecificFixtures": 19,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 43.9
+        "anyCoveragePct": 45.2
       },
       "US": {
-        "confirmedFixtures": 41,
-        "possibleFixtures": 41,
-        "anyCoverageFixtures": 41,
+        "confirmedFixtures": 42,
+        "possibleFixtures": 42,
+        "anyCoverageFixtures": 42,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 9,
         "confirmedPct": 100.0,
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 220,
+      "fixtures": 222,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 220,
-        "anyCoverageFixtures": 220,
+        "possibleFixtures": 222,
+        "anyCoverageFixtures": 222,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 3,
         "confirmedPct": 0.0,
@@ -165,29 +165,29 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 220,
-        "anyCoverageFixtures": 220,
+        "possibleFixtures": 222,
+        "anyCoverageFixtures": 222,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 98,
+        "eventSpecificFixtures": 200,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
     },
     "Premier League": {
-      "fixtures": 54,
+      "fixtures": 55,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 54,
-        "anyCoverageFixtures": 54,
+        "possibleFixtures": 55,
+        "anyCoverageFixtures": 55,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 37,
+        "eventSpecificFixtures": 38,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 54,
-        "anyCoverageFixtures": 54,
+        "possibleFixtures": 55,
+        "anyCoverageFixtures": 55,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 43,
+      "fixtures": 44,
       "UK": {
         "confirmedFixtures": 39,
-        "possibleFixtures": 43,
-        "anyCoverageFixtures": 43,
+        "possibleFixtures": 44,
+        "anyCoverageFixtures": 44,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 13,
-        "confirmedPct": 90.7,
+        "eventSpecificFixtures": 14,
+        "confirmedPct": 88.6,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 43,
+        "confirmedFixtures": 44,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 43,
+        "anyCoverageFixtures": 44,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -237,34 +237,34 @@
       }
     },
     "Women’s Champions League": {
-      "fixtures": 14,
+      "fixtures": 12,
       "UK": {
-        "confirmedFixtures": 14,
-        "possibleFixtures": 14,
-        "anyCoverageFixtures": 14,
+        "confirmedFixtures": 12,
+        "possibleFixtures": 12,
+        "anyCoverageFixtures": 12,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 14,
-        "possibleFixtures": 3,
-        "anyCoverageFixtures": 14,
+        "confirmedFixtures": 12,
+        "possibleFixtures": 2,
+        "anyCoverageFixtures": 12,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 3,
+        "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       }
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 729,
-    "US": 752
+    "UK": 732,
+    "US": 755
   },
   "eventSpecificGamesByCountry": {
-    "UK": 182,
-    "US": 235
+    "UK": 185,
+    "US": 336
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -273,114 +273,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 4,
-  "footballTVListingMatches": 182,
+  "footballTVListingMatches": 185,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 361,
-  "officialRightsEntries": 2270,
+  "officialRightsEntries": 2183,
   "verifiedGamesByCountry": {
-    "UK": 306,
+    "UK": 304,
     "US": 252
   },
   "possibleGamesByCountry": {
-    "UK": 512,
-    "US": 566
+    "UK": 515,
+    "US": 569
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.wchampions:401916977",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "HB Køge at Paris FC",
-      "homeTeam": "Paris FC",
-      "awayTeam": "HB Køge",
-      "start": "2026-11-19T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261119&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261119&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.wchampions:401916978",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "Bayern Munich at Austria Vienna",
-      "homeTeam": "Austria Vienna",
-      "awayTeam": "Bayern Munich",
-      "start": "2026-11-19T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261119&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/uefa.wchampions:401916974",
       "sport": "Football",
@@ -17102,6 +17009,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261201&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -17109,15 +17025,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -17142,6 +17049,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261201&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -17149,15 +17065,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -17182,6 +17089,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261201&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -17189,15 +17105,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -17447,6 +17354,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261201&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -17454,15 +17370,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -17553,6 +17460,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261201&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -17560,15 +17476,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -17626,6 +17533,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261201&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -17633,15 +17549,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -17666,6 +17573,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261201&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -17673,15 +17589,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -18992,6 +18899,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261202&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -18999,15 +18915,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -19193,6 +19100,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261202&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -19200,15 +19116,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -19443,6 +19350,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -19450,15 +19366,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -19483,6 +19390,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -19490,15 +19406,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -19523,6 +19430,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -19530,15 +19446,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -19563,6 +19470,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -19570,15 +19486,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -19603,6 +19510,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -19610,15 +19526,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -19817,6 +19724,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -19824,15 +19740,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -19857,6 +19764,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -19864,15 +19780,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -19897,6 +19804,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -19904,15 +19820,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -20051,6 +19958,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -20058,15 +19974,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -20091,6 +19998,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261203&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -20098,15 +20014,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -20384,6 +20291,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261204&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -20391,15 +20307,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -20464,6 +20371,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261204&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -20471,15 +20387,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -20504,6 +20411,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261204&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -20511,15 +20427,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -21627,6 +21534,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -21634,15 +21550,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -21667,6 +21574,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -21674,15 +21590,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -21707,6 +21614,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -21714,15 +21630,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -21811,6 +21718,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -21818,15 +21734,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -21971,6 +21878,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -21978,15 +21894,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -22011,6 +21918,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -22018,15 +21934,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -22051,6 +21958,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -22058,15 +21974,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -22091,6 +21998,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -22098,15 +22014,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -22171,6 +22078,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -22178,15 +22094,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -22211,6 +22118,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -22218,15 +22134,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -22251,6 +22158,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261205&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -22258,15 +22174,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -22364,20 +22271,20 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Osasuna v Elche",
+          "programmeStart": "2026-12-06T13:00:00Z"
         },
         {
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.disneyplus.com/",
-          "programmeTitle": "Osasuna v Elche",
-          "programmeStart": "2026-12-06T13:00:00Z"
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
@@ -22676,20 +22583,20 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Athletic Bilbao v Real Madrid",
+          "programmeStart": "2026-12-06T15:15:00Z"
         },
         {
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.disneyplus.com/",
-          "programmeTitle": "Athletic Bilbao v Real Madrid",
-          "programmeStart": "2026-12-06T15:15:00Z"
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
@@ -22911,20 +22818,20 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Getafe v Valencia",
+          "programmeStart": "2026-12-06T17:30:00Z"
         },
         {
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.disneyplus.com/",
-          "programmeTitle": "Getafe v Valencia",
-          "programmeStart": "2026-12-06T17:30:00Z"
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
@@ -23653,20 +23560,20 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Atlético Madrid v Real Betis",
+          "programmeStart": "2026-12-06T20:00:00Z"
         },
         {
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.disneyplus.com/",
-          "programmeTitle": "Atlético Madrid v Real Betis",
-          "programmeStart": "2026-12-06T20:00:00Z"
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
@@ -24023,6 +23930,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261206&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -24030,15 +23946,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -24063,6 +23970,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261206&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -24070,15 +23986,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -24103,6 +24010,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261206&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -24110,15 +24026,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -24143,6 +24050,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261206&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -24150,15 +24066,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -24472,20 +24379,20 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "programmeTitle": "Sevilla v Málaga",
+          "programmeStart": "2026-12-07T20:00:00Z"
         },
         {
           "country": "UK",
           "service": "Disney+",
           "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.disneyplus.com/",
-          "programmeTitle": "Sevilla v Málaga",
-          "programmeStart": "2026-12-07T20:00:00Z"
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
+          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
+          "watchUrl": "https://www.disneyplus.com/"
         }
       ]
     },
@@ -24502,6 +24409,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261207&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -24509,15 +24425,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -24658,6 +24565,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261207&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -24665,15 +24581,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -25152,6 +25059,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -25159,15 +25075,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -25192,6 +25099,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -25199,15 +25115,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -25232,6 +25139,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -25239,15 +25155,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -25272,6 +25179,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -25279,15 +25195,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -25312,6 +25219,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -25319,15 +25235,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -25467,6 +25374,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -25474,15 +25390,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -25507,6 +25414,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -25514,15 +25430,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -25547,6 +25454,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -25554,15 +25470,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -26072,6 +25979,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261209&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -26079,15 +25995,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -26975,6 +26882,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261210&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -26982,15 +26898,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27015,6 +26922,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261210&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27022,15 +26938,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27055,6 +26962,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261210&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27062,15 +26978,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27095,6 +27002,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261210&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27102,15 +27018,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27211,6 +27118,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261210&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27218,15 +27134,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27251,6 +27158,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261210&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27258,15 +27174,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27291,6 +27198,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261210&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27298,15 +27214,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27372,6 +27279,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261210&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27379,15 +27295,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27412,6 +27319,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261210&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27419,15 +27335,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27860,6 +27767,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261211&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27867,15 +27783,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27900,6 +27807,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261211&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27907,15 +27823,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -27940,6 +27847,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261211&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -27947,15 +27863,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -28746,6 +28653,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -28753,15 +28669,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -28846,6 +28753,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -28853,15 +28769,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -28886,6 +28793,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -28893,15 +28809,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -29027,6 +28934,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -29034,15 +28950,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -29067,6 +28974,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -29074,15 +28990,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -29147,6 +29054,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -29154,15 +29070,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -29187,6 +29094,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -29194,15 +29110,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -29293,6 +29200,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -29300,15 +29216,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -29443,6 +29350,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -29450,15 +29366,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -29549,6 +29456,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -29556,15 +29472,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -29589,6 +29496,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261212&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -29596,15 +29512,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -32282,6 +32189,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261213&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -32289,15 +32205,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -32355,6 +32262,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261213&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -32362,15 +32278,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -32395,6 +32302,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261213&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -32402,15 +32318,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -32898,6 +32805,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261214&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -32905,15 +32821,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -32971,6 +32878,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261214&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -32978,15 +32894,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33277,6 +33184,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261214&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33284,15 +33200,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33385,6 +33292,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261214&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33392,15 +33308,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33500,6 +33407,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261215&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33507,15 +33423,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33540,6 +33447,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261215&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33547,15 +33463,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33580,6 +33487,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261215&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33587,15 +33503,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33620,6 +33527,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261215&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33627,15 +33543,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33777,6 +33684,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261215&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33784,15 +33700,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33817,6 +33724,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261215&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33824,15 +33740,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33857,6 +33764,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261215&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33864,15 +33780,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -33897,6 +33804,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261215&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -33904,15 +33820,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -34974,6 +34881,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261216&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -34981,15 +34897,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -35014,6 +34921,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261216&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -35021,15 +34937,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -35299,6 +35206,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261217&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -35306,15 +35222,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -35339,6 +35246,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261217&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -35346,15 +35262,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -35379,6 +35286,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261217&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -35386,15 +35302,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -35419,6 +35326,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261217&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -35426,15 +35342,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -35459,6 +35366,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261217&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -35466,15 +35382,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -35539,6 +35446,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261217&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -35546,15 +35462,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -35653,6 +35560,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261217&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -35660,15 +35576,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -36031,6 +35938,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -36038,15 +35954,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -36071,6 +35978,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -36078,15 +35994,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -36111,6 +36018,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -36118,15 +36034,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -36488,6 +36395,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -36495,15 +36411,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -36528,6 +36435,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -36535,15 +36451,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -36568,6 +36475,15 @@
       "broadcasts": [],
       "broadcastLeads": [
         {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261218&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
           "country": "UK",
           "service": "NHL.TV",
           "verified": false,
@@ -36575,15 +36491,6 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
-          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
-          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
@@ -37256,6 +37163,289 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
           "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892961",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Boston Bruins at New Jersey Devils",
+      "homeTeam": "New Jersey Devils",
+      "awayTeam": "Boston Bruins",
+      "start": "2026-12-19T17:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261219&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401875044",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Como at AC Milan",
+      "homeTeam": "AC Milan",
+      "awayTeam": "Como",
+      "start": "2026-12-19T17:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.dazn.com/en-GB/home",
+          "programmeTitle": "AC Milan v Como (joins match in progress)",
+          "programmeStart": "2026-12-19T17:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401879200",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Tottenham Hotspur at Liverpool",
+      "homeTeam": "Liverpool",
+      "awayTeam": "Tottenham Hotspur",
+      "start": "2026-12-19T17:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Liverpool v Tottenham Hotspur",
+          "programmeStart": "2026-12-19T17:30:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ger.1:401884699",
+      "sport": "Football",
+      "competition": "Bundesliga",
+      "title": "Borussia Dortmund at RB Leipzig",
+      "homeTeam": "RB Leipzig",
+      "awayTeam": "Borussia Dortmund",
+      "start": "2026-12-19T17:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
+          "watchUrl": "https://www.peacocktv.com/sports",
+          "language": "Spanish"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Fandango",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "Most Bundesliga matches stream free in English; some are instead on USA Network.",
+          "watchUrl": "https://www.fandango.com/",
+          "free": true,
+          "language": "English"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
+          "note": "At least 30 matches per season air on USA Network; check this fixture."
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "RB Leipzig v Borussia Dortmund",
+          "programmeStart": "2026-12-19T17:30:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892962",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Calgary Flames at Florida Panthers",
+      "homeTeam": "Florida Panthers",
+      "awayTeam": "Calgary Flames",
+      "start": "2026-12-19T18:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
         }
       ]
     }
