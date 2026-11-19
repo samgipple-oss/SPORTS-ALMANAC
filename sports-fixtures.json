@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T19:22:26Z",
+  "updatedAt": "2026-11-19T22:08:59Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -132,11 +132,11 @@
       }
     },
     "NFL": {
-      "fixtures": 59,
+      "fixtures": 60,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 59,
-        "anyCoverageFixtures": 59,
+        "possibleFixtures": 60,
+        "anyCoverageFixtures": 60,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 1,
         "confirmedPct": 0.0,
@@ -144,20 +144,20 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 59,
-        "anyCoverageFixtures": 59,
+        "possibleFixtures": 60,
+        "anyCoverageFixtures": 60,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 59,
+        "eventSpecificFixtures": 60,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
     },
     "NHL": {
-      "fixtures": 222,
+      "fixtures": 223,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 222,
-        "anyCoverageFixtures": 222,
+        "possibleFixtures": 223,
+        "anyCoverageFixtures": 223,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 3,
         "confirmedPct": 0.0,
@@ -165,10 +165,10 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 222,
-        "anyCoverageFixtures": 222,
+        "possibleFixtures": 223,
+        "anyCoverageFixtures": 223,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 200,
+        "eventSpecificFixtures": 201,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 44,
+      "fixtures": 45,
       "UK": {
-        "confirmedFixtures": 39,
-        "possibleFixtures": 44,
-        "anyCoverageFixtures": 44,
+        "confirmedFixtures": 40,
+        "possibleFixtures": 45,
+        "anyCoverageFixtures": 45,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 14,
-        "confirmedPct": 88.6,
+        "confirmedPct": 88.9,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 44,
+        "confirmedFixtures": 45,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 44,
+        "anyCoverageFixtures": 45,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -237,22 +237,22 @@
       }
     },
     "Women’s Champions League": {
-      "fixtures": 12,
+      "fixtures": 9,
       "UK": {
-        "confirmedFixtures": 12,
-        "possibleFixtures": 12,
-        "anyCoverageFixtures": 12,
+        "confirmedFixtures": 9,
+        "possibleFixtures": 9,
+        "anyCoverageFixtures": 9,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 12,
-        "possibleFixtures": 2,
-        "anyCoverageFixtures": 12,
+        "confirmedFixtures": 9,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 9,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 2,
+        "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       }
@@ -276,11 +276,11 @@
   "footballTVListingMatches": 185,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 361,
+  "networkStreamingLeads": 365,
   "officialRightsEntries": 2183,
   "verifiedGamesByCountry": {
-    "UK": 304,
-    "US": 252
+    "UK": 302,
+    "US": 250
   },
   "possibleGamesByCountry": {
     "UK": 515,
@@ -288,150 +288,6 @@
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.wchampions:401916974",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "Roma at Benfica",
-      "homeTeam": "Benfica",
-      "awayTeam": "Roma",
-      "start": "2026-11-19T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261119&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261119&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.wchampions:401916975",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "Servette at Barcelona",
-      "homeTeam": "Barcelona",
-      "awayTeam": "Servette",
-      "start": "2026-11-19T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261119&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/uefa.wchampions:401916976",
-      "sport": "Football",
-      "competition": "Women’s Champions League",
-      "title": "OL Lyonnes at Arsenal",
-      "homeTeam": "Arsenal",
-      "awayTeam": "OL Lyonnes",
-      "start": "2026-11-19T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261119&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Every 2026-27 Women's Champions League fixture is included with Disney+ in the UK.",
-          "watchUrl": "https://www.disneyplus.com/"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/shows/uefa-womens-champions-league/",
-          "note": "Every Women's Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.wchampions/scoreboard?dates=20261119&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://press.disney.co.uk/news/disneyplus-kicks-off-the-road-to-warsaw-with-every-uefa-womens-champions-league-match-streaming-live-from-22-september",
-          "note": "Only selected free BBC matches; check individual listings.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
     {
       "id": "espn:hockey/nhl:401892742",
       "sport": "Ice hockey",
@@ -15394,6 +15250,39 @@
       ]
     },
     {
+      "id": "espn:basketball/nba:401910054",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Miami Heat at Cleveland Cavaliers",
+      "homeTeam": "Cleveland Cavaliers",
+      "awayTeam": "Miami Heat",
+      "start": "2026-11-29T20:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261129&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
       "id": "espn:basketball/nba:401910051",
       "sport": "Basketball",
       "competition": "NBA",
@@ -15819,39 +15708,6 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
-        }
-      ]
-    },
-    {
-      "id": "espn:basketball/nba:401910054",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Miami Heat at Cleveland Cavaliers",
-      "homeTeam": "Cleveland Cavaliers",
-      "awayTeam": "Miami Heat",
-      "start": "2026-11-29T23:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261129&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
         }
       ]
     },
@@ -37446,6 +37302,182 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401874813",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Juventus at AS Roma",
+      "homeTeam": "AS Roma",
+      "awayTeam": "Juventus",
+      "start": "2026-12-19T19:45:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892963",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Utah Mammoth at Edmonton Oilers",
+      "homeTeam": "Edmonton Oilers",
+      "awayTeam": "Utah Mammoth",
+      "start": "2026-12-19T20:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261219&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:football/nfl:401873125",
+      "sport": "American football",
+      "competition": "NFL",
+      "title": "Seattle Seahawks at Philadelphia Eagles",
+      "homeTeam": "Philadelphia Eagles",
+      "awayTeam": "Seattle Seahawks",
+      "start": "2026-12-19T22:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "FOX",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261219&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
+        },
+        {
+          "country": "UK",
+          "service": "NFL Game Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
+          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "NFL+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
+          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
+          "watchUrl": "https://www.nfl.com/plus/"
+        },
+        {
+          "country": "US",
+          "service": "FOX One",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.fox.com/sports/football/nfl",
+          "note": "FOX One streams FOX NFL games only in your applicable market.",
+          "watchUrl": "https://www.fox.com/sports/football/nfl"
+        },
+        {
+          "country": "US",
+          "service": "YouTube TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261219&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://tv.youtube.com/"
+        },
+        {
+          "country": "US",
+          "service": "Hulu + Live TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261219&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.hulu.com/live-tv"
+        },
+        {
+          "country": "US",
+          "service": "Fubo",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261219&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.fubo.tv/"
         }
       ]
     }
