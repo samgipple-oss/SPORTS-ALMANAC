@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T01:30:17Z",
+  "updatedAt": "2026-11-20T04:16:03Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -111,11 +111,11 @@
       }
     },
     "NBA": {
-      "fixtures": 163,
+      "fixtures": 164,
       "UK": {
-        "confirmedFixtures": 163,
+        "confirmedFixtures": 164,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 163,
+        "anyCoverageFixtures": 164,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -123,11 +123,11 @@
       },
       "US": {
         "confirmedFixtures": 13,
-        "possibleFixtures": 163,
-        "anyCoverageFixtures": 163,
+        "possibleFixtures": 164,
+        "anyCoverageFixtures": 164,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 36,
-        "confirmedPct": 8.0,
+        "eventSpecificFixtures": 37,
+        "confirmedPct": 7.9,
         "anyCoveragePct": 100.0
       }
     },
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 216,
+      "fixtures": 217,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 216,
-        "anyCoverageFixtures": 216,
+        "possibleFixtures": 217,
+        "anyCoverageFixtures": 217,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 0.0,
@@ -165,10 +165,10 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 216,
-        "anyCoverageFixtures": 216,
+        "possibleFixtures": 217,
+        "anyCoverageFixtures": 217,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 194,
+        "eventSpecificFixtures": 195,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -259,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 722,
-    "US": 745
+    "UK": 724,
+    "US": 747
   },
   "eventSpecificGamesByCountry": {
     "UK": 181,
-    "US": 328
+    "US": 330
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -276,15 +276,15 @@
   "footballTVListingMatches": 185,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 366,
-  "officialRightsEntries": 2163,
+  "networkStreamingLeads": 369,
+  "officialRightsEntries": 2167,
   "verifiedGamesByCountry": {
-    "UK": 299,
+    "UK": 300,
     "US": 248
   },
   "possibleGamesByCountry": {
-    "UK": 508,
-    "US": 561
+    "UK": 509,
+    "US": 563
   },
   "errors": [],
   "items": [
@@ -4683,9 +4683,9 @@
       "id": "espn:soccer/usa.1:401933731",
       "sport": "Football",
       "competition": "MLS",
-      "title": "TBD Away at Nashville SC",
+      "title": "FC Cincinnati at Nashville SC",
       "homeTeam": "Nashville SC",
-      "awayTeam": "TBD Away",
+      "awayTeam": "FC Cincinnati",
       "start": "2026-11-22T21:00:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261122&limit=300",
@@ -12168,8 +12168,8 @@
       "id": "espn:soccer/usa.1:401933722",
       "sport": "Football",
       "competition": "MLS",
-      "title": "Nashville SC at TBD Home",
-      "homeTeam": "TBD Home",
+      "title": "Nashville SC at FC Cincinnati",
+      "homeTeam": "FC Cincinnati",
       "awayTeam": "Nashville SC",
       "start": "2026-11-28T23:30:00Z",
       "liveStatus": "Scheduled",
@@ -18100,9 +18100,9 @@
       "id": "espn:soccer/usa.1:401933736",
       "sport": "Football",
       "competition": "MLS",
-      "title": "TBD Away at Nashville SC",
+      "title": "FC Cincinnati at Nashville SC",
       "homeTeam": "Nashville SC",
-      "awayTeam": "TBD Away",
+      "awayTeam": "FC Cincinnati",
       "start": "2026-12-03T01:00:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
@@ -37071,6 +37071,114 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261219&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910148",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Los Angeles Lakers at Denver Nuggets",
+      "homeTeam": "Denver Nuggets",
+      "awayTeam": "Los Angeles Lakers",
+      "start": "2026-12-20T02:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA TV",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261219&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
+        },
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "YouTube TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261219&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://tv.youtube.com/"
+        },
+        {
+          "country": "US",
+          "service": "Hulu + Live TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261219&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.hulu.com/live-tv"
+        },
+        {
+          "country": "US",
+          "service": "Fubo",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261219&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.fubo.tv/"
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401892969",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "San Jose Sharks at Vancouver Canucks",
+      "homeTeam": "Vancouver Canucks",
+      "awayTeam": "San Jose Sharks",
+      "start": "2026-12-20T03:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261219&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261219&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
         }
       ]
     }
