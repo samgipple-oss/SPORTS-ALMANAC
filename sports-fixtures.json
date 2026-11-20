@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T07:40:42Z",
+  "updatedAt": "2026-11-20T10:24:23Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -159,7 +159,7 @@
         "possibleFixtures": 217,
         "anyCoverageFixtures": 217,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 0,
+        "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -263,7 +263,7 @@
     "US": 747
   },
   "eventSpecificGamesByCountry": {
-    "UK": 181,
+    "UK": 183,
     "US": 330
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -272,7 +272,7 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 0,
+  "xmltvMatches": 2,
   "footballTVListingMatches": 185,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
@@ -2478,9 +2478,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Los Angeles at Ottawa",
+          "programmeStart": "2026-11-22T00:00:00Z",
+          "xmltvChannel": "PremierSports2.uk"
         }
       ]
     },
@@ -2913,9 +2916,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Minnesota at Vancouver",
+          "programmeStart": "2026-11-22T03:00:00Z",
+          "xmltvChannel": "PremierSports1.uk"
         }
       ]
     },
