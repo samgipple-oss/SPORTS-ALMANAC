@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T10:24:23Z",
+  "updatedAt": "2026-11-20T13:34:23Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 217,
+      "fixtures": 218,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 217,
-        "anyCoverageFixtures": 217,
+        "possibleFixtures": 218,
+        "anyCoverageFixtures": 218,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
@@ -165,8 +165,8 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 217,
-        "anyCoverageFixtures": 217,
+        "possibleFixtures": 218,
+        "anyCoverageFixtures": 218,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 195,
         "confirmedPct": 0.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 45,
+      "fixtures": 46,
       "UK": {
-        "confirmedFixtures": 40,
-        "possibleFixtures": 45,
-        "anyCoverageFixtures": 45,
+        "confirmedFixtures": 41,
+        "possibleFixtures": 46,
+        "anyCoverageFixtures": 46,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 14,
-        "confirmedPct": 88.9,
+        "confirmedPct": 89.1,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 45,
+        "confirmedFixtures": 46,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 45,
+        "anyCoverageFixtures": 46,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -216,22 +216,22 @@
       }
     },
     "WSL": {
-      "fixtures": 16,
+      "fixtures": 18,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 16,
-        "anyCoverageFixtures": 16,
+        "possibleFixtures": 18,
+        "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 16,
+        "eventSpecificFixtures": 18,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 16,
-        "anyCoverageFixtures": 16,
+        "possibleFixtures": 18,
+        "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 16,
+        "eventSpecificFixtures": 18,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -259,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 724,
-    "US": 747
+    "UK": 728,
+    "US": 751
   },
   "eventSpecificGamesByCountry": {
-    "UK": 183,
-    "US": 330
+    "UK": 185,
+    "US": 332
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -273,18 +273,18 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 2,
-  "footballTVListingMatches": 185,
+  "footballTVListingMatches": 187,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 369,
-  "officialRightsEntries": 2167,
+  "officialRightsEntries": 2183,
   "verifiedGamesByCountry": {
-    "UK": 300,
-    "US": 248
+    "UK": 301,
+    "US": 249
   },
   "possibleGamesByCountry": {
-    "UK": 509,
-    "US": 563
+    "UK": 513,
+    "US": 566
   },
   "errors": [],
   "items": [
@@ -37177,6 +37177,230 @@
           "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
           "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
           "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/ita.1:401874836",
+      "sport": "Football",
+      "competition": "Serie A",
+      "title": "Bologna at Fiorentina",
+      "homeTeam": "Fiorentina",
+      "awayTeam": "Bologna",
+      "start": "2026-12-20T11:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261220&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "DAZN",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
+          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
+          "watchUrl": "https://www.dazn.com/en-GB/home"
+        },
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
+          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
+          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902839",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "Everton at Manchester City",
+      "homeTeam": "Manchester City",
+      "awayTeam": "Everton",
+      "start": "2026-12-20T12:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261220&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261220&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Manchester City Women v Everton Women",
+          "programmeStart": "2026-12-20T12:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free WSL fixtures only; check official channel.",
+          "watchUrl": "https://www.youtube.com/",
+          "free": true
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.w.1:401902843",
+      "sport": "Football",
+      "competition": "WSL",
+      "title": "Arsenal at Charlton Athletic",
+      "homeTeam": "Charlton Athletic",
+      "awayTeam": "Arsenal",
+      "start": "2026-12-20T12:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261220&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Paramount+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261220&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.paramountplus.com/sports/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Charlton Athletic Women v Arsenal Women",
+          "programmeStart": "2026-12-20T12:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "BBC iPlayer",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free BBC WSL fixtures, not the whole league.",
+          "watchUrl": "https://www.bbc.co.uk/iplayer"
+        },
+        {
+          "country": "UK",
+          "service": "YouTube",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
+          "note": "Selected free WSL fixtures only; check official channel.",
+          "watchUrl": "https://www.youtube.com/",
+          "free": true
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401891811",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Chicago Blackhawks at Ottawa Senators",
+      "homeTeam": "Ottawa Senators",
+      "awayTeam": "Chicago Blackhawks",
+      "start": "2026-12-20T13:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261220&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.nhl.com/info/how-to-watch-and-stream-nhl-games",
+          "note": "Many out-of-market NHL games, excluding local, national and NHL Network blackouts.",
+          "watchUrl": "https://www.espn.com/watch/"
         },
         {
           "country": "UK",
