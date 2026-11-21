@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T10:06:25Z",
+  "updatedAt": "2026-11-21T13:21:02Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -69,20 +69,20 @@
       }
     },
     "La Liga": {
-      "fixtures": 52,
+      "fixtures": 51,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 52,
-        "anyCoverageFixtures": 52,
+        "possibleFixtures": 51,
+        "anyCoverageFixtures": 51,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 31,
+        "eventSpecificFixtures": 30,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 52,
+        "confirmedFixtures": 51,
         "possibleFixtures": 2,
-        "anyCoverageFixtures": 52,
+        "anyCoverageFixtures": 51,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
@@ -174,20 +174,20 @@
       }
     },
     "Premier League": {
-      "fixtures": 59,
+      "fixtures": 58,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 59,
-        "anyCoverageFixtures": 59,
+        "possibleFixtures": 58,
+        "anyCoverageFixtures": 58,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 41,
+        "eventSpecificFixtures": 40,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 59,
-        "anyCoverageFixtures": 59,
+        "possibleFixtures": 58,
+        "anyCoverageFixtures": 58,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
@@ -216,22 +216,22 @@
       }
     },
     "WSL": {
-      "fixtures": 21,
+      "fixtures": 20,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 21,
-        "anyCoverageFixtures": 21,
+        "possibleFixtures": 20,
+        "anyCoverageFixtures": 20,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 21,
+        "eventSpecificFixtures": 20,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 21,
-        "anyCoverageFixtures": 21,
+        "possibleFixtures": 20,
+        "anyCoverageFixtures": 20,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 21,
+        "eventSpecificFixtures": 20,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -259,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 772,
-    "US": 794
+    "UK": 769,
+    "US": 791
   },
   "eventSpecificGamesByCountry": {
-    "UK": 199,
-    "US": 354
+    "UK": 196,
+    "US": 353
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -273,205 +273,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 7,
-  "footballTVListingMatches": 201,
+  "footballTVListingMatches": 197,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 427,
-  "officialRightsEntries": 2331,
+  "officialRightsEntries": 2317,
   "verifiedGamesByCountry": {
     "UK": 306,
-    "US": 264
+    "US": 263
   },
   "possibleGamesByCountry": {
-    "UK": 556,
-    "US": 599
+    "UK": 553,
+    "US": 597
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/eng.1:401879233",
-      "sport": "Football",
-      "competition": "Premier League",
-      "title": "Fulham at Manchester City",
-      "homeTeam": "Manchester City",
-      "awayTeam": "Fulham",
-      "start": "2026-11-21T12:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261121&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
-          "note": "A selection of UK live fixtures; not every Premier League game is televised.",
-          "watchUrl": "https://www.skysports.com/watch"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
-          "note": "Selected games live with a NOW Sports membership when shown on Sky Sports.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.tntsports.co.uk/",
-          "programmeTitle": "Manchester City v Fulham",
-          "programmeStart": "2026-11-21T12:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.hbomax.com/",
-          "programmeTitle": "Manchester City v Fulham",
-          "programmeStart": "2026-11-21T12:30:00Z"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
-          "watchUrl": "https://www.peacocktv.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "USA Network",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected Premier League fixtures on USA Network."
-        },
-        {
-          "country": "US",
-          "service": "NBC",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected Premier League matches on NBC."
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902853",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Chelsea at Liverpool",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Chelsea",
-      "start": "2026-11-21T12:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261121&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261121&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Liverpool Women v Chelsea Women",
-          "programmeStart": "2026-11-21T12:45:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882806",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Deportivo at Alavés",
-      "homeTeam": "Alavés",
-      "awayTeam": "Deportivo",
-      "start": "2026-11-21T13:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261121&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "programmeTitle": "Alavés v Deportivo La Coruna",
-          "programmeStart": "2026-11-21T13:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/ita.1:401874981",
       "sport": "Football",
