@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T19:10:55Z",
+  "updatedAt": "2026-11-21T21:58:18Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -69,20 +69,20 @@
       }
     },
     "La Liga": {
-      "fixtures": 49,
+      "fixtures": 48,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 49,
-        "anyCoverageFixtures": 49,
+        "possibleFixtures": 48,
+        "anyCoverageFixtures": 48,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 28,
+        "eventSpecificFixtures": 27,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 49,
+        "confirmedFixtures": 48,
         "possibleFixtures": 2,
-        "anyCoverageFixtures": 49,
+        "anyCoverageFixtures": 48,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
@@ -90,20 +90,20 @@
       }
     },
     "MLS": {
-      "fixtures": 23,
+      "fixtures": 22,
       "UK": {
-        "confirmedFixtures": 23,
+        "confirmedFixtures": 22,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 23,
+        "anyCoverageFixtures": 22,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 23,
+        "confirmedFixtures": 22,
         "possibleFixtures": 7,
-        "anyCoverageFixtures": 23,
+        "anyCoverageFixtures": 22,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 7,
         "confirmedPct": 100.0,
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 226,
+      "fixtures": 225,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 226,
-        "anyCoverageFixtures": 226,
+        "possibleFixtures": 225,
+        "anyCoverageFixtures": 225,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
@@ -165,29 +165,29 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 226,
-        "anyCoverageFixtures": 226,
+        "possibleFixtures": 225,
+        "anyCoverageFixtures": 225,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 202,
+        "eventSpecificFixtures": 201,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
     },
     "Premier League": {
-      "fixtures": 52,
+      "fixtures": 53,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 52,
-        "anyCoverageFixtures": 52,
+        "possibleFixtures": 53,
+        "anyCoverageFixtures": 53,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 39,
+        "eventSpecificFixtures": 40,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 52,
-        "anyCoverageFixtures": 52,
+        "possibleFixtures": 53,
+        "anyCoverageFixtures": 53,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 0.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 47,
+      "fixtures": 46,
       "UK": {
-        "confirmedFixtures": 43,
-        "possibleFixtures": 47,
-        "anyCoverageFixtures": 47,
+        "confirmedFixtures": 42,
+        "possibleFixtures": 46,
+        "anyCoverageFixtures": 46,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 15,
-        "confirmedPct": 91.5,
+        "confirmedPct": 91.3,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 47,
+        "confirmedFixtures": 46,
         "possibleFixtures": 3,
-        "anyCoverageFixtures": 47,
+        "anyCoverageFixtures": 46,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 3,
         "confirmedPct": 100.0,
@@ -259,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 754,
-    "US": 771
+    "UK": 751,
+    "US": 768
   },
   "eventSpecificGamesByCountry": {
     "UK": 191,
-    "US": 342
+    "US": 341
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 14,
@@ -277,192 +277,17 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 427,
-  "officialRightsEntries": 2238,
+  "officialRightsEntries": 2233,
   "verifiedGamesByCountry": {
-    "UK": 302,
-    "US": 251
+    "UK": 300,
+    "US": 248
   },
   "possibleGamesByCountry": {
-    "UK": 540,
+    "UK": 538,
     "US": 583
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/ita.1:401875067",
-      "sport": "Football",
-      "competition": "Serie A",
-      "title": "Torino at Napoli",
-      "homeTeam": "Napoli",
-      "awayTeam": "Torino",
-      "start": "2026-11-21T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261121&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "DAZN",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
-          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
-          "watchUrl": "https://www.dazn.com/en-GB/home"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
-          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882798",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Celta Vigo at Real Madrid",
-      "homeTeam": "Real Madrid",
-      "awayTeam": "Celta Vigo",
-      "start": "2026-11-21T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261121&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Premier Sports shows most UK La Liga fixtures; selected late Saturday matches are exclusive to Disney+."
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.disneyplus.com/",
-          "programmeTitle": "Real Madrid v Celta Vigo",
-          "programmeStart": "2026-11-21T20:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "espn:hockey/nhl:401892755",
-      "sport": "Ice hockey",
-      "competition": "NHL",
-      "title": "Chicago Blackhawks at Calgary Flames",
-      "homeTeam": "Calgary Flames",
-      "awayTeam": "Chicago Blackhawks",
-      "start": "2026-11-21T20:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261121&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261121&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.espn.com/watch/"
-        },
-        {
-          "country": "UK",
-          "service": "NHL.TV",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
-          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
-          "watchUrl": "https://www.dazn.com/en-GB/"
-        },
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/usa.1:401933732",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Portland Timbers at FC Dallas",
-      "homeTeam": "FC Dallas",
-      "awayTeam": "Portland Timbers",
-      "start": "2026-11-21T21:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261121&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
     {
       "id": "espn:hockey/nhl:401892756",
       "sport": "Ice hockey",
@@ -38833,6 +38658,83 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401879202",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Aston Villa at Chelsea",
+      "homeTeam": "Chelsea",
+      "awayTeam": "Aston Villa",
+      "start": "2026-12-21T20:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261221&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Chelsea v Aston Villa",
+          "programmeStart": "2026-12-21T20:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
         }
       ]
     }
