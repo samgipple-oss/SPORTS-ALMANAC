@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T10:05:24Z",
+  "updatedAt": "2026-11-22T13:19:17Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -69,20 +69,20 @@
       }
     },
     "La Liga": {
-      "fixtures": 48,
+      "fixtures": 47,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 48,
-        "anyCoverageFixtures": 48,
+        "possibleFixtures": 47,
+        "anyCoverageFixtures": 47,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 27,
+        "eventSpecificFixtures": 26,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 48,
+        "confirmedFixtures": 47,
         "possibleFixtures": 2,
-        "anyCoverageFixtures": 48,
+        "anyCoverageFixtures": 47,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 46,
+      "fixtures": 45,
       "UK": {
-        "confirmedFixtures": 42,
-        "possibleFixtures": 46,
-        "anyCoverageFixtures": 46,
+        "confirmedFixtures": 41,
+        "possibleFixtures": 45,
+        "anyCoverageFixtures": 45,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 15,
-        "confirmedPct": 91.3,
+        "eventSpecificFixtures": 14,
+        "confirmedPct": 91.1,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 46,
+        "confirmedFixtures": 45,
         "possibleFixtures": 3,
-        "anyCoverageFixtures": 46,
+        "anyCoverageFixtures": 45,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 3,
         "confirmedPct": 100.0,
@@ -216,22 +216,22 @@
       }
     },
     "WSL": {
-      "fixtures": 19,
+      "fixtures": 17,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 19,
-        "anyCoverageFixtures": 19,
+        "possibleFixtures": 17,
+        "anyCoverageFixtures": 17,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 19,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 19,
-        "anyCoverageFixtures": 19,
+        "possibleFixtures": 17,
+        "anyCoverageFixtures": 17,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 19,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -259,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 748,
-    "US": 765
+    "UK": 744,
+    "US": 761
   },
   "eventSpecificGamesByCountry": {
-    "UK": 189,
-    "US": 335
+    "UK": 185,
+    "US": 333
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 15,
@@ -273,252 +273,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 5,
-  "footballTVListingMatches": 192,
+  "footballTVListingMatches": 187,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 428,
-  "officialRightsEntries": 2226,
+  "officialRightsEntries": 2210,
   "verifiedGamesByCountry": {
-    "UK": 304,
-    "US": 248
+    "UK": 303,
+    "US": 246
   },
   "possibleGamesByCountry": {
-    "UK": 531,
-    "US": 581
+    "UK": 527,
+    "US": 579
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/ita.1:401875008",
-      "sport": "Football",
-      "competition": "Serie A",
-      "title": "Venezia at Juventus",
-      "homeTeam": "Juventus",
-      "awayTeam": "Venezia",
-      "start": "2026-11-22T11:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261122&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "DAZN",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
-          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
-          "watchUrl": "https://www.dazn.com/en-GB/home"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
-          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.tntsports.co.uk/",
-          "programmeTitle": "Juventus v Venezia",
-          "programmeStart": "2026-11-22T11:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.hbomax.com/",
-          "programmeTitle": "Juventus v Venezia",
-          "programmeStart": "2026-11-22T11:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902852",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Tottenham Hotspur at Manchester City",
-      "homeTeam": "Manchester City",
-      "awayTeam": "Tottenham Hotspur",
-      "start": "2026-11-22T12:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261122&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261122&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Manchester City Women v Tottenham Hotspur Women",
-          "programmeStart": "2026-11-22T12:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.w.1:401902857",
-      "sport": "Football",
-      "competition": "WSL",
-      "title": "Manchester United at Birmingham City",
-      "homeTeam": "Birmingham City",
-      "awayTeam": "Manchester United",
-      "start": "2026-11-22T12:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261122&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.w.1/scoreboard?dates=20261122&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Birmingham City Women v Manchester United Women",
-          "programmeStart": "2026-11-22T12:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free BBC WSL fixtures, not the whole league.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        },
-        {
-          "country": "UK",
-          "service": "YouTube",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.wslfootball.com/news/the-2026-27-fixtures-are-out",
-          "note": "Selected free WSL fixtures only; check official channel.",
-          "watchUrl": "https://www.youtube.com/",
-          "free": true
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882804",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Villarreal at Barcelona",
-      "homeTeam": "Barcelona",
-      "awayTeam": "Villarreal",
-      "start": "2026-11-22T13:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261122&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "programmeTitle": "Barcelona v Villarreal",
-          "programmeStart": "2026-11-22T13:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/eng.1:401879234",
       "sport": "Football",
