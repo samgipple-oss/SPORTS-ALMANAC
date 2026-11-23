@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T19:22:50Z",
+  "updatedAt": "2026-11-23T22:10:56Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -69,20 +69,20 @@
       }
     },
     "La Liga": {
-      "fixtures": 44,
+      "fixtures": 43,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 44,
-        "anyCoverageFixtures": 44,
+        "possibleFixtures": 43,
+        "anyCoverageFixtures": 43,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 23,
+        "eventSpecificFixtures": 22,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 44,
+        "confirmedFixtures": 43,
         "possibleFixtures": 2,
-        "anyCoverageFixtures": 44,
+        "anyCoverageFixtures": 43,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
@@ -174,20 +174,20 @@
       }
     },
     "Premier League": {
-      "fixtures": 51,
+      "fixtures": 50,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 51,
-        "anyCoverageFixtures": 51,
+        "possibleFixtures": 50,
+        "anyCoverageFixtures": 50,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 38,
+        "eventSpecificFixtures": 37,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 51,
-        "anyCoverageFixtures": 51,
+        "possibleFixtures": 50,
+        "anyCoverageFixtures": 50,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 0.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 41,
+      "fixtures": 40,
       "UK": {
-        "confirmedFixtures": 37,
-        "possibleFixtures": 41,
-        "anyCoverageFixtures": 41,
+        "confirmedFixtures": 36,
+        "possibleFixtures": 40,
+        "anyCoverageFixtures": 40,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 13,
-        "confirmedPct": 90.2,
+        "confirmedPct": 90.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 41,
+        "confirmedFixtures": 40,
         "possibleFixtures": 2,
-        "anyCoverageFixtures": 41,
+        "anyCoverageFixtures": 40,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
@@ -259,11 +259,11 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 718,
-    "US": 735
+    "UK": 715,
+    "US": 732
   },
   "eventSpecificGamesByCountry": {
-    "UK": 172,
+    "UK": 170,
     "US": 324
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -273,201 +273,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 3,
-  "footballTVListingMatches": 173,
+  "footballTVListingMatches": 171,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 389,
-  "officialRightsEntries": 2117,
+  "officialRightsEntries": 2102,
   "verifiedGamesByCountry": {
-    "UK": 292,
-    "US": 236
+    "UK": 291,
+    "US": 234
   },
   "possibleGamesByCountry": {
-    "UK": 511,
-    "US": 560
+    "UK": 508,
+    "US": 559
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/ita.1:401875009",
-      "sport": "Football",
-      "competition": "Serie A",
-      "title": "Fiorentina at Monza",
-      "homeTeam": "Monza",
-      "awayTeam": "Fiorentina",
-      "start": "2026-11-23T19:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261123&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "DAZN",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://dazngroup.com/press-room/dazn-renews-serie-a-rights-in-the-uk-ireland-for-the-2026-27-season/",
-          "note": "All 2026-27 Serie A games are carried by DAZN, but Saturday afternoon live restrictions may delay coverage.",
-          "watchUrl": "https://www.dazn.com/en-GB/home"
-        },
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
-          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.1:401879237",
-      "sport": "Football",
-      "competition": "Premier League",
-      "title": "Everton at Brentford",
-      "homeTeam": "Brentford",
-      "awayTeam": "Everton",
-      "start": "2026-11-23T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261123&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Brentford v Everton",
-          "programmeStart": "2026-11-23T20:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
-          "note": "Selected live Premier League matches, not every fixture.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on required; selected TNT matches only.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
-          "watchUrl": "https://www.peacocktv.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "USA Network",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected Premier League fixtures on USA Network."
-        },
-        {
-          "country": "US",
-          "service": "NBC",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected Premier League matches on NBC."
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882802",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Elche at Levante",
-      "homeTeam": "Levante",
-      "awayTeam": "Elche",
-      "start": "2026-11-23T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261123&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "programmeTitle": "Levante v Elche",
-          "programmeStart": "2026-11-23T20:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
     {
       "id": "espn:basketball/nba:401910036",
       "sport": "Basketball",
