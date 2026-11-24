@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T16:29:18Z",
+  "updatedAt": "2026-11-24T19:22:42Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -27,20 +27,20 @@
       }
     },
     "Champions League": {
-      "fixtures": 36,
+      "fixtures": 34,
       "UK": {
-        "confirmedFixtures": 27,
+        "confirmedFixtures": 25,
         "possibleFixtures": 9,
-        "anyCoverageFixtures": 36,
+        "anyCoverageFixtures": 34,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 36,
-        "confirmedPct": 75.0,
+        "eventSpecificFixtures": 34,
+        "confirmedPct": 73.5,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 36,
+        "confirmedFixtures": 34,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 36,
+        "anyCoverageFixtures": 34,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -259,11 +259,11 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 711,
-    "US": 728
+    "UK": 709,
+    "US": 726
   },
   "eventSpecificGamesByCountry": {
-    "UK": 170,
+    "UK": 168,
     "US": 316
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -277,10 +277,10 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 379,
-  "officialRightsEntries": 2093,
+  "officialRightsEntries": 2087,
   "verifiedGamesByCountry": {
-    "UK": 295,
-    "US": 232
+    "UK": 293,
+    "US": 230
   },
   "possibleGamesByCountry": {
     "UK": 500,
@@ -288,88 +288,6 @@
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.champions:401915300",
-      "sport": "Football",
-      "competition": "Champions League",
-      "title": "Aston Villa at Galatasaray",
-      "homeTeam": "Galatasaray",
-      "awayTeam": "Aston Villa",
-      "start": "2026-11-24T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261124&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
-          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": true,
-          "basis": "official-exclusive-remainder",
-          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
-          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-channel-simulcast",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/uefa.champions:401915380",
-      "sport": "Football",
-      "competition": "Champions League",
-      "title": "LASK Linz at Bodo/Glimt",
-      "homeTeam": "Bodo/Glimt",
-      "awayTeam": "LASK Linz",
-      "start": "2026-11-24T17:45:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261124&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
-          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": true,
-          "basis": "official-exclusive-remainder",
-          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
-          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-channel-simulcast",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": []
-    },
     {
       "id": "espn:soccer/uefa.champions:401915294",
       "sport": "Football",
