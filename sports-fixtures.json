@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T13:43:59Z",
+  "updatedAt": "2026-11-25T16:29:01Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -17845,7 +17845,7 @@
       "homeTeam": "Rayo Vallecano",
       "awayTeam": "Athletic Club",
       "start": "2026-12-09T19:00:00Z",
-      "liveStatus": "Suspended",
+      "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261209&limit=300",
       "broadcasts": [
         {
