@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T07:46:47Z",
+  "updatedAt": "2026-11-25T10:26:28Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -54,7 +54,7 @@
         "possibleFixtures": 36,
         "anyCoverageFixtures": 36,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 26,
+        "eventSpecificFixtures": 27,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
@@ -138,7 +138,7 @@
         "possibleFixtures": 62,
         "anyCoverageFixtures": 62,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 0,
+        "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -263,7 +263,7 @@
     "US": 715
   },
   "eventSpecificGamesByCountry": {
-    "UK": 159,
+    "UK": 162,
     "US": 326
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -272,7 +272,7 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 1,
+  "xmltvMatches": 4,
   "footballTVListingMatches": 171,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
@@ -2056,10 +2056,13 @@
           "country": "UK",
           "service": "TNT Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
-          "note": "Some Europa League matches are HBO Max-only; verify a linear TNT channel for this game.",
-          "watchUrl": "https://www.tntsports.co.uk/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Live UEL: Olympiacos v AC Milan",
+          "programmeStart": "2026-11-26T17:45:00Z",
+          "xmltvChannel": "TNTSports4.uk"
         }
       ]
     },
@@ -2136,6 +2139,27 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261126&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Live NFL Bears @ Lions",
+          "programmeStart": "2026-11-26T17:00:00Z",
+          "xmltvChannel": "SkySportsAction.uk"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
         }
       ]
     },
@@ -2644,6 +2668,18 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261126&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        },
+        {
+          "country": "UK",
+          "service": "Channel 5",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.channel5.com/",
+          "programmeTitle": "Live: NFL Thanksgiving:...",
+          "programmeStart": "2026-11-26T21:00:00Z",
+          "xmltvChannel": "5Action.uk"
         }
       ]
     },
