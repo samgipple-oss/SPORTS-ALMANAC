@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T19:16:50Z",
+  "updatedAt": "2026-11-25T22:16:13Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -27,20 +27,20 @@
       }
     },
     "Champions League": {
-      "fixtures": 25,
+      "fixtures": 18,
       "UK": {
-        "confirmedFixtures": 16,
+        "confirmedFixtures": 9,
         "possibleFixtures": 9,
-        "anyCoverageFixtures": 25,
+        "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 25,
-        "confirmedPct": 64.0,
+        "eventSpecificFixtures": 18,
+        "confirmedPct": 50.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 25,
+        "confirmedFixtures": 18,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 25,
+        "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -111,32 +111,32 @@
       }
     },
     "NBA": {
-      "fixtures": 168,
+      "fixtures": 169,
       "UK": {
-        "confirmedFixtures": 168,
-        "possibleFixtures": 1,
-        "anyCoverageFixtures": 168,
+        "confirmedFixtures": 169,
+        "possibleFixtures": 0,
+        "anyCoverageFixtures": 169,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 1,
+        "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 14,
-        "possibleFixtures": 168,
-        "anyCoverageFixtures": 168,
+        "confirmedFixtures": 15,
+        "possibleFixtures": 169,
+        "anyCoverageFixtures": 169,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 36,
-        "confirmedPct": 8.3,
+        "eventSpecificFixtures": 37,
+        "confirmedPct": 8.9,
         "anyCoveragePct": 100.0
       }
     },
     "NFL": {
-      "fixtures": 63,
+      "fixtures": 64,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 63,
-        "anyCoverageFixtures": 63,
+        "possibleFixtures": 64,
+        "anyCoverageFixtures": 64,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
@@ -144,10 +144,10 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 63,
-        "anyCoverageFixtures": 63,
+        "possibleFixtures": 64,
+        "anyCoverageFixtures": 64,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 63,
+        "eventSpecificFixtures": 64,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -259,412 +259,35 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 698,
-    "US": 715
+    "UK": 693,
+    "US": 710
   },
   "eventSpecificGamesByCountry": {
-    "UK": 171,
-    "US": 328
+    "UK": 163,
+    "US": 330
   },
   "officialNHLBlackoutFixtureMatches": 0,
-  "nbaOfficialUSNationalBroadcastEntries": 15,
+  "nbaOfficialUSNationalBroadcastEntries": 16,
   "nbaOfficialSourceWarnings": [],
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 4,
+  "xmltvMatches": 3,
   "footballTVListingMatches": 182,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
-  "networkStreamingLeads": 368,
-  "officialRightsEntries": 2043,
+  "networkStreamingLeads": 371,
+  "officialRightsEntries": 2026,
   "verifiedGamesByCountry": {
-    "UK": 281,
-    "US": 219
+    "UK": 275,
+    "US": 213
   },
   "possibleGamesByCountry": {
     "UK": 499,
-    "US": 553
+    "US": 555
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/uefa.champions:401915291",
-      "sport": "Football",
-      "competition": "Champions League",
-      "title": "Viking FK at Atlético Madrid",
-      "homeTeam": "Atlético Madrid",
-      "awayTeam": "Viking FK",
-      "start": "2026-11-25T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261125&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
-          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": true,
-          "basis": "official-exclusive-remainder",
-          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
-          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-channel-simulcast",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/uefa.champions:401915292",
-      "sport": "Football",
-      "competition": "Champions League",
-      "title": "Liverpool at Club Brugge",
-      "homeTeam": "Club Brugge",
-      "awayTeam": "Liverpool",
-      "start": "2026-11-25T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261125&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
-          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": true,
-          "basis": "official-exclusive-remainder",
-          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
-          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-channel-simulcast",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/uefa.champions:401915373",
-      "sport": "Football",
-      "competition": "Champions League",
-      "title": "Manchester United at Sporting CP",
-      "homeTeam": "Sporting CP",
-      "awayTeam": "Manchester United",
-      "start": "2026-11-25T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261125&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
-          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": true,
-          "basis": "official-exclusive-remainder",
-          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
-          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-channel-simulcast",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/uefa.champions:401915374",
-      "sport": "Football",
-      "competition": "Champions League",
-      "title": "AS Roma at Paris Saint-Germain",
-      "homeTeam": "Paris Saint-Germain",
-      "awayTeam": "AS Roma",
-      "start": "2026-11-25T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261125&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
-          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": true,
-          "basis": "official-exclusive-remainder",
-          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
-          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-channel-simulcast",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/uefa.champions:401915375",
-      "sport": "Football",
-      "competition": "Champions League",
-      "title": "Fenerbahce at Shakhtar Donetsk",
-      "homeTeam": "Shakhtar Donetsk",
-      "awayTeam": "Fenerbahce",
-      "start": "2026-11-25T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261125&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
-          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": true,
-          "basis": "official-exclusive-remainder",
-          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
-          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-channel-simulcast",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/uefa.champions:401915376",
-      "sport": "Football",
-      "competition": "Champions League",
-      "title": "VfB Stuttgart at Internazionale",
-      "homeTeam": "Internazionale",
-      "awayTeam": "VfB Stuttgart",
-      "start": "2026-11-25T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261125&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
-          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": true,
-          "basis": "official-exclusive-remainder",
-          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
-          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-channel-simulcast",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:soccer/uefa.champions:401915377",
-      "sport": "Football",
-      "competition": "Champions League",
-      "title": "Bayern Munich at Lille",
-      "homeTeam": "Lille",
-      "awayTeam": "Bayern Munich",
-      "start": "2026-11-25T20:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261125&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/uefa-champions-league-schedule/",
-          "note": "Every UEFA Champions League match streams on Paramount+ in the US.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": true,
-          "basis": "official-exclusive-remainder",
-          "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-uefa-champions-league/",
-          "note": "This is not the Prime Tuesday first pick; UEFA's UK remainder is carried by TNT Sports/HBO Max.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": true,
-          "basis": "official-channel-simulcast",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports live rights require the appropriate HBO Max sports entitlement.",
-          "watchUrl": "https://www.hbomax.com/"
-        }
-      ],
-      "broadcastLeads": []
-    },
-    {
-      "id": "espn:basketball/nba:401909317",
-      "sport": "Basketball",
-      "competition": "NBA",
-      "title": "Miami Heat at Philadelphia 76ers",
-      "homeTeam": "Philadelphia 76ers",
-      "awayTeam": "Miami Heat",
-      "start": "2026-11-25T22:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261125&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "NBA League Pass",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Every NBA game is live on League Pass outside the US and Canada.",
-          "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "ESPN",
-          "verified": true,
-          "basis": "official-event-schedule",
-          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
-          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "NBA League Pass",
-          "verified": false,
-          "basis": "blackout-dependent-coverage",
-          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
-          "note": "Out-of-market games only; local and national live blackouts vary by location.",
-          "watchUrl": "https://www.nba.com/games"
-        },
-        {
-          "country": "US",
-          "service": "YouTube TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261125&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://tv.youtube.com/"
-        },
-        {
-          "country": "US",
-          "service": "Hulu + Live TV",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261125&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.hulu.com/live-tv"
-        },
-        {
-          "country": "US",
-          "service": "Fubo",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261125&limit=300",
-          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
-          "watchUrl": "https://www.fubo.tv/"
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
-          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Live NBA Cup: Heat @ 76ers",
-          "programmeStart": "2026-11-25T22:00:00Z",
-          "xmltvChannel": "SkySportsPlus.uk"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
-          "note": "This Sky Sports programme may be watched with a NOW Sports membership.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        }
-      ]
-    },
     {
       "id": "espn:basketball/nba:401909318",
       "sport": "Basketball",
@@ -35633,6 +35256,201 @@
           "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
           "note": "Live games on phones/tablets only when local or nationally televised in your market.",
           "watchUrl": "https://www.nfl.com/plus/"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401909098",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Miami Heat at Boston Celtics",
+      "homeTeam": "Boston Celtics",
+      "awayTeam": "Miami Heat",
+      "start": "2026-12-25T19:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "ESPN",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ABC",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
+        },
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "YouTube TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://tv.youtube.com/"
+        },
+        {
+          "country": "US",
+          "service": "Hulu + Live TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.hulu.com/live-tv"
+        },
+        {
+          "country": "US",
+          "service": "Fubo",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.fubo.tv/"
+        }
+      ]
+    },
+    {
+      "id": "espn:football/nfl:401873142",
+      "sport": "American football",
+      "competition": "NFL",
+      "title": "Buffalo Bills at Denver Broncos",
+      "homeTeam": "Denver Broncos",
+      "awayTeam": "Buffalo Bills",
+      "start": "2026-12-25T21:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261225&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Netflix",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261225&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.netflix.com/"
+        },
+        {
+          "country": "UK",
+          "service": "NFL Game Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
+          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "NFL+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
+          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
+          "watchUrl": "https://www.nfl.com/plus/"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401909099",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Philadelphia 76ers at Los Angeles Lakers",
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Philadelphia 76ers",
+      "start": "2026-12-25T22:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "ESPN",
+          "verified": true,
+          "basis": "official-event-schedule",
+          "sourceUrl": "https://www.nba.com/news/every-nba-game-on-abc-espn-in-2026-27",
+          "note": "Individual teams, tip-off and date match NBA's official 2026-27 national broadcast schedule.",
+          "watchUrl": "https://www.espn.com/watch/"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ABC",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified."
+        },
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        },
+        {
+          "country": "US",
+          "service": "YouTube TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://tv.youtube.com/"
+        },
+        {
+          "country": "US",
+          "service": "Hulu + Live TV",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.hulu.com/live-tv"
+        },
+        {
+          "country": "US",
+          "service": "Fubo",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
+          "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
+          "watchUrl": "https://www.fubo.tv/"
         }
       ]
     }
