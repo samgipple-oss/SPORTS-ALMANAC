@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T07:45:14Z",
+  "updatedAt": "2026-11-26T10:27:34Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -159,7 +159,7 @@
         "possibleFixtures": 201,
         "anyCoverageFixtures": 201,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 0,
+        "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
@@ -263,7 +263,7 @@
     "US": 690
   },
   "eventSpecificGamesByCountry": {
-    "UK": 163,
+    "UK": 165,
     "US": 316
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -272,7 +272,7 @@
   "nhlBlackoutSourceWarning": null,
   "successfulChecks": 480,
   "totalChecks": 480,
-  "xmltvMatches": 3,
+  "xmltvMatches": 7,
   "footballTVListingMatches": 182,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
@@ -545,6 +545,17 @@
           "watchUrl": "https://www.tntsports.co.uk/",
           "programmeTitle": "Celta Vigo v AFC Bournemouth",
           "programmeStart": "2026-11-26T17:45:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "UEFA Europa League Football",
+          "programmeStart": "2026-11-26T17:30:00Z",
+          "xmltvChannel": "PremierSports1.uk"
         }
       ]
     },
@@ -1362,9 +1373,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Toronto at Boston",
+          "programmeStart": "2026-11-27T18:00:00Z",
+          "xmltvChannel": "PremierSports2.uk"
         }
       ]
     },
@@ -1849,18 +1863,21 @@
           "country": "UK",
           "service": "TNT Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
-          "note": "Selected live Premier League matches, not every fixture.",
-          "watchUrl": "https://www.tntsports.co.uk/"
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Premier League Preview",
+          "programmeStart": "2026-11-27T18:30:00Z",
+          "xmltvChannel": "TNTSports3.uk"
         },
         {
           "country": "UK",
           "service": "HBO Max",
           "verified": false,
-          "basis": "competition-rights",
+          "basis": "network-simulcast",
           "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "note": "TNT Sports streams on HBO Max with the TNT Sports plan or eligible entitlement.",
           "watchUrl": "https://www.hbomax.com/"
         },
         {
@@ -2007,9 +2024,12 @@
           "country": "UK",
           "service": "Premier Sports",
           "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
-          "note": "Selected NHL games only; check the Premier Sports listings."
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.open-epg.com/files/unitedkingdom.xml.gz",
+          "note": "Both teams appear in an XMLTV schedule programme near kickoff; check live availability.",
+          "programmeTitle": "Live NHL: Los Angeles at Anaheim",
+          "programmeStart": "2026-11-27T21:00:00Z",
+          "xmltvChannel": "PremierSports2.uk"
         }
       ]
     },
