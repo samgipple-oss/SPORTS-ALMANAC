@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T10:27:34Z",
+  "updatedAt": "2026-11-26T13:42:44Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -174,20 +174,20 @@
       }
     },
     "Premier League": {
-      "fixtures": 50,
+      "fixtures": 51,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 50,
-        "anyCoverageFixtures": 50,
+        "possibleFixtures": 51,
+        "anyCoverageFixtures": 51,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 37,
+        "eventSpecificFixtures": 38,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 50,
-        "anyCoverageFixtures": 50,
+        "possibleFixtures": 51,
+        "anyCoverageFixtures": 51,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
@@ -259,11 +259,11 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 673,
-    "US": 690
+    "UK": 674,
+    "US": 691
   },
   "eventSpecificGamesByCountry": {
-    "UK": 165,
+    "UK": 166,
     "US": 316
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -273,18 +273,18 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 7,
-  "footballTVListingMatches": 182,
+  "footballTVListingMatches": 184,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 372,
-  "officialRightsEntries": 1986,
+  "officialRightsEntries": 1993,
   "verifiedGamesByCountry": {
     "UK": 269,
     "US": 213
   },
   "possibleGamesByCountry": {
-    "UK": 485,
-    "US": 535
+    "UK": 486,
+    "US": 536
   },
   "errors": [],
   "items": [
@@ -34730,6 +34730,85 @@
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261225&limit=300",
           "note": "May carry the ESPN-listed linear network; channel, region and subscription package must be checked.",
           "watchUrl": "https://www.fubo.tv/"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401878737",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Leeds United at Aston Villa",
+      "homeTeam": "Aston Villa",
+      "awayTeam": "Leeds United",
+      "start": "2026-12-26T12:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261226&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "A selection of UK live fixtures; not every Premier League game is televised.",
+          "watchUrl": "https://www.skysports.com/watch"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.sky.com/hello-sky/tv/where-to-watch-premier-league-games",
+          "note": "Selected games live with a NOW Sports membership when shown on Sky Sports.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.tntsports.co.uk/",
+          "programmeTitle": "Aston Villa v Leeds United",
+          "programmeStart": "2026-12-26T12:30:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.hbomax.com/",
+          "programmeTitle": "Aston Villa v Leeds United",
+          "programmeStart": "2026-12-26T12:30:00Z"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
         }
       ]
     }
