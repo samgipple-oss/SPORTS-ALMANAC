@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T13:39:17Z",
+  "updatedAt": "2026-11-27T16:23:46Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -174,20 +174,20 @@
       }
     },
     "Premier League": {
-      "fixtures": 57,
+      "fixtures": 58,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 57,
-        "anyCoverageFixtures": 57,
+        "possibleFixtures": 58,
+        "anyCoverageFixtures": 58,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 40,
+        "eventSpecificFixtures": 41,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 57,
-        "anyCoverageFixtures": 57,
+        "possibleFixtures": 58,
+        "anyCoverageFixtures": 58,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
@@ -259,11 +259,11 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 682,
-    "US": 699
+    "UK": 683,
+    "US": 700
   },
   "eventSpecificGamesByCountry": {
-    "UK": 159,
+    "UK": 160,
     "US": 326
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -273,18 +273,18 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 8,
-  "footballTVListingMatches": 177,
+  "footballTVListingMatches": 178,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 366,
-  "officialRightsEntries": 2021,
+  "officialRightsEntries": 2028,
   "verifiedGamesByCountry": {
     "UK": 259,
     "US": 195
   },
   "possibleGamesByCountry": {
-    "UK": 487,
-    "US": 562
+    "UK": 488,
+    "US": 563
   },
   "errors": [],
   "items": [
@@ -35173,6 +35173,83 @@
           "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
           "note": "Live games on phones/tablets only when local or nationally televised in your market.",
           "watchUrl": "https://www.nfl.com/plus/"
+        }
+      ]
+    },
+    {
+      "id": "espn:soccer/eng.1:401878736",
+      "sport": "Football",
+      "competition": "Premier League",
+      "title": "Chelsea at Coventry City",
+      "homeTeam": "Coventry City",
+      "awayTeam": "Chelsea",
+      "start": "2026-12-27T14:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261227&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "Sky Sports",
+          "verified": false,
+          "basis": "matched-tv-listing",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
+          "watchUrl": "https://www.skysports.com/watch",
+          "programmeTitle": "Coventry City v Chelsea",
+          "programmeStart": "2026-12-27T14:00:00Z"
+        },
+        {
+          "country": "UK",
+          "service": "NOW",
+          "verified": false,
+          "basis": "network-simulcast",
+          "sourceUrl": "https://www.live-footballontv.com/",
+          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
+          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
+        },
+        {
+          "country": "UK",
+          "service": "TNT Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
+          "note": "Selected live Premier League matches, not every fixture.",
+          "watchUrl": "https://www.tntsports.co.uk/"
+        },
+        {
+          "country": "UK",
+          "service": "HBO Max",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
+          "note": "TNT Sports add-on required; selected TNT matches only.",
+          "watchUrl": "https://www.hbomax.com/"
+        },
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "USA Network",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League fixtures on USA Network."
+        },
+        {
+          "country": "US",
+          "service": "NBC",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
+          "note": "Selected Premier League matches on NBC."
         }
       ]
     }
