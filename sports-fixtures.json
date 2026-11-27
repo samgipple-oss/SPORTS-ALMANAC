@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T04:27:53Z",
+  "updatedAt": "2026-11-27T07:44:06Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -132,11 +132,11 @@
       }
     },
     "NFL": {
-      "fixtures": 61,
+      "fixtures": 65,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 61,
-        "anyCoverageFixtures": 61,
+        "possibleFixtures": 65,
+        "anyCoverageFixtures": 65,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 0.0,
@@ -144,8 +144,8 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 61,
-        "anyCoverageFixtures": 61,
+        "possibleFixtures": 65,
+        "anyCoverageFixtures": 65,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 61,
         "confirmedPct": 0.0,
@@ -259,8 +259,8 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 678,
-    "US": 695
+    "UK": 682,
+    "US": 699
   },
   "eventSpecificGamesByCountry": {
     "UK": 155,
@@ -277,14 +277,14 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 366,
-  "officialRightsEntries": 2013,
+  "officialRightsEntries": 2021,
   "verifiedGamesByCountry": {
     "UK": 259,
     "US": 195
   },
   "possibleGamesByCountry": {
-    "UK": 482,
-    "US": 558
+    "UK": 486,
+    "US": 562
   },
   "errors": [],
   "items": [
@@ -35014,6 +35014,134 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:football/nfl:401873144",
+      "sport": "American football",
+      "competition": "NFL",
+      "title": "Carolina Panthers at Pittsburgh Steelers",
+      "homeTeam": "Pittsburgh Steelers",
+      "awayTeam": "Carolina Panthers",
+      "start": "2026-12-27T05:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261227&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NFL Game Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
+          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "NFL+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
+          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
+          "watchUrl": "https://www.nfl.com/plus/"
+        }
+      ]
+    },
+    {
+      "id": "espn:football/nfl:401873145",
+      "sport": "American football",
+      "competition": "NFL",
+      "title": "Cincinnati Bengals at Indianapolis Colts",
+      "homeTeam": "Indianapolis Colts",
+      "awayTeam": "Cincinnati Bengals",
+      "start": "2026-12-27T05:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261227&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NFL Game Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
+          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "NFL+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
+          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
+          "watchUrl": "https://www.nfl.com/plus/"
+        }
+      ]
+    },
+    {
+      "id": "espn:football/nfl:401873146",
+      "sport": "American football",
+      "competition": "NFL",
+      "title": "Tampa Bay Buccaneers at Atlanta Falcons",
+      "homeTeam": "Atlanta Falcons",
+      "awayTeam": "Tampa Bay Buccaneers",
+      "start": "2026-12-27T05:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261227&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NFL Game Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
+          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "NFL+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
+          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
+          "watchUrl": "https://www.nfl.com/plus/"
+        }
+      ]
+    },
+    {
+      "id": "espn:football/nfl:401873147",
+      "sport": "American football",
+      "competition": "NFL",
+      "title": "Washington Commanders at Minnesota Vikings",
+      "homeTeam": "Minnesota Vikings",
+      "awayTeam": "Washington Commanders",
+      "start": "2026-12-27T05:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261227&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "UK",
+          "service": "NFL Game Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-EN/help/articles/16858954355485-nfl-game-pass-blackout-restrictions-in-the-uk-and-republic-of-ireland",
+          "note": "On DAZN; two selected Sunday regular-season matches per week can be blacked out live.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "US",
+          "service": "NFL+",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.nfl.com/hc/en-us/articles/40568374746644-How-to-access-LIVE-NFL-Regular-Season-games",
+          "note": "Live games on phones/tablets only when local or nationally televised in your market.",
+          "watchUrl": "https://www.nfl.com/plus/"
         }
       ]
     }
