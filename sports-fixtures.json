@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T10:25:31Z",
+  "updatedAt": "2026-11-27T13:39:17Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -54,7 +54,7 @@
         "possibleFixtures": 18,
         "anyCoverageFixtures": 18,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 16,
+        "eventSpecificFixtures": 15,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
@@ -263,7 +263,7 @@
     "US": 699
   },
   "eventSpecificGamesByCountry": {
-    "UK": 160,
+    "UK": 159,
     "US": 326
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -273,7 +273,7 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 8,
-  "footballTVListingMatches": 178,
+  "footballTVListingMatches": 177,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 366,
@@ -16419,12 +16419,10 @@
           "country": "UK",
           "service": "TNT Sports",
           "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.tntsports.co.uk/",
-          "programmeTitle": "Lech Poznan v Ferencvaros",
-          "programmeStart": "2026-12-10T20:00:00Z"
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000/",
+          "note": "Some Europa League matches are HBO Max-only; verify a linear TNT channel for this game.",
+          "watchUrl": "https://www.tntsports.co.uk/"
         }
       ]
     },
