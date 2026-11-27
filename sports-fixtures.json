@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T01:43:08Z",
+  "updatedAt": "2026-11-27T04:27:53Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -111,11 +111,11 @@
       }
     },
     "NBA": {
-      "fixtures": 170,
+      "fixtures": 171,
       "UK": {
-        "confirmedFixtures": 170,
+        "confirmedFixtures": 171,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 170,
+        "anyCoverageFixtures": 171,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
@@ -123,8 +123,8 @@
       },
       "US": {
         "confirmedFixtures": 15,
-        "possibleFixtures": 170,
-        "anyCoverageFixtures": 170,
+        "possibleFixtures": 171,
+        "anyCoverageFixtures": 171,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 39,
         "confirmedPct": 8.8,
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 209,
+      "fixtures": 212,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 209,
-        "anyCoverageFixtures": 209,
+        "possibleFixtures": 212,
+        "anyCoverageFixtures": 212,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 0.0,
@@ -165,10 +165,10 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 209,
-        "anyCoverageFixtures": 209,
+        "possibleFixtures": 212,
+        "anyCoverageFixtures": 212,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 189,
+        "eventSpecificFixtures": 192,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
@@ -259,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 674,
-    "US": 691
+    "UK": 678,
+    "US": 695
   },
   "eventSpecificGamesByCountry": {
     "UK": 155,
-    "US": 323
+    "US": 326
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 16,
@@ -277,14 +277,14 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 366,
-  "officialRightsEntries": 2005,
+  "officialRightsEntries": 2013,
   "verifiedGamesByCountry": {
-    "UK": 258,
+    "UK": 259,
     "US": 195
   },
   "possibleGamesByCountry": {
-    "UK": 479,
-    "US": 554
+    "UK": 482,
+    "US": 558
   },
   "errors": [],
   "items": [
@@ -34861,6 +34861,159 @@
           "basis": "competition-rights",
           "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
           "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401893002",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Vancouver Canucks at Calgary Flames",
+      "homeTeam": "Calgary Flames",
+      "awayTeam": "Vancouver Canucks",
+      "start": "2026-12-27T03:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261226&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261226&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401893003",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Utah Mammoth at Los Angeles Kings",
+      "homeTeam": "Los Angeles Kings",
+      "awayTeam": "Utah Mammoth",
+      "start": "2026-12-27T03:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261226&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261226&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401893004",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Vegas Golden Knights at San Jose Sharks",
+      "homeTeam": "San Jose Sharks",
+      "awayTeam": "Vegas Golden Knights",
+      "start": "2026-12-27T03:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261226&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261226&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910194",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Memphis Grizzlies at LA Clippers",
+      "homeTeam": "LA Clippers",
+      "awayTeam": "Memphis Grizzlies",
+      "start": "2026-12-27T03:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261226&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
         }
       ]
     }
