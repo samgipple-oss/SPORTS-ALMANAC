@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T01:40:17Z",
+  "updatedAt": "2026-11-28T04:19:30Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -111,11 +111,11 @@
       }
     },
     "NBA": {
-      "fixtures": 170,
+      "fixtures": 174,
       "UK": {
-        "confirmedFixtures": 170,
+        "confirmedFixtures": 174,
         "possibleFixtures": 1,
-        "anyCoverageFixtures": 170,
+        "anyCoverageFixtures": 174,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 1,
         "confirmedPct": 100.0,
@@ -123,11 +123,11 @@
       },
       "US": {
         "confirmedFixtures": 15,
-        "possibleFixtures": 170,
-        "anyCoverageFixtures": 170,
+        "possibleFixtures": 174,
+        "anyCoverageFixtures": 174,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 37,
-        "confirmedPct": 8.8,
+        "eventSpecificFixtures": 39,
+        "confirmedPct": 8.6,
         "anyCoveragePct": 100.0
       }
     },
@@ -259,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 676,
-    "US": 693
+    "UK": 680,
+    "US": 697
   },
   "eventSpecificGamesByCountry": {
     "UK": 156,
-    "US": 320
+    "US": 322
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 16,
@@ -277,14 +277,14 @@
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 382,
-  "officialRightsEntries": 2018,
+  "officialRightsEntries": 2026,
   "verifiedGamesByCountry": {
-    "UK": 255,
+    "UK": 259,
     "US": 190
   },
   "possibleGamesByCountry": {
     "UK": 484,
-    "US": 558
+    "US": 562
   },
   "errors": [],
   "items": [
@@ -7051,7 +7051,7 @@
       "homeTeam": "Inter Miami CF",
       "awayTeam": "Columbus Crew",
       "start": "2026-12-03T00:30:00Z",
-      "liveStatus": "Scheduled",
+      "liveStatus": "Canceled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261202&limit=300",
       "broadcasts": [
         {
@@ -12991,6 +12991,90 @@
         }
       ],
       "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401937079",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "TBD at TBD",
+      "homeTeam": "TBD",
+      "awayTeam": "TBD",
+      "start": "2026-12-08T05:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261208&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Prime Video",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.primevideo.com/salp/ucl-help/"
+        },
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401937080",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "TBD at TBD",
+      "homeTeam": "TBD",
+      "awayTeam": "TBD",
+      "start": "2026-12-08T05:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261208&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Prime Video",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261208&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.primevideo.com/salp/ucl-help/"
+        },
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -35090,6 +35174,72 @@
       "homeTeam": "Golden State Warriors",
       "awayTeam": "Minnesota Timberwolves",
       "start": "2026-12-28T01:30:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261227&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910205",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Philadelphia 76ers at LA Clippers",
+      "homeTeam": "LA Clippers",
+      "awayTeam": "Philadelphia 76ers",
+      "start": "2026-12-28T02:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261227&limit=300",
+      "broadcasts": [
+        {
+          "country": "UK",
+          "service": "NBA League Pass",
+          "verified": true,
+          "basis": "official-league-wide-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Every NBA game is live on League Pass outside the US and Canada.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "NBA League Pass",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
+          "note": "Out-of-market games only; local and national live blackouts vary by location.",
+          "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:basketball/nba:401910206",
+      "sport": "Basketball",
+      "competition": "NBA",
+      "title": "Memphis Grizzlies at Los Angeles Lakers",
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Memphis Grizzlies",
+      "start": "2026-12-28T02:00:00Z",
       "liveStatus": "Scheduled",
       "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261227&limit=300",
       "broadcasts": [
