@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-11-28T16:06:31Z",
+  "updatedAt": "2026-11-28T19:16:33Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
   "broadcastAuditVersion": 1,
   "coverageByCompetition": {
     "Bundesliga": {
-      "fixtures": 31,
+      "fixtures": 30,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 18,
-        "anyCoverageFixtures": 18,
+        "possibleFixtures": 17,
+        "anyCoverageFixtures": 17,
         "uncoveredFixtures": 13,
-        "eventSpecificFixtures": 18,
+        "eventSpecificFixtures": 17,
         "confirmedPct": 0.0,
-        "anyCoveragePct": 58.1
+        "anyCoveragePct": 56.7
       },
       "US": {
-        "confirmedFixtures": 31,
-        "possibleFixtures": 31,
-        "anyCoverageFixtures": 31,
+        "confirmedFixtures": 30,
+        "possibleFixtures": 30,
+        "anyCoverageFixtures": 30,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 4,
+        "eventSpecificFixtures": 3,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       }
@@ -69,20 +69,20 @@
       }
     },
     "La Liga": {
-      "fixtures": 40,
+      "fixtures": 39,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 40,
-        "anyCoverageFixtures": 40,
+        "possibleFixtures": 39,
+        "anyCoverageFixtures": 39,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 30,
+        "eventSpecificFixtures": 29,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 40,
+        "confirmedFixtures": 39,
         "possibleFixtures": 2,
-        "anyCoverageFixtures": 40,
+        "anyCoverageFixtures": 39,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
@@ -90,20 +90,20 @@
       }
     },
     "MLS": {
-      "fixtures": 14,
+      "fixtures": 13,
       "UK": {
-        "confirmedFixtures": 14,
+        "confirmedFixtures": 13,
         "possibleFixtures": 0,
-        "anyCoverageFixtures": 14,
+        "anyCoverageFixtures": 13,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 0,
         "confirmedPct": 100.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 14,
+        "confirmedFixtures": 13,
         "possibleFixtures": 1,
-        "anyCoverageFixtures": 14,
+        "anyCoverageFixtures": 13,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 1,
         "confirmedPct": 100.0,
@@ -126,7 +126,7 @@
         "possibleFixtures": 195,
         "anyCoverageFixtures": 195,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 39,
+        "eventSpecificFixtures": 40,
         "confirmedPct": 7.7,
         "anyCoveragePct": 100.0
       }
@@ -153,11 +153,11 @@
       }
     },
     "NHL": {
-      "fixtures": 204,
+      "fixtures": 205,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 204,
-        "anyCoverageFixtures": 204,
+        "possibleFixtures": 205,
+        "anyCoverageFixtures": 205,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 4,
         "confirmedPct": 0.0,
@@ -165,29 +165,29 @@
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 204,
-        "anyCoverageFixtures": 204,
+        "possibleFixtures": 205,
+        "anyCoverageFixtures": 205,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 185,
+        "eventSpecificFixtures": 186,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       }
     },
     "Premier League": {
-      "fixtures": 57,
+      "fixtures": 56,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 57,
-        "anyCoverageFixtures": 57,
+        "possibleFixtures": 56,
+        "anyCoverageFixtures": 56,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 42,
+        "eventSpecificFixtures": 41,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 57,
-        "anyCoverageFixtures": 57,
+        "possibleFixtures": 56,
+        "anyCoverageFixtures": 56,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 3,
         "confirmedPct": 0.0,
@@ -195,20 +195,20 @@
       }
     },
     "Serie A": {
-      "fixtures": 38,
+      "fixtures": 37,
       "UK": {
         "confirmedFixtures": 34,
-        "possibleFixtures": 38,
-        "anyCoverageFixtures": 38,
+        "possibleFixtures": 37,
+        "anyCoverageFixtures": 37,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 13,
-        "confirmedPct": 89.5,
+        "eventSpecificFixtures": 12,
+        "confirmedPct": 91.9,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 38,
+        "confirmedFixtures": 37,
         "possibleFixtures": 2,
-        "anyCoverageFixtures": 38,
+        "anyCoverageFixtures": 37,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
@@ -259,12 +259,12 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 696,
-    "US": 709
+    "UK": 692,
+    "US": 705
   },
   "eventSpecificGamesByCountry": {
-    "UK": 159,
-    "US": 317
+    "UK": 155,
+    "US": 318
   },
   "officialNHLBlackoutFixtureMatches": 0,
   "nbaOfficialUSNationalBroadcastEntries": 16,
@@ -273,297 +273,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 9,
-  "footballTVListingMatches": 172,
+  "footballTVListingMatches": 168,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 382,
-  "officialRightsEntries": 2036,
+  "officialRightsEntries": 2019,
   "verifiedGamesByCountry": {
-    "UK": 279,
-    "US": 183
+    "UK": 278,
+    "US": 179
   },
   "possibleGamesByCountry": {
-    "UK": 479,
-    "US": 577
+    "UK": 476,
+    "US": 576
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/ita.1:401874826",
-      "sport": "Football",
-      "competition": "Serie A",
-      "title": "Lazio at Torino",
-      "homeTeam": "Torino",
-      "awayTeam": "Lazio",
-      "start": "2026-11-28T17:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261128&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Paramount+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.paramountplus.com/sneak-peak/how-to-watch-serie-a-on-paramount-plus/",
-          "note": "All 380 Serie A games live on Paramount+ in the US in 2026-27.",
-          "watchUrl": "https://www.paramountplus.com/sports/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "DAZN",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.dazn.com/en-GB/home",
-          "programmeTitle": "Torino v Lazio (joins match in progress)",
-          "programmeStart": "2026-11-28T17:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected Serie A fixtures are shared with TNT Sports; check individual listing.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on only, if this Serie A match is selected for TNT.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "UK",
-          "service": "BBC iPlayer",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://football-italia.net/where-to-watch-serie-a-in-2026-27/",
-          "note": "Selected free-to-air Serie A games only; individual fixture not confirmed.",
-          "watchUrl": "https://www.bbc.co.uk/iplayer"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/eng.1:401878752",
-      "sport": "Football",
-      "competition": "Premier League",
-      "title": "Aston Villa at Ipswich Town",
-      "homeTeam": "Ipswich Town",
-      "awayTeam": "Aston Villa",
-      "start": "2026-11-28T17:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261128&limit=300",
-      "broadcasts": [],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "Ipswich Town v Aston Villa",
-          "programmeStart": "2026-11-28T17:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        },
-        {
-          "country": "UK",
-          "service": "TNT Sports",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.premierleague.com/en/about/faq/broadcast",
-          "note": "Selected live Premier League matches, not every fixture.",
-          "watchUrl": "https://www.tntsports.co.uk/"
-        },
-        {
-          "country": "UK",
-          "service": "HBO Max",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://help.hbomax.com/gb-en/Answer/Detail/000002560",
-          "note": "TNT Sports add-on required; selected TNT matches only.",
-          "watchUrl": "https://www.hbomax.com/"
-        },
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected live games and NBC simulcasts; USA Network games may be unavailable live.",
-          "watchUrl": "https://www.peacocktv.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "USA Network",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected Premier League fixtures on USA Network."
-        },
-        {
-          "country": "US",
-          "service": "NBC",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.peacocktv.com/sports/premier-league",
-          "note": "Selected Premier League matches on NBC."
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/esp.1:401882793",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Atlético Madrid at Elche",
-      "homeTeam": "Elche",
-      "awayTeam": "Atlético Madrid",
-      "start": "2026-11-28T17:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261128&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "programmeTitle": "Elche v Atlético Madrid",
-          "programmeStart": "2026-11-28T17:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/ger.1:401884726",
-      "sport": "Football",
-      "competition": "Bundesliga",
-      "title": "Eintracht Frankfurt at VfB Stuttgart",
-      "homeTeam": "VfB Stuttgart",
-      "awayTeam": "Eintracht Frankfurt",
-      "start": "2026-11-28T17:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261128&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "Peacock",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
-          "note": "All 2026-27 Bundesliga fixtures stream in Spanish on Peacock in the US.",
-          "watchUrl": "https://www.peacocktv.com/sports",
-          "language": "Spanish"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "US",
-          "service": "Fandango",
-          "verified": false,
-          "basis": "event-schedule",
-          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261128&limit=300",
-          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
-          "watchUrl": "https://www.fandango.com/"
-        },
-        {
-          "country": "US",
-          "service": "USA Network",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-broadens-broadcast-accessibility-for-fans-in-us-with-new-deals-versants-usa-sports-nbcuniversals-telemundo-38268",
-          "note": "At least 30 matches per season air on USA Network; check this fixture."
-        },
-        {
-          "country": "UK",
-          "service": "Sky Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "watchUrl": "https://www.skysports.com/watch",
-          "programmeTitle": "VfB Stuttgart v Eintracht Frankfurt",
-          "programmeStart": "2026-11-28T17:30:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "NOW",
-          "verified": false,
-          "basis": "network-simulcast",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "This identified Sky Sports match may be viewed with eligible NOW Sports access.",
-          "watchUrl": "https://www.nowtv.com/watch-sky-sports-online"
-        }
-      ]
-    },
-    {
-      "id": "espn:soccer/usa.1:401933737",
-      "sport": "Football",
-      "competition": "MLS",
-      "title": "Chicago Fire FC at Charlotte FC",
-      "homeTeam": "Charlotte FC",
-      "awayTeam": "Chicago Fire FC",
-      "start": "2026-11-28T17:30:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261128&limit=300",
-      "broadcasts": [
-        {
-          "country": "UK",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        },
-        {
-          "country": "US",
-          "service": "Apple TV",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://www.mlssoccer.com/how-to-watch/",
-          "note": "Every 2026 MLS match is on Apple TV; no blackouts.",
-          "watchUrl": "https://tv.apple.com/sports"
-        }
-      ],
-      "broadcastLeads": []
-    },
     {
       "id": "espn:soccer/usa.1:401933724",
       "sport": "Football",
@@ -12623,6 +12347,24 @@
         }
       ],
       "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "Peacock",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261207&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports"
+        },
+        {
+          "country": "US",
+          "service": "NBCSN",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261207&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.peacocktv.com/sports/nba"
+        },
         {
           "country": "US",
           "service": "NBA League Pass",
@@ -35552,6 +35294,46 @@
           "sourceUrl": "https://support.watch.nba.com/hc/en-us/articles/115002481154-League-Pass-Blackout-Guide",
           "note": "Out-of-market games only; local and national live blackouts vary by location.",
           "watchUrl": "https://www.nba.com/games"
+        }
+      ]
+    },
+    {
+      "id": "espn:hockey/nhl:401893012",
+      "sport": "Ice hockey",
+      "competition": "NHL",
+      "title": "Vegas Golden Knights at Minnesota Wild",
+      "homeTeam": "Minnesota Wild",
+      "awayTeam": "Vegas Golden Knights",
+      "start": "2026-12-28T19:00:00Z",
+      "liveStatus": "Scheduled",
+      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261228&limit=300",
+      "broadcasts": [],
+      "broadcastLeads": [
+        {
+          "country": "US",
+          "service": "ESPN+",
+          "verified": false,
+          "basis": "event-schedule",
+          "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261228&limit=300",
+          "note": "ESPN lists this network for this game; regional access and blackouts unverified.",
+          "watchUrl": "https://www.espn.com/watch/"
+        },
+        {
+          "country": "UK",
+          "service": "NHL.TV",
+          "verified": false,
+          "basis": "blackout-dependent-coverage",
+          "sourceUrl": "https://www.dazn.com/en-GB/help/articles/29693674363549-nhltv-on-dazn",
+          "note": "NHL.TV on DAZN; selected Premier Sports exclusives are blacked out live in the UK.",
+          "watchUrl": "https://www.dazn.com/en-GB/"
+        },
+        {
+          "country": "UK",
+          "service": "Premier Sports",
+          "verified": false,
+          "basis": "competition-rights",
+          "sourceUrl": "https://www.dazn.com/en-HR/help/articles/29693615472541-nhl-blackout-restrictions",
+          "note": "Selected NHL games only; check the Premier Sports listings."
         }
       ]
     }
