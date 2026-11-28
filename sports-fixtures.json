@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T10:11:06Z",
+  "updatedAt": "2026-11-28T13:24:21Z",
   "schemaVersion": 5,
   "rightsRulesCheckedAsOf": "2026-11-04",
   "source": "ESPN fixtures and US event listings, UK football guides, optional XMLTV, NHL official UK blackout listings, rights rules, verified manual overrides",
@@ -69,20 +69,20 @@
       }
     },
     "La Liga": {
-      "fixtures": 42,
+      "fixtures": 41,
       "UK": {
         "confirmedFixtures": 0,
-        "possibleFixtures": 42,
-        "anyCoverageFixtures": 42,
+        "possibleFixtures": 41,
+        "anyCoverageFixtures": 41,
         "uncoveredFixtures": 0,
-        "eventSpecificFixtures": 32,
+        "eventSpecificFixtures": 31,
         "confirmedPct": 0.0,
         "anyCoveragePct": 100.0
       },
       "US": {
-        "confirmedFixtures": 42,
+        "confirmedFixtures": 41,
         "possibleFixtures": 2,
-        "anyCoverageFixtures": 42,
+        "anyCoverageFixtures": 41,
         "uncoveredFixtures": 0,
         "eventSpecificFixtures": 2,
         "confirmedPct": 100.0,
@@ -259,11 +259,11 @@
     }
   },
   "anyCoverageGamesByCountry": {
-    "UK": 701,
-    "US": 718
+    "UK": 700,
+    "US": 717
   },
   "eventSpecificGamesByCountry": {
-    "UK": 161,
+    "UK": 160,
     "US": 322
   },
   "officialNHLBlackoutFixtureMatches": 0,
@@ -273,64 +273,21 @@
   "successfulChecks": 480,
   "totalChecks": 480,
   "xmltvMatches": 9,
-  "footballTVListingMatches": 174,
+  "footballTVListingMatches": 173,
   "specificNFLFreeBroadcasts": 0,
   "footballTVListingSourceErrors": 0,
   "networkStreamingLeads": 382,
-  "officialRightsEntries": 2068,
+  "officialRightsEntries": 2065,
   "verifiedGamesByCountry": {
     "UK": 280,
-    "US": 190
+    "US": 189
   },
   "possibleGamesByCountry": {
-    "UK": 484,
+    "UK": 483,
     "US": 583
   },
   "errors": [],
   "items": [
-    {
-      "id": "espn:soccer/esp.1:401882796",
-      "sport": "Football",
-      "competition": "La Liga",
-      "title": "Rayo Vallecano at Real Betis",
-      "homeTeam": "Real Betis",
-      "awayTeam": "Rayo Vallecano",
-      "start": "2026-11-28T13:00:00Z",
-      "liveStatus": "Scheduled",
-      "fixtureSource": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261128&limit=300",
-      "broadcasts": [
-        {
-          "country": "US",
-          "service": "ESPN+",
-          "verified": true,
-          "basis": "official-league-wide-coverage",
-          "sourceUrl": "https://espnpressroom.com/press-release/espn-presents-the-2026-27-laliga-season-beginning-aug-15/",
-          "note": "All 380 La Liga matches stream on ESPN+ in the US in 2026-27.",
-          "watchUrl": "https://www.espn.com/watch/"
-        }
-      ],
-      "broadcastLeads": [
-        {
-          "country": "UK",
-          "service": "Premier Sports",
-          "verified": false,
-          "basis": "matched-tv-listing",
-          "sourceUrl": "https://www.live-footballontv.com/",
-          "note": "Individual teams, local date and kickoff matched a published UK TV fixture guide; check provider availability.",
-          "programmeTitle": "Real Betis v Rayo Vallecano",
-          "programmeStart": "2026-11-28T13:00:00Z"
-        },
-        {
-          "country": "UK",
-          "service": "Disney+",
-          "verified": false,
-          "basis": "competition-rights",
-          "sourceUrl": "https://www.laliga.com/en-BR/news/laliga-announces-landmark-broadcast-deals-with-premier-sports-and-disney-in-the-uk-and-ireland",
-          "note": "Exclusive UK late-Saturday La Liga fixture, if this match is the scheduled selection; otherwise not carried.",
-          "watchUrl": "https://www.disneyplus.com/"
-        }
-      ]
-    },
     {
       "id": "espn:soccer/ita.1:401875081",
       "sport": "Football",
